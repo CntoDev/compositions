@@ -1,3 +1,29 @@
+How to use
+==========
+
+Download this repository (via git or [direct ZIP archive download from Github]
+(https://github.com/CntoDev/compositions/archive/master.zip) and extract
+whatever compositions you want into your `compositions` directory in your
+Arma 3 profile,
+```
+C:\Users\YourWindowsUser\Documents\Arma 3\compositions
+```
+or, if you have a non-default Arma 3 profile,
+```
+C:\Users\YourWindowsUser\Documents\Arma 3 - Other Profiles\YourProfileName\compositions
+```
+
+This repository contains per-author directories containing compositions, with
+one exception: `reference`. This is a directory of reference factions and other
+compositions maintained by CNTO RnD / MMT collectively.
+
+Whenever there's an update to the compositions, you can just download the
+ZIP archive again and extract + override the old compositions, unless instructed
+otherwise.
+
+How to maintain
+===============
+
 For reference compositions (to keep them maintainable):
 
 - always use the Virtual Reality map (perfectly flat terrain)
