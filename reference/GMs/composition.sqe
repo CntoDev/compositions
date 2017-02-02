@@ -1,5 +1,5 @@
 version=52;
-center[]={4098.3335,5,4108};
+center[]={4004.3333,5,4000};
 class items
 {
 	items=3;
@@ -15,13 +15,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.3334961,0.0014390945,0.049804688};
+					position[]={-4.333252,0.0014390945,0.049804688};
 				};
 				side="West";
 				flags=7;
 				class Attributes
 				{
 					rank="COLONEL";
+					init="this call a3ee_fnc_godlike";
 					description="Game master";
 					isPlayable=1;
 					class Inventory
@@ -86,7 +87,7 @@ class items
 						goggles="G_Goggles_VR";
 					};
 				};
-				id=4;
+				id=1;
 				type="B_Protagonist_VR_F";
 				class CustomAttributes
 				{
@@ -117,13 +118,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.3334961,0.0014390945,0.049804688};
+					position[]={-3.333252,0.0014390945,0.049804688};
 				};
 				side="West";
 				flags=5;
 				class Attributes
 				{
 					rank="COLONEL";
+					init="this call a3ee_fnc_godlike";
 					description="Game master";
 					isPlayable=1;
 					class Inventory
@@ -188,8 +190,250 @@ class items
 						goggles="G_Goggles_VR";
 					};
 				};
-				id=6;
+				id=2;
 				type="B_Protagonist_VR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="insta_zeus_unit_curator";
+						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=0;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_persistent_callsign";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="GM";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.33325195,0.0014390945,0.049804688};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="COLONEL";
+					init="this call a3ee_fnc_godlike";
+					description="Game master";
+					isPlayable=1;
+					class Inventory
+					{
+						class handgun
+						{
+							name="rhs_weap_pya";
+							class primaryMuzzleMag
+							{
+								name="rhs_mag_9x19_17";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_Protagonist_VR";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_mag_9x19_17";
+									count=10;
+									ammoLeft=17;
+								};
+							};
+							class ItemCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item1
+								{
+									name="rhs_acc_2dpZenit";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACRE_PRC148";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						goggles="G_Goggles_VR";
+					};
+				};
+				id=4;
+				type="O_Protagonist_VR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="insta_zeus_unit_curator";
+						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.66674805,0.0014390945,0.049804688};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="COLONEL";
+					init="this call a3ee_fnc_godlike";
+					description="Game master";
+					isPlayable=1;
+					class Inventory
+					{
+						class handgun
+						{
+							name="rhs_weap_pya";
+							class primaryMuzzleMag
+							{
+								name="rhs_mag_9x19_17";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_Protagonist_VR";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_mag_9x19_17";
+									count=10;
+									ammoLeft=17;
+								};
+							};
+							class ItemCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item1
+								{
+									name="rhs_acc_2dpZenit";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACRE_PRC148";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						goggles="G_Goggles_VR";
+					};
+				};
+				id=5;
+				type="O_Protagonist_VR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -243,246 +487,6 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item1
-	{
-		dataType="Group";
-		side="East";
-		class Entities
-		{
-			items=2;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.33349609,0.0014390945,0.049804688};
-				};
-				side="East";
-				flags=7;
-				class Attributes
-				{
-					rank="COLONEL";
-					description="Game master";
-					isPlayable=1;
-					class Inventory
-					{
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class uniform
-						{
-							typeName="U_O_Protagonist_VR";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="rhs_mag_9x19_17";
-									count=10;
-									ammoLeft=17;
-								};
-							};
-							class ItemCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item1
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item2
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						gps="ItemGPS";
-						goggles="G_Goggles_VR";
-					};
-				};
-				id=11;
-				type="O_Protagonist_VR_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="insta_zeus_unit_curator";
-						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=1;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.66650391,0.0014390945,0.049804688};
-				};
-				side="East";
-				flags=5;
-				class Attributes
-				{
-					rank="COLONEL";
-					description="Game master";
-					isPlayable=1;
-					class Inventory
-					{
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class uniform
-						{
-							typeName="U_O_Protagonist_VR";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="rhs_mag_9x19_17";
-									count=10;
-									ammoLeft=17;
-								};
-							};
-							class ItemCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item1
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item2
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						gps="ItemGPS";
-						goggles="G_Goggles_VR";
-					};
-				};
-				id=13;
-				type="O_Protagonist_VR_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="insta_zeus_unit_curator";
-						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=1;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=10;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="GM";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
 	class Item2
 	{
 		dataType="Group";
@@ -495,13 +499,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.6665039,0.0014390945,0.049804688};
+					position[]={3.666748,0.0014390945,0.049804688};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="COLONEL";
+					init="this call a3ee_fnc_godlike";
 					description="Game master";
 					isPlayable=1;
 					class Inventory
@@ -566,7 +571,7 @@ class items
 						goggles="G_Goggles_VR";
 					};
 				};
-				id=15;
+				id=7;
 				type="I_Protagonist_VR_F";
 				class CustomAttributes
 				{
@@ -597,13 +602,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.6665039,0.0014390945,0.049804688};
+					position[]={4.666748,0.0014390945,0.049804688};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="COLONEL";
+					init="this call a3ee_fnc_godlike";
 					description="Game master";
 					isPlayable=1;
 					class Inventory
@@ -668,7 +674,7 @@ class items
 						goggles="G_Goggles_VR";
 					};
 				};
-				id=17;
+				id=8;
 				type="I_Protagonist_VR_F";
 				class CustomAttributes
 				{
@@ -698,7 +704,7 @@ class items
 		class Attributes
 		{
 		};
-		id=14;
+		id=6;
 		class CustomAttributes
 		{
 			class Attribute0
