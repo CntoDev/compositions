@@ -32,6 +32,11 @@ For reference compositions (to keep them maintainable):
     around a bit, to snap them to the grid (they're not on the grid after
     placement)
 - whatever you do, do as little clicking/interaction as possible (see below)
+- when saving the composition after changes
+  - zoom out sufficiently, so you catch all group markers in the selection
+  - select twice - the first selection misses groups with 1 soldier (Jet)
+  - use map mode for selecting units, map markers (respawn, etc.) do not get
+    selected in the 3D view
 
 Eden editor records your every click into every textbox, everytime you expand
 a section of attributes, everytime you accidentally check/uncheck a checkbox,
