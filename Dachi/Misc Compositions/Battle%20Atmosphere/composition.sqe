@@ -1,0 +1,226 @@
+version=52;
+center[]={4980.5659,38.070457,6118.75};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={1.1225586,0.70685959,1.081543};
+		};
+		id=465;
+		type="ACE_moduleAmbianceSound";
+		atlOffset=0.21312714;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ACE_moduleAmbianceSound_followPlayers";
+				expression="_this setVariable ['followPlayers',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ACE_moduleAmbianceSound_minimalDelay";
+				expression="_this setVariable ['minimalDelay',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=10;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ACE_moduleAmbianceSound_soundVolume";
+				expression="_this setVariable ['soundVolume',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=25;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ACE_moduleAmbianceSound_maximalDistance";
+				expression="_this setVariable ['maximalDistance',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=2000;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ACE_moduleAmbianceSound_maximalDelay";
+				expression="_this setVariable ['maximalDelay',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=170;
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ACE_moduleAmbianceSound_minimalDistance";
+				expression="_this setVariable ['minimalDistance',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=500;
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ACE_moduleAmbianceSound_soundFiles";
+				expression="_this setVariable ['soundFiles',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="BattlefieldFirefight1_3D,BattlefieldFirefight2_3D,BattlefieldFirefight3_3D,BattlefieldFirefight4_3D";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-1.1225586,0,-1.081543};
+		};
+		id=466;
+		type="ModuleTracers_F";
+		atlOffset=0.036251068;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleTracers_F_Max";
+				expression="_this setVariable ['Max',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="20";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleTracers_F_Side";
+				expression="_this setVariable ['Side',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="1";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleTracers_F_Min";
+				expression="_this setVariable ['Min',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			nAttributes=3;
+		};
+	};
+};

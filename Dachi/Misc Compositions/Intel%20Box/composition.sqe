@@ -1,0 +1,48 @@
+version=52;
+center[]={12151.775,94.245888,13642.274};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.01084137,0};
+			angles[]={6.2805324,2.365113,6.1874714};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this addAction [""Download Plans"",{ " \n "  params [""_target"", ""_caller""]; " \n "  PlansDownloaded = 1; publicVariable ""PlansDownloaded""; " \n "  [_target, 3] remoteExec [""BIS_fnc_dataTerminalAnimate""]; " \n "  sleep 5; " \n "  [_target, 0] remoteExec [""BIS_fnc_dataTerminalAnimate""]; " \n "  ""Your Intel has been downloaded"" remoteExec [""hint""]; " \n "  { player createDiaryRecord [""Diary"", [""Intel"", ""Enemy are planning an attack on <marker name='attack'>Chernagorsk Govt Building</marker> using under cover rebels<br /><img image='undercover_agents.jpg' />""]] } remoteExec [""call"", 0, true]; " \n "},nil,0.1,true,true,"""", ""isNil """"PlansDownloaded"""" && ((_target distance _this) < 2)""]";
+			name="IntelTerminal";
+		};
+		id=1267;
+		type="Land_DataTerminal_01_F";
+		atlOffset=0.00039672852;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

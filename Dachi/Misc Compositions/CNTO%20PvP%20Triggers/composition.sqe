@@ -1,0 +1,230 @@
+version=53;
+center[]={2591.509,13.86,2709.4873};
+class items
+{
+	items=16;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={0.7409668,0,-3.9873047};
+		class Attributes
+		{
+			text="Warn on leaving area";
+			condition="hasInterface && !(player in thisList)";
+			onActivation="hint ""You are leaving the AO, return back!""";
+			sizeA=150;
+			sizeB=150;
+		};
+		id=514;
+		type="EmptyDetectorAreaR250";
+	};
+	class Item1
+	{
+		dataType="Trigger";
+		position[]={0.7409668,0,-4.9873047};
+		class Attributes
+		{
+			text="Kill on leaving area";
+			condition="hasInterface && !(player in thisList)";
+			onActivation="player setDamage 1";
+			sizeA=200;
+			sizeB=200;
+		};
+		id=515;
+		type="EmptyDetectorAreaR250";
+	};
+	class Item2
+	{
+		dataType="Trigger";
+		position[]={0.75366211,0,-0.17089844};
+		class Attributes
+		{
+			text="10 Minutes Left";
+			condition="(ceil (estimatedEndServerTime - serverTime) / 60) <= 10";
+			onActivation="hint ""10 Minutes Left"";";
+			sizeA=0;
+			sizeB=0;
+			isServerOnly=1;
+		};
+		id=516;
+		type="EmptyDetector";
+	};
+	class Item3
+	{
+		dataType="Trigger";
+		position[]={0.75366211,0,-1.6708984};
+		class Attributes
+		{
+			text="Game Over";
+			condition="(ceil (estimatedEndServerTime - serverTime) / 60) <= 0";
+			sizeA=0;
+			sizeB=0;
+			type="END5";
+			isServerOnly=1;
+		};
+		id=517;
+		type="EmptyDetector";
+	};
+	class Item4
+	{
+		dataType="Trigger";
+		position[]={0.75366211,0,4.0791016};
+		class Attributes
+		{
+			text="SAS Win";
+			condition="triggerActivated Trig2;";
+			sizeA=0;
+			sizeB=0;
+			timeout[]={5,5,5};
+			type="END1";
+		};
+		id=518;
+		type="EmptyDetector";
+	};
+	class Item5
+	{
+		dataType="Trigger";
+		position[]={0.75366211,0,2.0791016};
+		class Attributes
+		{
+			text="SBS Win";
+			condition="triggerActivated Trig1;";
+			sizeA=0;
+			sizeB=0;
+			timeout[]={5,5,5};
+			type="END2";
+		};
+		id=519;
+		type="EmptyDetector";
+	};
+	class Item6
+	{
+		dataType="Trigger";
+		position[]={0.75366211,0,1.3291016};
+		class Attributes
+		{
+			name="Trig1_1";
+			text="SAS Killed Trigger";
+			condition="{faction _x == ""BLU_F""} count allDead > 0 && {{faction _x == ""BLU_F""} count (allUnits-allDead) == 0}";
+			onActivation="Hint ""The SAS have been elminated"";";
+			sizeA=0;
+			sizeB=0;
+			timeout[]={10,10,10};
+			activationType="NOT PRESENT";
+		};
+		id=520;
+		type="EmptyDetector";
+	};
+	class Item7
+	{
+		dataType="Trigger";
+		position[]={0.75366211,0,3.3291016};
+		class Attributes
+		{
+			name="Trig2_1";
+			text="SBS Killed Trigger";
+			condition="{faction _x == ""IND_F""} count allDead > 0 && {{faction _x == ""IND_F""} count (allUnits-allDead) == 0}";
+			onActivation="Hint ""The SBS have been elminated"";";
+			sizeA=0;
+			sizeB=0;
+			timeout[]={10,10,10};
+			activationType="NOT PRESENT";
+		};
+		id=521;
+		type="EmptyDetector";
+	};
+	class Item8
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.74633789,9.5367432e-007,-1.6708984};
+		};
+		title="Game Over";
+		description="This will end the mission when the mission/server time limit reaches 0";
+		id=522;
+		atlOffset=9.5367432e-007;
+	};
+	class Item9
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.74633789,9.5367432e-007,-0.17089844};
+		};
+		title="10 Minutes Left";
+		description="This will display a message (hint) telling players that there is only 10mins left. The value of 10 can be changed.";
+		id=523;
+		atlOffset=9.5367432e-007;
+	};
+	class Item10
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.74633789,9.5367432e-007,3.3291016};
+		};
+		title="SBS Eliminated";
+		description="This trigger checks to see if the base soldiers faction has been elminated i.e. IND_F this is found when you right click on your base soldiers and then select view in config then is found under the Faction." \n "" \n "Because the trigger uses the base soldiers faction you can have more than 4 sides. It has the variable name that the ending trigger looks for.";
+		id=524;
+		atlOffset=9.5367432e-007;
+	};
+	class Item11
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.74633789,9.5367432e-007,4.0791016};
+		};
+		title="SAS Win Trigger";
+		description="This trigger looks to see if another trigger is activated and if so then ends the mission with a specific ending END1. The specific endings are set in the description.ext" \n "" \n "It looks to see if the trigger that checks for the SBS being eliminated has been activated.";
+		id=525;
+		atlOffset=9.5367432e-007;
+	};
+	class Item12
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.74633789,9.5367432e-007,1.3291016};
+		};
+		title="SAS Eliminated";
+		description="This trigger checks to see if the base soldiers faction has been elminated i.e. BLU_F this is found when you right click on your base soldiers and then select view in config then is found under the Faction." \n "" \n "Because the trigger uses the base soldiers faction you can have more than 4 sides. It has the variable name that the ending trigger looks for.";
+		id=526;
+		atlOffset=9.5367432e-007;
+	};
+	class Item13
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.74633789,9.5367432e-007,2.0791016};
+		};
+		title="SBS Win Trigger";
+		description="This trigger looks to see if another trigger is activated and if so then ends the mission with a specific ending END2. The specific endings are set in the description.ext" \n "" \n "It looks to see if the trigger that checks for the SAS being eliminated has been activated.";
+		id=527;
+		atlOffset=9.5367432e-007;
+	};
+	class Item14
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.7590332,0,-3.9873047};
+		};
+		title="Out of bounds Warning";
+		description="This Trigger will warn players when they leave the triggers area zone set by the size of the trigger and where you place the trigger." \n "" \n "It will display a hint to players telling them they are leaving the AO.";
+		id=528;
+	};
+	class Item15
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.7590332,0,-4.9873047};
+		};
+		title="Kill Player when out of bounds";
+		description="This Trigger will kill players when they leave the triggers area zone set by the size of the trigger and where you place the trigger.";
+		id=529;
+	};
+};

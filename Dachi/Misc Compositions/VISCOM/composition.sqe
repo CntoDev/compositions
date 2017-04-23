@@ -1,0 +1,73 @@
+version=52;
+center[]={4014,5,3972};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,8.4787369,0};
+			angles[]={0,3.1416116,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=34;
+		type="Land_TTowerSmall_2_F";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.40650272,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=16;
+		type="Land_CampingTable_small_F";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.25,0.96907234,0};
+			angles[]={0,4.7252698,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
+			disableSimulation=1;
+		};
+		id=19;
+		type="Land_Laptop_unfolded_F";
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.25,0.96907234,0};
+			angles[]={0,1.5836768,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
+			disableSimulation=1;
+		};
+		id=18;
+		type="Land_Laptop_unfolded_F";
+	};
+};

@@ -1,0 +1,75 @@
+version=52;
+center[]={5680.4038,89.131317,3005.3589};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={-0.31542969,0,-0.99853516};
+		angle=4.462265;
+		class Attributes
+		{
+			condition="!alive trans;";
+			onActivation="0 = [0.95] execVM ""lights.sqf""; hint ""Success"";";
+			sizeA=0;
+			sizeB=0;
+			activationBy="LOGIC";
+		};
+		id=2115;
+		type="EmptyDetector";
+		atlOffset=0.00031280518;
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.10351563,0.00048065186,0.42651367};
+			angles[]={0,4.462266,6.2812634};
+		};
+		name="myLogic";
+		init="trans = nearestObject [myLogic, ""CUP_A2_trafostanica_velka""];";
+		id=2116;
+		type="Logic";
+		atlOffset=0.00031280518;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.21191406,2.6073914,0.5715332};
+			angles[]={0,1.8544847,6.2812634};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=2117;
+		type="CUP_A2_trafostanica_velka";
+		atlOffset=2.2888184e-005;
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=1;
+	};
+	class Links
+	{
+		items=1;
+		class Item0
+		{
+			linkID=0;
+			item0=2115;
+			item1=2116;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

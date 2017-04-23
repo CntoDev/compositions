@@ -1,0 +1,64 @@
+version=52;
+center[]={14260.488,44.925373,12939.277};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.084960938,0.50621033,0.012695313};
+			angles[]={6.2549129,1.3259398,6.2662778};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=192;
+		type="Land_CampingChair_V2_F";
+		atlOffset=-0.00043106079;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.075195313,0.59772491,-0.02734375};
+			angles[]={0,4.4423637,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+			name="arrow1";
+			createAsSimpleObject=1;
+		};
+		id=2014;
+		type="Sign_Pointer_Cyan_F";
+		atlOffset=0.54629135;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

@@ -1,0 +1,112 @@
+version=52;
+center[]={6576.2983,5.9978275,2447.2878};
+class items
+{
+	items=5;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.15820313,2.0356941,-0.39306641};
+			angles[]={0,1.0506229,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=1820;
+		type="PortableHelipadLight_01_blue_F";
+		atlOffset=1.9228415;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.079589844,1.6115026,0.20263672};
+			angles[]={0,4.1880445,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			fuel=0;
+			textures="Guerilla_01";
+		};
+		id=1821;
+		type="LOP_AA_Offroad_Police";
+		atlOffset=-0.0021724701;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.073242188,2.0277805,0.078857422};
+			angles[]={0,1.0506229,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=1823;
+		type="PortableHelipadLight_01_blue_F";
+		atlOffset=1.914928;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.20800781,2.0277882,0.29443359};
+			angles[]={0,1.0506229,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=1829;
+		type="PortableHelipadLight_01_blue_F";
+		atlOffset=1.9149356;
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.044433594,2.0317535,-0.15185547};
+			angles[]={0,1.0506229,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=1830;
+		type="PortableHelipadLight_01_blue_F";
+		atlOffset=1.918901;
+	};
+};

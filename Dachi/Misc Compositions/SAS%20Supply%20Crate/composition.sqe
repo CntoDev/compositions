@@ -1,0 +1,82 @@
+version=52;
+center[]={1375.762,15.885002,927.09497};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.89242554,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=776;
+		type="B_supplyCrate_F";
+		atlOffset=114.885;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[""tf47_at4_heat""],[10]],[[""150Rnd_556x45_Drum_Mag_F"",""150Rnd_556x45_Drum_Mag_Tracer_F"",""30Rnd_556x45_Stanag_red"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""ACE_Chemlight_HiYellow"",""SatchelCharge_Remote_Mag"",""rhs_mag_M441_HE"",""MiniGrenade"",""SmokeShellBlue"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShell"",""1Rnd_SmokeBlue_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_Smoke_Grenade_shell""],[40,15,100,50,30,10,30,30,40,40,40,40,20,20,20,20]],[[""ACE_fieldDressing"",""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_epinephrine"",""ACE_IR_Strobe_Item"",""ACE_morphine"",""ACE_packingBandage""],[60,20,10,20,20,35,40]],[[],[]]],false]";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="basic_vehicle_cargo_dontclear";
+				expression="_this setVariable [""DontClearCargo"",_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=3;
+		};
+	};
+};

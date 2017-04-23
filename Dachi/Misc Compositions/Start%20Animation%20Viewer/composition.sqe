@@ -1,0 +1,20 @@
+version=52;
+center[]={1985.667,307.12219,2398.833};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={0,0,0};
+		class Attributes
+		{
+			condition="true";
+			onActivation="[] call BIS_fnc_animViewer;";
+			sizeA=0;
+			sizeB=0;
+		};
+		id=802;
+		type="EmptyDetector";
+	};
+};

@@ -1,0 +1,69 @@
+version=53;
+center[]={6584.249,5.0050001,4299.0723};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={-0.26025391,0,-0.18310547};
+		angle=6.2782459;
+		class Attributes
+		{
+			name="bar1";
+			onActivation="bargate1 animate [""door_1_rot"", 1]";
+			onDeactivation="bargate1 animate [""door_1_rot"", 0]";
+			sizeA=4;
+			sizeB=25;
+			interuptable=1;
+			repeatable=1;
+			activationBy="GUER";
+			isRectangle=1;
+		};
+		id=0;
+		type="EmptyDetector";
+		atlOffset=0.0050001144;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.25976563,4.0502806,0.18261719};
+			angles[]={-0,6.2725563,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.60000002;
+			name="bargate1";
+		};
+		id=1;
+		type="Land_BarGate_F";
+		atlOffset=0.0050001144;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_isMedicalFacility";
+				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

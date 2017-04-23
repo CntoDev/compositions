@@ -1,0 +1,111 @@
+version=52;
+center[]={9940.3115,139.995,10126.365};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=205;
+		type="SupportProvider_Virtual_Drop";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_cooldown";
+				expression="_this setVariable ['BIS_SUPP_cooldown',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_vehicleInit";
+				expression="_this setVariable ['BIS_SUPP_vehicleInit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_vehicles";
+				expression="_this setVariable ['BIS_SUPP_vehicles',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[]";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_filter";
+				expression="_this setVariable ['BIS_SUPP_filter',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Side";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_crateInit";
+				expression="_this setVariable ['BIS_SUPP_crateInit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="if (isServer) then { clearMagazineCargoGlobal _this;  clearItemCargoGlobal _this;  clearWeaponCargoGlobal _this;   clearBackpackCargoGlobal _this;   _this addMagazineCargoGlobal [""rhs_30Rnd_545x39_AK_green"", 20];  _this addMagazineCargoGlobal [""rhs_30Rnd_545x39_AK"", 30];  _this addMagazineCargoGlobal [""rhs_VOG25"", 20];  _this addMagazineCargoGlobal [""HandGrenade"", 10];  _this addMagazineCargoGlobal [""SmokeShell"", 10];  _this addItemCargoGlobal [""ACE_fieldDressing"", 15];  _this addItemCargoGlobal [""ACE_morphine"", 10];  _this addItemCargoGlobal [""ACE_quikclot"", 15];  _this addMagazineCargoGlobal [""rhs_100Rnd_762x54mmR"", 15];  _this addMagazineCargoGlobal [""rhs_100Rnd_762x54mmR_7N13"", 10];  _this addWeaponCargoGlobal [""rhs_weap_rpg26"", 10];  Signal = ""SmokeShellRed"" createVehicle position _this;  Signal = ""Chemlight_red"" createVehicle position _this;  this allowDamage false; }";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+};

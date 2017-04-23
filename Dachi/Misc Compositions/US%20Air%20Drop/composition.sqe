@@ -1,0 +1,115 @@
+version=52;
+center[]={15810.576,256.40939,11237.303};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			angles[]={0.040474184,0,6.1336102};
+		};
+		id=203;
+		type="SupportProvider_Virtual_Drop";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_cooldown";
+				expression="_this setVariable ['BIS_SUPP_cooldown',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_vehicleInit";
+				expression="_this setVariable ['BIS_SUPP_vehicleInit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_vehicles";
+				expression="_this setVariable ['BIS_SUPP_vehicles',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[]";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_filter";
+				expression="_this setVariable ['BIS_SUPP_filter',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Side";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="SupportProvider_Virtual_Drop_BIS_SUPP_crateInit";
+				expression="_this setVariable ['BIS_SUPP_crateInit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="if (isServer) then { clearMagazineCargoGlobal _this;  clearItemCargoGlobal _this;  clearWeaponCargoGlobal _this;   clearBackpackCargoGlobal _this;   _this addMagazineCargoGlobal [""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"", 20];  _this addMagazineCargoGlobal [""rhs_mag_30Rnd_556x45_M855A1_Stanag"", 30];  _this addMagazineCargoGlobal [""1Rnd_HE_Grenade_shell"", 20];  _this addMagazineCargoGlobal [""HandGrenade"", 10];  _this addMagazineCargoGlobal [""SmokeShell"", 10];  _this addItemCargoGlobal [""ACE_fieldDressing"", 15];  _this addItemCargoGlobal [""ACE_morphine"", 10];  _this addItemCargoGlobal [""ACE_quikclot"", 15];  _this addMagazineCargoGlobal [""rhsusf_100Rnd_556x45_soft_pouch"", 15];  _this addMagazineCargoGlobal [""rhsusf_100Rnd_762x51_m61_ap"", 10];  _this addWeaponCargoGlobal [""rhs_weap_M136"", 10];  Signal = ""SmokeShellBlue"" createVehicle position _this;  Signal = ""Chemlight_blue"" createVehicle position _this;  this allowDamage false; }";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+};
