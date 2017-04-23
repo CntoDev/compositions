@@ -1,5 +1,5 @@
-version=52;
-center[]={1820.6859,5.5,5627.1221};
+version=53;
+center[]={3757.8862,5,548.59637};
 class items
 {
 	items=29;
@@ -15,16 +15,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={13.477661,0.75506687,17.98291};
-					angles[]={0,3.7412624,0};
+					position[]={13.477051,0.75506687,17.983582};
+					angles[]={-0,3.7412624,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=221;
+				id=70;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -49,25 +51,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -85,26 +68,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -112,16 +76,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={17.484375,0.70210552,15.375488};
-					angles[]={0,5.3131409,0};
+					position[]={17.483887,0.70210552,15.37616};
+					angles[]={-0,5.3131409,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=224;
+				id=71;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -146,25 +112,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -182,26 +129,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item2
@@ -209,16 +137,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={9.6054688,0.70210552,20.615234};
-					angles[]={0,5.3131409,0};
+					position[]={9.6049805,0.70210552,20.615906};
+					angles[]={-0,5.3131409,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=225;
+				id=72;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -243,25 +173,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -279,26 +190,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item3
@@ -306,16 +198,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={22.388306,0.75506687,4.2641602};
-					angles[]={0,4.5145307,0};
+					position[]={22.387695,0.75506687,4.2648315};
+					angles[]={-0,4.5145307,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=242;
+				id=73;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -340,25 +234,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -376,26 +251,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item4
@@ -403,16 +259,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={23.434448,0.70210552,-0.40039063};
-					angles[]={0,6.0864091,0};
+					position[]={23.434082,0.70210552,-0.39971924};
+					angles[]={-0,6.0864091,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=243;
+				id=74;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -437,25 +295,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -473,26 +312,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item5
@@ -500,16 +320,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={21.455811,0.70210552,8.8525391};
-					angles[]={0,6.0864091,0};
+					position[]={21.455322,0.70210552,8.8532104};
+					angles[]={-0,6.0864091,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=244;
+				id=75;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -534,25 +356,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -570,26 +373,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item6
@@ -597,16 +381,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={21.012451,0.75506687,-11.731934};
-					angles[]={0,5.1837263,0};
+					position[]={21.011963,0.75506687,-11.731262};
+					angles[]={-0,5.1837263,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=245;
+				id=76;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -631,25 +417,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -667,26 +434,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item7
@@ -694,16 +442,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={18.939209,0.70210552,-16.039551};
-					angles[]={0,0.4724195,0};
+					position[]={18.938721,0.70210552,-16.038879};
+					angles[]={-0,0.4724195,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=246;
+				id=77;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -728,25 +478,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -764,26 +495,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item8
@@ -791,16 +503,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={23.127563,0.70210552,-7.5546875};
-					angles[]={0,0.4724195,0};
+					position[]={23.126953,0.70210552,-7.5540161};
+					angles[]={-0,0.4724195,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=247;
+				id=78;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -825,25 +539,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -861,26 +556,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item9
@@ -888,16 +564,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={8.8432617,0.75506687,-20.719727};
-					angles[]={0,6.0681825,0};
+					position[]={8.8427734,0.75506687,-20.719055};
+					angles[]={-0,6.0681825,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=248;
+				id=79;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -922,25 +600,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -958,26 +617,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item10
@@ -985,16 +625,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1973877,0.70210552,-21.845703};
-					angles[]={0,1.3568757,0};
+					position[]={4.1967773,0.70210552,-21.845032};
+					angles[]={-0,1.3568757,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=249;
+				id=80;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1019,25 +661,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1055,26 +678,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item11
@@ -1082,16 +686,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={13.415039,0.70210552,-19.708984};
-					angles[]={0,1.3568757,0};
+					position[]={13.414551,0.70210552,-19.708313};
+					angles[]={-0,1.3568757,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=250;
+				id=81;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1116,25 +722,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1152,26 +739,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item12
@@ -1179,16 +747,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-8.0102539,0.75506687,-17.783691};
-					angles[]={0,3.7412624,0};
+					position[]={-8.0107422,0.75506687,-17.78302};
+					angles[]={-0,3.7412624,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=251;
+				id=82;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -1213,25 +783,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1249,26 +800,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item13
@@ -1276,16 +808,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.00354,0.70210552,-20.391113};
-					angles[]={0,5.3131409,0};
+					position[]={-4.0039063,0.70210552,-20.390442};
+					angles[]={-0,5.3131409,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=252;
+				id=83;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1310,25 +844,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1346,26 +861,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item14
@@ -1373,16 +869,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-11.882446,0.70210552,-15.151367};
-					angles[]={0,5.3131409,0};
+					position[]={-11.882813,0.70210552,-15.150696};
+					angles[]={-0,5.3131409,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=253;
+				id=84;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1407,25 +905,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1443,26 +922,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item15
@@ -1470,16 +930,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-18.541626,0.75506687,-6.2583008};
-					angles[]={0,1.2190406,0};
+					position[]={-18.541992,0.75506687,-6.2576294};
+					angles[]={-0,1.2190406,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=254;
+				id=85;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -1504,25 +966,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1540,26 +983,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item16
@@ -1567,16 +991,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-20.290405,0.70210552,-1.809082};
-					angles[]={0,2.7909191,0};
+					position[]={-20.291016,0.70210552,-1.8084106};
+					angles[]={-0,2.7909191,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=255;
+				id=86;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1601,25 +1027,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1637,26 +1044,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item17
@@ -1664,16 +1052,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-16.91687,0.70210552,-10.649414};
-					angles[]={0,2.7909191,0};
+					position[]={-16.91748,0.70210552,-10.648743};
+					angles[]={-0,2.7909191,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=256;
+				id=87;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1698,25 +1088,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1734,26 +1105,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item18
@@ -1761,16 +1113,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-17.279907,0.75506687,11.558105};
-					angles[]={0,2.2034595,0};
+					position[]={-17.280273,0.75506687,11.558777};
+					angles[]={-0,2.2034595,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=257;
+				id=88;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -1795,25 +1149,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1831,26 +1166,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item19
@@ -1858,16 +1174,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-14.541748,0.70210552,15.476563};
-					angles[]={0,3.7753379,0};
+					position[]={-14.542236,0.70210552,15.477234};
+					angles[]={-0,3.7753379,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=258;
+				id=89;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1892,25 +1210,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -1928,26 +1227,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item20
@@ -1955,16 +1235,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-20.038574,0.70210552,7.7749023};
-					angles[]={0,3.7753379,0};
+					position[]={-20.039063,0.70210552,7.7755737};
+					angles[]={-0,3.7753379,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=259;
+				id=90;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -1989,25 +1271,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -2025,26 +1288,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item21
@@ -2052,16 +1296,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.439209,0.75506687,20.701172};
-					angles[]={0,2.918191,0};
+					position[]={-3.4396973,0.75506687,20.701843};
+					angles[]={-0,2.918191,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=260;
+				id=91;
 				type="Land_Razorwire_F";
 				class CustomAttributes
 				{
@@ -2086,25 +1332,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -2122,26 +1349,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item22
@@ -2149,16 +1357,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1971436,0.70210552,21.866211};
-					angles[]={0,4.4900694,0};
+					position[]={1.1967773,0.70210552,21.866882};
+					angles[]={-0,4.4900694,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=261;
+				id=92;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -2183,25 +1393,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -2219,26 +1410,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item23
@@ -2246,16 +1418,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-8.0023193,0.70210552,19.651855};
-					angles[]={0,4.4900694,0};
+					position[]={-8.0029297,0.70210552,19.652527};
+					angles[]={-0,4.4900694,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=262;
+				id=93;
 				type="Land_HBarrier_1_F";
 				class CustomAttributes
 				{
@@ -2280,25 +1454,6 @@ class items
 					};
 					class Attribute1
 					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="ace_isMedicalFacility";
 						expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 						class Value
@@ -2316,45 +1471,28 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="a3ee_simpleobject";
-						expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 		};
-		id=204;
+		id=69;
 	};
 	class Item1
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={4.1848145,1.21,15.647949};
-			angles[]={0,3.3651929,0};
+			position[]={4.1843262,1.21,15.648621};
+			angles[]={-0,3.3651929,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=233;
+		id=94;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2377,26 +1515,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item2
@@ -2404,15 +1523,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={14.862915,1.21,8.3520508};
-			angles[]={0,4.0774894,0};
+			position[]={14.862305,1.21,8.3527222};
+			angles[]={-0,4.0774894,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=234;
+		id=95;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2435,26 +1556,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item3
@@ -2462,15 +1564,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={18.130859,1.21,-3.9345703};
-			angles[]={0,4.8072233,0};
+			position[]={18.130371,1.21,-3.9338989};
+			angles[]={-0,4.8072233,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=235;
+		id=96;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2493,26 +1597,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item4
@@ -2520,15 +1605,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={13.018799,1.21,-13.711914};
-			angles[]={0,2.5688353,0};
+			position[]={13.018311,1.21,-13.711243};
+			angles[]={-0,2.5688353,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=236;
+		id=97;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2551,26 +1638,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item5
@@ -2578,15 +1646,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.0028076,1.21,-16.000488};
-			angles[]={0,3.3160899,0};
+			position[]={1.0024414,1.21,-15.999817};
+			angles[]={-0,3.3160899,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=237;
+		id=98;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2609,26 +1679,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item6
@@ -2636,15 +1687,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-10.2229,1.21,-9.6987305};
-			angles[]={0,3.9734206,0};
+			position[]={-10.223389,1.21,-9.6980591};
+			angles[]={-0,3.9734206,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=238;
+		id=99;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2667,26 +1720,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item7
@@ -2694,15 +1728,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-14.349487,1.21,1.8564453};
-			angles[]={0,4.8356318,0};
+			position[]={-14.350098,1.21,1.8571167};
+			angles[]={-0,4.8356318,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=239;
+		id=100;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2725,26 +1761,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item8
@@ -2752,15 +1769,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-7.62854,1.21,12.702148};
-			angles[]={0,2.6226904,0};
+			position[]={-7.6289063,1.21,12.70282};
+			angles[]={-0,2.6226904,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=240;
+		id=101;
 		type="Land_HBarrier_Big_F";
 		class CustomAttributes
 		{
@@ -2783,26 +1802,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item9
@@ -2810,15 +1810,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={8.9349365,1.2556248,-21.150391};
-			angles[]={0,2.9596758,0};
+			position[]={8.9345703,1.2556248,-21.149719};
+			angles[]={-0,2.9596758,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=263;
+		id=102;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -2841,26 +1843,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item10
@@ -2868,15 +1851,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.82714844,1.122673,-20.108398};
-			angles[]={0,0.12700564,0};
+			position[]={0.82666016,1.122673,-20.107727};
+			angles[]={-0,0.12700564,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=265;
+		id=103;
 		type="CamoNet_BLUFOR_open_F";
 		class CustomAttributes
 		{
@@ -2899,26 +1884,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item11
@@ -2926,15 +1892,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-7.8952637,1.2556248,-17.117676};
-			angles[]={0,3.7084036,0};
+			position[]={-7.895752,1.2556248,-17.117004};
+			angles[]={-0,3.7084036,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=266;
+		id=104;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -2957,26 +1925,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item12
@@ -2984,15 +1933,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-18.100342,1.2556248,-6.2827148};
-			angles[]={0,4.2883792,0};
+			position[]={-18.10083,1.2556248,-6.2820435};
+			angles[]={-0,4.2883792,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=267;
+		id=105;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3015,26 +1966,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item13
@@ -3042,15 +1974,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-14.153931,1.2556248,-12.410156};
-			angles[]={0,3.9754519,0};
+			position[]={-14.154297,1.2556248,-12.409485};
+			angles[]={-0,3.9754519,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=268;
+		id=106;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3073,26 +2007,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item14
@@ -3100,15 +2015,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-16.703125,1.2556248,11.203613};
-			angles[]={0,5.3120375,0};
+			position[]={-16.703613,1.2556248,11.204285};
+			angles[]={-0,5.3120375,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=269;
+		id=107;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3131,26 +2048,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item15
@@ -3158,15 +2056,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-10.187012,1.2556248,16.590332};
-			angles[]={0,5.7095561,0};
+			position[]={-10.1875,1.2556248,16.591003};
+			angles[]={-0,5.7095561,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=270;
+		id=108;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3189,26 +2089,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item16
@@ -3216,15 +2097,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.7779541,1.2556248,19.509766};
-			angles[]={0,6.0352659,0};
+			position[]={-2.7783203,1.2556248,19.510437};
+			angles[]={-0,6.0352659,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=271;
+		id=109;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3247,26 +2130,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item17
@@ -3274,15 +2138,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-18.594727,1.122673,2.2451172};
-			angles[]={0,4.8422413,0};
+			position[]={-18.595215,1.122673,2.2457886};
+			angles[]={-0,4.8422413,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=272;
+		id=110;
 		type="CamoNet_BLUFOR_open_F";
 		class CustomAttributes
 		{
@@ -3305,26 +2171,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item18
@@ -3332,15 +2179,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={4.5935059,1.122673,19.372559};
-			angles[]={0,3.3912816,0};
+			position[]={4.5930176,1.122673,19.37323};
+			angles[]={-0,3.3912816,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=273;
+		id=111;
 		type="CamoNet_BLUFOR_open_F";
 		class CustomAttributes
 		{
@@ -3363,26 +2212,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item19
@@ -3390,15 +2220,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={13.110962,1.2556248,16.98877};
-			angles[]={0,0.62613803,0};
+			position[]={13.110352,1.2556248,16.989441};
+			angles[]={-0,0.62613803,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=274;
+		id=112;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3421,26 +2253,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item20
@@ -3448,15 +2261,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={18.685791,1.2556248,11.226563};
-			angles[]={0,0.95227116,0};
+			position[]={18.685303,1.2556248,11.227234};
+			angles[]={-0,0.95227116,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=275;
+		id=113;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3479,26 +2294,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item21
@@ -3506,15 +2302,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={21.822998,1.2556248,3.6469727};
-			angles[]={0,1.363206,0};
+			position[]={21.82251,1.2556248,3.647644};
+			angles[]={-0,1.363206,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=276;
+		id=114;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3537,26 +2335,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item22
@@ -3564,15 +2343,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={21.97644,1.2556248,-5.2358398};
-			angles[]={0,1.7419121,0};
+			position[]={21.976074,1.2556248,-5.2351685};
+			angles[]={-0,1.7419121,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=277;
+		id=115;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3595,26 +2376,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item23
@@ -3622,15 +2384,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={18.426147,1.2556248,-15.272949};
-			angles[]={0,2.2640612,0};
+			position[]={18.425781,1.2556248,-15.272278};
+			angles[]={-0,2.2640612,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=278;
+		id=116;
 		type="CamoNet_BLUFOR_F";
 		class CustomAttributes
 		{
@@ -3653,26 +2417,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item24
@@ -3687,16 +2432,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-7.9466553,0.64319754,-8.5654297};
-					angles[]={0,0.32087046,0};
+					position[]={-7.9472656,0.64319754,-8.5647583};
+					angles[]={-0,0.32087046,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=327;
+				id=118;
 				type="Land_PaperBox_closed_F";
 				class CustomAttributes
 				{
@@ -3719,26 +2466,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -3746,16 +2474,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-9.2806396,0.64319754,-6.8891602};
-					angles[]={0,0.85261112,0};
+					position[]={-9.28125,0.64319754,-6.8884888};
+					angles[]={-0,0.85261112,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=330;
+				id=119;
 				type="Land_PaperBox_closed_F";
 				class CustomAttributes
 				{
@@ -3778,30 +2508,11 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 		};
-		id=342;
+		id=117;
 	};
 	class Item25
 	{
@@ -3815,16 +2526,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-12.186035,0.56675053,4.2739258};
-					angles[]={0,2.7724607,0};
+					position[]={-12.186523,0.56675053,4.2745972};
+					angles[]={-0,2.7724607,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=386;
+				id=121;
 				type="Land_WaterBarrel_F";
 				class CustomAttributes
 				{
@@ -3847,26 +2560,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -3874,16 +2568,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-11.511475,0.42267513,3.4208984};
-					angles[]={0,4.6536746,0};
+					position[]={-11.511963,0.42267513,3.4215698};
+					angles[]={-0,4.6536746,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=394;
+				id=122;
 				type="Land_MetalBarrel_F";
 				class CustomAttributes
 				{
@@ -3906,26 +2602,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 			class Item2
@@ -3933,16 +2610,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-12.289307,0.40475273,2.4526367};
-					angles[]={0,5.7600107,0};
+					position[]={-12.289795,0.40475273,2.4533081};
+					angles[]={-0,5.7600107,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=395;
+				id=123;
 				type="Land_BarrelEmpty_grey_F";
 				class CustomAttributes
 				{
@@ -3965,26 +2644,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 			class Item3
@@ -3992,16 +2652,18 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-11.574829,0.40475273,2.6806641};
-					angles[]={0,5.8666158,0};
+					position[]={-11.575195,0.40475273,2.6813354};
+					angles[]={-0,5.8666158,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
 					skill=0.2;
+					createAsSimpleObject=1;
+					disableSimulation=1;
 				};
-				id=396;
+				id=124;
 				type="Land_BarrelTrash_grey_F";
 				class CustomAttributes
 				{
@@ -4024,87 +2686,32 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="enableSimulation";
-						expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 		};
-		id=399;
+		id=120;
 	};
 	class Item26
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-11.536011,0.63499641,0.72412109};
-			angles[]={0,5.5756764,0};
+			position[]={-11.536621,0.63499641,0.72479248};
+			angles[]={-0,5.5756764,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=400;
+		id=125;
 		type="CargoNet_01_box_F";
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="allowDamage";
-				expression="_this allowdamage _value;";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
 			{
 				property="ammoBox";
 				expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -4123,7 +2730,26 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			class Attribute1
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item27
@@ -4131,57 +2757,21 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-12.422485,0.63499641,-1.3530273};
-			angles[]={0,0.11513031,0};
+			position[]={-12.422852,0.63499641,-1.352356};
+			angles[]={-0,0.11513031,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=401;
+		id=126;
 		type="CargoNet_01_box_F";
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="allowDamage";
-				expression="_this allowdamage _value;";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
 			{
 				property="ammoBox";
 				expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -4200,7 +2790,26 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			class Attribute1
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item28
@@ -4208,15 +2817,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-5.8582764,1.2678833,10.727051};
-			angles[]={0,4.1606522,0};
+			position[]={-5.8588867,1.2678833,10.727722};
+			angles[]={-0,4.1606522,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=402;
+		id=127;
 		type="TK_WarfareBContructionSite_Base_EP1";
 		class CustomAttributes
 		{
@@ -4239,26 +2850,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 };

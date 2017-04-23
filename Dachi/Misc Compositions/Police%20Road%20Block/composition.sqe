@@ -1,42 +1,42 @@
-version=52;
-center[]={6575.6758,5.9978275,2444.6035};
+version=53;
+center[]={3714.2778,4.9995861,575.93304};
 class items
 {
-	items=15;
+	items=13;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.78076172,2.0356941,2.2912598};
-			angles[]={0,1.0506229,0};
+			position[]={-3.4187012,2.0854487,-0.94128418};
+			angles[]={0,3.5978742,0};
 		};
 		side="Empty";
 		class Attributes
 		{
 		};
-		id=1820;
+		id=0;
 		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9228415;
+		atlOffset=1.9743547;
 	};
 	class Item1
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.70214844,1.6115026,2.8869629};
-			angles[]={0,4.1880445,0};
+			position[]={-3.041748,1.6119165,-1.0479736};
+			angles[]={-0,0.45210549,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 			fuel=0;
+			init="this animate [""BeaconsStart"", 1];";
 			textures="Guerilla_01";
 		};
-		id=1821;
+		id=1;
 		type="LOP_AA_Offroad_Police";
-		atlOffset=-0.0021724701;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -66,17 +66,146 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.7514648,1.6136751,-1.2709961};
-			angles[]={0,0.41280985,0};
+			position[]={-2.7124023,2.0819492,-1.256897};
+			angles[]={0,3.5978742,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=3;
+		type="PortableHelipadLight_01_blue_F";
+		atlOffset=1.9708552;
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-4.9558105,0.00041389465,-0.51623535};
+			angles[]={-0,2.5472512,0};
+		};
+		id=5;
+		type="a3ee_attach_synced";
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.921875,0.65491915,-1.5244141};
+			angles[]={-0,2.4332256,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=14;
+		type="RoadBarrier_small_F";
+		atlOffset=0.015026569;
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.23388672,0.55875587,-3.4609375};
+			angles[]={-0,2.3101978,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=15;
+		type="RoadBarrier_F";
+		atlOffset=0.001718998;
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.9243164,0.57208109,-0.12524414};
+			angles[]={-0,5.6209693,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=16;
+		type="RoadBarrier_F";
+		atlOffset=0.015044212;
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={4.9628906,0.66584015,1.7861328};
+			angles[]={-0,2.4332256,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=21;
+		type="RoadBarrier_small_F";
+		atlOffset=0.025947571;
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-2.2211914,0.63947868,-5.1657715};
+			angles[]={-0,2.4332256,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=22;
+		type="RoadBarrier_small_F";
+		atlOffset=-0.00041389465;
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.8544922,2.0854487,3.142395};
+			angles[]={0,1.2010922,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+		};
+		id=23;
+		type="PortableHelipadLight_01_blue_F";
+		atlOffset=1.9743547;
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.6704102,1.6119165,3.5297241};
+			angles[]={-0,4.3385091,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 			fuel=0;
+			init="this animate [""BeaconsStart"", 1];";
 			textures="Guerilla_01";
 		};
-		id=1822;
+		id=24;
 		type="LOP_AA_Offroad_Police";
 		class CustomAttributes
 		{
@@ -102,201 +231,102 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item3
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0.54931641,2.0277805,2.7631836};
-			angles[]={0,1.0506229,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1823;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.914928;
-	};
-	class Item4
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-2.8691406,2.0318956,-1.2573242};
-			angles[]={0,0.44923729,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1824;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9190431;
-	};
-	class Item5
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-2.3901367,2.0318832,-1.4318848};
-			angles[]={0,0.44923729,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1825;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9190307;
-	};
-	class Item6
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={1.7797852,0.65667772,-1.2041016};
-			angles[]={0,2.4332256,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=1826;
-		type="RoadBarrier_small_F";
-		atlOffset=0.015026569;
-	};
-	class Item7
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0.62402344,0.56051445,-3.140625};
-			angles[]={0,2.3101978,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=1827;
-		type="RoadBarrier_F";
-		atlOffset=0.001718998;
-	};
-	class Item8
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={3.7822266,0.57383966,0.19506836};
-			angles[]={0,5.6209693,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=1828;
-		type="RoadBarrier_F";
-		atlOffset=0.015044212;
-	};
-	class Item9
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0.41455078,2.0277882,2.9787598};
-			angles[]={0,1.0506229,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1829;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9149356;
-	};
-	class Item10
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0.66699219,2.0317535,2.5324707};
-			angles[]={0,1.0506229,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1830;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.918901;
-	};
 	class Item11
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.6376953,2.0318937,-1.3793945};
-			angles[]={0,0.44923729,0};
+			position[]={1.5490723,2.0819492,3.8532104};
+			angles[]={0,1.2010922,0};
 		};
 		side="Empty";
 		class Attributes
 		{
 		};
-		id=1831;
+		id=25;
 		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9190412;
+		atlOffset=1.9708552;
 	};
 	class Item12
 	{
-		dataType="Object";
+		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-3.1210938,2.0316124,-1.1682129};
-			angles[]={0,0.44923729,0};
+			position[]={2.6962891,0.00041389465,1.7879639};
+			angles[]={-0,0.1504693,0};
 		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1832;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9187598;
+		id=26;
+		type="a3ee_attach_synced";
 	};
-	class Item13
+};
+class connections
+{
+	class LinkIDProvider
 	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={5.8208008,0.66759872,2.1064453};
-			angles[]={0,2.4332256,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=1833;
-		type="RoadBarrier_small_F";
-		atlOffset=0.025947571;
+		nextID=6;
 	};
-	class Item14
+	class Links
 	{
-		dataType="Object";
-		class PositionInfo
+		items=6;
+		class Item0
 		{
-			position[]={-1.3632813,0.64123726,-4.845459};
-			angles[]={0,2.4332256,0};
+			linkID=0;
+			item0=1;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
 		};
-		side="Empty";
-		flags=4;
-		class Attributes
+		class Item1
 		{
+			linkID=1;
+			item0=0;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
 		};
-		id=1834;
-		type="RoadBarrier_small_F";
-		atlOffset=-0.00041389465;
+		class Item2
+		{
+			linkID=2;
+			item0=3;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=24;
+			item1=26;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=23;
+			item1=26;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=25;
+			item1=26;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
 	};
 };

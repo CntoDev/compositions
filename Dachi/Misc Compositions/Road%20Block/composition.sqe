@@ -1,5 +1,5 @@
-version=52;
-center[]={1820.5048,5.5,5634.2769};
+version=53;
+center[]={3775.7544,5,633.66785};
 class items
 {
 	items=35;
@@ -8,7 +8,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.9208984,4.0502806,-9.9814453};
+			position[]={6.9206543,4.0502806,-9.9810791};
 			angles[]={0,2.6275644,0};
 		};
 		side="Empty";
@@ -16,7 +16,7 @@ class items
 		class Attributes
 		{
 		};
-		id=226;
+		id=334;
 		type="Land_BarGate_F";
 	};
 	class Item1
@@ -24,15 +24,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={14.150635,0.96563101,-8.1601563};
-			angles[]={0,2.6274831,0};
+			position[]={14.150391,0.96563101,-8.15979};
+			angles[]={-0,2.6274831,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=227;
+		id=335;
 		type="Land_BagBunker_Small_F";
 		class CustomAttributes
 		{
@@ -57,25 +59,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -93,7 +76,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item2
@@ -101,15 +84,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.0534668,0.96563101,-15.280762};
-			angles[]={0,2.6274831,0};
+			position[]={1.0532227,0.96563101,-15.280396};
+			angles[]={-0,2.6274831,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=228;
+		id=336;
 		type="Land_BagBunker_Small_F";
 		class CustomAttributes
 		{
@@ -134,25 +119,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -170,7 +136,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item3
@@ -178,15 +144,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={20.507568,0.75506687,-5.8085938};
-			angles[]={0,3.4921112,0};
+			position[]={20.507324,0.75506687,-5.8082275};
+			angles[]={-0,3.4921112,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			dynamicSimulation=1;
 		};
-		id=229;
+		id=337;
 		type="Land_Razorwire_F";
 		class CustomAttributes
 		{
@@ -205,30 +172,11 @@ class items
 								"BOOL"
 							};
 						};
-						value=0;
+						value=1;
 					};
 				};
 			};
 			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
 			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -247,7 +195,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item4
@@ -255,15 +203,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-3.1218262,0.75506687,-19.532227};
-			angles[]={0,1.6385219,0};
+			position[]={-3.1220703,0.75506687,-19.53186};
+			angles[]={-0,1.6385219,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			dynamicSimulation=1;
 		};
-		id=230;
+		id=338;
 		type="Land_Razorwire_F";
 		class CustomAttributes
 		{
@@ -282,30 +231,11 @@ class items
 								"BOOL"
 							};
 						};
-						value=0;
+						value=1;
 					};
 				};
 			};
 			class Attribute1
-			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
 			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -324,7 +254,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item5
@@ -332,15 +262,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={8.1955566,0.38567305,-1.3793945};
+			position[]={8.1953125,0.38567305,-1.3790283};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=231;
+		id=339;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -365,25 +297,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -401,7 +314,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item6
@@ -409,15 +322,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={5.807373,0.38567305,-0.49414063};
+			position[]={5.8071289,0.38567305,-0.49377441};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=232;
+		id=340;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -442,25 +357,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -478,7 +374,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item7
@@ -486,15 +382,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={3.470459,0.38567305,0.38476563};
+			position[]={3.4702148,0.38567305,0.38513184};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=233;
+		id=341;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -519,25 +417,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -555,7 +434,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item8
@@ -563,15 +442,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.2185059,0.38567305,1.2338867};
+			position[]={1.2182617,0.38567305,1.2342529};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=234;
+		id=342;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -596,25 +477,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -632,7 +494,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item9
@@ -640,15 +502,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.41772461,0.38567305,2.9692383};
+			position[]={0.41748047,0.38567305,2.9696045};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=235;
+		id=343;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -673,25 +537,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -709,7 +554,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item10
@@ -717,15 +562,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.1447754,0.38567305,5.4355469};
+			position[]={1.1445313,0.38567305,5.4359131};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=236;
+		id=344;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -750,25 +597,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -786,7 +614,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item11
@@ -794,15 +622,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.8791504,0.38567305,7.9145508};
+			position[]={1.8789063,0.38567305,7.914917};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=237;
+		id=345;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -827,25 +657,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -863,7 +674,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item12
@@ -871,15 +682,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={2.6120605,0.38567305,10.358398};
+			position[]={2.6118164,0.38567305,10.358765};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=238;
+		id=346;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -904,25 +717,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -940,7 +734,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item13
@@ -948,15 +742,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.7419434,0.38567305,11.939453};
+			position[]={1.7416992,0.38567305,11.939819};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=239;
+		id=347;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -981,25 +777,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1017,7 +794,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item14
@@ -1025,15 +802,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.57250977,0.38567305,12.828613};
+			position[]={-0.57275391,0.38567305,12.828979};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=240;
+		id=348;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1058,25 +837,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1094,7 +854,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item15
@@ -1102,15 +862,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.9645996,0.38567305,13.6875};
+			position[]={-2.9648438,0.38567305,13.687866};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=241;
+		id=349;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1135,25 +897,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1171,7 +914,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item16
@@ -1179,15 +922,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-5.3527832,0.38567305,14.517578};
+			position[]={-5.3530273,0.38567305,14.517944};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=242;
+		id=350;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1212,25 +957,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1248,7 +974,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item17
@@ -1256,15 +982,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.46923828,0.38567305,-6.0874023};
+			position[]={-0.46948242,0.38567305,-6.0870361};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=243;
+		id=351;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1289,25 +1017,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1325,7 +1034,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item18
@@ -1333,15 +1042,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.8574219,0.38567305,-5.2016602};
+			position[]={-2.857666,0.38567305,-5.2012939};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=244;
+		id=352;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1366,25 +1077,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1402,7 +1094,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item19
@@ -1410,15 +1102,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-5.1943359,0.38567305,-4.3232422};
+			position[]={-5.1945801,0.38567305,-4.322876};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=245;
+		id=353;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1443,25 +1137,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1479,7 +1154,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item20
@@ -1487,15 +1162,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-7.4462891,0.38567305,-3.4741211};
+			position[]={-7.4465332,0.38567305,-3.4737549};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=246;
+		id=354;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1520,25 +1197,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1556,7 +1214,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item21
@@ -1564,15 +1222,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-8.2470703,0.38567305,-1.7387695};
+			position[]={-8.2473145,0.38567305,-1.7384033};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=247;
+		id=355;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1597,25 +1257,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1633,7 +1274,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item22
@@ -1641,15 +1282,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-7.5200195,0.38567305,0.72802734};
+			position[]={-7.5202637,0.38567305,0.72839355};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=248;
+		id=356;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1674,25 +1317,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1710,7 +1334,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item23
@@ -1718,15 +1342,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-6.7856445,0.38567305,3.206543};
+			position[]={-6.7858887,0.38567305,3.2069092};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=249;
+		id=357;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1751,25 +1377,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1787,7 +1394,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item24
@@ -1795,15 +1402,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-6.0527344,0.38567305,5.6503906};
+			position[]={-6.0529785,0.38567305,5.6507568};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=250;
+		id=358;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1828,25 +1437,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1864,7 +1454,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item25
@@ -1872,15 +1462,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-6.9228516,0.38567305,7.2314453};
+			position[]={-6.9230957,0.38567305,7.2318115};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=251;
+		id=359;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1905,25 +1497,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -1941,7 +1514,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item26
@@ -1949,15 +1522,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-9.2373047,0.38567305,8.1206055};
+			position[]={-9.2375488,0.38567305,8.1209717};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=252;
+		id=360;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -1982,25 +1557,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2018,7 +1574,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item27
@@ -2026,15 +1582,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-11.629395,0.38567305,8.9799805};
+			position[]={-11.629639,0.38567305,8.9803467};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=253;
+		id=361;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2059,25 +1617,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2095,7 +1634,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item28
@@ -2103,15 +1642,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-14.017578,0.38567305,9.8095703};
+			position[]={-14.017822,0.38567305,9.8099365};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=254;
+		id=362;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2136,25 +1677,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2172,7 +1694,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item29
@@ -2180,15 +1702,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-1.2607422,0.38567305,-12.65918};
+			position[]={-1.2609863,0.38567305,-12.658813};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=255;
+		id=363;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2213,25 +1737,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2249,7 +1754,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item30
@@ -2257,15 +1762,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.52636719,0.38567305,-10.180176};
+			position[]={-0.52661133,0.38567305,-10.17981};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=256;
+		id=364;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2290,25 +1797,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2326,7 +1814,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item31
@@ -2334,15 +1822,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.20654297,0.38567305,-7.7368164};
+			position[]={0.20629883,0.38567305,-7.7364502};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=257;
+		id=365;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2367,25 +1857,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2403,7 +1874,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item32
@@ -2411,15 +1882,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={8.9978027,0.38567305,-2.9550781};
+			position[]={8.9975586,0.38567305,-2.9547119};
 			angles[]={0,1.8672949,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=258;
+		id=366;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2444,25 +1917,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2480,7 +1934,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item33
@@ -2488,15 +1942,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={12.05542,0.38567305,-5.4345703};
+			position[]={12.055176,0.38567305,-5.4342041};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=259;
+		id=367;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2521,25 +1977,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2557,7 +1994,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 	class Item34
@@ -2565,15 +2002,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={9.8034668,0.38567305,-4.5849609};
+			position[]={9.8032227,0.38567305,-4.5845947};
 			angles[]={0,0.35579085,0};
 		};
 		side="Empty";
 		flags=5;
 		class Attributes
 		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=260;
+		id=368;
 		type="Land_CncBarrier_stripes_F";
 		class CustomAttributes
 		{
@@ -2598,25 +2037,6 @@ class items
 			};
 			class Attribute1
 			{
-				property="enableSimulation";
-				expression="if !(is3DEN) then {_this enablesimulationglobal _value;};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
 				property="ace_isMedicalFacility";
 				expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 				class Value
@@ -2634,7 +2054,7 @@ class items
 					};
 				};
 			};
-			nAttributes=3;
+			nAttributes=2;
 		};
 	};
 };

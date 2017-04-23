@@ -1,5 +1,5 @@
-version=52;
-center[]={4526.0112,6.9899025,6619.7671};
+version=53;
+center[]={4050.8398,4.9998937,762.72247};
 class items
 {
 	items=5;
@@ -8,15 +8,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-9.8618164,0.58280039,-2.9628906};
-			angles[]={0,4.2228556,0};
+			position[]={-9.8615723,0.58280039,-2.9628906};
+			angles[]={-0,4.2228556,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
 		};
-		id=1562;
+		id=1062;
 		type="Land_Wreck_Skodovka_F";
 		class CustomAttributes
 		{
@@ -39,26 +40,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="a3ee_simpleobject";
-				expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item1
@@ -66,15 +48,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-6.3378906,0.84304285,-1.2133789};
-			angles[]={0,4.9829578,0};
+			position[]={-6.3376465,0.84304285,-1.2133789};
+			angles[]={-0,4.9829578,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
 		};
-		id=1563;
+		id=1063;
 		type="Land_Wreck_Car2_F";
 		class CustomAttributes
 		{
@@ -97,26 +80,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="a3ee_simpleobject";
-				expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item2
@@ -124,15 +88,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.71240234,0.91513681,0.70458984};
-			angles[]={0,3.8691802,0};
+			position[]={-0.7121582,0.91513681,0.70458984};
+			angles[]={-0,3.8691802,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
 		};
-		id=1564;
+		id=1064;
 		type="Land_Wreck_Offroad2_F";
 		class CustomAttributes
 		{
@@ -155,26 +120,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="a3ee_simpleobject";
-				expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item3
@@ -182,15 +128,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={5.5761719,1.1739206,1.0859375};
-			angles[]={0,1.7453023,0};
+			position[]={5.576416,1.1739202,1.0859375};
+			angles[]={-0,1.7453023,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
 		};
-		id=1565;
+		id=1065;
 		type="Land_Wreck_Truck_dropside_F";
 		atlOffset=-0.00010633469;
 		class CustomAttributes
@@ -214,26 +161,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="a3ee_simpleobject";
-				expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 	class Item4
@@ -241,15 +169,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={11.333984,0.72839499,2.3857422};
-			angles[]={0,4.0423994,0};
+			position[]={11.334229,0.72839499,2.3857422};
+			angles[]={-0,4.0423994,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
+			createAsSimpleObject=1;
 		};
-		id=1566;
+		id=1066;
 		type="Land_Wreck_Car_F";
 		class CustomAttributes
 		{
@@ -272,26 +201,7 @@ class items
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="a3ee_simpleobject";
-				expression="[_this,_value] call a3ee_fnc_oa_simpleObject";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
 };

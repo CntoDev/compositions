@@ -1,42 +1,43 @@
-version=52;
-center[]={6576.2983,5.9978275,2447.2878};
+version=53;
+center[]={3709.1968,4.9980001,552.83167};
 class items
 {
-	items=5;
+	items=4;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.15820313,2.0356941,-0.39306641};
+			position[]={0.87353516,2.0870347,-0.699646};
 			angles[]={0,1.0506229,0};
 		};
 		side="Empty";
 		class Attributes
 		{
 		};
-		id=1820;
+		id=0;
 		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9228415;
+		atlOffset=1.9743547;
 	};
 	class Item1
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.079589844,1.6115026,0.20263672};
-			angles[]={0,4.1880445,0};
+			position[]={0.63818359,1.6115026,-0.34393311};
+			angles[]={0,4.1880398,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 			fuel=0;
+			init="this animate [""BeaconsStart"", 1];";
 			textures="Guerilla_01";
 		};
-		id=1821;
+		id=1;
 		type="LOP_AA_Offroad_Police";
-		atlOffset=-0.0021724701;
+		atlOffset=-0.001999855;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -66,47 +67,96 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.073242188,2.0277805,0.078857422};
+			position[]={0.46508789,2.0835352,-0.042663574};
 			angles[]={0,1.0506229,0};
 		};
 		side="Empty";
 		class Attributes
 		{
 		};
-		id=1823;
+		id=3;
 		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.914928;
+		atlOffset=1.9708552;
 	};
 	class Item3
 	{
-		dataType="Object";
+		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.20800781,2.0277882,0.29443359};
-			angles[]={0,1.0506229,0};
+			position[]={-1.9775391,0.001999855,1.1171875};
 		};
-		side="Empty";
-		class Attributes
-		{
-		};
-		id=1829;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.9149356;
+		id=5;
+		type="a3ee_attach_synced";
 	};
-	class Item4
+};
+class connections
+{
+	class LinkIDProvider
 	{
-		dataType="Object";
-		class PositionInfo
+		nextID=6;
+	};
+	class Links
+	{
+		items=6;
+		class Item0
 		{
-			position[]={0.044433594,2.0317535,-0.15185547};
-			angles[]={0,1.0506229,0};
+			linkID=0;
+			item0=1;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
 		};
-		side="Empty";
-		class Attributes
+		class Item1
 		{
+			linkID=1;
+			item0=0;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
 		};
-		id=1830;
-		type="PortableHelipadLight_01_blue_F";
-		atlOffset=1.918901;
+		class Item2
+		{
+			linkID=2;
+			item0=3;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=1;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=0;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=3;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
 	};
 };
