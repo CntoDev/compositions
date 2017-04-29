@@ -1,14 +1,14 @@
-version=52;
-center[]={4014,5,3972};
+version=53;
+center[]={4000,8.9683102e-044,4000};
 class items
 {
-	items=4;
+	items=5;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0,8.4787369,0};
+			position[]={0,13.478737,0};
 			angles[]={0,3.1416116,0};
 		};
 		side="Empty";
@@ -17,7 +17,7 @@ class items
 		{
 			disableSimulation=1;
 		};
-		id=34;
+		id=35;
 		type="Land_TTowerSmall_2_F";
 	};
 	class Item1
@@ -25,7 +25,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0,0.40650272,0};
+			position[]={0,5.4065027,0};
 		};
 		side="Empty";
 		flags=4;
@@ -33,7 +33,7 @@ class items
 		{
 			disableSimulation=1;
 		};
-		id=16;
+		id=36;
 		type="Land_CampingTable_small_F";
 	};
 	class Item2
@@ -41,16 +41,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.25,0.96907234,0};
-			angles[]={0,4.7252698,0};
+			position[]={-0.25,5.9690776,0};
+			angles[]={-0,4.7252698,0};
 		};
 		side="Empty";
+		flags=4;
 		class Attributes
 		{
 			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
 			disableSimulation=1;
 		};
-		id=19;
+		id=37;
 		type="Land_Laptop_unfolded_F";
 	};
 	class Item3
@@ -58,16 +59,28 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.25,0.96907234,0};
-			angles[]={0,1.5836768,0};
+			position[]={0.25,5.9690776,0};
+			angles[]={-0,1.5836768,0};
 		};
 		side="Empty";
+		flags=4;
 		class Attributes
 		{
 			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
 			disableSimulation=1;
 		};
-		id=18;
+		id=38;
 		type="Land_Laptop_unfolded_F";
+	};
+	class Item4
+	{
+		dataType="Marker";
+		position[]={0,0,0};
+		name="viscom_marker";
+		text="VISCOM";
+		type="mil_triangle";
+		colorName="ColorGreen";
+		id=39;
+		atlOffset=-5;
 	};
 };
