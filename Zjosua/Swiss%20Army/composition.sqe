@@ -10358,7 +10358,8 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="init=""[this, 200] call a3ee_fnc_boxGuard"";";
+			init="[this, 200] call a3ee_fnc_boxGuard;";
+			dynamicSimulation=1;
 		};
 		id=66;
 		type="B_supplyCrate_F";
@@ -10416,7 +10417,8 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="init=""[this, 200] call a3ee_fnc_boxGuard"";";
+			init="[this, 200] call a3ee_fnc_boxGuard;";
+			dynamicSimulation=1;
 		};
 		id=67;
 		type="Box_NATO_Ammo_F";
