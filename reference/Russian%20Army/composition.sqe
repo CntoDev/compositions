@@ -8136,32 +8136,23 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="DMT 1 Team Leader";
+					description="Recon Team Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_ak74m_gp25";
-							muzzle="rhs_acc_dtk";
+							muzzle="rhs_acc_tgpa";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_AK_no_tracers";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
 							{
-								name="rhs_VOG25";
+								name="rhs_GRD40_Red";
 								ammoLeft=1;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
 							};
 						};
 						class binocular
@@ -8178,13 +8169,13 @@ class items
 								class Item0
 								{
 									name="SmokeShell";
-									count=1;
+									count=2;
 									ammoLeft=1;
 								};
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=9;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -8212,17 +8203,17 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item6
-								{
 									name="ACE_CableTie";
 									count=2;
 								};
-								class Item7
+								class Item6
 								{
 									name="ACE_MapTools";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item8
@@ -8230,100 +8221,197 @@ class items
 									name="ACRE_PRC152";
 									count=1;
 								};
-								class Item9
+							};
+						};
+						class vest
+						{
+							typeName="rhsgref_6b23_ttsko_mountain_sniper";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="rhs_30Rnd_545x39_AK_no_tracers";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_AK_green";
+									count=1;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="SmokeShellBlue";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="rhs_GRD40_Red";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_GRD40_Green";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_GDM40";
+									count=4;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="ACE_IR_Strobe_Item";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_microDAGR";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						headgear="rhsgref_fieldcap_ttsko_mountain";
+					};
+				};
+				id=47;
+				type="B_spotter_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.7299805,0,-3.4819336};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					description="Recon Marksman";
+					isPlayable=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="rhs_weap_svdp_wd_npz";
+							optics="optic_SOS";
+							class primaryMuzzleMag
+							{
+								name="rhs_10Rnd_762x54mmR_7N1";
+								ammoLeft=10;
+							};
+						};
+						class binocular
+						{
+							name="Laserdesignator_03";
+							class primaryMuzzleMag
+							{
+								name="Laserbatteries";
+								ammoLeft=1;
+							};
+						};
+						class uniform
+						{
+							typeName="rhsgref_uniform_ttsko_mountain";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="SmokeShell";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=11;
+								class Item0
+								{
+									name="ACE_fieldDressing";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_quikclot";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item4
+								{
+									name="rhs_acc_2dpZenit";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item6
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item7
 								{
 									name="ACE_Kestrel4500";
+									count=1;
+								};
+								class Item8
+								{
+									name="ACE_RangeCard";
+									count=1;
+								};
+								class Item9
+								{
+									name="ACE_microDAGR";
+									count=1;
+								};
+								class Item10
+								{
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_vog_od";
+							typeName="rhsgref_6b23_ttsko_mountain_sniper";
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=1;
 								class Item0
 								{
-									name="SmokeShell";
-									count=3;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="B_AssaultPack_rgr";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="rhs_VOG25";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_GRD40_White";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="rhs_GRD40_Red";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="rhs_GRD40_Green";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="SmokeShell";
-									count=3;
-									ammoLeft=1;
-								};
-								class Item5
-								{
-									name="SmokeShellGreen";
-									count=5;
-									ammoLeft=1;
-								};
-								class Item6
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
+									name="rhs_10Rnd_762x54mmR_7N1";
+									count=8;
+									ammoLeft=10;
 								};
 							};
 							class ItemCargo
@@ -8340,135 +8428,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="rhs_6b7_1m_olive";
-					};
-				};
-				id=47;
-				type="O_Soldier_TL_F";
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-3.7299805,0,-3.4819336};
-				};
-				side="East";
-				flags=5;
-				class Attributes
-				{
-					description="DMT 1 Shooter";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_svdp_wd_npz";
-							optics="optic_SOS";
-							class primaryMuzzleMag
-							{
-								name="rhs_10Rnd_762x54mmR_7N1";
-								ammoLeft=10;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class uniform
-						{
-							typeName="rhsgref_uniform_ttsko_mountain";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=4;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=4;
-								};
-								class Item1
-								{
-									name="ACE_quikclot";
-									count=6;
-								};
-								class Item2
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item4
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACE_RangeCard";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhs_6b23_6sh116_od";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=3;
-								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_10Rnd_762x54mmR_7N1";
-									count=15;
-									ammoLeft=10;
-								};
-								class Item2
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						headgear="rhs_6b7_1m_olive";
+						headgear="rhsgref_fieldcap_ttsko_mountain";
 					};
 				};
 				id=48;
-				type="O_soldier_M_F";
+				type="B_spotter_F";
 			};
 		};
 		class Attributes
@@ -8492,7 +8456,7 @@ class items
 								"STRING"
 							};
 						};
-						value="DMT1";
+						value="REC";
 					};
 				};
 			};

@@ -8131,35 +8131,27 @@ class items
 					position[]={-4.7299805,0,-3.4824219};
 				};
 				side="West";
-				flags=7;
+				flags=6;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="DMT 1 Team Leader";
+					description="Recon Team Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_m4a1_carryhandle_m203S";
+							muzzle="rhsusf_acc_nt4_black";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
 							{
-								name="1Rnd_HE_Grenade_shell";
+								name="1Rnd_SmokeRed_Grenade_shell";
 								ammoLeft=1;
-							};
-						};
-						class handgun
-						{
-							name="rhsusf_weap_m9";
-							class primaryMuzzleMag
-							{
-								name="rhsusf_mag_15Rnd_9x19_JHP";
-								ammoLeft=15;
 							};
 						};
 						class binocular
@@ -8176,13 +8168,13 @@ class items
 								class Item0
 								{
 									name="SmokeShell";
-									count=1;
+									count=2;
 									ammoLeft=1;
 								};
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=9;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -8210,17 +8202,17 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item6
-								{
 									name="ACE_CableTie";
 									count=2;
 								};
-								class Item7
+								class Item6
 								{
 									name="ACE_MapTools";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item8
@@ -8228,100 +8220,203 @@ class items
 									name="ACRE_PRC152";
 									count=1;
 								};
-								class Item9
+							};
+						};
+						class vest
+						{
+							typeName="rhsusf_spcs_ocp_rifleman";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									count=1;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="SmokeShellBlue";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="1Rnd_SmokeRed_Grenade_shell";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="1Rnd_SmokeGreen_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="ACE_HuntIR_M203";
+									count=4;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=3;
+								class Item0
+								{
+									name="ACE_IR_Strobe_Item";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_HuntIR_monitor";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_microDAGR";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						headgear="rhs_Booniehat_ocp";
+					};
+				};
+				id=71;
+				type="B_spotter_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.7299805,0,-3.4824219};
+				};
+				side="West";
+				flags=4;
+				class Attributes
+				{
+					description="Recon Marksman";
+					isPlayable=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="rhs_weap_sr25_ec_d";
+							optics="optic_DMS";
+							underBarrel="bipod_02_F_hex";
+							class primaryMuzzleMag
+							{
+								name="rhsusf_20Rnd_762x51_m993_Mag";
+								ammoLeft=20;
+							};
+						};
+						class binocular
+						{
+							name="Laserdesignator_03";
+							class primaryMuzzleMag
+							{
+								name="Laserbatteries";
+								ammoLeft=1;
+							};
+						};
+						class uniform
+						{
+							typeName="rhs_uniform_cu_ocp";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="SmokeShell";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=11;
+								class Item0
+								{
+									name="ACE_fieldDressing";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_quikclot";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item4
+								{
+									name="rhsusf_acc_M952V";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item6
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item7
 								{
 									name="ACE_Kestrel4500";
+									count=1;
+								};
+								class Item8
+								{
+									name="ACE_RangeCard";
+									count=1;
+								};
+								class Item9
+								{
+									name="ACE_microDAGR";
+									count=1;
+								};
+								class Item10
+								{
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
 						};
 						class vest
 						{
-							typeName="rhsusf_iotv_ocp_Grenadier";
+							typeName="rhsusf_spcs_ocp_rifleman";
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=1;
 								class Item0
 								{
-									name="SmokeShell";
-									count=3;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									name="rhsusf_20Rnd_762x51_m993_Mag";
 									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="B_AssaultPack_mcamo";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="1Rnd_HE_Grenade_shell";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="1Rnd_Smoke_Grenade_shell";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="1Rnd_SmokeRed_Grenade_shell";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="1Rnd_SmokeGreen_Grenade_shell";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="SmokeShell";
-									count=3;
-									ammoLeft=1;
-								};
-								class Item5
-								{
-									name="SmokeShellGreen";
-									count=5;
-									ammoLeft=1;
-								};
-								class Item6
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
+									ammoLeft=20;
 								};
 							};
 							class ItemCargo
@@ -8338,136 +8433,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="rhsusf_ach_helmet_headset_ocp";
+						headgear="rhs_Booniehat_ocp";
 					};
 				};
-				id=47;
-				type="B_Soldier_TL_F";
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-3.7299805,0,-3.4824219};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					description="DMT 1 Shooter";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_sr25_ec_d";
-							optics="optic_DMS";
-							underBarrel="bipod_02_F_hex";
-							class primaryMuzzleMag
-							{
-								name="rhsusf_20Rnd_762x51_m993_Mag";
-								ammoLeft=20;
-							};
-						};
-						class handgun
-						{
-							name="rhsusf_weap_m9";
-							class primaryMuzzleMag
-							{
-								name="rhsusf_mag_15Rnd_9x19_JHP";
-								ammoLeft=15;
-							};
-						};
-						class uniform
-						{
-							typeName="rhs_uniform_cu_ocp";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=4;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=4;
-								};
-								class Item1
-								{
-									name="ACE_quikclot";
-									count=6;
-								};
-								class Item2
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item4
-								{
-									name="rhsusf_acc_M952V";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACE_RangeCard";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhsusf_iotv_ocp_Rifleman";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=3;
-								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhsusf_20Rnd_762x51_m993_Mag";
-									count=7;
-									ammoLeft=20;
-								};
-								class Item2
-								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						headgear="rhsusf_ach_helmet_ocp";
-					};
-				};
-				id=48;
-				type="B_soldier_M_F";
+				id=72;
+				type="B_spotter_F";
 			};
 		};
 		class Attributes
@@ -8491,7 +8461,7 @@ class items
 								"STRING"
 							};
 						};
-						value="DMT1";
+						value="REC";
 					};
 				};
 			};
