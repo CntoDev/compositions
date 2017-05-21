@@ -28,6 +28,20 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.01
+  - updated team colors func to `a3ee_team_colors_fnc_setColor`, just load+save
+    the composition in editor, this fixes it
+  - changed RPG-7 using MAT teams to carry Kitbags
+  - removed one PKM ammo box from AAR, MMG gunner, MMG bearer (fixes overload)
+  - moved 1-2 AR boxes from AAR to AR, gave AR an Assaultpack
+  - added 1-2 more AR boxes to AR's Assaultpack (if enough space)
+  - changed HEDP to HE rockets for Carl Gustav (M3MAAWS)
+  - changed US crew uniform and helmet to match grey color scheme of US pilots
+  - changed backpacks of driver/copilot to use less contrasting colors compared
+    to their respective uniform/vest colors
+  - changed Carryall backpacks of TFN Engineers to use custom Flecktarn Carryall
+  - changed all (GP-25 and normal) AK74m rifles to be the non-NPZ variants
+  - removed secondary long-range (PRC148) from Engineers
 - v1.00 (and before)
   - added a Comment object with version number (`v1.00`)
   - added `respawn_west`, `respawn_east`, `respawn_guerrila` markers
