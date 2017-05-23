@@ -2431,7 +2431,7 @@ class items
 								"STRING"
 							};
 						};
-						value="Plt Net 1";
+						value="Plt Net";
 					};
 				};
 			};
@@ -2450,7 +2450,7 @@ class items
 								"STRING"
 							};
 						};
-						value="";
+						value="Gnd Mech";
 					};
 				};
 			};
@@ -2469,7 +2469,7 @@ class items
 								"STRING"
 							};
 						};
-						value="";
+						value="Air";
 					};
 				};
 			};
@@ -2488,7 +2488,7 @@ class items
 								"STRING"
 							};
 						};
-						value="";
+						value="reserved";
 					};
 				};
 			};
@@ -2507,7 +2507,7 @@ class items
 								"STRING"
 							};
 						};
-						value="";
+						value="HQ";
 					};
 				};
 			};
@@ -2936,7 +2936,7 @@ class items
 			class Attribute0
 			{
 				property="a3ee_3den_code";
-				expression="if (is3DEN) then { [] call (compile (_value call a3ee_fnc_decomment)) } else { deleteVehicle _this }";
+				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
 				class Value
 				{
 					class data
@@ -3163,7 +3163,7 @@ class items
 		{
 			position[]={-3.4858398,0,4};
 		};
-		title="v1.00";
+		title="v1.01";
 		description="Current composition version.";
 		id=34;
 	};
