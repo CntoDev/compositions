@@ -28,6 +28,9 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.02
+  - loadout overhaul for DMT, made them lighter + gave them tools for recon
+  - specified preset ACRE2 radio channels for most units
 - v1.01
   - updated team colors func to `a3ee_team_colors_fnc_setColor`, just load+save
     the composition in editor, this fixes it
