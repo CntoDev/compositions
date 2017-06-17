@@ -28,6 +28,11 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.03
+  - set crew driver/gunner and pilot/copilot/jetpilot as Engineers through the
+    Object: ACE Options menu in unit attributes
+  - overhauled the TFN faction (weapons, helmets, etc.), changes not applicable
+    to derived factions
 - v1.02
   - loadout overhaul for DMT, made them lighter + gave them tools for recon
   - specified preset ACRE2 radio channels for most units
