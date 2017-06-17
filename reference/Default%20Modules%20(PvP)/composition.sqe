@@ -2,7 +2,7 @@ version=53;
 center[]={4003.4858,5,3996};
 class items
 {
-	items=35;
+	items=36;
 	class Item0
 	{
 		dataType="Logic";
@@ -2761,7 +2761,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={4.5141602,0,-1};
+			position[]={4.388916,0,-1.916748};
 		};
 		id=26;
 		type="a3ee_exec_code";
@@ -2927,7 +2927,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={4.5141602,0,-2};
+			position[]={4.388916,0,-2.916748};
 		};
 		id=27;
 		type="a3ee_exec_code_3den";
@@ -3166,5 +3166,15 @@ class items
 		title="v1.01";
 		description="Current composition version.";
 		id=34;
+	};
+	class Item35
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={4.388916,0,-0.91674805};
+		};
+		id=35;
+		type="a3ee_aresenal_respawn";
 	};
 };

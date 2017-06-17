@@ -2,7 +2,7 @@ version=53;
 center[]={4004.0769,5,3996.1794};
 class items
 {
-	items=39;
+	items=40;
 	class Item0
 	{
 		dataType="Logic";
@@ -2888,7 +2888,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.9230957,0,-0.17944336};
+			position[]={3.8249512,0,-1.125};
 		};
 		id=27;
 		type="a3ee_exec_code";
@@ -3054,7 +3054,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.9230957,0,-1.1794434};
+			position[]={3.8249512,0,-2.125};
 		};
 		id=28;
 		type="a3ee_exec_code_3den";
@@ -3578,5 +3578,15 @@ class items
 		};
 		title="TTPs";
 		id=38;
+	};
+	class Item39
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={3.8249512,0,-0.125};
+		};
+		id=39;
+		type="a3ee_aresenal_respawn";
 	};
 };
