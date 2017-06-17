@@ -1,19 +1,9 @@
 version=53;
-center[]={5428.5713,8.9683102e-044,5288.8442};
+center[]={852.50684,5,407.12329};
 class items
 {
-	items=19;
+	items=17;
 	class Item0
-	{
-		dataType="Marker";
-		position[]={6.4287109,5,-3.8442383};
-		name="resupply_marker";
-		text="Resupply";
-		type="mil_triangle";
-		colorName="ColorGreen";
-		id=70;
-	};
-	class Item1
 	{
 		dataType="Group";
 		side="Independent";
@@ -25,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,7.2055664};
+					position[]={-4.5068359,0.0014390945,6.9266968};
 				};
 				side="Independent";
 				flags=7;
@@ -211,7 +201,7 @@ class items
 						headgear="BoonieH_CamoW";
 					};
 				};
-				id=148;
+				id=79;
 				type="I_officer_F";
 				class CustomAttributes
 				{
@@ -306,7 +296,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5712891,5.0014391,7.2055664};
+					position[]={-2.5068359,0.0014390945,6.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -499,7 +489,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=150;
+				id=80;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -566,7 +556,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.5712891,5.0014391,7.2055664};
+					position[]={-1.5068359,0.0014390945,6.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -682,7 +672,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=151;
+				id=81;
 				type="I_soldier_F";
 				class CustomAttributes
 				{
@@ -749,7 +739,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,7.2055664};
+					position[]={-3.5068359,0.0014390945,6.9266968};
 				};
 				side="Independent";
 				flags=4;
@@ -887,7 +877,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=292;
+				id=82;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -981,29 +971,10 @@ class items
 		class Attributes
 		{
 		};
-		id=147;
+		id=78;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="PLT";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -1022,10 +993,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item2
+	class Item1
 	{
 		dataType="Group";
 		side="Independent";
@@ -1037,7 +1008,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,5.2055664};
+					position[]={-4.5068359,0.0014390945,4.9266968};
 				};
 				side="Independent";
 				flags=7;
@@ -1240,7 +1211,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=152;
+				id=84;
 				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
@@ -1302,7 +1273,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,5.2055664};
+					position[]={-3.5068359,0.0014390945,4.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -1495,7 +1466,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=154;
+				id=85;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -1543,7 +1514,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,3.2055664};
+					position[]={-4.5068359,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -1729,7 +1700,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=155;
+				id=86;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -1796,7 +1767,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,3.2055664};
+					position[]={-3.5068359,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -1907,7 +1878,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=156;
+				id=87;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -1974,7 +1945,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5712891,5.0014391,3.2055664};
+					position[]={-2.5068359,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -2160,7 +2131,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=157;
+				id=88;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -2227,7 +2198,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.5712891,5.0014391,3.2055664};
+					position[]={-1.5068359,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -2347,7 +2318,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=158;
+				id=89;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -2414,7 +2385,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,1.2055664};
+					position[]={-4.5068359,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -2600,7 +2571,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=160;
+				id=90;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -2667,7 +2638,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,1.2055664};
+					position[]={-3.5068359,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -2778,7 +2749,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=161;
+				id=91;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -2845,7 +2816,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5712891,5.0014391,1.2055664};
+					position[]={-2.5068359,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -3031,7 +3002,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=162;
+				id=92;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -3098,7 +3069,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.5712891,5.0014391,1.2055664};
+					position[]={-1.5068359,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -3218,7 +3189,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=163;
+				id=93;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -3284,29 +3255,10 @@ class items
 		class Attributes
 		{
 		};
-		id=153;
+		id=83;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="RANGER";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -3325,10 +3277,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item3
+	class Item2
 	{
 		dataType="Group";
 		side="Independent";
@@ -3340,7 +3292,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,-0.79443359};
+					position[]={-4.5068359,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -3544,7 +3496,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=248;
+				id=95;
 				type="I_Soldier_TL_F";
 			};
 			class Item1
@@ -3552,7 +3504,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,-0.79443359};
+					position[]={-3.5068359,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -3677,7 +3629,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=250;
+				id=96;
 				type="I_support_MG_F";
 			};
 			class Item2
@@ -3685,7 +3637,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5712891,5.0014391,-0.79443359};
+					position[]={-2.5068359,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -3823,36 +3775,17 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=280;
+				id=97;
 				type="I_Soldier_A_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=247;
+		id=94;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MMG";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -3871,10 +3804,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item4
+	class Item3
 	{
 		dataType="Group";
 		side="Independent";
@@ -3886,7 +3819,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,5.2055664};
+					position[]={-0.50683594,0.0014390945,4.9266968};
 				};
 				side="Independent";
 				flags=7;
@@ -4088,7 +4021,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=254;
+				id=99;
 				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
@@ -4150,7 +4083,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,5.2055664};
+					position[]={0.49316406,0.0014390945,4.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -4342,7 +4275,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=255;
+				id=100;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -4390,7 +4323,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,3.2055664};
+					position[]={-0.50683594,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -4575,7 +4508,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=256;
+				id=101;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -4642,7 +4575,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,3.2055664};
+					position[]={0.49316406,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -4753,7 +4686,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=257;
+				id=102;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -4820,7 +4753,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4287109,5.0014391,3.2055664};
+					position[]={1.4931641,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -5005,7 +4938,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=258;
+				id=103;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -5072,7 +5005,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.4287109,5.0014391,3.2055664};
+					position[]={2.4931641,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -5192,7 +5125,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=259;
+				id=104;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -5259,7 +5192,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,1.2055664};
+					position[]={-0.50683594,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -5444,7 +5377,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=260;
+				id=105;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -5511,7 +5444,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,1.2055664};
+					position[]={0.49316406,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -5622,7 +5555,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=261;
+				id=106;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -5689,7 +5622,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4287109,5.0014391,1.2055664};
+					position[]={1.4931641,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -5874,7 +5807,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=262;
+				id=107;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -5941,7 +5874,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.4287109,5.0014391,1.2055664};
+					position[]={2.4931641,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -6061,7 +5994,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=263;
+				id=108;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -6127,29 +6060,10 @@ class items
 		class Attributes
 		{
 		};
-		id=253;
+		id=98;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MARINE";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -6168,10 +6082,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item5
+	class Item4
 	{
 		dataType="Group";
 		side="Independent";
@@ -6183,7 +6097,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4287109,5.0014391,5.2055664};
+					position[]={3.4931641,0.0014390945,4.9266968};
 				};
 				side="Independent";
 				flags=7;
@@ -6385,7 +6299,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=265;
+				id=110;
 				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
@@ -6447,7 +6361,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4287109,5.0014391,5.2055664};
+					position[]={4.4931641,0.0014390945,4.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -6639,7 +6553,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=266;
+				id=111;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -6687,7 +6601,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4287109,5.0014391,3.2055664};
+					position[]={3.4931641,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -6872,7 +6786,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=267;
+				id=112;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -6939,7 +6853,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4287109,5.0014391,3.2055664};
+					position[]={4.4931641,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -7050,7 +6964,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=268;
+				id=113;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7117,7 +7031,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4287109,5.0014391,3.2055664};
+					position[]={5.4931641,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -7302,7 +7216,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=269;
+				id=114;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -7369,7 +7283,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4287109,5.0014391,3.2055664};
+					position[]={6.4931641,0.0014390945,2.9266968};
 				};
 				side="Independent";
 				flags=5;
@@ -7489,7 +7403,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=270;
+				id=115;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7556,7 +7470,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4287109,5.0014391,1.2055664};
+					position[]={3.4931641,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -7741,7 +7655,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=271;
+				id=116;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -7808,7 +7722,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4287109,5.0014391,1.2055664};
+					position[]={4.4931641,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -7919,7 +7833,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=272;
+				id=117;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7986,7 +7900,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4287109,5.0014391,1.2055664};
+					position[]={5.4931641,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -8171,7 +8085,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=273;
+				id=118;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -8238,7 +8152,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4287109,5.0014391,1.2055664};
+					position[]={6.4931641,0.0014390945,0.92669678};
 				};
 				side="Independent";
 				flags=5;
@@ -8358,7 +8272,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=274;
+				id=119;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -8424,29 +8338,10 @@ class items
 		class Attributes
 		{
 		};
-		id=264;
+		id=109;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="DIABLO";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -8465,10 +8360,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item6
+	class Item5
 	{
 		dataType="Group";
 		side="Independent";
@@ -8480,7 +8375,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,-0.79443359};
+					position[]={-0.50683594,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -8683,7 +8578,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=276;
+				id=121;
 				type="I_Soldier_TL_F";
 			};
 			class Item1
@@ -8691,7 +8586,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,-0.79443359};
+					position[]={0.49316406,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -8838,7 +8733,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=278;
+				id=122;
 				type="I_Soldier_AT_F";
 			};
 			class Item2
@@ -8846,7 +8741,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4287109,5.0014391,-0.79443359};
+					position[]={1.4931641,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -8983,36 +8878,17 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=287;
+				id=123;
 				type="I_Soldier_AAT_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=275;
+		id=120;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MAT";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -9031,10 +8907,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item7
+	class Item6
 	{
 		dataType="Group";
 		side="Independent";
@@ -9046,7 +8922,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4287109,5.0014391,-0.79443359};
+					position[]={3.4931641,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -9206,15 +9082,38 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=286;
+				id=125;
 				type="I_engineer_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=2;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4287109,5.0014391,-0.79443359};
+					position[]={6.4931641,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -9368,15 +9267,38 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=285;
+				id=126;
 				type="I_engineer_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=2;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4287109,5.0014391,-0.79443359};
+					position[]={5.4931641,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -9530,15 +9452,38 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=284;
+				id=127;
 				type="I_engineer_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=2;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item3
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4287109,5.0014391,-0.79443359};
+					position[]={4.4931641,0.0014390945,-1.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -9692,36 +9637,40 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=283;
+				id=128;
 				type="I_engineer_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=2;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=281;
+		id=124;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="ENG";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -9740,10 +9689,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item8
+	class Item7
 	{
 		dataType="Group";
 		side="Independent";
@@ -9755,7 +9704,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,-2.7944336};
+					position[]={-4.5068359,0.0014390945,-3.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -9962,7 +9911,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=294;
+				id=130;
 				type="asdg_I_recon_TL";
 			};
 			class Item1
@@ -9970,7 +9919,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,-2.7944336};
+					position[]={-3.5068359,0.0014390945,-3.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -10087,39 +10036,16 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=295;
+				id=131;
 				type="asdg_I_recon_M";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=293;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="DMT";
-					};
-				};
-			};
-			nAttributes=1;
-		};
+		id=129;
 	};
-	class Item9
+	class Item8
 	{
 		dataType="Group";
 		side="Independent";
@@ -10131,7 +10057,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,-2.7944336};
+					position[]={-0.50683594,0.0014390945,-3.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -10291,7 +10217,7 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=300;
+				id=133;
 				type="I_support_AMort_F";
 			};
 			class Item1
@@ -10299,7 +10225,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,-2.7944336};
+					position[]={0.49316406,0.0014390945,-3.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -10431,36 +10357,17 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=302;
+				id=134;
 				type="I_support_AMort_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=301;
+		id=132;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MTR";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -10479,10 +10386,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item10
+	class Item9
 	{
 		dataType="Group";
 		side="Independent";
@@ -10494,7 +10401,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,-4.7944336};
+					position[]={-4.5068359,0.0014390945,-5.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -10618,11 +10525,30 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=304;
+				id=136;
 				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -10686,7 +10612,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -10694,7 +10620,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,-4.7944336};
+					position[]={-3.5068359,0.0014390945,-5.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -10823,15 +10749,38 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=305;
+				id=137;
 				type="I_crew_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5712891,5.0014391,-4.7944336};
+					position[]={-2.5068359,0.0014390945,-5.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -10945,36 +10894,40 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=306;
+				id=138;
 				type="I_crew_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=303;
+		id=135;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="SABRE";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -10993,10 +10946,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item11
+	class Item10
 	{
 		dataType="Group";
 		side="Independent";
@@ -11008,7 +10961,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,-4.7944336};
+					position[]={-0.50683594,0.0014390945,-5.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -11132,15 +11085,38 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=308;
+				id=140;
 				type="I_crew_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,-4.7944336};
+					position[]={0.49316406,0.0014390945,-5.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -11269,15 +11245,38 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=309;
+				id=141;
 				type="I_crew_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4287109,5.0014391,-4.7944336};
+					position[]={1.4931641,0.0014390945,-5.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -11391,36 +11390,40 @@ class items
 						headgear="CamoH_CamoW";
 					};
 				};
-				id=310;
+				id=142;
 				type="I_crew_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=307;
+		id=139;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="PALADIN";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -11439,10 +11442,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item12
+	class Item11
 	{
 		dataType="Group";
 		side="Independent";
@@ -11454,7 +11457,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5712891,5.0014391,-6.7944336};
+					position[]={-4.5068359,0.0014390945,-7.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -11588,11 +11591,30 @@ class items
 						headgear="H_PilotHelmetHeli_B";
 					};
 				};
-				id=312;
+				id=144;
 				type="I_helipilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11656,7 +11678,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -11664,7 +11686,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5712891,5.0014391,-6.7944336};
+					position[]={-3.5068359,0.0014390945,-7.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -11811,11 +11833,30 @@ class items
 						headgear="H_CrewHelmetHeli_B";
 					};
 				};
-				id=313;
+				id=145;
 				type="I_helicrew_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11879,36 +11920,17 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=311;
+		id=143;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="FALCON";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -11927,10 +11949,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item13
+	class Item12
 	{
 		dataType="Group";
 		side="Independent";
@@ -11942,7 +11964,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.57128906,5.0014391,-6.7944336};
+					position[]={-0.50683594,0.0014390945,-7.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -12076,11 +12098,30 @@ class items
 						headgear="H_PilotHelmetHeli_B";
 					};
 				};
-				id=315;
+				id=147;
 				type="I_helipilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -12144,7 +12185,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -12152,7 +12193,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.42871094,5.0014391,-6.7944336};
+					position[]={0.49316406,0.0014390945,-7.0733032};
 				};
 				side="Independent";
 				flags=5;
@@ -12299,11 +12340,30 @@ class items
 						headgear="H_PilotHelmetHeli_B";
 					};
 				};
-				id=316;
+				id=148;
 				type="I_helicrew_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -12367,36 +12427,17 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=314;
+		id=146;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="TEMPEST";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -12415,10 +12456,10 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item14
+	class Item13
 	{
 		dataType="Group";
 		side="Independent";
@@ -12430,7 +12471,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4287109,5.0014391,-6.7944336};
+					position[]={3.4931641,0.0014390945,-7.0733032};
 				};
 				side="Independent";
 				flags=7;
@@ -12557,11 +12598,30 @@ class items
 						headgear="H_PilotHelmetFighter_I";
 					};
 				};
-				id=318;
+				id=150;
 				type="I_Fighter_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -12625,36 +12685,17 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=317;
+		id=149;
 		class CustomAttributes
 		{
 			class Attribute0
-			{
-				property="groupID";
-				expression="[_this, _value] call CBA_fnc_setCallsign";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="RAVAGER";
-					};
-				};
-			};
-			class Attribute1
 			{
 				property="a3ee_persistent_callsign";
 				expression="false";
@@ -12673,42 +12714,33 @@ class items
 					};
 				};
 			};
-			nAttributes=2;
+			nAttributes=1;
 		};
 	};
-	class Item15
+	class Item14
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={3.4287109,5,-4.8442383};
+			position[]={3.4931641,0,-5.123291};
 		};
-		title="v1.0";
+		title="v1.03";
 		description="Current composition version.";
-		id=321;
+		id=151;
 	};
-	class Item16
-	{
-		dataType="Marker";
-		position[]={3.4287109,0,-2.8442383};
-		name="respawn_guerrila";
-		type="respawn_unknown";
-		id=322;
-		atlOffset=-5;
-	};
-	class Item17
+	class Item15
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.4287109,5.8924227,-2.8442383};
+			position[]={6.4931641,0.89242268,-3.1231079};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 		};
-		id=329;
+		id=152;
 		type="I_supplyCrate_F";
 		class CustomAttributes
 		{
@@ -12734,19 +12766,19 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item18
+	class Item16
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.4287109,5.2840548,-4.8442383};
+			position[]={6.4931641,0.28405476,-5.1231079};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 		};
-		id=332;
+		id=153;
 		type="Box_NATO_Ammo_F";
 		class CustomAttributes
 		{
