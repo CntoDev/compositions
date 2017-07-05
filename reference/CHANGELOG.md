@@ -28,6 +28,10 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.04
+  - All MAT Teams carrying RPG's got the ver3 scopes with ranges for all types
+    of ammo.
+  - All Callsigns were changed to be uniformed throught no matter the faction.
 - v1.03
   - set crew driver/gunner and pilot/copilot/jetpilot as Engineers through the
     Object: ACE Options menu in unit attributes
