@@ -3,6 +3,8 @@ Changelog (for versioned compositions)
 
 Swiss Army
 ---------------
+- v1.02
+  - changed callsigns to new unified callsigns
 - v1.01
   - updated team colors func to `a3ee_team_colors_fnc_setColor`
   - gave AR an Assaultpack and moved some AR ammo belts from AAR to AR
