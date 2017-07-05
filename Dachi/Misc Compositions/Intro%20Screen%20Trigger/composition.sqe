@@ -1,0 +1,22 @@
+version=53;
+center[]={8333.8535,4.0300002,7496.0239};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={0,0,0};
+		class Attributes
+		{
+			name="playerInit";
+			condition="local player";
+			onActivation="titleCut ["""", ""BLACK FADED"", 999]; 0 = player execVM ""fnc\fnc_playerInit.sqf"";";
+			sizeA=0;
+			sizeB=0;
+			effectMusic="jungle";
+		};
+		id=3612;
+		type="EmptyDetector";
+	};
+};

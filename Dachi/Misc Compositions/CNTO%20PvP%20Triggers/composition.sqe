@@ -1,12 +1,12 @@
 version=53;
-center[]={2591.509,13.86,2709.4873};
+center[]={5792.2002,5,5280.3359};
 class items
 {
 	items=16;
 	class Item0
 	{
 		dataType="Trigger";
-		position[]={0.7409668,0,-3.9873047};
+		position[]={0.74121094,0,-3.987793};
 		class Attributes
 		{
 			text="Warn on leaving area";
@@ -15,13 +15,13 @@ class items
 			sizeA=150;
 			sizeB=150;
 		};
-		id=514;
+		id=0;
 		type="EmptyDetectorAreaR250";
 	};
 	class Item1
 	{
 		dataType="Trigger";
-		position[]={0.7409668,0,-4.9873047};
+		position[]={0.74121094,0,-4.987793};
 		class Attributes
 		{
 			text="Kill on leaving area";
@@ -30,13 +30,13 @@ class items
 			sizeA=200;
 			sizeB=200;
 		};
-		id=515;
+		id=1;
 		type="EmptyDetectorAreaR250";
 	};
 	class Item2
 	{
 		dataType="Trigger";
-		position[]={0.75366211,0,-0.17089844};
+		position[]={0.75390625,0,-0.17138672};
 		class Attributes
 		{
 			text="10 Minutes Left";
@@ -46,13 +46,13 @@ class items
 			sizeB=0;
 			isServerOnly=1;
 		};
-		id=516;
+		id=2;
 		type="EmptyDetector";
 	};
 	class Item3
 	{
 		dataType="Trigger";
-		position[]={0.75366211,0,-1.6708984};
+		position[]={0.75390625,0,-1.6713867};
 		class Attributes
 		{
 			text="Game Over";
@@ -62,13 +62,13 @@ class items
 			type="END5";
 			isServerOnly=1;
 		};
-		id=517;
+		id=3;
 		type="EmptyDetector";
 	};
 	class Item4
 	{
 		dataType="Trigger";
-		position[]={0.75366211,0,4.0791016};
+		position[]={0.75390625,0,4.0786133};
 		class Attributes
 		{
 			text="SAS Win";
@@ -78,13 +78,13 @@ class items
 			timeout[]={5,5,5};
 			type="END1";
 		};
-		id=518;
+		id=4;
 		type="EmptyDetector";
 	};
 	class Item5
 	{
 		dataType="Trigger";
-		position[]={0.75366211,0,2.0791016};
+		position[]={0.75390625,0,2.0786133};
 		class Attributes
 		{
 			text="SBS Win";
@@ -94,16 +94,16 @@ class items
 			timeout[]={5,5,5};
 			type="END2";
 		};
-		id=519;
+		id=5;
 		type="EmptyDetector";
 	};
 	class Item6
 	{
 		dataType="Trigger";
-		position[]={0.75366211,0,1.3291016};
+		position[]={0.75390625,0,1.3291016};
 		class Attributes
 		{
-			name="Trig1_1";
+			name="Trig1";
 			text="SAS Killed Trigger";
 			condition="{faction _x == ""BLU_F""} count allDead > 0 && {{faction _x == ""BLU_F""} count (allUnits-allDead) == 0}";
 			onActivation="Hint ""The SAS have been elminated"";";
@@ -112,16 +112,16 @@ class items
 			timeout[]={10,10,10};
 			activationType="NOT PRESENT";
 		};
-		id=520;
+		id=6;
 		type="EmptyDetector";
 	};
 	class Item7
 	{
 		dataType="Trigger";
-		position[]={0.75366211,0,3.3291016};
+		position[]={0.75390625,0,3.3291016};
 		class Attributes
 		{
-			name="Trig2_1";
+			name="Trig2";
 			text="SBS Killed Trigger";
 			condition="{faction _x == ""IND_F""} count allDead > 0 && {{faction _x == ""IND_F""} count (allUnits-allDead) == 0}";
 			onActivation="Hint ""The SBS have been elminated"";";
@@ -130,7 +130,7 @@ class items
 			timeout[]={10,10,10};
 			activationType="NOT PRESENT";
 		};
-		id=521;
+		id=7;
 		type="EmptyDetector";
 	};
 	class Item8
@@ -138,93 +138,95 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.74633789,9.5367432e-007,-1.6708984};
+			position[]={-0.74609375,0.00013828278,-1.6713867};
 		};
 		title="Game Over";
 		description="This will end the mission when the mission/server time limit reaches 0";
-		id=522;
-		atlOffset=9.5367432e-007;
+		id=8;
+		atlOffset=0.00013828278;
 	};
 	class Item9
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.74633789,9.5367432e-007,-0.17089844};
+			position[]={-0.74609375,0.00013828278,-0.17138672};
 		};
 		title="10 Minutes Left";
 		description="This will display a message (hint) telling players that there is only 10mins left. The value of 10 can be changed.";
-		id=523;
-		atlOffset=9.5367432e-007;
+		id=9;
+		atlOffset=0.00013828278;
 	};
 	class Item10
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.74633789,9.5367432e-007,3.3291016};
+			position[]={-0.74609375,0.00013828278,3.3286133};
 		};
 		title="SBS Eliminated";
 		description="This trigger checks to see if the base soldiers faction has been elminated i.e. IND_F this is found when you right click on your base soldiers and then select view in config then is found under the Faction." \n "" \n "Because the trigger uses the base soldiers faction you can have more than 4 sides. It has the variable name that the ending trigger looks for.";
-		id=524;
-		atlOffset=9.5367432e-007;
+		id=10;
+		atlOffset=0.00013828278;
 	};
 	class Item11
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.74633789,9.5367432e-007,4.0791016};
+			position[]={-0.74609375,0.00013828278,4.0786133};
 		};
 		title="SAS Win Trigger";
 		description="This trigger looks to see if another trigger is activated and if so then ends the mission with a specific ending END1. The specific endings are set in the description.ext" \n "" \n "It looks to see if the trigger that checks for the SBS being eliminated has been activated.";
-		id=525;
-		atlOffset=9.5367432e-007;
+		id=11;
+		atlOffset=0.00013828278;
 	};
 	class Item12
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.74633789,9.5367432e-007,1.3291016};
+			position[]={-0.74609375,0.00013828278,1.3286133};
 		};
 		title="SAS Eliminated";
 		description="This trigger checks to see if the base soldiers faction has been elminated i.e. BLU_F this is found when you right click on your base soldiers and then select view in config then is found under the Faction." \n "" \n "Because the trigger uses the base soldiers faction you can have more than 4 sides. It has the variable name that the ending trigger looks for.";
-		id=526;
-		atlOffset=9.5367432e-007;
+		id=12;
+		atlOffset=0.00013828278;
 	};
 	class Item13
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.74633789,9.5367432e-007,2.0791016};
+			position[]={-0.74609375,0.00013828278,2.0786133};
 		};
 		title="SBS Win Trigger";
 		description="This trigger looks to see if another trigger is activated and if so then ends the mission with a specific ending END2. The specific endings are set in the description.ext" \n "" \n "It looks to see if the trigger that checks for the SAS being eliminated has been activated.";
-		id=527;
-		atlOffset=9.5367432e-007;
+		id=13;
+		atlOffset=0.00013828278;
 	};
 	class Item14
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.7590332,0,-3.9873047};
+			position[]={-0.75878906,0.0001373291,-3.987793};
 		};
 		title="Out of bounds Warning";
 		description="This Trigger will warn players when they leave the triggers area zone set by the size of the trigger and where you place the trigger." \n "" \n "It will display a hint to players telling them they are leaving the AO.";
-		id=528;
+		id=14;
+		atlOffset=0.0001373291;
 	};
 	class Item15
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.7590332,0,-4.9873047};
+			position[]={-0.75878906,0.0001373291,-4.987793};
 		};
 		title="Kill Player when out of bounds";
 		description="This Trigger will kill players when they leave the triggers area zone set by the size of the trigger and where you place the trigger.";
-		id=529;
+		id=15;
+		atlOffset=0.0001373291;
 	};
 };

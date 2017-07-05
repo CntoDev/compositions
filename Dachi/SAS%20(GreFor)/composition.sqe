@@ -1,5 +1,5 @@
 version=53;
-center[]={7506.8623,0,7571.3037};
+center[]={7506.9116,5,7571.5884};
 class items
 {
 	items=8;
@@ -15,13 +15,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8623047,5.0014391,4.7460938};
+					position[]={-2.9116211,0.0014390945,4.4614258};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
-					description="Plt Comd";
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
+					description="Platoon Commander";
 					isPlayable=1;
 					class Inventory
 					{
@@ -89,17 +90,17 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item7
 								{
-									name="ACRE_PRC152_ID_1";
+									name="ACRE_PRC152";
 									count=1;
 								};
 								class Item8
 								{
-									name="ACRE_PRC148_ID_1";
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -316,13 +317,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8623047,5.0014391,4.7460938};
+					position[]={-1.9116211,0.0014390945,4.4614258};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Plt Medic";
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
+					description="Platoon Medic";
 					isPlayable=1;
 					class Inventory
 					{
@@ -391,7 +393,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -580,13 +582,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86230469,5.0014391,4.7460938};
+					position[]={-0.91162109,0.0014390945,4.4614258};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Plt Sgt";
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
+					description="Platoon Sergeant";
 					isPlayable=1;
 					class Inventory
 					{
@@ -654,17 +657,17 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item7
 								{
-									name="ACRE_PRC152_ID_1";
+									name="ACRE_PRC152";
 									count=1;
 								};
 								class Item8
 								{
-									name="ACRE_PRC148_ID_1";
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -862,14 +865,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13769531,5.0014391,4.7460938};
+					position[]={0.088378906,0.0014390945,4.4614258};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					skill=0.25774309;
-					description="Plt Rifleman";
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
+					description="Platoon Rifleman";
 					isPlayable=1;
 					class Inventory
 					{
@@ -933,7 +937,7 @@ class items
 								};
 								class Item4
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item5
@@ -1106,12 +1110,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8623047,5.0014391,2.7460938};
+					position[]={-2.9116211,0.0014390945,2.4614258};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha SL";
 					isPlayable=1;
 					class Inventory
@@ -1180,17 +1185,17 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item7
 								{
-									name="ACRE_PRC152_ID_1";
+									name="ACRE_PRC152";
 									count=1;
 								};
 								class Item8
 								{
-									name="ACRE_PRC148_ID_1";
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -1380,12 +1385,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8623047,5.0014391,2.7460938};
+					position[]={-1.9116211,0.0014390945,2.4614258};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha Medic";
 					isPlayable=1;
 					class Inventory
@@ -1455,7 +1461,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -1625,12 +1631,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8623047,5.0014391,0.74609375};
+					position[]={-2.9116211,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 1, FTL";
 					isPlayable=1;
 					class Inventory
@@ -1709,7 +1716,7 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -1898,12 +1905,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8623047,5.0014391,0.74609375};
+					position[]={-1.9116211,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 1, AR";
 					isPlayable=1;
 					class Inventory
@@ -1974,7 +1982,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -2102,12 +2110,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86230469,5.0014391,0.74609375};
+					position[]={-0.91162109,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 1, AAR";
 					isPlayable=1;
 					class Inventory
@@ -2191,7 +2200,7 @@ class items
 								};
 								class Item7
 								{
-									name="ACRE_PRC343_ID_2";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -2338,12 +2347,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13769531,5.0014391,0.74609375};
+					position[]={0.088378906,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 1, Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -2412,7 +2422,7 @@ class items
 								};
 								class Item4
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item5
@@ -2530,12 +2540,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8623047,5.0014391,-1.2539063};
+					position[]={-2.9116211,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 2, FTL";
 					isPlayable=1;
 					class Inventory
@@ -2614,7 +2625,7 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -2803,12 +2814,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8623047,5.0014391,-1.2539063};
+					position[]={-1.9116211,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 2, AR";
 					isPlayable=1;
 					class Inventory
@@ -2879,7 +2891,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -3007,12 +3019,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86230469,5.0014391,-1.2539063};
+					position[]={-0.91162109,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 2, AAR";
 					isPlayable=1;
 					class Inventory
@@ -3096,7 +3109,7 @@ class items
 								};
 								class Item7
 								{
-									name="ACRE_PRC343_ID_2";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -3243,12 +3256,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13769531,5.0014391,-1.2539063};
+					position[]={0.088378906,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Alpha 2, Explosive Specialist";
 					isPlayable=1;
 					class Inventory
@@ -3313,7 +3327,7 @@ class items
 								};
 								class Item4
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item5
@@ -3501,12 +3515,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1376953,5.0014391,2.7460938};
+					position[]={1.0883789,0.0014390945,2.4614258};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo SL";
 					isPlayable=1;
 					class Inventory
@@ -3575,17 +3590,17 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item7
 								{
-									name="ACRE_PRC152_ID_1";
+									name="ACRE_PRC152";
 									count=1;
 								};
 								class Item8
 								{
-									name="ACRE_PRC148_ID_1";
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -3775,12 +3790,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1376953,5.0014391,2.7460938};
+					position[]={2.0883789,0.0014390945,2.4614258};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo Medic";
 					isPlayable=1;
 					class Inventory
@@ -3850,7 +3866,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -4020,12 +4036,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1376953,5.0014391,0.74609375};
+					position[]={1.0883789,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 1, FTL";
 					isPlayable=1;
 					class Inventory
@@ -4104,7 +4121,7 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -4293,12 +4310,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1376953,5.0014391,0.74609375};
+					position[]={2.0883789,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 1, AR";
 					isPlayable=1;
 					class Inventory
@@ -4369,7 +4387,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -4497,12 +4515,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1376953,5.0014391,0.74609375};
+					position[]={3.0883789,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 1, AAR";
 					isPlayable=1;
 					class Inventory
@@ -4586,7 +4605,7 @@ class items
 								};
 								class Item7
 								{
-									name="ACRE_PRC343_ID_2";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -4733,12 +4752,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1376953,5.0014391,0.74609375};
+					position[]={4.0883789,0.0014390945,0.46142578};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 1, Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -4807,7 +4827,7 @@ class items
 								};
 								class Item4
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item5
@@ -4925,12 +4945,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1376953,5.0014391,-1.2539063};
+					position[]={1.0883789,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 2, FTL";
 					isPlayable=1;
 					class Inventory
@@ -5009,7 +5030,7 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -5198,12 +5219,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1376953,5.0014391,-1.2539063};
+					position[]={2.0883789,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 2, AR";
 					isPlayable=1;
 					class Inventory
@@ -5274,7 +5296,7 @@ class items
 								};
 								class Item5
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -5402,12 +5424,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1376953,5.0014391,-1.2539063};
+					position[]={3.0883789,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 2, AAR";
 					isPlayable=1;
 					class Inventory
@@ -5491,7 +5514,7 @@ class items
 								};
 								class Item7
 								{
-									name="ACRE_PRC343_ID_2";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -5638,12 +5661,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1376953,5.0014391,-1.2539063};
+					position[]={4.0883789,0.0014390945,-1.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
 					description="Bravo 2, Explosive Specialist";
 					isPlayable=1;
 					class Inventory
@@ -5708,7 +5732,7 @@ class items
 								};
 								class Item4
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item5
@@ -5896,12 +5920,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8623047,5.0014391,-3.2539063};
+					position[]={-2.9116211,0.0014390945,-3.5385742};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
+					description="DMT Lead";
 					isPlayable=1;
 					class Inventory
 					{
@@ -5979,7 +6005,7 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -6114,12 +6140,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8623047,5.0014391,-3.2539063};
+					position[]={-1.9116211,0.0014390945,-3.5385742};
 				};
 				side="Independent";
 				flags=5;
 				class Attributes
 				{
+					init="call{this addGoggles ""G_Balaclava_oli"";}";
+					description="DMT Marksman";
 					isPlayable=1;
 					class Inventory
 					{
@@ -6197,7 +6225,7 @@ class items
 								};
 								class Item6
 								{
-									name="ACRE_PRC343_ID_1";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -6313,7 +6341,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={4.1376953,5.8924227,-3.3041992};
+			position[]={4.0883789,0.89242268,-3.5888672};
 		};
 		side="Empty";
 		flags=4;
@@ -6389,27 +6417,26 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={1.1376953,5,-3.3041992};
+			position[]={1.0883789,0,-3.5883789};
 		};
-		title="v1.03";
+		title="v1.04";
 		description="Current composition version.";
 		id=31;
 	};
 	class Item6
 	{
 		dataType="Marker";
-		position[]={4.1376953,0,-4.3037109};
+		position[]={4.0883789,0,-4.5883789};
 		name="resupply_marker";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
 		id=32;
-		atlOffset=-5;
 	};
 	class Item7
 	{
 		dataType="Marker";
-		position[]={1.1376953,1.3349106e+013,-4.3037109};
+		position[]={1.0883789,1.3349106e+013,-4.5883789};
 		name="respawn_guerrila";
 		type="respawn_unknown";
 		id=33;

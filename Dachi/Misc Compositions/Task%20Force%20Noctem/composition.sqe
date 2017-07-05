@@ -1,12 +1,12 @@
 version=53;
-center[]={7508.5688,5,7575.0747};
+center[]={4004.73,0,3993.5325};
 class items
 {
-	items=19;
+	items=17;
 	class Item0
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=4;
@@ -15,9 +15,9 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,6.9750977};
+					position[]={-4.7299805,0,6.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
@@ -28,20 +28,24 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_SmokeRed_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -51,7 +55,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class ItemCargo
 							{
@@ -78,7 +82,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -110,7 +114,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -129,19 +133,19 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=3;
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									count=4;
 									ammoLeft=30;
 								};
 								class Item4
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -149,26 +153,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_plt_co_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Green";
+									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -193,10 +197,15 @@ class items
 							};
 							class ItemCargo
 							{
-								items=1;
+								items=2;
 								class Item0
 								{
 									name="ACE_IR_Strobe_Item";
+									count=1;
+								};
+								class Item1
+								{
+									name="cnto_flecktarn_h_beret";
 									count=1;
 								};
 							};
@@ -205,11 +214,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="BoonieH_TigerJ";
+						goggles="rhs_googles_yellow";
+						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
 				id=1;
-				type="O_officer_F";
+				type="I_officer_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -284,9 +294,9 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,6.9750977};
+					position[]={-3.7299805,0,6.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
@@ -297,20 +307,19 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -320,7 +329,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class ItemCargo
 							{
@@ -347,7 +356,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -379,11 +388,11 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=5;
 								class Item0
 								{
 									name="SmokeShell";
@@ -398,15 +407,21 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
+								};
+								class Item4
+								{
+									name="rhsusf_mag_17Rnd_9x19_JHP";
+									count=1;
+									ammoLeft=17;
 								};
 							};
 						};
@@ -414,11 +429,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=2;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -493,9 +508,9 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5688477,0.0014390945,6.9750977};
+					position[]={-2.7299805,0,6.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
@@ -505,26 +520,25 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -561,7 +575,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -573,7 +587,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -586,19 +600,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -606,7 +620,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_medic_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
@@ -683,11 +697,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="rhs_googles_yellow";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=3;
-				type="O_medic_F";
+				type="I_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -734,9 +749,9 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.5688477,0.0014390945,6.9750977};
+					position[]={-1.7299805,0,6.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
@@ -746,26 +761,25 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -802,7 +816,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -814,7 +828,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -827,19 +841,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -848,11 +862,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Tactical_Black";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=4;
-				type="O_Soldier_F";
+				type="I_soldier_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -926,7 +941,7 @@ class items
 	class Item1
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=10;
@@ -935,33 +950,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,4.9750977};
+					position[]={-4.7299805,0,4.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Alpha Squad Leader";
+					description="Templar Squad Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -971,7 +990,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1008,7 +1027,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -1035,7 +1054,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1054,19 +1073,19 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item4
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -1074,32 +1093,32 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_sl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=7;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item3
 								{
-									name="rhs_GRD40_Green";
+									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
@@ -1136,11 +1155,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
 				id=6;
-				type="O_Soldier_SL_F";
+				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -1201,38 +1220,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,4.9750977};
+					position[]={-3.7299805,0,4.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Alpha Squad Medic";
+					description="Templar Squad Medic";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1269,7 +1287,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -1281,7 +1299,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1294,19 +1312,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -1314,7 +1332,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_medic_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
@@ -1391,11 +1409,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="rhs_googles_yellow";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=7;
-				type="O_medic_F";
+				type="I_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -1442,33 +1461,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,2.9750977};
+					position[]={-4.7299805,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Alpha 1 Fireteam Leader";
+					description="Templar 1 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -1478,7 +1501,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1515,7 +1538,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -1537,7 +1560,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1550,19 +1573,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -1570,26 +1593,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_tl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=8;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -1626,11 +1649,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="rhs_googles_yellow";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=8;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -1696,37 +1720,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,2.9750977};
+					position[]={-3.7299805,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Alpha 1 Autorifleman";
+					description="Templar 1 Autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_m249_pip_S_vfg";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhsusf_100Rnd_556x45_soft_pouch";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1763,7 +1787,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -1775,7 +1799,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1788,14 +1812,29 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=4;
+									ammoLeft=100;
 								};
 								class Item2
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
+									ammoLeft=17;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="cnto_flecktarn_b_ap_mediterranean";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 							};
@@ -1803,11 +1842,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						goggles="G_Aviator";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=9;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -1873,33 +1913,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5688477,0.0014390945,2.9750977};
+					position[]={-2.7299805,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Alpha 1 Assist. autorifleman";
+					description="Templar 1 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="hlc_rifle_samr2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -1909,7 +1948,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1946,7 +1985,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -1968,7 +2007,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -1981,19 +2020,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -2001,20 +2040,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_aar_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=3;
+								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=3;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
@@ -2022,6 +2061,24 @@ class items
 								{
 									name="MiniGrenade";
 									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=3;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=1;
 									ammoLeft=1;
 								};
 							};
@@ -2039,11 +2096,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Shades_Green";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=10;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -2109,42 +2167,41 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.5688477,0.0014390945,2.9750977};
+					position[]={-1.7299805,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Alpha 1 Rifleman AT";
+					description="Templar 1 Rifleman AT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg26";
+							name="rhs_weap_M136";
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2181,7 +2238,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -2193,7 +2250,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2206,19 +2263,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -2227,11 +2284,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Aviator";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=11;
-				type="O_Soldier_LAT_F";
+				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -2249,7 +2307,7 @@ class items
 										"STRING"
 									};
 								};
-								value="YELLOW";
+								value="BLUE";
 							};
 						};
 					};
@@ -2297,33 +2355,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,0.97509766};
+					position[]={-4.7299805,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Alpha 2 Fireteam Leader";
+					description="Templar 2 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -2333,7 +2395,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2370,7 +2432,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -2392,7 +2454,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2405,19 +2467,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -2425,26 +2487,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_tl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=8;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -2481,11 +2543,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=12;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -2551,37 +2613,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,0.97509766};
+					position[]={-3.7299805,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Alpha 2 Autorifleman";
+					description="Templar 2 Autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_m249_pip_S_vfg";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhsusf_100Rnd_556x45_soft_pouch";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2618,7 +2680,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -2630,7 +2692,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2643,14 +2705,29 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=4;
+									ammoLeft=100;
 								};
 								class Item2
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
+									ammoLeft=17;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="cnto_flecktarn_b_ap_mediterranean";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 							};
@@ -2658,11 +2735,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						goggles="Goggles_blk";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=13;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -2728,33 +2806,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5688477,0.0014390945,0.97509766};
+					position[]={-2.7299805,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Alpha 2 Assist. autorifleman";
+					description="Templar 2 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="hlc_rifle_samr2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -2764,7 +2841,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2801,7 +2878,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -2823,7 +2900,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -2836,19 +2913,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -2856,20 +2933,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_aar_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=3;
+								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=3;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
@@ -2877,6 +2954,24 @@ class items
 								{
 									name="MiniGrenade";
 									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=3;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=1;
 									ammoLeft=1;
 								};
 							};
@@ -2894,11 +2989,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Aviator";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=14;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -2964,42 +3060,41 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.5688477,0.0014390945,0.97509766};
+					position[]={-1.7299805,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Alpha 2 Rifleman AT";
+					description="Templar 2 Rifleman AT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg26";
+							name="rhs_weap_M136";
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3036,7 +3131,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -3048,7 +3143,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3061,19 +3156,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -3082,11 +3177,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Spectacles";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=15;
-				type="O_Soldier_LAT_F";
+				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3169,7 +3265,7 @@ class items
 								"STRING"
 							};
 						};
-						value="ALPHA";
+						value="TEMPLAR";
 					};
 				};
 			};
@@ -3179,7 +3275,7 @@ class items
 	class Item2
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=10;
@@ -3188,33 +3284,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.56884766,0.0014390945,4.9750977};
+					position[]={-0.72998047,0,4.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Bravo Squad Leader";
+					description="Lancer Squad Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -3224,7 +3324,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3261,7 +3361,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -3288,7 +3388,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3307,19 +3407,19 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item4
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -3327,32 +3427,32 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_sl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=7;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item3
 								{
-									name="rhs_GRD40_Green";
+									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
@@ -3389,11 +3489,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
 				id=17;
-				type="O_Soldier_SL_F";
+				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3454,38 +3554,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.43115234,0.0014390945,4.9750977};
+					position[]={0.27001953,0,4.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Bravo Squad Medic";
+					description="Lancer Squad Medic";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3522,7 +3621,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -3534,7 +3633,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3547,19 +3646,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -3567,7 +3666,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_medic_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
@@ -3644,11 +3743,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Sport_Greenblack";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=18;
-				type="O_medic_F";
+				type="I_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3695,33 +3795,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.56884766,0.0014390945,2.9750977};
+					position[]={-0.72998047,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Bravo 1 Fireteam Leader";
+					description="Lancer 1 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -3731,7 +3835,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3768,7 +3872,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -3790,7 +3894,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -3803,19 +3907,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -3823,26 +3927,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_tl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=8;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -3879,11 +3983,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Lowprofile";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=19;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -3949,37 +4054,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.43115234,0.0014390945,2.9750977};
+					position[]={0.27001953,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Bravo 1 Autorifleman";
+					description="Lancer 1 Autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_m249_pip_S_vfg";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhsusf_100Rnd_556x45_soft_pouch";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4016,7 +4121,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -4028,7 +4133,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4041,14 +4146,29 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=4;
+									ammoLeft=100;
 								};
 								class Item2
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
+									ammoLeft=17;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="cnto_flecktarn_b_ap_mediterranean";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 							};
@@ -4056,11 +4176,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						goggles="rhs_googles_orange";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=20;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4126,33 +4247,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4311523,0.0014390945,2.9750977};
+					position[]={1.2700195,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Bravo 1 Assist. autorifleman";
+					description="Lancer 1 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="hlc_rifle_samr2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -4162,7 +4282,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4199,7 +4319,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -4221,7 +4341,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4234,19 +4354,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -4254,20 +4374,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_aar_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=3;
+								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=3;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
@@ -4275,6 +4395,24 @@ class items
 								{
 									name="MiniGrenade";
 									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=3;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=1;
 									ammoLeft=1;
 								};
 							};
@@ -4292,11 +4430,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=21;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4362,42 +4500,41 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.4311523,0.0014390945,2.9750977};
+					position[]={2.2700195,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Bravo 1 Rifleman AT";
+					description="Lancer 1 Rifleman AT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg26";
+							name="rhs_weap_M136";
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4434,7 +4571,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -4446,7 +4583,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4459,19 +4596,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -4480,11 +4617,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Shades_Red";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=22;
-				type="O_Soldier_LAT_F";
+				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4550,33 +4688,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.56884766,0.0014390945,0.97509766};
+					position[]={-0.72998047,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Bravo 2 Fireteam Leader";
+					description="Lancer 2 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -4586,7 +4728,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4623,7 +4765,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -4645,7 +4787,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4658,19 +4800,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -4678,26 +4820,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_tl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=8;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -4734,11 +4876,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Sport_Checkered";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=23;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4804,37 +4947,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.43115234,0.0014390945,0.97509766};
+					position[]={0.27001953,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Bravo 2 Autorifleman";
+					description="Lancer 2 Autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_m249_pip_S_vfg";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhsusf_100Rnd_556x45_soft_pouch";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4871,7 +5014,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -4883,7 +5026,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -4896,14 +5039,29 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=4;
+									ammoLeft=100;
 								};
 								class Item2
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
+									ammoLeft=17;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="cnto_flecktarn_b_ap_mediterranean";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 							};
@@ -4911,11 +5069,11 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=24;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -4981,33 +5139,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4311523,0.0014390945,0.97509766};
+					position[]={1.2700195,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Bravo 2 Assist. autorifleman";
+					description="Lancer 2 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="hlc_rifle_samr2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -5017,7 +5174,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5054,7 +5211,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -5076,7 +5233,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5089,19 +5246,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -5109,20 +5266,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_aar_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=3;
+								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=3;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
@@ -5130,6 +5287,24 @@ class items
 								{
 									name="MiniGrenade";
 									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=3;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=1;
 									ammoLeft=1;
 								};
 							};
@@ -5147,11 +5322,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="rhs_googles_yellow";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=25;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5217,42 +5393,41 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.4311523,0.0014390945,0.97509766};
+					position[]={2.2700195,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Bravo 2 Rifleman AT";
+					description="Lancer 2 Rifleman AT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg26";
+							name="rhs_weap_M136";
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5289,7 +5464,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -5301,7 +5476,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5314,19 +5489,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -5335,11 +5510,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Tactical_Black";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=26;
-				type="O_Soldier_LAT_F";
+				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5422,7 +5598,7 @@ class items
 								"STRING"
 							};
 						};
-						value="BRAVO";
+						value="LANCER";
 					};
 				};
 			};
@@ -5432,7 +5608,7 @@ class items
 	class Item3
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=10;
@@ -5441,33 +5617,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4311523,0.0014390945,4.9750977};
+					position[]={3.2700195,0,4.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Charlie Squad Leader";
+					description="Dragoon Squad Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -5477,7 +5657,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5514,7 +5694,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -5541,7 +5721,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5560,19 +5740,19 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item4
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -5580,32 +5760,32 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_sl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=7;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item3
 								{
-									name="rhs_GRD40_Green";
+									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
@@ -5642,11 +5822,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Combat";
+						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
 				id=28;
-				type="O_Soldier_SL_F";
+				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5707,38 +5888,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4311523,0.0014390945,4.9750977};
+					position[]={4.2700195,0,4.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Charlie Squad Medic";
+					description="Dragoon Squad Medic";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5775,7 +5955,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -5787,7 +5967,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -5800,19 +5980,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -5820,7 +6000,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_medic_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
@@ -5897,11 +6077,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=29;
-				type="O_medic_F";
+				type="I_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -5948,33 +6128,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4311523,0.0014390945,2.9750977};
+					position[]={3.2700195,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Charlie 1 Fireteam Leader";
+					description="Dragoon 1 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -5984,7 +6168,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6021,7 +6205,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -6043,7 +6227,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6056,19 +6240,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -6076,26 +6260,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_tl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=8;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -6132,11 +6316,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Squares_Tinted";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=30;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -6202,37 +6387,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4311523,0.0014390945,2.9750977};
+					position[]={4.2700195,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Charlie 1 Autorifleman";
+					description="Dragoon 1 Autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_m249_pip_S_vfg";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhsusf_100Rnd_556x45_soft_pouch";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6269,7 +6454,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -6281,7 +6466,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6294,14 +6479,29 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=4;
+									ammoLeft=100;
 								};
 								class Item2
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
+									ammoLeft=17;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="cnto_flecktarn_b_ap_mediterranean";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 							};
@@ -6309,11 +6509,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						goggles="G_Spectacles";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=31;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -6379,33 +6580,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4311523,0.0014390945,2.9750977};
+					position[]={5.2700195,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Charlie 1 Assist. autorifleman";
+					description="Dragoon 1 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="hlc_rifle_samr2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -6415,7 +6615,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6452,7 +6652,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -6474,7 +6674,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6487,19 +6687,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -6507,20 +6707,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_aar_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=3;
+								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=3;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
@@ -6528,6 +6728,24 @@ class items
 								{
 									name="MiniGrenade";
 									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=3;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=1;
 									ammoLeft=1;
 								};
 							};
@@ -6545,11 +6763,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=32;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -6615,42 +6833,41 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4311523,0.0014390945,2.9750977};
+					position[]={6.2700195,0,2.5175781};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Charlie 1 Rifleman AT";
+					description="Dragoon 1 Rifleman AT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg26";
+							name="rhs_weap_M136";
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6687,7 +6904,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -6699,7 +6916,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6712,19 +6929,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -6733,11 +6950,12 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Sport_BlackWhite";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=33;
-				type="O_Soldier_LAT_F";
+				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -6803,33 +7021,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4311523,0.0014390945,0.97509766};
+					position[]={3.2700195,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Charlie 2 Fireteam Leader";
+					description="Dragoon 2 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -6839,7 +7061,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6876,7 +7098,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -6898,7 +7120,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -6911,19 +7133,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -6931,26 +7153,26 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_tl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=6;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=8;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=5;
 									ammoLeft=1;
 								};
@@ -6987,11 +7209,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=34;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -7057,37 +7279,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4311523,0.0014390945,0.97509766};
+					position[]={4.2700195,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Charlie 2 Autorifleman";
+					description="Dragoon 2 Autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_m249_pip_S_vfg";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhsusf_100Rnd_556x45_soft_pouch";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7124,7 +7346,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -7136,7 +7358,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7149,14 +7371,29 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=4;
+									ammoLeft=100;
 								};
 								class Item2
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
+									ammoLeft=17;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="cnto_flecktarn_b_ap_mediterranean";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 							};
@@ -7164,11 +7401,11 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=35;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -7234,33 +7471,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4311523,0.0014390945,0.97509766};
+					position[]={5.2700195,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Charlie 2 Assist. autorifleman";
+					description="Dragoon 2 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="hlc_rifle_samr2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -7270,7 +7506,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7307,7 +7543,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -7329,7 +7565,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7342,19 +7578,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -7362,20 +7598,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_ft_aar_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=3;
+								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=3;
+									name="rhsusf_100Rnd_556x45_soft_pouch";
+									count=2;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
@@ -7383,6 +7619,24 @@ class items
 								{
 									name="MiniGrenade";
 									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=3;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=1;
 									ammoLeft=1;
 								};
 							};
@@ -7400,11 +7654,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Squares";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=36;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -7470,42 +7725,41 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4311523,0.0014390945,0.97509766};
+					position[]={6.2700195,0,0.51757813};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Charlie 2 Rifleman AT";
+					description="Dragoon 2 Rifleman AT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg26";
+							name="rhs_weap_M136";
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7542,7 +7796,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -7554,7 +7808,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7567,19 +7821,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -7588,11 +7842,11 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=37;
-				type="O_Soldier_LAT_F";
+				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -7675,7 +7929,7 @@ class items
 								"STRING"
 							};
 						};
-						value="CHARLIE";
+						value="DRAGOON";
 					};
 				};
 			};
@@ -7685,7 +7939,7 @@ class items
 	class Item4
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=3;
@@ -7694,33 +7948,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,-1.0249023};
+					position[]={-4.7299805,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="MMG Team Leader";
+					description="MMG 1 Team Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -7730,7 +7988,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7767,7 +8025,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -7794,7 +8052,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7813,19 +8071,19 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item4
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -7833,32 +8091,32 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_sl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=7;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item3
 								{
-									name="rhs_GRD40_Green";
+									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
@@ -7895,48 +8153,49 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Combat";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=39;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,-1.0249023};
+					position[]={-3.7299805,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="MMG Gunner";
+					description="MMG 1 Gunner";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkp";
+							name="hlc_lmg_M60E4";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR_7N13";
+								name="hlc_100Rnd_762x51_Barrier_M60E4";
 								ammoLeft=100;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7973,7 +8232,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -7985,7 +8244,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -7998,7 +8257,7 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=6;
 									ammoLeft=17;
 								};
@@ -8006,15 +8265,21 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_mmg_gunner_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=1;
+								items=2;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR_7N13";
+									name="hlc_100Rnd_762x51_Barrier_M60E4";
 									count=4;
+									ammoLeft=100;
+								};
+								class Item1
+								{
+									name="hlc_100Rnd_762x51_T_M60E4";
+									count=1;
 									ammoLeft=100;
 								};
 							};
@@ -8022,49 +8287,49 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						goggles="G_Aviator";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=40;
-				type="O_Soldier_AR_F";
+				type="I_Soldier_AR_F";
 			};
 			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5688477,0.0014390945,-1.0249023};
+					position[]={-2.7299805,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="MMG Ammo Bearer";
+					description="MMG 1 Ammo Bearer";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8101,7 +8366,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -8113,7 +8378,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8126,19 +8391,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -8146,15 +8411,21 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_mmg_gunner_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=1;
+								items=2;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR_7N13";
+									name="hlc_100Rnd_762x51_Barrier_M60E4";
 									count=4;
+									ammoLeft=100;
+								};
+								class Item1
+								{
+									name="hlc_100Rnd_762x51_T_M60E4";
+									count=1;
 									ammoLeft=100;
 								};
 							};
@@ -8162,11 +8433,11 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=41;
-				type="O_Soldier_AAR_F";
+				type="I_Soldier_AAR_F";
 			};
 		};
 		class Attributes
@@ -8190,7 +8461,7 @@ class items
 								"STRING"
 							};
 						};
-						value="MMG";
+						value="MMG1";
 					};
 				};
 			};
@@ -8200,7 +8471,7 @@ class items
 	class Item5
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=3;
@@ -8209,33 +8480,37 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.56884766,0.0014390945,-1.0249023};
+					position[]={-0.72998047,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="MAT Team Leader";
+					description="MAT 1 Team Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -8245,7 +8520,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8282,7 +8557,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -8309,7 +8584,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8328,19 +8603,19 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
 								class Item4
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -8348,32 +8623,32 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_sq_sl_pack";
+							typeName="cnto_flecktarn_b_ap_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=7;
 								class Item0
 								{
-									name="rhs_VOG25";
+									name="1Rnd_HE_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_GRD40_White";
+									name="1Rnd_Smoke_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_GRD40_Red";
+									name="1Rnd_SmokeRed_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
 								class Item3
 								{
-									name="rhs_GRD40_Green";
+									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=4;
 									ammoLeft=1;
 								};
@@ -8410,59 +8685,59 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Squares";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=43;
-				type="O_Soldier_TL_F";
+				type="I_Soldier_TL_F";
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.43115234,0.0014390945,-1.0249023};
+					position[]={0.27001953,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="MAT Gunner";
+					description="MAT 1 Gunner";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class secondaryWeapon
 						{
-							name="rhs_weap_rpg7";
-							optics="rhs_acc_pgo7v3";
+							name="tf47_m3maaws";
+							optics="tf47_optic_m3maaws";
 							class primaryMuzzleMag
 							{
-								name="rhs_rpg7_PG7VL_mag";
+								name="tf47_m3maaws_HEAT";
 								ammoLeft=1;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8499,7 +8774,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -8511,7 +8786,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8524,19 +8799,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -8544,20 +8819,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_mat_gunner_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=2;
 								class Item0
 								{
-									name="rhs_rpg7_PG7VL_mag";
+									name="tf47_m3maaws_HEAT";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_rpg7_OG7V_mag";
+									name="tf47_m3maaws_HE";
 									count=1;
 									ammoLeft=1;
 								};
@@ -8566,49 +8841,48 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="CamoH_TigerJ";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=44;
-				type="O_Soldier_AT_F";
+				type="I_Soldier_AT_F";
 			};
 			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.4311523,0.0014390945,-1.0249023};
+					position[]={1.2700195,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="MAT Ammo Bearer";
+					description="MAT 1 Ammo Bearer";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8645,7 +8919,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -8657,7 +8931,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8670,19 +8944,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -8690,20 +8964,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_mat_gunner_pack";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=2;
 								class Item0
 								{
-									name="rhs_rpg7_PG7VL_mag";
+									name="tf47_m3maaws_HEAT";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item1
 								{
-									name="rhs_rpg7_OG7V_mag";
+									name="tf47_m3maaws_HE";
 									count=1;
 									ammoLeft=1;
 								};
@@ -8712,11 +8986,11 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=45;
-				type="O_Soldier_AAT_F";
+				type="I_Soldier_AAT_F";
 			};
 		};
 		class Attributes
@@ -8740,7 +9014,7 @@ class items
 								"STRING"
 							};
 						};
-						value="MAT";
+						value="MAT1";
 					};
 				};
 			};
@@ -8750,7 +9024,7 @@ class items
 	class Item6
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=2;
@@ -8759,9 +9033,9 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,-3.0249023};
+					position[]={-4.7299805,0,-3.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
@@ -8772,21 +9046,17 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_gp25_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145_m320";
+							muzzle="rhsusf_acc_rotex5_grey";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
 								ammoLeft=30;
 							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
+							class secondaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
+								name="1Rnd_SmokeRed_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class binocular
@@ -8795,7 +9065,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_t_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -8803,13 +9073,13 @@ class items
 								class Item0
 								{
 									name="SmokeShell";
-									count=1;
+									count=2;
 									ammoLeft=1;
 								};
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=9;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -8832,22 +9102,22 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item6
-								{
 									name="ACE_CableTie";
 									count=2;
 								};
-								class Item7
+								class Item6
 								{
 									name="ACE_MapTools";
+									count=1;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item8
@@ -8855,94 +9125,203 @@ class items
 									name="ACRE_PRC152";
 									count=1;
 								};
-								class Item9
+							};
+						};
+						class vest
+						{
+							typeName="cnto_flecktarn_v_l_mediterranean";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									count=1;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="SmokeShellBlue";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="1Rnd_SmokeRed_Grenade_shell";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="1Rnd_SmokeGreen_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="ACE_HuntIR_M203";
+									count=4;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=3;
+								class Item0
+								{
+									name="ACE_IR_Strobe_Item";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_HuntIR_monitor";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_microDAGR";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						goggles="rhs_googles_yellow";
+						headgear="cnto_flecktarn_h_boo_mediterranean";
+					};
+				};
+				id=47;
+				type="I_Spotter_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.7299805,0,-3.4824219};
+				};
+				side="Independent";
+				flags=5;
+				class Attributes
+				{
+					description="DMT Marksman";
+					isPlayable=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="hlc_rifle_M14_Rail";
+							optics="optic_SOS";
+							class primaryMuzzleMag
+							{
+								name="hlc_20Rnd_762x51_barrier_M14";
+								ammoLeft=20;
+							};
+						};
+						class binocular
+						{
+							name="Laserdesignator_03";
+							class primaryMuzzleMag
+							{
+								name="Laserbatteries";
+								ammoLeft=1;
+							};
+						};
+						class uniform
+						{
+							typeName="cnto_flecktarn_u_t_mediterranean";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="SmokeShell";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=11;
+								class Item0
+								{
+									name="ACE_fieldDressing";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_quikclot";
+									count=6;
+								};
+								class Item2
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item4
+								{
+									name="rhsusf_acc_M952V";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item6
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item7
 								{
 									name="ACE_Kestrel4500";
+									count=1;
+								};
+								class Item8
+								{
+									name="ACE_RangeCard";
+									count=1;
+								};
+								class Item9
+								{
+									name="ACE_microDAGR";
+									count=1;
+								};
+								class Item10
+								{
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=1;
 								class Item0
 								{
-									name="SmokeShell";
-									count=3;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="hlc_20Rnd_762x51_barrier_M14";
 									count=4;
-									ammoLeft=30;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="cnto_sptz_sq_sl_pack";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="rhs_VOG25";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_GRD40_White";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="rhs_GRD40_Red";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="rhs_GRD40_Green";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="SmokeShell";
-									count=3;
-									ammoLeft=1;
-								};
-								class Item5
-								{
-									name="SmokeShellGreen";
-									count=5;
-									ammoLeft=1;
-								};
-								class Item6
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
+									ammoLeft=20;
 								};
 							};
 							class ItemCargo
@@ -8959,135 +9338,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
-					};
-				};
-				id=47;
-				type="B_spotter_F";
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-3.5688477,0.0014390945,-3.0249023};
-				};
-				side="East";
-				flags=5;
-				class Attributes
-				{
-					description="DMT Marksman";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_svdp_wd_npz";
-							optics="optic_SOS";
-							class primaryMuzzleMag
-							{
-								name="rhs_10Rnd_762x54mmR_7N1";
-								ammoLeft=10;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class uniform
-						{
-							typeName="CamoU_TigerJ";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=4;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=4;
-								};
-								class Item1
-								{
-									name="ACE_quikclot";
-									count=6;
-								};
-								class Item2
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item4
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACE_RangeCard";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="AAFVest01_l_TigerJ";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=3;
-								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_10Rnd_762x54mmR_7N1";
-									count=15;
-									ammoLeft=10;
-								};
-								class Item2
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="G_Combat";
+						headgear="cnto_flecktarn_h_boo_mediterranean";
 					};
 				};
 				id=48;
-				type="B_spotter_F";
+				type="I_Spotter_F";
 			};
 		};
 		class Attributes
@@ -9121,7 +9377,7 @@ class items
 	class Item7
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=2;
@@ -9130,33 +9386,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.56884766,0.0014390945,-3.0249023};
+					position[]={-0.72998047,0,-3.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Mortar Ass. Gunner";
+					description="Mortar 1 Ass. Gunner";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -9166,7 +9421,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -9203,7 +9458,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -9230,11 +9485,11 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=7;
 								class Item0
 								{
 									name="SmokeShell";
@@ -9261,13 +9516,19 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item5
 								{
-									name="rhs_mag_9x19_17";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									count=2;
+									ammoLeft=30;
+								};
+								class Item6
+								{
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -9275,56 +9536,55 @@ class items
 						};
 						class backpack
 						{
-							typeName="O_Mortar_01_support_F";
+							typeName="B_Mortar_01_support_F";
 							isBackpack=1;
 						};
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=50;
-				type="O_support_AMort_F";
+				type="I_support_AMort_F";
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.43115234,0.0014390945,-3.0249023};
+					position[]={0.27001953,0,-3.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Mortar Gunner";
+					description="Mortar 1 Gunner";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -9361,7 +9621,7 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
@@ -9383,7 +9643,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_l_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -9396,19 +9656,19 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_mag_9x19_17";
+									name="rhsusf_mag_17Rnd_9x19_JHP";
 									count=1;
 									ammoLeft=17;
 								};
@@ -9416,17 +9676,18 @@ class items
 						};
 						class backpack
 						{
-							typeName="O_Mortar_01_weapon_F";
+							typeName="B_Mortar_01_weapon_F";
 							isBackpack=1;
 						};
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
-						headgear="Helmet_S_tiger";
+						goggles="Goggles_blk";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=51;
-				type="O_support_Mort_F";
+				type="I_support_Mort_F";
 			};
 		};
 		class Attributes
@@ -9450,7 +9711,7 @@ class items
 								"STRING"
 							};
 						};
-						value="MTR";
+						value="MTR1";
 					};
 				};
 			};
@@ -9460,7 +9721,7 @@ class items
 	class Item8
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=4;
@@ -9469,33 +9730,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4311523,0.0014390945,-1.0249023};
+					position[]={3.2700195,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Engineer Team Leader";
+					description="Engineer 1 Team Leader";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -9505,11 +9765,11 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=9;
+								items=8;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -9532,25 +9792,20 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
+									name="ACE_MapTools";
 									count=1;
 								};
 								class Item6
 								{
-									name="ACE_MapTools";
+									name="ACRE_PRC343";
 									count=1;
 								};
 								class Item7
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-								class Item8
 								{
 									name="ACRE_PRC152";
 									count=1;
@@ -9559,7 +9814,7 @@ class items
 						};
 						class vest
 						{
-							typeName="AAFVest01_m_TigerJ";
+							typeName="cnto_flecktarn_v_l_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -9578,7 +9833,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
@@ -9610,7 +9865,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_eng_tl_pack";
+							typeName="cnto_flecktarn_b_ca_mediterranean";
 							isBackpack=1;
 							class ItemCargo
 							{
@@ -9626,66 +9881,42 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=53;
-				type="O_engineer_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=2;
-							};
-						};
-					};
-					nAttributes=1;
-				};
+				type="I_engineer_F";
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4311523,0.0014390945,-1.0249023};
+					position[]={4.2700195,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Engineer Rifleman";
+					description="Engineer 1 Rifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -9695,11 +9926,11 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=10;
+								items=7;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -9722,39 +9953,24 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
+									name="ACE_MapTools";
 									count=1;
 								};
 								class Item6
 								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item7
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-								class Item8
-								{
-									name="ACE_M26_Clacker";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACE_DefusalKit";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -9773,20 +9989,30 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
 							};
 							class ItemCargo
 							{
-								items=2;
+								items=4;
 								class Item0
+								{
+									name="ACE_M26_Clacker";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_DefusalKit";
+									count=1;
+								};
+								class Item2
 								{
 									name="ACE_EntrenchingTool";
 									count=1;
 								};
-								class Item1
+								class Item3
 								{
 									name="ACE_wirecutter";
 									count=1;
@@ -9795,7 +10021,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_eng_tl_pack";
+							typeName="cnto_flecktarn_b_ca_mediterranean";
 							isBackpack=1;
 							class ItemCargo
 							{
@@ -9811,66 +10037,42 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=54;
-				type="O_engineer_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=2;
-							};
-						};
-					};
-					nAttributes=1;
-				};
+				type="I_engineer_F";
 			};
 			class Item2
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4311523,0.0014390945,-1.0249023};
+					position[]={5.2700195,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Engineer Rifleman";
+					description="Engineer 1 Rifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -9880,11 +10082,11 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=10;
+								items=7;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -9907,39 +10109,24 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
+									name="ACE_MapTools";
 									count=1;
 								};
 								class Item6
 								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item7
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-								class Item8
-								{
-									name="ACE_M26_Clacker";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACE_DefusalKit";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -9958,20 +10145,30 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
 							};
 							class ItemCargo
 							{
-								items=2;
+								items=4;
 								class Item0
+								{
+									name="ACE_M26_Clacker";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_DefusalKit";
+									count=1;
+								};
+								class Item2
 								{
 									name="ACE_EntrenchingTool";
 									count=1;
 								};
-								class Item1
+								class Item3
 								{
 									name="ACE_wirecutter";
 									count=1;
@@ -9980,7 +10177,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_eng_tl_pack";
+							typeName="cnto_flecktarn_b_ca_mediterranean";
 							isBackpack=1;
 							class ItemCargo
 							{
@@ -9996,66 +10193,42 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=55;
-				type="O_engineer_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=2;
-							};
-						};
-					};
-					nAttributes=1;
-				};
+				type="I_engineer_F";
 			};
 			class Item3
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4311523,0.0014390945,-1.0249023};
+					position[]={6.2700195,0,-1.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Engineer Rifleman";
+					description="Engineer 1 Rifleman";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74m_npz";
-							muzzle="rhs_acc_dtk";
+							name="rhs_weap_hk416d145";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -10065,11 +10238,11 @@ class items
 						};
 						class uniform
 						{
-							typeName="CamoU_TigerJ";
+							typeName="cnto_flecktarn_u_mediterranean";
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=10;
+								items=7;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -10092,39 +10265,24 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item5
 								{
-									name="ACRE_PRC343";
+									name="ACE_MapTools";
 									count=1;
 								};
 								class Item6
 								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item7
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-								class Item8
-								{
-									name="ACE_M26_Clacker";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACE_DefusalKit";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
 						};
 						class vest
 						{
-							typeName="AAFVest01_h_TigerJ";
+							typeName="cnto_flecktarn_v_h_mediterranean";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -10143,20 +10301,30 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
 							};
 							class ItemCargo
 							{
-								items=2;
+								items=4;
 								class Item0
+								{
+									name="ACE_M26_Clacker";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_DefusalKit";
+									count=1;
+								};
+								class Item2
 								{
 									name="ACE_EntrenchingTool";
 									count=1;
 								};
-								class Item1
+								class Item3
 								{
 									name="ACE_wirecutter";
 									count=1;
@@ -10165,7 +10333,7 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_sptz_eng_tl_pack";
+							typeName="cnto_flecktarn_b_ca_mediterranean";
 							isBackpack=1;
 							class ItemCargo
 							{
@@ -10181,34 +10349,12 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="Helmet_S_tiger";
+						goggles="G_Tactical_Black";
+						headgear="cnto_flecktarn_h_c_mediterranean";
 					};
 				};
 				id=56;
-				type="O_engineer_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=2;
-							};
-						};
-					};
-					nAttributes=1;
-				};
+				type="I_engineer_F";
 			};
 		};
 		class Attributes
@@ -10232,7 +10378,7 @@ class items
 								"STRING"
 							};
 						};
-						value="ENG";
+						value="ENG1";
 					};
 				};
 			};
@@ -10242,7 +10388,7 @@ class items
 	class Item9
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=3;
@@ -10251,33 +10397,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,-5.0249023};
+					position[]={-4.7299805,0,-5.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Vehicle Commander ""Dagger""";
+					description="Vehicle Commander ""Axe 1""";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
+							name="rhsusf_weap_MP7A2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
+								name="rhsusf_mag_40Rnd_46x30_JHP";
+								ammoLeft=40;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -10291,7 +10436,7 @@ class items
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=7;
+								items=6;
 								class Item0
 								{
 									name="ACE_quikclot";
@@ -10304,7 +10449,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item3
@@ -10322,16 +10467,11 @@ class items
 									name="ACRE_PRC152";
 									count=1;
 								};
-								class Item6
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
 							};
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_od";
+							typeName="TacVest_black";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -10362,9 +10502,18 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhsusf_mag_40Rnd_46x30_JHP";
 									count=4;
-									ammoLeft=30;
+									ammoLeft=40;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACRE_PRC148";
+									count=1;
 								};
 							};
 						};
@@ -10373,33 +10522,14 @@ class items
 						watch="ItemWatch";
 						gps="ItemGPS";
 						hmd="ACE_NVG_Wide";
-						headgear="rhs_6b7_1m_olive";
+						headgear="H_HelmetCrew_B";
 					};
 				};
 				id=58;
-				type="O_crew_F";
+				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -10463,7 +10593,7 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -10471,32 +10601,31 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,-5.0249023};
+					position[]={-3.7299805,0,-5.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Vehicle Driver ""Dagger""";
+					description="Vehicle Driver ""Axe 1""";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
+							name="rhsusf_weap_MP7A2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
+								name="rhsusf_mag_40Rnd_46x30_JHP";
+								ammoLeft=40;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -10519,7 +10648,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item3
@@ -10531,7 +10660,7 @@ class items
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_od";
+							typeName="TacVest_black";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -10562,9 +10691,9 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhsusf_mag_40Rnd_46x30_JHP";
 									count=4;
-									ammoLeft=30;
+									ammoLeft=40;
 								};
 							};
 						};
@@ -10585,12 +10714,13 @@ class items
 						map="ItemMap";
 						compass="ItemCompass";
 						watch="ItemWatch";
+						goggles="rhs_googles_orange";
 						hmd="ACE_NVG_Wide";
-						headgear="rhs_6b7_1m_olive";
+						headgear="H_HelmetCrew_B";
 					};
 				};
 				id=59;
-				type="O_crew_F";
+				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -10620,33 +10750,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.5688477,0.0014390945,-5.0249023};
+					position[]={-2.7299805,0,-5.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
-					description="Vehicle Gunner ""Dagger""";
+					description="Vehicle Gunner ""Axe 1""";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
+							name="rhsusf_weap_MP7A2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
+								name="rhsusf_mag_40Rnd_46x30_JHP";
+								ammoLeft=40;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -10669,7 +10798,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item3
@@ -10681,7 +10810,7 @@ class items
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_od";
+							typeName="TacVest_black";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -10712,9 +10841,9 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhsusf_mag_40Rnd_46x30_JHP";
 									count=4;
-									ammoLeft=30;
+									ammoLeft=40;
 								};
 							};
 						};
@@ -10722,11 +10851,11 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						hmd="ACE_NVG_Wide";
-						headgear="rhs_6b7_1m_olive";
+						headgear="H_HelmetCrew_B";
 					};
 				};
 				id=60;
-				type="O_crew_F";
+				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
@@ -10773,7 +10902,7 @@ class items
 								"STRING"
 							};
 						};
-						value="DAGGER";
+						value="AXE1";
 					};
 				};
 			};
@@ -10783,7 +10912,7 @@ class items
 	class Item10
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=2;
@@ -10792,33 +10921,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5688477,0.0014390945,-7.0249023};
+					position[]={-0.72998047,0,-5.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Pilot ""Nightbird""";
+					description="Pilot ""Rapier 1""";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
+							name="rhsusf_weap_MP7A2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
+								name="rhsusf_mag_40Rnd_46x30_JHP";
+								ammoLeft=40;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -10828,7 +10956,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="U_O_PilotCoveralls";
+							typeName="NatoU_Atacs";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -10855,7 +10983,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item3
@@ -10882,7 +11010,7 @@ class items
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_od";
+							typeName="TacVest_black";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -10913,9 +11041,9 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhsusf_mag_40Rnd_46x30_JHP";
 									count=4;
-									ammoLeft=30;
+									ammoLeft=40;
 								};
 							};
 						};
@@ -10924,33 +11052,14 @@ class items
 						watch="ItemWatch";
 						gps="ItemGPS";
 						hmd="ACE_NVG_Wide";
-						headgear="H_PilotHelmetHeli_O";
+						headgear="H_PilotHelmetHeli_B";
 					};
 				};
 				id=62;
-				type="O_Pilot_F";
+				type="I_pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11014,6 +11123,25 @@ class items
 							};
 						};
 					};
+					class Attribute1
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
 					nAttributes=2;
 				};
 			};
@@ -11022,32 +11150,31 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.5688477,0.0014390945,-7.0249023};
+					position[]={0.27001953,0,-5.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=5;
 				class Attributes
 				{
-					description="Co-Pilot ""Nightbird""";
+					description="Co-Pilot ""Rapier 1""";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
+							name="rhsusf_weap_MP7A2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
+								name="rhsusf_mag_40Rnd_46x30_JHP";
+								ammoLeft=40;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -11057,7 +11184,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="U_O_PilotCoveralls";
+							typeName="NatoU_Atacs";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -11084,7 +11211,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item3
@@ -11111,7 +11238,7 @@ class items
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_od";
+							typeName="TacVest_black";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -11142,9 +11269,9 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhsusf_mag_40Rnd_46x30_JHP";
 									count=4;
-									ammoLeft=30;
+									ammoLeft=40;
 								};
 							};
 						};
@@ -11166,34 +11293,16 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
+						goggles="rhs_googles_yellow";
 						hmd="ACE_NVG_Wide";
-						headgear="H_PilotHelmetHeli_O";
+						headgear="H_PilotHelmetHeli_B";
 					};
 				};
 				id=63;
-				type="O_Pilot_F";
+				type="I_pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11254,6 +11363,25 @@ class items
 										};
 									};
 								};
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
 							};
 						};
 					};
@@ -11282,7 +11410,7 @@ class items
 								"STRING"
 							};
 						};
-						value="NIGHTBIRD";
+						value="RPI1";
 					};
 				};
 			};
@@ -11292,7 +11420,7 @@ class items
 	class Item11
 	{
 		dataType="Group";
-		side="East";
+		side="Independent";
 		class Entities
 		{
 			items=1;
@@ -11301,33 +11429,32 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4311523,0.0014390945,-7.0249023};
+					position[]={2.2700195,0,-5.4824219};
 				};
-				side="East";
+				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Jet Pilot ""Paladin""";
+					description="Jet Pilot ""Falx 1""";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
+							name="rhsusf_weap_MP7A2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
+								name="rhsusf_mag_40Rnd_46x30_JHP";
+								ammoLeft=40;
 							};
 						};
 						class handgun
 						{
-							name="rhs_weap_pya";
+							name="rhsusf_weap_glock17g4";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_9x19_17";
+								name="rhsusf_mag_17Rnd_9x19_JHP";
 								ammoLeft=17;
 							};
 						};
@@ -11337,7 +11464,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="U_O_PilotCoveralls";
+							typeName="NatoU_Atacs";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -11364,7 +11491,7 @@ class items
 								};
 								class Item2
 								{
-									name="rhs_acc_2dpZenit";
+									name="rhsusf_acc_M952V";
 									count=1;
 								};
 								class Item3
@@ -11391,7 +11518,7 @@ class items
 						};
 						class vest
 						{
-							typeName="rhs_6b23_6sh116_od";
+							typeName="TacVest_black";
 							isBackpack=0;
 							class MagazineCargo
 							{
@@ -11422,9 +11549,9 @@ class items
 								};
 								class Item4
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhsusf_mag_40Rnd_46x30_JHP";
 									count=4;
-									ammoLeft=30;
+									ammoLeft=40;
 								};
 							};
 						};
@@ -11437,33 +11564,14 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						headgear="H_PilotHelmetFighter_O";
+						headgear="H_PilotHelmetFighter_I";
 					};
 				};
 				id=65;
-				type="O_Pilot_F";
+				type="I_pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11524,6 +11632,25 @@ class items
 										};
 									};
 								};
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ace_isEngineer";
+						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
 							};
 						};
 					};
@@ -11552,7 +11679,7 @@ class items
 								"STRING"
 							};
 						};
-						value="PALADIN";
+						value="FX1";
 					};
 				};
 			};
@@ -11564,7 +11691,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.4311523,0.28405476,-5.074707};
+			position[]={6.2700195,0,-5.5324707};
 		};
 		side="Empty";
 		flags=4;
@@ -11573,7 +11700,7 @@ class items
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
 		id=66;
-		type="Box_East_Ammo_F";
+		type="Box_IND_Ammo_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11591,7 +11718,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_rpg26""],[1]],[[""rhs_30Rnd_545x39_AK"",""rhs_30Rnd_545x39_AK_green"",""rhs_100Rnd_762x54mmR"",""SmokeShell"",""MiniGrenade"",""rhs_VOG25""],[24,6,4,12,10,5]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
+						value="[[[[""rhs_weap_M136""],[1]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""MiniGrenade"",""1Rnd_HE_Grenade_shell""],[24,6,4,12,10,5]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
 					};
 				};
 			};
@@ -11603,7 +11730,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.4311523,0.89242268,-3.074707};
+			position[]={6.2700195,0,-3.5324707};
 		};
 		side="Empty";
 		flags=4;
@@ -11612,7 +11739,7 @@ class items
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
 		id=67;
-		type="O_supplyCrate_F";
+		type="I_supplyCrate_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11630,7 +11757,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_rpg26""],[4]],[[""rhs_30Rnd_545x39_AK"",""rhs_30Rnd_545x39_AK_green"",""rhs_100Rnd_762x54mmR"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""MiniGrenade"",""rhs_VOG25"",""rhs_100Rnd_762x54mmR_7N13"",""rhs_10Rnd_762x54mmR_7N1"",""rhs_rpg7_PG7VL_mag"",""rhs_rpg7_OG7V_mag""],[80,20,12,30,8,4,24,15,4,8,4,2]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV_500""],[40,60,20,20,20,10,5,8]],[[],[]]],false]";
+						value="[[[[""rhs_weap_M136""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""hlc_100Rnd_762x51_Barrier_M60E4"",""hlc_20Rnd_762x51_barrier_M14"",""tf47_m3maaws_HEAT"",""tf47_m3maaws_HE""],[80,20,12,30,8,4,24,15,4,8,4,2]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV_500""],[40,60,20,20,20,10,5,8]],[[],[]]],false]";
 					};
 				};
 			};
@@ -11639,1081 +11766,33 @@ class items
 	};
 	class Item14
 	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={4.4311523,0,-5.074707};
-		};
-		title="v1.04";
-		description="Current composition version.";
+		dataType="Marker";
+		position[]={4.2700195,0,-3.5324707};
+		name="respawn_guerrila";
+		type="respawn_unknown";
 		id=68;
+		atlOffset=1.3349106e+013;
 	};
 	class Item15
 	{
-		dataType="Group";
-		side="East";
-		class Entities
+		dataType="Comment";
+		class PositionInfo
 		{
-			items=2;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.56884766,0.0014390945,-7.0249023};
-				};
-				side="East";
-				flags=7;
-				class Attributes
-				{
-					rank="LIEUTENANT";
-					description="Pilot ""Reaper""";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
-							class primaryMuzzleMag
-							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class binocular
-						{
-							name="ACE_Vector";
-						};
-						class uniform
-						{
-							typeName="U_O_PilotCoveralls";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_quikclot";
-									count=10;
-								};
-								class Item1
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item2
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhs_6b23_6sh116_od";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=4;
-									ammoLeft=30;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						gps="ItemGPS";
-						hmd="ACE_NVG_Wide";
-						headgear="H_PilotHelmetHeli_O";
-					};
-				};
-				id=70;
-				type="O_Pilot_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.43115234,0.0014390945,-7.0249023};
-				};
-				side="East";
-				flags=5;
-				class Attributes
-				{
-					description="Co-Pilot ""Reaper""";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
-							class primaryMuzzleMag
-							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class binocular
-						{
-							name="ACE_Vector";
-						};
-						class uniform
-						{
-							typeName="U_O_PilotCoveralls";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_quikclot";
-									count=10;
-								};
-								class Item1
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item2
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhs_6b23_6sh116_od";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=4;
-									ammoLeft=30;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="B_AssaultPack_rgr";
-							isBackpack=1;
-							class ItemCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="ToolKit";
-									count=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						gps="ItemGPS";
-						hmd="ACE_NVG_Wide";
-						headgear="H_PilotHelmetHeli_O";
-					};
-				};
-				id=71;
-				type="O_Pilot_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
+			position[]={4.2700195,0,-5.5324707};
 		};
-		class Attributes
-		{
-		};
+		title="v1.03";
+		description="Current composition version.";
 		id=69;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="REAPER";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item16
 	{
-		dataType="Group";
-		side="East";
-		class Entities
-		{
-			items=3;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.56884766,0.0014390945,-5.0249023};
-				};
-				side="East";
-				flags=7;
-				class Attributes
-				{
-					rank="LIEUTENANT";
-					description="Vehicle Commander ""Sabre""";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
-							class primaryMuzzleMag
-							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class binocular
-						{
-							name="ACE_Vector";
-						};
-						class uniform
-						{
-							typeName="rhs_uniform_gorka_r_g";
-							isBackpack=0;
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_quikclot";
-									count=10;
-								};
-								class Item1
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item2
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_MapTools";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhs_6b23_6sh116_od";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="SmokeShell";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=4;
-									ammoLeft=30;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						gps="ItemGPS";
-						hmd="ACE_NVG_Wide";
-						headgear="rhs_6b7_1m_olive";
-					};
-				};
-				id=73;
-				type="O_crew_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.43115234,0.0014390945,-5.0249023};
-				};
-				side="East";
-				flags=5;
-				class Attributes
-				{
-					description="Vehicle Driver ""Sabre""";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
-							class primaryMuzzleMag
-							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class uniform
-						{
-							typeName="rhs_uniform_gorka_r_g";
-							isBackpack=0;
-							class ItemCargo
-							{
-								items=4;
-								class Item0
-								{
-									name="ACE_quikclot";
-									count=10;
-								};
-								class Item1
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item2
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhs_6b23_6sh116_od";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="SmokeShell";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=4;
-									ammoLeft=30;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="B_AssaultPack_rgr";
-							isBackpack=1;
-							class ItemCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="ToolKit";
-									count=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						hmd="ACE_NVG_Wide";
-						headgear="rhs_6b7_1m_olive";
-					};
-				};
-				id=74;
-				type="O_crew_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=1;
-				};
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={1.4311523,0.0014390945,-5.0249023};
-				};
-				side="East";
-				flags=5;
-				class Attributes
-				{
-					rank="CORPORAL";
-					description="Vehicle Gunner ""Sabre""";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="rhs_weap_aks74un_folded";
-							muzzle="rhs_acc_pgs64_74un";
-							class primaryMuzzleMag
-							{
-								name="rhs_30Rnd_545x39_AK";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="rhs_weap_pya";
-							class primaryMuzzleMag
-							{
-								name="rhs_mag_9x19_17";
-								ammoLeft=17;
-							};
-						};
-						class uniform
-						{
-							typeName="rhs_uniform_gorka_r_g";
-							isBackpack=0;
-							class ItemCargo
-							{
-								items=4;
-								class Item0
-								{
-									name="ACE_quikclot";
-									count=10;
-								};
-								class Item1
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item2
-								{
-									name="rhs_acc_2dpZenit";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="rhs_6b23_6sh116_od";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="SmokeShell";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=4;
-									ammoLeft=30;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						hmd="ACE_NVG_Wide";
-						headgear="rhs_6b7_1m_olive";
-					};
-				};
-				id=75;
-				type="O_crew_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					nAttributes=1;
-				};
-			};
-		};
-		class Attributes
-		{
-		};
-		id=72;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="SABRE";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item17
-	{
 		dataType="Marker";
-		position[]={6.4311523,0,-4.074707};
+		position[]={6.2700195,0,-4.5324707};
 		name="resupply_marker";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=76;
-	};
-	class Item18
-	{
-		dataType="Marker";
-		position[]={4.4311523,0,-4.074707};
-		name="respawn_east";
-		type="respawn_unknown";
-		id=77;
+		id=70;
+		atlOffset=-5;
 	};
 };

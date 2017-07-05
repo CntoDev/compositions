@@ -1,0 +1,168 @@
+version=53;
+center[]={11850.935,159,12758.679};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=218;
+		type="a3ee_exec_code";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_code";
+				expression="_this setVariable [""code"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[   " \n "    [""swap"", ""cnto_flecktarn_u_mediterranean"", ""cnto_flecktarn_u_jungle""],   " \n "    [""swap"", ""cnto_flecktarn_v_l_mediterranean"", ""cnto_flecktarn_v_l_jungle""],   " \n "    [""swap"", ""cnto_flecktarn_v_mediterranean"", ""cnto_flecktarn_v_jungle""],   " \n "    [""swap"", ""cnto_flecktarn_v_h_mediterranean"", ""cnto_flecktarn_v_h_jungle""],   " \n "    [""swap"", ""cnto_flecktarn_v_s_mediterranean"", ""cnto_flecktarn_v_s_jungle""],   " \n "    [""swap"", ""cnto_tfn_sq_sl_pack"", ""cnto_flecktarn_b_ap_jungle""],   " \n "    [""swap"", ""cnto_tfn_sq_medic_pack"", ""cnto_flecktarn_b_kb_jungle""], " \n "    [""swap"", ""cnto_tfn_ft_tl_pack"", ""cnto_flecktarn_b_ap_jungle""], " \n "    [""swap"", ""cnto_tfn_ft_aar_pack"", ""cnto_flecktarn_b_kb_jungle""], " \n "    [""swap"", ""cnto_tfn_plt_co_pack"", ""cnto_flecktarn_b_ap_jungle""], " \n "    [""swap"", ""cnto_tfn_mmg_tl_pack"", ""cnto_flecktarn_b_ap_jungle""], " \n "    [""swap"", ""cnto_tfn_mmg_bearer_pack"", ""cnto_flecktarn_b_kb_jungle""], " \n "    [""swap"", ""cnto_tfn_mat_gunner_pack"", ""cnto_flecktarn_b_kb_jungle""], " \n "    [""swap"", ""cnto_tfn_mat_bearer_pack"", ""cnto_flecktarn_b_kb_jungle""], " \n "    [""swap"", ""cnto_flecktarn_h_c_mediterranean"", ""cnto_flecktarn_h_c_jungle""]  " \n "] call a3ee_fnc_modifyLoadout;";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3ee_runoninit";
+				expression="_this setVariable [""runoninit"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3ee_forjip";
+				expression="_this setVariable [""forjip"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3ee_keepmodule";
+				expression="_this setVariable [""keepmodule"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3ee_runonrespawn";
+				expression="_this setVariable [""runonrespawn"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3ee_execonmp";
+				expression="_this setVariable [""execonmp"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="a3ee_enabledexec";
+				expression="_this setVariable [""enabledexec"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="a3ee_execenv";
+				expression="_this setVariable [""execenv"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+};
