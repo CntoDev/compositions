@@ -1,0 +1,25 @@
+version=53;
+center[]={11615.02,317.3327,11510.98};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={0,0,0};
+		class Attributes
+		{
+			text="flak";
+			condition="call{this}";
+			onActivation="call{[] spawn {" \n "  for ""_i"" from 1 to 10 do {" \n "    flak1 = createVehicle [""SmallSecondary"",c130_alpha modelToWorld [random 100, random 100, random 100],[],0,""CAN_COLLIDE""];" \n "    sleep (random [0.5,1,3]);" \n "    flak2 = createVehicle [""SmallSecondary"",c130_bravo modelToWorld [random 100, random 100, random 100],[],0,""CAN_COLLIDE""];" \n "    sleep (random [0.5,1,3]);" \n "  };" \n "};}";
+			sizeA=2431.2991;
+			sizeB=1737.394;
+			activationBy="WEST";
+			isRectangle=1;
+			isServerOnly=1;
+		};
+		id=662;
+		type="EmptyDetectorAreaR250";
+		atlOffset=65.018005;
+	};
+};
