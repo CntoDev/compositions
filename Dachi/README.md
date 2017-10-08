@@ -21,6 +21,10 @@ Spetsnaz faction are the special forces of the Russian Military and as such are 
 
 ======================================================================================================================
 
+The European Federation is a futuristic European Defence Force who are well equipped and deadly in urban warfare.
+
+======================================================================================================================
+
 Misc Compositions are a collection of compositions I have made to help me when building missions feel free to add them your players profile compositions and try them out.
 
 Regards,
