@@ -1,0 +1,35 @@
+version=53;
+center[]={5505.3638,5,3344.8049};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=71;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="private _replace_strings = { " \n " params [""_from"", ""_to"", ""_gear""]; " \n " { " \n "  if (_x isEqualType []) then { " \n "   [_from, _to, _x] call _replace_strings; " \n "  } else { " \n "   if (_x isEqualType """" && {_x find ""cnto_flecktarn_"" == 0}) then { " \n "    private _off = _x find _from; " \n "    if (_off != -1) then { " \n "     _gear set [_forEachIndex, (_x select [0, _off]) + " \n "          _to + (_x select [_off + count _from])]; " \n "    }; " \n "   }; " \n "  }; " \n " } forEach _gear; " \n "}; " \n " " \n "{ " \n "    private _unit = _x; " \n " private _new_camo = ""grassland""; " \n "  " \n " private _gear = getUnitLoadout _unit; " \n " [""mediterranean"", _new_camo, _gear] call _replace_strings; " \n " _unit setUnitLoadout _gear; " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

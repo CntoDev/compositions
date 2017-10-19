@@ -11,6 +11,7 @@ List of adaptations
 ===================
 
 * TFN Desert - Task Force Noctem camo for desert environment.
+* TFN Grassland - Task Force Noctem camo for grassland environment.
 * TFN Forest - Task Force Noctem camo for forest environment.
 * TFN Jungle - Task Force Noctem camo for jungle environment.
 * TFN Snow - Task Force Noctem camo for winter environment.
