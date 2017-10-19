@@ -14,4 +14,5 @@ List of adaptations
 * TFN Forest - Task Force Noctem camo for forest environment.
 * TFN Jungle - Task Force Noctem camo for jungle environment.
 * TFN Snow - Task Force Noctem camo for winter environment.
+* US Urban - US Army urban camo
 * Night Gear - Adds night gear to Standard Faction.
