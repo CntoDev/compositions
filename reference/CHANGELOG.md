@@ -28,6 +28,8 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.05
+  - Added a MAT ammo box on spawn.
 - v1.04
   - All MAT Teams carrying RPG's got the ver3 scopes with ranges for all types
     of ammo.
