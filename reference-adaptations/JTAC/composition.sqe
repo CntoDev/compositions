@@ -1,0 +1,35 @@
+version=53;
+center[]={1969.255,5,6638.917};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=147;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x addWeapon ""Laserdesignator"";   " \n "  _x addItemToVest ""ACRE_PRC148""; " \n "  _x addBackpack ""cnto_flecktarn_b_ap_mediterranean""; " \n "  _x addItemToBackpack ""Laserbatteries"";  " \n "  _x addItemToBackpack ""Laserbatteries"";  " \n " }; " \n "} forEach playableUnits; " \n " " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
