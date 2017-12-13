@@ -1,12 +1,12 @@
 version=53;
-center[]={1969.255,5,6638.917};
+center[]={2254.5564,5,6437.4873};
 class items
 {
 	items=1;
 	class Item0
 	{
 		dataType="Logic";
-		id=147;
+		id=72;
 		type="a3ee_exec_code_3den";
 		class CustomAttributes
 		{
@@ -25,7 +25,7 @@ class items
 								"STRING"
 							};
 						};
-						value="{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x addWeapon ""Laserdesignator"";   " \n "  _x addItemToVest ""ACRE_PRC148""; " \n "  _x addBackpack ""cnto_flecktarn_b_ap_mediterranean""; " \n "  _x addItemToBackpack ""Laserbatteries"";  " \n "  _x addItemToBackpack ""Laserbatteries"";  " \n " }; " \n "} forEach playableUnits; " \n " " \n "save3DENInventory playableUnits;";
+						value="{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x addMagazine ""Laserbatteries"";" \n "  _x addWeapon ""Laserdesignator"";   " \n "  _x addItemToVest ""ACRE_PRC148"";  " \n " }; " \n "} forEach playableUnits; " \n " " \n "save3DENInventory playableUnits;";
 					};
 				};
 			};
