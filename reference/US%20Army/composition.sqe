@@ -9060,6 +9060,15 @@ class items
 								ammoLeft=1;
 							};
 						};
+						class handgun
+						{
+							name="rhsusf_weap_m9";
+							class primaryMuzzleMag
+							{
+								name="rhsusf_mag_15Rnd_9x19_JHP";
+								ammoLeft=15;
+							};
+						};
 						class binocular
 						{
 							name="ACE_VectorDay";
@@ -9171,6 +9180,12 @@ class items
 									count=4;
 									ammoLeft=1;
 								};
+								class Item6
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=3;
+									ammoLeft=15;
+								};
 							};
 							class ItemCargo
 							{
@@ -9226,6 +9241,15 @@ class items
 							{
 								name="rhsusf_20Rnd_762x51_m993_Mag";
 								ammoLeft=20;
+							};
+						};
+						class handgun
+						{
+							name="rhsusf_weap_m9";
+							class primaryMuzzleMag
+							{
+								name="rhsusf_mag_15Rnd_9x19_JHP";
+								ammoLeft=15;
 							};
 						};
 						class binocular
@@ -9323,6 +9347,12 @@ class items
 									name="rhsusf_20Rnd_762x51_m993_Mag";
 									count=4;
 									ammoLeft=20;
+								};
+								class Item1
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=6;
+									ammoLeft=15;
 								};
 							};
 							class ItemCargo
