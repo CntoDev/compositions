@@ -1,0 +1,35 @@
+version=53;
+center[]={6045.355,5,1271.1029};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=0;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="{ " \n "    private _unit = _x; " \n " " \n "   _unit addPrimaryWeaponItem ""RH_qdss_nt4""; " \n " " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
