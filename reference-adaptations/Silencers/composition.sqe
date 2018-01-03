@@ -1,12 +1,12 @@
 version=53;
-center[]={6045.355,5,1271.1029};
+center[]={4991.6211,5,7133.5229};
 class items
 {
 	items=1;
 	class Item0
 	{
 		dataType="Logic";
-		id=0;
+		id=72;
 		type="a3ee_exec_code_3den";
 		class CustomAttributes
 		{
@@ -25,7 +25,7 @@ class items
 								"STRING"
 							};
 						};
-						value="{ " \n "    private _unit = _x; " \n " " \n "   _unit addPrimaryWeaponItem ""RH_qdss_nt4""; " \n " " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
+						value="{ " \n "    private _unit = _x; " \n " " \n "   _unit addPrimaryWeaponItem ""RH_qdss_nt4"";" \n "   _unit addPrimaryWeaponItem ""rhs_acc_dtk4short""; " \n " " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
 					};
 				};
 			};
