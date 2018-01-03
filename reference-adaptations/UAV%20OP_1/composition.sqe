@@ -25,7 +25,7 @@ class items
 								"STRING"
 							};
 						};
-						value="{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x linkItem ""I_UavTerminal"";" \n "  _x addBackpack ""I_UAV_01_backpack_F"";" \n "  _x addItemToVest ""ACE_UAVBattery"";  " \n " }; " \n "} forEach playableUnits; " \n " " \n "save3DENInventory playableUnits;";
+						value="{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x linkItem ""I_UavTerminal"";" \n "  _x addBackpack ""I_UAV_01_backpack_F"";" \n "  _x addItemToVest ""ACE_UAVBattery"";  " \n " }; " \n "} forEach (playableUnits select { side _x == resistance }); " \n " " \n "save3DENInventory (playableUnits select { side _x == resistance });" \n "" \n "{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x linkItem ""B_UavTerminal"";" \n "  _x addBackpack ""B_UAV_01_backpack_F"";" \n "  _x addItemToVest ""ACE_UAVBattery"";  " \n " }; " \n "} forEach (playableUnits select { side _x == west }); " \n " " \n "save3DENInventory (playableUnits select { side _x == west });" \n "" \n "{ " \n " if (_x get3DENAttribute ""description"" select 0 == ""Platoon Rifleman"") then  " \n " {    " \n "  _x linkItem ""O_UavTerminal"";" \n "  _x addBackpack ""O_UAV_01_backpack_F"";" \n "  _x addItemToVest ""ACE_UAVBattery"";  " \n " }; " \n "} forEach (playableUnits select { side _x == east }); " \n " " \n "save3DENInventory (playableUnits select { side _x == east });";
 					};
 				};
 			};
