@@ -2,7 +2,7 @@ version=53;
 center[]={7508.2856,5,7596.0776};
 class items
 {
-	items=41;
+	items=45;
 	class Item0
 	{
 		dataType="Logic";
@@ -3129,7 +3129,7 @@ class items
 		{
 			position[]={-4.2856445,0,3.9223633};
 		};
-		title="v1.03";
+		title="v1.04";
 		description="Current composition version.";
 		id=37;
 	};
@@ -3692,6 +3692,343 @@ class items
 							};
 						};
 						value="CNTO TTP'S";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item41
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={5.2063599,0,2.796875};
+		};
+		title="Code of Conduct";
+		id=41;
+	};
+	class Item42
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={5.2063599,0,-0.203125};
+		};
+		id=42;
+		type="ModuleCreateDiaryRecord_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCreateDiaryRecord_F_PresetTitle";
+				expression="_this setVariable ['PresetTitle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Situation";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCreateDiaryRecord_F_Title";
+				expression="_this setVariable ['Title',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="GOLDEN RULES";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCreateDiaryRecord_F_Description";
+				expression="_this setVariable ['Description',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="<font color='#FF0000' size='15'>GOLDEN RULES</font color>  " \n "<br></br>   " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>In the Lobby:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] 19:55 Once you hear ""Clear comms"" - you close your mouth instantly. " \n "There should not be any more joking around and more importantly you should show respect towards the Role Manager conducting role selection by remaining quiet and listening in. " \n "<br></br>   " \n "<br></br>   " \n "[*] Chat is not to be used unless requesting ""PTS"". " \n "<br></br>   " \n "<br></br>   " \n "[*] Whatever you want to say, it can wait 5 - 20 seconds, even if it is a response to some question or comment. Let people talk and write your PTS in the chat in order to make your response. There may be moments PTS will get cut short. " \n "<br></br>   " \n "<br></br>   " \n "[*] Let the Staff-Members (or the Role Manager) do the work and sort things out. Make it easier for them by listening and being patient. The less people tend to talk over each other, the quicker we can start the mission. " \n "<br></br>   " \n "<br></br>   " \n "[*] Make sure you have your Tags: NO TAGS - NO PLAY. " \n "<br></br>   " \n "<br></br> " \n "[*] Don’t take game impacting and leading roles if you don’t intend on staying until the very end of the mission. It gives a very bad impression to everyone in your team and creates problems with communication and logistics. If you have to leave because of real life situation forcing you - make sure someone takes over before leaving. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>In Game:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] Lower your direct speech volume at base, really do it. Not everyone wants to hear 30 peoples conversations while trying to plan for the mission. " \n "<br></br> " \n "<br></br> " \n "[*] Do not place unnecessary map markers. " \n "<br></br> " \n "<br></br> " \n "[*] Listen to orders, even if you don't like them. You can try to change your Leaders opinion, but don't force it. If he says ""move out now"" you move out now. He may have information you don't. Next time take FTL, SL or PTL if you're really unhappy by decisions being made. " \n "<br></br> " \n "<br></br> " \n "[*] looting of the enemy should be a last resort in dire situations. Do not loot the enemy dead unless permission has been granted by Platoon Lead.  " \n "<br></br> " \n "<br></br> " \n "[*] Don't talk unless necessary. You will be better in terms of concentration, awareness and your communications. This will also stop you missing orders if you’re chatting away. If you really have to wait for 5-10 mins somewhere and nothing is going on. Stick to your buddy, go on lowest volume -> Now you can talk. " \n "<br></br> " \n "<br></br> " \n "[*] At Base don't kill players, don't shoot or throw grenades, don't mess around with equipment! If you are bored, go afk until reinsertion time, make yourself some coffee or even better: ""READ ARMA 3 Tactical Guide"". " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>During Debrief:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] Keep calm during the Debrief. Don't run around, don't take your clothes off, don't drop your weapons, don't do anything but listen. Have some respect and don't distract other people from listening.  " \n "<br></br> " \n "<br></br> " \n "[*] Try to keep it brief. Sometimes we talk too much and people stop listening to us. But if you really had a cool experience make sure to share it. Just think about how much time you’re going to take. You can always go into more details in the War Stories forum. " \n "<br></br> " \n "<br></br> " \n "[*] Technical issues - address them very shortly. We don't need to know instantly how many people had the problem and all the details. We only need to know there was a problem and someone has noticed it. Talk with that person after the mission if you encounter the same issues and open up a post on the forums. ";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCreateDiaryRecord_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCreateDiaryRecord_F_Subject";
+				expression="_this setVariable ['Subject',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="CNTO Code of Conduct";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item43
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={5.2063599,0,0.796875};
+		};
+		id=43;
+		type="ModuleCreateDiaryRecord_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCreateDiaryRecord_F_PresetTitle";
+				expression="_this setVariable ['PresetTitle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Situation";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCreateDiaryRecord_F_Title";
+				expression="_this setVariable ['Title',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="REINSERTION POLICY";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCreateDiaryRecord_F_Description";
+				expression="_this setVariable ['Description',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="<font color='#FF0000' size='15'>REINSERTION POLICY</font color>  " \n "<br></br>  " \n "<br></br>  " \n "[*] Reinsetions Policy: Resinsertions will be on the hour every hour only no matter your role.  " \n "<br></br>  " \n "<br></br>  " \n "[*] Platoon Wild Card: This allows the platoon commander a one time option to bring in reinsertions whenever they deem it necessary, it is designed to be used to counter extreme situations like a full or partial platoon wipe. " \n "<br></br>  " \n "<br></br> " \n "[*] Platoon Wild Card: Can be used once only during a mission and is requested by Platoon Lead through HQ.";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCreateDiaryRecord_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCreateDiaryRecord_F_Subject";
+				expression="_this setVariable ['Subject',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="CNTO Code of Conduct";
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item44
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={5.2053833,0,1.796875};
+		};
+		id=44;
+		type="ModuleCreateDiaryRecord_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCreateDiaryRecord_F_PresetTitle";
+				expression="_this setVariable ['PresetTitle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Situation";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCreateDiaryRecord_F_Title";
+				expression="_this setVariable ['Title',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="CNTO Code of ConductOverview";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCreateDiaryRecord_F_Description";
+				expression="_this setVariable ['Description',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="<br></br>This entire section will detail CNTO's Code of Conduct.";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCreateDiaryRecord_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCreateDiaryRecord_F_Subject";
+				expression="_this setVariable ['Subject',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="CNTO Code of Conduct";
 					};
 				};
 			};
