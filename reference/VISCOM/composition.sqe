@@ -48,7 +48,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="this addAction [""VISCOM-DISABLED DUE TO BUG"", {}];";
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
 			disableSimulation=1;
 		};
 		id=37;
@@ -67,7 +67,7 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="this addAction [""VISCOM-DISABLED DUE TO BUG"", {}];";
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
 			disableSimulation=1;
 		};
 		id=38;
