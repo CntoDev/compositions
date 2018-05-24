@@ -28,6 +28,12 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+-v1.07
+  -US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)
+  -overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look
+  -overhauled the US faction: updated helmets and vests to armour rating of IV
+  -corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)
+  -overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)
 - v1.05
   - Added a MAT ammo box on spawn.
 - v1.04
