@@ -28,6 +28,10 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+-v1.08
+  -changed "Reaper" to "Nightbird", "RPR" to "NB"
+  -changed "Paladin" to "Falcon", "PAL" to "FC"
+  -changed "DAGGER" to "DGR"
 -v1.07
   -US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)
   -overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look
