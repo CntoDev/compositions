@@ -8191,7 +8191,7 @@ class items
 							name="hlc_lmg_M60E4";
 							class primaryMuzzleMag
 							{
-								name="hlc_100Rnd_762x51_Barrier_M60E4";
+								name="rhsusf_100Rnd_762x51_m61_ap";
 								ammoLeft=100;
 							};
 						};
@@ -8277,20 +8277,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_flecktarn_b_ap_mediterranean";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=2;
 								class Item0
 								{
-									name="hlc_100Rnd_762x51_Barrier_M60E4";
+									name="rhsusf_100Rnd_762x51_m61_ap";
 									count=4;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="hlc_100Rnd_762x51_T_M60E4";
+									name="rhsusf_100Rnd_762x51_m62_tracer";
 									count=1;
 									ammoLeft=100;
 								};
@@ -8423,20 +8423,20 @@ class items
 						};
 						class backpack
 						{
-							typeName="cnto_flecktarn_b_ap_mediterranean";
+							typeName="cnto_flecktarn_b_kb_mediterranean";
 							isBackpack=1;
 							class MagazineCargo
 							{
 								items=2;
 								class Item0
 								{
-									name="hlc_100Rnd_762x51_Barrier_M60E4";
+									name="rhsusf_100Rnd_762x51_m61_ap";
 									count=4;
 									ammoLeft=100;
 								};
 								class Item1
 								{
-									name="hlc_100Rnd_762x51_T_M60E4";
+									name="rhsusf_100Rnd_762x51_m62_tracer";
 									count=1;
 									ammoLeft=100;
 								};
@@ -11020,16 +11020,6 @@ class items
 						{
 							typeName="NatoU_Atacs";
 							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
 							class ItemCargo
 							{
 								items=8;
@@ -11085,7 +11075,7 @@ class items
 								class Item0
 								{
 									name="SmokeShell";
-									count=1;
+									count=2;
 									ammoLeft=1;
 								};
 								class Item1
@@ -11254,16 +11244,6 @@ class items
 						{
 							typeName="NatoU_Atacs";
 							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
 							class ItemCargo
 							{
 								items=8;
@@ -11319,7 +11299,7 @@ class items
 								class Item0
 								{
 									name="SmokeShell";
-									count=1;
+									count=2;
 									ammoLeft=1;
 								};
 								class Item1
@@ -11539,16 +11519,6 @@ class items
 						{
 							typeName="NatoU_Atacs";
 							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
 							class ItemCargo
 							{
 								items=8;
@@ -11604,7 +11574,7 @@ class items
 								class Item0
 								{
 									name="SmokeShell";
-									count=1;
+									count=2;
 									ammoLeft=1;
 								};
 								class Item1
@@ -11835,7 +11805,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_m72a7""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""hlc_100Rnd_762x51_Barrier_M60E4"",""hlc_20Rnd_762x51_barrier_M14"",""MRAWS_HEAT_F"",""MRAWS_HE_F""],[80,20,12,30,8,4,24,15,4,8,6,3]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,4]],[[],[]]],false]";
+						value="[[[[""rhs_weap_m72a7""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""rhsusf_100Rnd_762x51_m61_ap"",""hlc_20Rnd_762x51_barrier_M14"",""MRAWS_HEAT_F"",""MRAWS_HE_F""],[80,20,12,30,8,4,24,15,4,8,6,3]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,4]],[[],[]]],false]";
 					};
 				};
 			};
