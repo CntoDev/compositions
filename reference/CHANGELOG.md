@@ -28,16 +28,18 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
--v1.08
-  -changed "Reaper" to "Nightbird", "RPR" to "NB"
-  -changed "Paladin" to "Falcon", "PAL" to "FC"
-  -changed "DAGGER" to "DGR"
--v1.07
-  -US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)
-  -overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look
-  -overhauled the US faction: updated helmets and vests to armour rating of IV
-  -corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)
-  -overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)
+- v1.09
+  - updated Fireteam colours A1 Red A2 Yellow, B1 Green B2 Blue, C1 Red C2 Yellow.
+- v1.08
+  - changed "Reaper" to "Nightbird", "RPR" to "NB"
+  - changed "Paladin" to "Falcon", "PAL" to "FC"
+  - changed "DAGGER" to "DGR"
+- v1.07
+  - US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)
+  - overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look
+  - overhauled the US faction: updated helmets and vests to armour rating of IV
+  - corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)
+  - overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)
 - v1.05
   - Added a MAT ammo box on spawn.
 - v1.04
@@ -71,3 +73,8 @@ Player factions
   - added `respawn_west`, `respawn_east`, `respawn_guerrila` markers
   - added `[this, 200] call a3ee_fnc_boxGuard` to init lines of resupply boxes
   - added `Resupply` green triangle markers on the position of resupply boxes
+  
+Module composition
+---------------
+- v1.06
+  - updated current version is v1.06.
