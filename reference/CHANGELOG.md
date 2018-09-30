@@ -28,6 +28,8 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.10
+  - changed Medic loadouts from 6 x 1000ml blood bags to 2 x 1000ml and 8 x 500ml.
 - v1.09
   - updated Fireteam colours A1 Red A2 Yellow, B1 Green B2 Blue, C1 Red C2 Yellow.
 - v1.08
