@@ -1,5 +1,5 @@
 version=53;
-center[]={3662.7021,5,2616.1904};
+center[]={3977.0339,5,1284.2906};
 class items
 {
 	items=18;
@@ -15,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,6.6206055};
+					position[]={-4.845459,0.0014390945,6.62146};
 				};
 				side="East";
 				flags=7;
@@ -28,16 +28,16 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
 							{
-								name="rhs_GRD40_Red";
+								name="rhs_GRD40_White";
 								ammoLeft=1;
 							};
 						};
@@ -119,7 +119,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -128,27 +128,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -162,7 +156,7 @@ class items
 								class Item0
 								{
 									name="rhs_GRD40_White";
-									count=5;
+									count=4;
 									ammoLeft=1;
 								};
 								class Item1
@@ -213,7 +207,7 @@ class items
 						headgear="rhs_fieldcap_digi";
 					};
 				};
-				id=409;
+				id=73;
 				type="O_officer_F";
 				class CustomAttributes
 				{
@@ -289,7 +283,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,6.6206055};
+					position[]={-3.845459,0.0014390945,6.62146};
 				};
 				side="East";
 				flags=5;
@@ -302,11 +296,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -388,7 +382,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -397,27 +391,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -428,7 +416,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=410;
+				id=74;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -504,7 +492,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8483887,0.0014390945,6.6206055};
+					position[]={-2.845459,0.0014390945,6.62146};
 				};
 				side="East";
 				flags=5;
@@ -516,12 +504,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -589,30 +576,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="HandGrenade";
 									count=2;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -703,7 +684,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=411;
+				id=75;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -751,7 +732,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8483887,0.0014390945,6.6206055};
+					position[]={-1.845459,0.0014390945,6.62146};
 				};
 				side="East";
 				flags=5;
@@ -763,11 +744,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -835,30 +816,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -868,7 +843,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=412;
+				id=76;
 				type="O_Soldier_F";
 				class CustomAttributes
 				{
@@ -915,7 +890,7 @@ class items
 		class Attributes
 		{
 		};
-		id=408;
+		id=72;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -952,7 +927,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,4.6206055};
+					position[]={-4.845459,0.0014390945,4.62146};
 				};
 				side="East";
 				flags=7;
@@ -965,11 +940,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -1061,7 +1036,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -1070,27 +1045,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -1104,7 +1073,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=4;
+									count=3;
 									ammoLeft=1;
 								};
 								class Item1
@@ -1161,7 +1130,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=414;
+				id=78;
 				type="O_Soldier_SL_F";
 				class CustomAttributes
 				{
@@ -1223,7 +1192,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,4.6206055};
+					position[]={-3.845459,0.0014390945,4.62146};
 				};
 				side="East";
 				flags=5;
@@ -1235,12 +1204,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -1308,30 +1276,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="HandGrenade";
 									count=2;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -1422,7 +1384,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=415;
+				id=79;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -1470,7 +1432,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,2.6206055};
+					position[]={-4.845459,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -1483,11 +1445,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -1574,30 +1536,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -1611,7 +1567,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=8;
+									count=7;
 									ammoLeft=1;
 								};
 								class Item1
@@ -1662,7 +1618,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=416;
+				id=80;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -1729,7 +1685,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,2.6206055};
+					position[]={-3.845459,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -1741,10 +1697,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_pkp";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhs_100Rnd_762x54mmR_green";
 								ammoLeft=100;
 							};
 						};
@@ -1815,21 +1771,21 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
 								};
-								class Item2
+								class Item1
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=1;
 									ammoLeft=100;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -1842,7 +1798,7 @@ class items
 								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=2;
 									ammoLeft=100;
 								};
@@ -1854,7 +1810,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=417;
+				id=81;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -1921,7 +1877,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8483887,0.0014390945,2.6206055};
+					position[]={-2.845459,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -1934,12 +1890,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -2021,30 +1976,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -2057,39 +2006,39 @@ class items
 								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=2;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
 									name="MiniGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_100Rnd_762x54mmR_green";
+									count=2;
+									ammoLeft=100;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=6;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -2109,7 +2058,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=418;
+				id=82;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -2176,7 +2125,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8483887,0.0014390945,2.6206055};
+					position[]={-1.845459,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -2188,11 +2137,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -2264,30 +2213,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -2297,7 +2240,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=419;
+				id=83;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -2364,7 +2307,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,0.62060547};
+					position[]={-4.845459,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -2377,11 +2320,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -2468,30 +2411,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -2505,7 +2442,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=8;
+									count=7;
 									ammoLeft=1;
 								};
 								class Item1
@@ -2556,7 +2493,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=420;
+				id=84;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -2623,7 +2560,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,0.62060547};
+					position[]={-3.845459,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -2635,10 +2572,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_pkp";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhs_100Rnd_762x54mmR_green";
 								ammoLeft=100;
 							};
 						};
@@ -2709,21 +2646,21 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
 								};
-								class Item2
+								class Item1
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=1;
 									ammoLeft=100;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -2736,7 +2673,7 @@ class items
 								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=2;
 									ammoLeft=100;
 								};
@@ -2748,7 +2685,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=421;
+				id=85;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -2815,7 +2752,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8483887,0.0014390945,0.62060547};
+					position[]={-2.845459,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -2828,12 +2765,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -2915,30 +2851,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -2951,39 +2881,39 @@ class items
 								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=2;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
 									name="MiniGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_100Rnd_762x54mmR_green";
+									count=2;
+									ammoLeft=100;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=6;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -3003,7 +2933,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=422;
+				id=86;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -3070,7 +3000,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8483887,0.0014390945,0.62060547};
+					position[]={-1.845459,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -3082,11 +3012,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -3158,30 +3088,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -3191,7 +3115,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=423;
+				id=87;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -3257,7 +3181,7 @@ class items
 		class Attributes
 		{
 		};
-		id=413;
+		id=77;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -3294,7 +3218,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.84838867,0.0014390945,4.6206055};
+					position[]={-0.84545898,0.0014390945,4.62146};
 				};
 				side="East";
 				flags=7;
@@ -3307,11 +3231,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -3403,7 +3327,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -3412,27 +3336,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -3446,7 +3364,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=4;
+									count=3;
 									ammoLeft=1;
 								};
 								class Item1
@@ -3503,7 +3421,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=425;
+				id=89;
 				type="O_Soldier_SL_F";
 				class CustomAttributes
 				{
@@ -3565,7 +3483,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15161133,0.0014390945,4.6206055};
+					position[]={0.15454102,0.0014390945,4.62146};
 				};
 				side="East";
 				flags=5;
@@ -3577,12 +3495,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -3650,30 +3567,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="HandGrenade";
 									count=2;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -3764,7 +3675,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=426;
+				id=90;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -3812,7 +3723,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.84838867,0.0014390945,2.6206055};
+					position[]={-0.84545898,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -3825,11 +3736,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -3916,30 +3827,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -3953,7 +3858,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=8;
+									count=7;
 									ammoLeft=1;
 								};
 								class Item1
@@ -4004,7 +3909,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=427;
+				id=91;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -4071,7 +3976,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15161133,0.0014390945,2.6206055};
+					position[]={0.15454102,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -4083,10 +3988,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_pkp";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhs_100Rnd_762x54mmR_green";
 								ammoLeft=100;
 							};
 						};
@@ -4157,21 +4062,21 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
 								};
-								class Item2
+								class Item1
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=1;
 									ammoLeft=100;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -4184,7 +4089,7 @@ class items
 								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=2;
 									ammoLeft=100;
 								};
@@ -4196,7 +4101,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=428;
+				id=92;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -4263,7 +4168,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1516113,0.0014390945,2.6206055};
+					position[]={1.154541,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -4276,12 +4181,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -4363,30 +4267,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -4399,39 +4297,39 @@ class items
 								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=2;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
 									name="MiniGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_100Rnd_762x54mmR_green";
+									count=2;
+									ammoLeft=100;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=6;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -4451,7 +4349,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=429;
+				id=93;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -4518,7 +4416,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1516113,0.0014390945,2.6206055};
+					position[]={2.154541,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -4530,11 +4428,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -4606,30 +4504,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -4639,7 +4531,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=430;
+				id=94;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -4706,7 +4598,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.84838867,0.0014390945,0.62060547};
+					position[]={-0.84545898,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -4719,11 +4611,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -4810,30 +4702,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -4847,7 +4733,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=8;
+									count=7;
 									ammoLeft=1;
 								};
 								class Item1
@@ -4898,7 +4784,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=431;
+				id=95;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -4965,7 +4851,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15161133,0.0014390945,0.62060547};
+					position[]={0.15454102,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -4977,10 +4863,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_pkp";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhs_100Rnd_762x54mmR_green";
 								ammoLeft=100;
 							};
 						};
@@ -5051,21 +4937,21 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
 								};
-								class Item2
+								class Item1
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=1;
 									ammoLeft=100;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -5078,7 +4964,7 @@ class items
 								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=2;
 									ammoLeft=100;
 								};
@@ -5090,7 +4976,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=432;
+				id=96;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -5157,7 +5043,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1516113,0.0014390945,0.62060547};
+					position[]={1.154541,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -5170,12 +5056,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -5257,30 +5142,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -5293,39 +5172,39 @@ class items
 								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=2;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
 									name="MiniGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_100Rnd_762x54mmR_green";
+									count=2;
+									ammoLeft=100;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=6;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -5345,7 +5224,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=433;
+				id=97;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -5412,7 +5291,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1516113,0.0014390945,0.62060547};
+					position[]={2.154541,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -5424,11 +5303,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -5500,30 +5379,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -5533,7 +5406,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=434;
+				id=98;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -5599,7 +5472,7 @@ class items
 		class Attributes
 		{
 		};
-		id=424;
+		id=88;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -5636,7 +5509,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1516113,0.0014390945,4.6206055};
+					position[]={3.154541,0.0014390945,4.62146};
 				};
 				side="East";
 				flags=7;
@@ -5649,11 +5522,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -5745,7 +5618,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -5754,27 +5627,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -5788,7 +5655,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=4;
+									count=3;
 									ammoLeft=1;
 								};
 								class Item1
@@ -5845,7 +5712,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=436;
+				id=100;
 				type="O_Soldier_SL_F";
 				class CustomAttributes
 				{
@@ -5907,7 +5774,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1516113,0.0014390945,4.6206055};
+					position[]={4.154541,0.0014390945,4.62146};
 				};
 				side="East";
 				flags=5;
@@ -5919,12 +5786,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -5992,30 +5858,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item1
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=8;
 									ammoLeft=30;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK_green";
+									name="HandGrenade";
 									count=2;
-									ammoLeft=30;
-								};
-								class Item3
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -6106,7 +5966,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=437;
+				id=101;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -6154,7 +6014,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1516113,0.0014390945,2.6206055};
+					position[]={3.154541,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -6167,11 +6027,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -6258,30 +6118,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -6295,7 +6149,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=8;
+									count=7;
 									ammoLeft=1;
 								};
 								class Item1
@@ -6346,7 +6200,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=438;
+				id=102;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -6413,7 +6267,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1516113,0.0014390945,2.6206055};
+					position[]={4.154541,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -6425,10 +6279,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_pkp";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhs_100Rnd_762x54mmR_green";
 								ammoLeft=100;
 							};
 						};
@@ -6499,21 +6353,21 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
 								};
-								class Item2
+								class Item1
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=1;
 									ammoLeft=100;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -6526,7 +6380,7 @@ class items
 								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=2;
 									ammoLeft=100;
 								};
@@ -6538,7 +6392,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=439;
+				id=103;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -6605,7 +6459,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1516113,0.0014390945,2.6206055};
+					position[]={5.154541,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -6618,12 +6472,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -6705,30 +6558,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -6741,39 +6588,39 @@ class items
 								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=2;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
 									name="MiniGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_100Rnd_762x54mmR_green";
+									count=2;
+									ammoLeft=100;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=6;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -6793,7 +6640,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=440;
+				id=104;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -6860,7 +6707,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1516113,0.0014390945,2.6206055};
+					position[]={6.154541,0.0014390945,2.62146};
 				};
 				side="East";
 				flags=5;
@@ -6872,11 +6719,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -6948,30 +6795,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -6981,7 +6822,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=441;
+				id=105;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7048,7 +6889,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1516113,0.0014390945,0.62060547};
+					position[]={3.154541,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -7061,11 +6902,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -7152,30 +6993,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -7189,7 +7024,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=8;
+									count=7;
 									ammoLeft=1;
 								};
 								class Item1
@@ -7240,7 +7075,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=442;
+				id=106;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -7307,7 +7142,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1516113,0.0014390945,0.62060547};
+					position[]={4.154541,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -7319,10 +7154,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_pkm";
+							name="rhs_weap_pkp";
 							class primaryMuzzleMag
 							{
-								name="rhs_100Rnd_762x54mmR";
+								name="rhs_100Rnd_762x54mmR_green";
 								ammoLeft=100;
 							};
 						};
@@ -7393,21 +7228,21 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
 								};
-								class Item2
+								class Item1
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=1;
 									ammoLeft=100;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -7420,7 +7255,7 @@ class items
 								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
+									name="rhs_100Rnd_762x54mmR_green";
 									count=2;
 									ammoLeft=100;
 								};
@@ -7432,7 +7267,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=443;
+				id=107;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7499,7 +7334,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1516113,0.0014390945,0.62060547};
+					position[]={5.154541,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -7512,12 +7347,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -7599,30 +7433,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -7635,39 +7463,39 @@ class items
 								items=6;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR";
-									count=2;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
 									name="MiniGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="rhs_100Rnd_762x54mmR_green";
+									count=2;
+									ammoLeft=100;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=6;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -7687,7 +7515,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=444;
+				id=108;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -7754,7 +7582,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1516113,0.0014390945,0.62060547};
+					position[]={6.154541,0.0014390945,0.62145996};
 				};
 				side="East";
 				flags=5;
@@ -7766,11 +7594,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -7842,30 +7670,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=9;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -7875,7 +7697,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=445;
+				id=109;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7941,7 +7763,7 @@ class items
 		class Attributes
 		{
 		};
-		id=435;
+		id=99;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -7978,7 +7800,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,-1.3793945};
+					position[]={-4.845459,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=7;
@@ -7991,11 +7813,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -8087,7 +7909,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -8096,27 +7918,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -8130,7 +7946,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=4;
+									count=3;
 									ammoLeft=1;
 								};
 								class Item1
@@ -8187,7 +8003,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=447;
+				id=111;
 				type="O_Soldier_TL_F";
 			};
 			class Item1
@@ -8195,7 +8011,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,-1.3793945};
+					position[]={-3.845459,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -8281,15 +8097,15 @@ class items
 								items=2;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -8299,17 +8115,11 @@ class items
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=2;
+								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR_7N13";
-									count=3;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_100Rnd_762x54mmR_green";
-									count=1;
+									name="rhs_100Rnd_762x54mmR_7BZ3";
+									count=4;
 									ammoLeft=100;
 								};
 							};
@@ -8320,7 +8130,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=448;
+				id=112;
 				type="O_Soldier_AR_F";
 			};
 			class Item2
@@ -8328,7 +8138,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8483887,0.0014390945,-1.3793945};
+					position[]={-2.845459,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -8340,12 +8150,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -8413,30 +8222,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -8446,17 +8249,11 @@ class items
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=2;
+								items=1;
 								class Item0
 								{
-									name="rhs_100Rnd_762x54mmR_7N13";
-									count=3;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhs_100Rnd_762x54mmR_green";
-									count=1;
+									name="rhs_100Rnd_762x54mmR_7BZ3";
+									count=4;
 									ammoLeft=100;
 								};
 							};
@@ -8467,14 +8264,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=449;
+				id=113;
 				type="O_Soldier_AAR_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=446;
+		id=110;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -8511,7 +8308,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.84838867,0.0014390945,-1.3793945};
+					position[]={-0.84545898,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=7;
@@ -8524,11 +8321,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -8620,7 +8417,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=4;
 								class Item0
 								{
 									name="SmokeShell";
@@ -8629,27 +8426,21 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
+									name="rhs_mag_9x19_17";
+									count=1;
+									ammoLeft=17;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
-									count=6;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
 									ammoLeft=30;
 								};
 								class Item3
 								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item4
-								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
 								};
 							};
 						};
@@ -8663,7 +8454,7 @@ class items
 								class Item0
 								{
 									name="rhs_VOG25";
-									count=4;
+									count=3;
 									ammoLeft=1;
 								};
 								class Item1
@@ -8720,7 +8511,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=451;
+				id=115;
 				type="O_Soldier_TL_F";
 			};
 			class Item1
@@ -8728,7 +8519,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15161133,0.0014390945,-1.3793945};
+					position[]={0.15454102,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -8740,11 +8531,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -8822,30 +8613,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -8876,7 +8661,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=452;
+				id=116;
 				type="O_Soldier_AT_F";
 			};
 			class Item2
@@ -8884,7 +8669,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1516113,0.0014390945,-1.3793945};
+					position[]={1.154541,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -8896,12 +8681,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
-							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -8969,30 +8753,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -9023,14 +8801,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=453;
+				id=117;
 				type="O_Soldier_AAT_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=450;
+		id=114;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9067,7 +8845,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,-3.3793945};
+					position[]={-4.845459,0.0014390945,-3.37854};
 				};
 				side="East";
 				flags=7;
@@ -9080,16 +8858,16 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak74mr_gp25";
+							name="rhs_weap_ak74m_fullplum_gp25_npz";
 							muzzle="rhs_acc_tgpa";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK_no_tracers";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
 							{
-								name="rhs_GRD40_Red";
+								name="rhs_GRD40_Green";
 								ammoLeft=1;
 							};
 						};
@@ -9176,48 +8954,30 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=4;
 								class Item0
-								{
-									name="rhs_30Rnd_545x39_AK_no_tracers";
-									count=3;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=1;
-									ammoLeft=30;
-								};
-								class Item2
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="rhs_GRD40_Red";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item4
-								{
-									name="rhs_GRD40_Green";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item5
+								class Item2
 								{
 									name="rhs_GDM40";
 									count=4;
 									ammoLeft=1;
 								};
-								class Item6
+								class Item3
 								{
-									name="rhs_mag_9x19_17";
-									count=1;
-									ammoLeft=17;
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=4;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -9242,7 +9002,7 @@ class items
 						headgear="rhs_fieldcap_digi2";
 					};
 				};
-				id=455;
+				id=119;
 				type="B_spotter_F";
 			};
 			class Item1
@@ -9250,7 +9010,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,-3.3793945};
+					position[]={-3.845459,0.0014390945,-3.37854};
 				};
 				side="East";
 				flags=5;
@@ -9375,12 +9135,6 @@ class items
 									count=8;
 									ammoLeft=10;
 								};
-								class Item1
-								{
-									name="rhs_mag_9x19_17";
-									count=5;
-									ammoLeft=17;
-								};
 							};
 							class ItemCargo
 							{
@@ -9399,14 +9153,14 @@ class items
 						headgear="rhs_fieldcap_digi2";
 					};
 				};
-				id=456;
+				id=120;
 				type="B_spotter_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=454;
+		id=118;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9443,7 +9197,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.84838867,0.0014390945,-3.3793945};
+					position[]={-0.84545898,0.0014390945,-3.37854};
 				};
 				side="East";
 				flags=7;
@@ -9456,11 +9210,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -9547,7 +9301,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=7;
+								items=6;
 								class Item0
 								{
 									name="SmokeShell";
@@ -9556,39 +9310,33 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
+									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
 								};
-								class Item4
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item5
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item6
+								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -9604,7 +9352,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=458;
+				id=122;
 				type="O_support_AMort_F";
 			};
 			class Item1
@@ -9612,7 +9360,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15161133,0.0014390945,-3.3793945};
+					position[]={0.15454102,0.0014390945,-3.37854};
 				};
 				side="East";
 				flags=5;
@@ -9624,11 +9372,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -9706,30 +9454,24 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=4;
+								items=3;
 								class Item0
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="rhs_30Rnd_545x39_AK";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="rhs_30Rnd_545x39_AK_green";
-									count=2;
-									ammoLeft=30;
-								};
-								class Item3
 								{
 									name="rhs_mag_9x19_17";
 									count=1;
 									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 						};
@@ -9744,14 +9486,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=459;
+				id=123;
 				type="O_support_Mort_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=457;
+		id=121;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9788,7 +9530,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1516113,0.0014390945,-1.3793945};
+					position[]={3.154541,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=7;
@@ -9801,11 +9543,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -9886,13 +9628,13 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=4;
 									ammoLeft=30;
 								};
@@ -9943,7 +9685,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=461;
+				id=125;
 				type="O_engineer_F";
 			};
 			class Item1
@@ -9951,7 +9693,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1516113,0.0014390945,-1.3793945};
+					position[]={4.154541,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -9963,11 +9705,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -10043,13 +9785,13 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=4;
 									ammoLeft=30;
 								};
@@ -10100,7 +9842,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=462;
+				id=126;
 				type="O_engineer_F";
 			};
 			class Item2
@@ -10108,7 +9850,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1516113,0.0014390945,-1.3793945};
+					position[]={5.154541,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -10120,11 +9862,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -10200,13 +9942,13 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=4;
 									ammoLeft=30;
 								};
@@ -10257,7 +9999,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=463;
+				id=127;
 				type="O_engineer_F";
 			};
 			class Item3
@@ -10265,7 +10007,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1516113,0.0014390945,-1.3793945};
+					position[]={6.154541,0.0014390945,-1.37854};
 				};
 				side="East";
 				flags=5;
@@ -10277,11 +10019,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_ak105_zenitco01_b33";
+							name="rhs_weap_ak74m_fullplum_npz";
 							muzzle="rhs_acc_dtk";
 							class primaryMuzzleMag
 							{
-								name="rhs_30Rnd_545x39_AK";
+								name="rhs_30Rnd_545x39_7N22_plum_AK";
 								ammoLeft=30;
 							};
 						};
@@ -10357,13 +10099,13 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="rhs_30Rnd_545x39_AK";
+									name="rhs_30Rnd_545x39_7N22_plum_AK";
 									count=4;
 									ammoLeft=30;
 								};
@@ -10414,14 +10156,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=464;
+				id=128;
 				type="O_engineer_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=460;
+		id=124;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -10458,7 +10200,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8483887,0.0014390945,-5.3793945};
+					position[]={-4.845459,0.0014390945,-5.37854};
 				};
 				side="East";
 				flags=7;
@@ -10588,7 +10330,7 @@ class items
 						headgear="H_HelmetCrew_I";
 					};
 				};
-				id=466;
+				id=130;
 				type="O_crew_F";
 				class CustomAttributes
 				{
@@ -10664,7 +10406,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8483887,0.0014390945,-5.3793945};
+					position[]={-3.845459,0.0014390945,-5.37854};
 				};
 				side="East";
 				flags=5;
@@ -10788,14 +10530,14 @@ class items
 						headgear="H_HelmetCrew_I";
 					};
 				};
-				id=467;
+				id=131;
 				type="O_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -10819,7 +10561,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8483887,0.0014390945,-5.3793945};
+					position[]={-2.845459,0.0014390945,-5.37854};
 				};
 				side="East";
 				flags=5;
@@ -10929,14 +10671,14 @@ class items
 						headgear="H_HelmetCrew_I";
 					};
 				};
-				id=468;
+				id=132;
 				type="O_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -10959,7 +10701,7 @@ class items
 		class Attributes
 		{
 		};
-		id=465;
+		id=129;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -10996,7 +10738,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.84838867,0.0014390945,-5.3793945};
+					position[]={-0.84545898,0.0014390945,-5.37854};
 				};
 				side="East";
 				flags=7;
@@ -11136,14 +10878,14 @@ class items
 						headgear="H_PilotHelmetHeli_O";
 					};
 				};
-				id=470;
+				id=134;
 				type="O_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -11231,7 +10973,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.15161133,0.0014390945,-5.3793945};
+					position[]={0.15454102,0.0014390945,-5.37854};
 				};
 				side="East";
 				flags=5;
@@ -11384,14 +11126,14 @@ class items
 						headgear="H_PilotHelmetHeli_O";
 					};
 				};
-				id=471;
+				id=135;
 				type="O_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -11478,7 +11220,7 @@ class items
 		class Attributes
 		{
 		};
-		id=469;
+		id=133;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11515,7 +11257,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1516113,0.0014390945,-5.3793945};
+					position[]={2.154541,0.0014390945,-5.37854};
 				};
 				side="East";
 				flags=7;
@@ -11659,14 +11401,14 @@ class items
 						headgear="H_PilotHelmetFighter_O";
 					};
 				};
-				id=473;
+				id=137;
 				type="O_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -11753,7 +11495,7 @@ class items
 		class Attributes
 		{
 		};
-		id=472;
+		id=136;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11783,7 +11525,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.1516113,0.28405476,-5.4296875};
+			position[]={6.1540527,0.28405476,-5.4285889};
 		};
 		side="Empty";
 		flags=4;
@@ -11791,7 +11533,7 @@ class items
 		{
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
-		id=474;
+		id=138;
 		type="Box_East_Ammo_F";
 		class CustomAttributes
 		{
@@ -11810,7 +11552,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_rpg26""],[1]],[[""rhs_30Rnd_545x39_AK"",""rhs_30Rnd_545x39_AK_green"",""rhs_100Rnd_762x54mmR"",""SmokeShell"",""MiniGrenade"",""rhs_VOG25""],[24,6,4,12,10,5]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
+						value="[[[[""rhs_weap_rpg26""],[1]],[[""rhs_30Rnd_545x39_AK"",""SmokeShell"",""rhs_VOG25"",""rhs_30Rnd_545x39_7N22_plum_AK"",""rhs_100Rnd_762x54mmR_green"",""HandGrenade""],[24,12,5,6,4,10]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
 					};
 				};
 			};
@@ -11822,7 +11564,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.1516113,0.89242268,-3.4296875};
+			position[]={6.1540527,0.89242268,-3.4285889};
 		};
 		side="Empty";
 		flags=4;
@@ -11830,7 +11572,7 @@ class items
 		{
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
-		id=475;
+		id=139;
 		type="O_supplyCrate_F";
 		class CustomAttributes
 		{
@@ -11849,7 +11591,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_rpg26""],[4]],[[""rhs_30Rnd_545x39_AK"",""rhs_30Rnd_545x39_AK_green"",""rhs_100Rnd_762x54mmR"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""MiniGrenade"",""rhs_VOG25"",""rhs_100Rnd_762x54mmR_7N13"",""rhs_10Rnd_762x54mmR_7N1"",""rhs_rpg7_PG7VL_mag"",""rhs_rpg7_OG7V_mag""],[80,20,12,30,8,4,24,15,4,8,4,2]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,10]],[[],[]]],false]";
+						value="[[[[""rhs_weap_rpg26""],[4]],[[""rhs_30Rnd_545x39_AK"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""rhs_VOG25"",""rhs_10Rnd_762x54mmR_7N1"",""rhs_rpg7_PG7VL_mag"",""rhs_rpg7_OG7V_mag"",""rhs_100Rnd_762x54mmR_7BZ3"",""rhs_100Rnd_762x54mmR_green"",""rhs_30Rnd_545x39_7N22_plum_AK"",""HandGrenade""],[80,30,8,4,15,8,4,2,4,12,20,24]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,10]],[[],[]]],false]";
 					};
 				};
 			};
@@ -11859,10 +11601,10 @@ class items
 	class Item14
 	{
 		dataType="Marker";
-		position[]={4.1516113,2.4371225e+032,-3.4296875};
+		position[]={4.154541,2.4371225e+032,-3.428833};
 		name="respawn_east";
 		type="respawn_unknown";
-		id=476;
+		id=140;
 		atlOffset=2.4371225e+032;
 	};
 	class Item15
@@ -11870,35 +11612,35 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={4.1518555,0,-5.4294434};
+			position[]={4.1550293,0,-5.4285889};
 		};
-		title="v1.10";
+		title="v1.11";
 		description="Current composition version.";
-		id=477;
+		id=141;
 	};
 	class Item16
 	{
 		dataType="Marker";
-		position[]={6.1516113,0,-4.4296875};
-		name="resupply_marker";
+		position[]={6.154541,0,-4.428833};
+		name="resupply_marker_1";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=478;
+		id=142;
 	};
 	class Item17
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.223877,0.14963102,-6.9633789};
+			position[]={6.2268066,0.14963102,-6.9625244};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 		};
-		id=479;
+		id=143;
 		type="Box_East_WpsLaunch_F";
 		class CustomAttributes
 		{
