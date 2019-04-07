@@ -28,6 +28,48 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.12
+  -Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd.
+  -Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag.
+  -Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey
+  -Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]
+  -Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP
+  -Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP
+  -Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP
+  -Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP
+  -Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP
+  -Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP
+  -Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP
+  -Fixed US DMT Marksman Rifle Loaded Mag to correct varient.
+  -Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP.
+  -Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP.
+  -Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]
+  -Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black
+  -Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]
+  -Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2.
+  -Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)
+  -Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues
+  -Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000
+  -Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US.
+  -Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]
+  -Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS
+  -Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]
+  -Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS
+- v1.11
+  - changed m40 mini grenades to m67 fragmentation
+  - replaced mp7 weapons with mp5k-pdw
+  - changed ak105 to ak74m (plum) 
+  - changed PKM to PKP
+  - changed RUS PKM ammo boxes. MMG now loads with 7TZ (AP rounds)
+  - added vert grip to us weapons
+  - replaced m14 with HK PSG1A1
+  - replaced m260e4 with mg3
+  - updated all ammo boxes respectively. 
 - v1.10
   - changed Medic loadouts from 6 x 1000ml blood bags to 2 x 1000ml and 8 x 500ml.
 - v1.09
