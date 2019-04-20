@@ -1,5 +1,5 @@
 version=53;
-center[]={6588.9434,0.59408426,3573.0522};
+center[]={6390.0459,0.89116859,3670.7351};
 class items
 {
 	items=2;
@@ -8,16 +8,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.00048828125,4.5625734,-0.00024414063};
+			position[]={1.2290039,4.2654891,-1.894043};
 			angles[]={-0,4.712389,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{{ " \n "    _x params [""_classname"", ""_text""]; " \n "    this addAction [ " \n "        _text, " \n "        compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "        nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "    ]; " \n "} forEach [ " \n " " \n "    [""optic_ACO_grn"",     ""<t color='#33cc33'>ACO Green</t>""], " \n "    [""optic_Aco"",         ""<t color='#33cc33'>ACO Red</t>""], " \n "    [""optic_ACO_grn_smg"", ""<t color='#33cc33'>ACO SMG Green</t>""], " \n "    [""optic_Aco_smg"",     ""<t color='#33cc33'>ACO SMG Red</t>""], " \n "    [""rhsusf_acc_eotech_xps3"",      ""<t color='#0000cc'>XPS3</t>""], " \n "    [""rhsusf_acc_eotech_552"",    ""<t color='#0000cc'>M552 CCO</t>""], " \n "    [""rhsusf_acc_mrds"",    ""<t color='#0000cc'>MRDS</t>""], " \n "    [""rhsusf_acc_rm05"",    ""<t color='#0000cc'>RM05</t>""], " \n "    [""rhsusf_acc_rx01_nofilter"",    ""<t color='#0000cc'>RX01</t>""], " \n "    [""rh_barska_rds"",      ""<t color='#33cc33'>Barska</t>""], " \n "    [""rh_cmore"",    ""<t color='#33cc33'>CMORE</t>""], " \n "    [""RH_zpoint"",       ""<t color='#33cc33'>Zeiss Z-point</t>""], " \n "    [""RH_LTdocter"",     ""<t color='#33cc33'>Larue Docter</t>""],  " \n "    [""RH_LTdocterl"",     ""<t color='#33cc33'>Larue Docter Low</t>""],  " \n "     [""RH_compM2"",           ""<t color='#0000cc'>Aimpoint CompM2</t>""], " \n "    [""RH_compM2l"",       ""<t color='#0000cc'>Aimpoint CompM2 Low</t>""], " \n "    [""RH_compM4s"",       ""<t color='#0000cc'>Aimpoint CompM4S</t>""], " \n "    [""rhsusf_acc_t1_high"",               ""<t color='#0000cc'>Aimpoint T1</t>""], " \n "    [""rhsusf_acc_t1_low"",               ""<t color='#0000cc'>Aimpoint T1 Low</t>""], " \n "    [""rhsusf_acc_compm4"",   ""<t color='#0000cc'>M68 CCO</t>""], " \n "    [""rhs_acc_rakurspm"",    ""<t color='#ff0000'>1P76 Rakurs-PM (RIS)</t>""], " \n "    [""rhs_acc_1p87"",    ""<t color='#ff0000'>1P87 (RIS)</t>""], " \n "    [""rhs_acc_ekp8_18"",    ""<t color='#ff0000'>EKP-8-18 (RIS)</t>""], " \n "    [""rhs_acc_1p63"",    ""<t color='#ff0000'>1P63</t>""], " \n "    [""rhs_acc_ekp8_02"",    ""<t color='#ff0000'>EKP-8-02</t>""], " \n "    [""rhs_acc_ekp1"",    ""<t color='#ff0000'>EKP-1S-03</t>""], " \n "    [""rhs_acc_nita_3d"",    ""<t color='#ff0000'>NIT-A</t>""], " \n "    [""rhs_acc_pkas"",    ""<t color='#ff0000'>PK-AS</t>""] " \n "]}";
+			init="call{{ " \n "    _x params [""_classname"", ""_text""]; " \n "    this addAction [ " \n "        _text, " \n "        compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "        nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "    ]; " \n "} forEach [ " \n " " \n "    [""optic_ACO_grn"",     ""<t color='#33cc33'>ACO Green</t>""], " \n "    [""optic_Aco"",         ""<t color='#33cc33'>ACO Red</t>""], " \n "    [""optic_ACO_grn_smg"", ""<t color='#33cc33'>ACO SMG Green</t>""], " \n "    [""optic_Aco_smg"",     ""<t color='#33cc33'>ACO SMG Red</t>""], " \n "    [""rhsusf_acc_eotech_xps3"",      ""<t color='#0000cc'>XPS3</t>""], " \n "    [""rhsusf_acc_eotech_552"",    ""<t color='#0000cc'>M552 CCO</t>""], " \n "    [""rhsusf_acc_mrds"",    ""<t color='#0000cc'>MRDS</t>""], " \n "    [""rhsusf_acc_rm05"",    ""<t color='#0000cc'>RM05</t>""], " \n "    [""rhsusf_acc_rx01_nofilter"",    ""<t color='#0000cc'>RX01</t>""], " \n "    [""rh_barska_rds"",      ""<t color='#33cc33'>Barska</t>""], " \n "    [""rh_cmore"",    ""<t color='#33cc33'>CMORE</t>""], " \n "    [""RH_zpoint"",       ""<t color='#33cc33'>Zeiss Z-point</t>""], " \n "    [""RH_LTdocter"",     ""<t color='#33cc33'>Larue Docter</t>""],  " \n "    [""RH_LTdocterl"",     ""<t color='#33cc33'>Larue Docter Low</t>""],  " \n "     [""RH_compM2"",           ""<t color='#0000cc'>Aimpoint CompM2</t>""], " \n "    [""RH_compM2l"",       ""<t color='#0000cc'>Aimpoint CompM2 Low</t>""], " \n "    [""RH_compM4s"",       ""<t color='#0000cc'>Aimpoint CompM4S</t>""], " \n "    [""rhsusf_acc_t1_high"",               ""<t color='#0000cc'>Aimpoint T1</t>""], " \n "    [""rhsusf_acc_t1_low"",               ""<t color='#0000cc'>Aimpoint T1 Low</t>""], " \n "    [""rhsusf_acc_compm4"",   ""<t color='#0000cc'>M68 CCO</t>""], " \n "    [""rhs_acc_rakurspm"",    ""<t color='#ff0000'>1P76 Rakurs-PM</t>""], " \n "    [""rhs_acc_1p87"",    ""<t color='#ff0000'>1P87</t>""], " \n "    [""rhs_acc_ekp8_18"",    ""<t color='#ff0000'>EKP-8-18</t>""], " \n "    [""rhs_acc_1p63"",    ""<t color='#ff0000'>1P63</t>""], " \n "    [""rhs_acc_ekp8_02"",    ""<t color='#ff0000'>EKP-8-02</t>""], " \n "    [""rhs_acc_ekp1"",    ""<t color='#ff0000'>EKP-1S-03</t>""], " \n "    [""rhs_acc_pkas"",    ""<t color='#ff0000'>PK-AS</t>""] " \n "]}";
 		};
-		id=2;
+		id=0;
 		type="Land_PlasticCase_01_small_F";
 		class CustomAttributes
 		{
@@ -46,12 +46,12 @@ class items
 	class Item1
 	{
 		dataType="Marker";
-		position[]={0,0,0};
+		position[]={1.2294922,0,-1.8935547};
 		name="scopebox_marker_mixed";
 		text="Scopebox";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=3;
-		atlOffset=-4.4059157;
+		id=1;
+		atlOffset=-4.1088314;
 	};
 };
