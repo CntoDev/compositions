@@ -28,6 +28,9 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.12.2
+  -Hotfixed US Vests across the Squads to match V.12 changes. Whoops.
+  -Added Angled Grip to TFN HK416s where possible. 
 - v1.12
   -Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd.
   -Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag.
