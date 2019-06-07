@@ -28,6 +28,22 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.13.0
+  -TFN DMT Lead Rifle Changed to D10 Version
+  -TFN DMT given extra pistol mag to bring in line with other units
+  -TFN AAR Weapon changed to HK416 D14.5
+  -TFN Lead Elements Given AN/PEQ-16A's
+  -US Lead Elements Given AN/PEQ-16A's
+  -US DMT given extra pistol mag to bring in line with other units
+  -US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions
+  -US DMT Bipod Changed to Harris Bipod
+  -US DMT Marksman Rifle changed to black version of same rifle
+  -US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11
+  -US SMGs changed from Czech Skorpions to US MP7A2's with Grips to make US gear uniformally US
+  -RUS DMT given extra pistol mag to bring in line with other units
+  -RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets
+  -RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets
+  -RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an increased effective range but is less powerful due to decreased payload
 - v1.12.2
   -Hotfixed US Vests across the Squads to match V.12 changes. Whoops.
   -Added Angled Grip to TFN HK416s where possible. 
