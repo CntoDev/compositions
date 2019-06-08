@@ -28,7 +28,7 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
-- v1.13.1
+- v1.13.1 
   -US SMGs reverted to Skorpion Evo's
 - v1.13.0
   -TFN DMT Lead Rifle Changed to D10 Version
