@@ -28,6 +28,10 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.13.3
+ -US Added Improved Bipod/SAW Grip to AR M249
+ -US Removed M14 Mags
+ -TFN Added Bipod to M249
 - v1.13.2
  -ALL Added 1 Extra Tourniquet to every Unit
  -TFN DMT Lead Rifle Changed to D10 Version
