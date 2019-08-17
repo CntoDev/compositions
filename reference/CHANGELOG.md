@@ -28,59 +28,63 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.13.3
+ -US Added Improved Bipod/SAW Grip to AR M249
+ -US Removed M14 Mags
+ -TFN Added Bipod to M249
 - v1.13.2
-  - ALL Added 1 Extra Tourniquet to every Unit
-  - TFN DMT Lead Rifle Changed to D10 Version
-  - TFN DMT given extra pistol mag to bring in line with other units
-  - TFN AAR Weapon changed to HK416 D14.5
-  - TFN Lead Elements Given AN/PEQ-16A's
-  - US Alpha Fireteam 2 AAR vest changed to ALT variant to match rest of faction
-  - US Lead Elements Given AN/PEQ-16A's
-  - US DMT given extra pistol mag to bring in line with other units
-  - US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions
-  - US DMT Bipod Changed to Harris Bipod
-  - US DMT Marksman Rifle changed to black version of same rifle
-  - US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11
-  - RUS DMT given extra pistol mag to bring in line with other units
-  - RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets
-  - RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets
-  - RUS Removed RIS Rail adaptors from AK rifles
-  - RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an  increased effective range but is less powerful due to decreased payload
+ -ALL Added 1 Extra Tourniquet to every Unit
+ -TFN DMT Lead Rifle Changed to D10 Version
+ -TFN DMT given extra pistol mag to bring in line with other units
+ -TFN AAR Weapon changed to HK416 D14.5
+ -TFN Lead Elements Given AN/PEQ-16A's
+ -US Alpha Fireteam 2 AAR vest changed to ALT variant to match rest of faction
+ -US Lead Elements Given AN/PEQ-16A's
+ -US DMT given extra pistol mag to bring in line with other units
+ -US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions
+ -US DMT Bipod Changed to Harris Bipod
+ -US DMT Marksman Rifle changed to black version of same rifle
+ -US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11
+ -RUS DMT given extra pistol mag to bring in line with other units
+ -RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets
+ -RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets
+ -RUS Removed RIS Rail adaptors from AK rifles
+ -RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an  increased effective range but is less powerful due to decreased payload
 - v1.12.2
-  - Hotfixed US Vests across the Squads to match V.12 changes. Whoops.
-  - Added Angled Grip to TFN HK416s where possible. 
+  -Hotfixed US Vests across the Squads to match V.12 changes. Whoops.
+  -Added Angled Grip to TFN HK416s where possible. 
 - v1.12
-  - Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd.
-  - Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag.
-  - Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey
-  - Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]
-  - Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP
-  - Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP
-  - Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
-  - Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP
-  - Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP
-  - Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP
-  - Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
-  - Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP
-  - Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP
-  - Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP
-  - Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
-  - Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP
-  - Fixed US DMT Marksman Rifle Loaded Mag to correct varient.
-  - Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP.
-  - Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP.
-  - Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]
-  - Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black
-  - Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]
-  - Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2.
-  - Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)
-  - Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues
-  - Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000
-  - Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US.
-  - Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]
-  - Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS
-  - Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]
-  - Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS
+  -Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd.
+  -Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag.
+  -Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey
+  -Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]
+  -Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP
+  -Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP
+  -Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP
+  -Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP
+  -Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP
+  -Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP
+  -Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP
+  -Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP
+  -Fixed US DMT Marksman Rifle Loaded Mag to correct varient.
+  -Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP.
+  -Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP.
+  -Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]
+  -Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black
+  -Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]
+  -Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2.
+  -Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)
+  -Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues
+  -Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000
+  -Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US.
+  -Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]
+  -Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS
+  -Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]
+  -Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS
 - v1.11
   - changed m40 mini grenades to m67 fragmentation
   - replaced mp7 weapons with mp5k-pdw
