@@ -28,6 +28,10 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.13.2 
+  -US DMT had M14 Mags removed
+  -US AR had Improved Bipod and SAW grip added to M249
+  -TFN AR had SAW Bipod added to M249
 - v1.13.1 
   -US SMGs reverted to Skorpion Evo's
 - v1.13.0
