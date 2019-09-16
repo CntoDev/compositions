@@ -1,5 +1,5 @@
 version=53;
-center[]={4163.0967,5,2057.1638};
+center[]={4342.4492,5,6056.001};
 class items
 {
 	items=18;
@@ -15,20 +15,21 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,6.5942383};
+					position[]={-5.8720703,0.0014390945,7.6567383};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="MAJOR";
-					description="Platoon Commander";
+					description="Platoon Commander@PLT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -128,27 +129,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -218,11 +228,30 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=121;
+				id=73;
 				type="I_officer_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -286,7 +315,57 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute2
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -294,7 +373,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,6.5942383};
+					position[]={-4.8725586,0.0014390945,7.6572266};
 				};
 				side="Independent";
 				flags=5;
@@ -308,6 +387,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -402,27 +482,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -433,7 +522,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=122;
+				id=74;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -509,7 +598,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8618164,0.0014390945,6.5942383};
+					position[]={-3.8725586,0.0014390945,7.6572266};
 				};
 				side="Independent";
 				flags=5;
@@ -522,6 +611,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -596,27 +686,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -642,7 +741,7 @@ class items
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=11;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -681,14 +780,19 @@ class items
 								class Item7
 								{
 									name="ACE_bloodIV";
-									count=6;
+									count=2;
 								};
 								class Item8
+								{
+									name="ACE_bloodIV_500";
+									count=8;
+								};
+								class Item9
 								{
 									name="ACE_tourniquet";
 									count=6;
 								};
-								class Item9
+								class Item10
 								{
 									name="ACE_surgicalKit";
 									count=1;
@@ -702,7 +806,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=123;
+				id=75;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -750,7 +854,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8618164,0.0014390945,6.5942383};
+					position[]={-2.8725586,0.0014390945,7.6572266};
 				};
 				side="Independent";
 				flags=5;
@@ -763,6 +867,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -837,27 +942,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -867,7 +981,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=124;
+				id=76;
 				type="I_soldier_F";
 				class CustomAttributes
 				{
@@ -914,7 +1028,7 @@ class items
 		class Attributes
 		{
 		};
-		id=120;
+		id=72;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -951,20 +1065,21 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,4.5942383};
+					position[]={-5.9311523,0.0014390945,5.362793};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Alpha Squad Leader";
+					description="Alpha Squad Leader@ALPHA";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -1069,27 +1184,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -1160,11 +1284,30 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=126;
+				id=78;
 				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -1214,7 +1357,57 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute2
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -1222,7 +1415,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,4.5942383};
+					position[]={-4.9311523,0.0014390945,5.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -1235,6 +1428,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -1309,27 +1503,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -1355,7 +1558,7 @@ class items
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=11;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -1394,14 +1597,19 @@ class items
 								class Item7
 								{
 									name="ACE_bloodIV";
-									count=6;
+									count=2;
 								};
 								class Item8
+								{
+									name="ACE_bloodIV_500";
+									count=8;
+								};
+								class Item9
 								{
 									name="ACE_tourniquet";
 									count=6;
 								};
-								class Item9
+								class Item10
 								{
 									name="ACE_surgicalKit";
 									count=1;
@@ -1415,7 +1623,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=127;
+				id=79;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -1463,7 +1671,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,2.5942383};
+					position[]={-5.9311523,0.0014390945,3.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -1477,6 +1685,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -1570,27 +1779,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -1655,7 +1873,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=128;
+				id=80;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -1722,7 +1940,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,2.5942383};
+					position[]={-4.9311523,0.0014390945,3.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -1734,7 +1952,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m249_pip_S_para";
+							name="rhs_weap_minimi_para_railed";
+							underBarrel="rhsusf_acc_saw_bipod";
 							class primaryMuzzleMag
 							{
 								name="rhsusf_100Rnd_556x45_soft_pouch";
@@ -1809,21 +2028,30 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhsusf_100Rnd_556x45_soft_pouch";
 									count=4;
 									ammoLeft=100;
 								};
-								class Item2
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -1848,7 +2076,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=129;
+				id=81;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -1915,7 +2143,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8618164,0.0014390945,2.5942383};
+					position[]={-3.9311523,0.0014390945,3.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -1928,7 +2156,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_samr2";
+							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -2017,27 +2246,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -2056,33 +2294,33 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -2102,7 +2340,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=130;
+				id=82;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -2169,7 +2407,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8618164,0.0014390945,2.5942383};
+					position[]={-2.9311523,0.0014390945,3.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -2182,6 +2420,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -2260,27 +2499,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -2290,7 +2538,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=131;
+				id=83;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -2357,7 +2605,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,0.59423828};
+					position[]={-5.9311523,0.0014390945,1.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -2371,6 +2619,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -2464,27 +2713,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -2549,7 +2807,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=132;
+				id=84;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -2616,7 +2874,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,0.59423828};
+					position[]={-4.9311523,0.0014390945,1.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -2628,7 +2886,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m249_pip_S_para";
+							name="rhs_weap_minimi_para_railed";
+							underBarrel="rhsusf_acc_saw_bipod";
 							class primaryMuzzleMag
 							{
 								name="rhsusf_100Rnd_556x45_soft_pouch";
@@ -2703,21 +2962,30 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhsusf_100Rnd_556x45_soft_pouch";
 									count=4;
 									ammoLeft=100;
 								};
-								class Item2
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -2742,7 +3010,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=133;
+				id=85;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -2809,7 +3077,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8618164,0.0014390945,0.59423828};
+					position[]={-3.9311523,0.0014390945,1.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -2822,7 +3090,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_samr2";
+							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -2911,27 +3180,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -2950,33 +3228,33 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -2996,7 +3274,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=134;
+				id=86;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -3063,7 +3341,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.8618164,0.0014390945,0.59423828};
+					position[]={-2.9311523,0.0014390945,1.3632813};
 				};
 				side="Independent";
 				flags=5;
@@ -3076,6 +3354,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -3154,27 +3433,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -3184,7 +3472,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=135;
+				id=87;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -3250,7 +3538,7 @@ class items
 		class Attributes
 		{
 		};
-		id=125;
+		id=77;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -3287,20 +3575,21 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86181641,0.0014390945,4.5942383};
+					position[]={-0.36816406,0.0014390945,5.2509766};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Bravo Squad Leader";
+					description="Bravo Squad Leader@BRAVO";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -3405,27 +3694,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -3496,11 +3794,30 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=137;
+				id=89;
 				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -3550,7 +3867,57 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute2
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -3558,7 +3925,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13818359,0.0014390945,4.5942383};
+					position[]={0.63134766,0.0014390945,5.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -3571,6 +3938,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -3645,27 +4013,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -3691,7 +4068,7 @@ class items
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=11;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -3730,14 +4107,19 @@ class items
 								class Item7
 								{
 									name="ACE_bloodIV";
-									count=6;
+									count=2;
 								};
 								class Item8
+								{
+									name="ACE_bloodIV_500";
+									count=8;
+								};
+								class Item9
 								{
 									name="ACE_tourniquet";
 									count=6;
 								};
-								class Item9
+								class Item10
 								{
 									name="ACE_surgicalKit";
 									count=1;
@@ -3751,7 +4133,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=138;
+				id=90;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -3799,7 +4181,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86181641,0.0014390945,2.5942383};
+					position[]={-0.36865234,0.0014390945,3.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -3813,6 +4195,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -3906,27 +4289,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -3991,7 +4383,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=139;
+				id=91;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -4058,7 +4450,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13818359,0.0014390945,2.5942383};
+					position[]={0.63134766,0.0014390945,3.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -4070,7 +4462,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m249_pip_S_para";
+							name="rhs_weap_minimi_para_railed";
+							underBarrel="rhsusf_acc_saw_bipod";
 							class primaryMuzzleMag
 							{
 								name="rhsusf_100Rnd_556x45_soft_pouch";
@@ -4145,21 +4538,30 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhsusf_100Rnd_556x45_soft_pouch";
 									count=4;
 									ammoLeft=100;
 								};
-								class Item2
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -4184,7 +4586,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=140;
+				id=92;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -4251,7 +4653,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1381836,0.0014390945,2.5942383};
+					position[]={1.6313477,0.0014390945,3.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -4264,7 +4666,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_samr2";
+							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -4353,27 +4756,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -4392,33 +4804,33 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -4438,7 +4850,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=141;
+				id=93;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -4505,7 +4917,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1381836,0.0014390945,2.5942383};
+					position[]={2.6313477,0.0014390945,3.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -4518,6 +4930,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -4596,27 +5009,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -4626,7 +5048,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=142;
+				id=94;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -4693,7 +5115,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86181641,0.0014390945,0.59423828};
+					position[]={-0.36865234,0.0014390945,1.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -4707,6 +5129,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -4800,27 +5223,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -4885,7 +5317,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=143;
+				id=95;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -4952,7 +5384,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13818359,0.0014390945,0.59423828};
+					position[]={0.63134766,0.0014390945,1.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -4964,7 +5396,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m249_pip_S_para";
+							name="rhs_weap_minimi_para_railed";
+							underBarrel="rhsusf_acc_saw_bipod";
 							class primaryMuzzleMag
 							{
 								name="rhsusf_100Rnd_556x45_soft_pouch";
@@ -5039,21 +5472,30 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhsusf_100Rnd_556x45_soft_pouch";
 									count=4;
 									ammoLeft=100;
 								};
-								class Item2
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -5078,7 +5520,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=144;
+				id=96;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -5145,7 +5587,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1381836,0.0014390945,0.59423828};
+					position[]={1.6313477,0.0014390945,1.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -5158,7 +5600,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_samr2";
+							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -5247,27 +5690,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -5286,33 +5738,33 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -5332,7 +5784,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=145;
+				id=97;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -5399,7 +5851,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1381836,0.0014390945,0.59423828};
+					position[]={2.6313477,0.0014390945,1.2509766};
 				};
 				side="Independent";
 				flags=5;
@@ -5412,6 +5864,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -5490,27 +5943,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -5520,7 +5982,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=146;
+				id=98;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -5586,7 +6048,7 @@ class items
 		class Attributes
 		{
 		};
-		id=136;
+		id=88;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -5623,20 +6085,21 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1381836,0.0014390945,4.5942383};
+					position[]={4.6787109,0.0014390945,5.1430664};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Charlie Squad Leader";
+					description="Charlie Squad Leader@CHARLIE";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -5741,27 +6204,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -5832,11 +6304,30 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=148;
+				id=100;
 				type="I_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -5886,7 +6377,57 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute2
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -5894,7 +6435,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1381836,0.0014390945,4.5942383};
+					position[]={5.6787109,0.0014390945,5.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -5907,6 +6448,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -5981,27 +6523,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -6027,7 +6578,7 @@ class items
 							};
 							class ItemCargo
 							{
-								items=10;
+								items=11;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -6066,14 +6617,19 @@ class items
 								class Item7
 								{
 									name="ACE_bloodIV";
-									count=6;
+									count=2;
 								};
 								class Item8
+								{
+									name="ACE_bloodIV_500";
+									count=8;
+								};
+								class Item9
 								{
 									name="ACE_tourniquet";
 									count=6;
 								};
-								class Item9
+								class Item10
 								{
 									name="ACE_surgicalKit";
 									count=1;
@@ -6087,7 +6643,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=149;
+				id=101;
 				type="I_medic_F";
 				class CustomAttributes
 				{
@@ -6135,7 +6691,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1381836,0.0014390945,2.5942383};
+					position[]={4.6787109,0.0014390945,3.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -6149,6 +6705,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -6242,27 +6799,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -6327,7 +6893,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=150;
+				id=102;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -6394,7 +6960,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1381836,0.0014390945,2.5942383};
+					position[]={5.6787109,0.0014390945,3.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -6406,7 +6972,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m249_pip_S_para";
+							name="rhs_weap_minimi_para_railed";
+							underBarrel="rhsusf_acc_saw_bipod";
 							class primaryMuzzleMag
 							{
 								name="rhsusf_100Rnd_556x45_soft_pouch";
@@ -6481,21 +7048,30 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhsusf_100Rnd_556x45_soft_pouch";
 									count=4;
 									ammoLeft=100;
 								};
-								class Item2
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -6520,7 +7096,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=151;
+				id=103;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -6587,7 +7163,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1381836,0.0014390945,2.5942383};
+					position[]={6.6787109,0.0014390945,3.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -6600,7 +7176,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_samr2";
+							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -6689,27 +7266,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -6728,33 +7314,33 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -6774,7 +7360,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=152;
+				id=104;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -6841,7 +7427,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1381836,0.0014390945,2.5942383};
+					position[]={7.6787109,0.0014390945,3.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -6854,6 +7440,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -6932,27 +7519,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -6962,7 +7558,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=153;
+				id=105;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7029,7 +7625,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1381836,0.0014390945,0.59423828};
+					position[]={4.6787109,0.0014390945,1.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -7043,6 +7639,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -7136,27 +7733,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -7221,7 +7827,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=154;
+				id=106;
 				type="I_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -7288,7 +7894,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1381836,0.0014390945,0.59423828};
+					position[]={5.6787109,0.0014390945,1.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -7300,7 +7906,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m249_pip_S_para";
+							name="rhs_weap_minimi_para_railed";
+							underBarrel="rhsusf_acc_saw_bipod";
 							class primaryMuzzleMag
 							{
 								name="rhsusf_100Rnd_556x45_soft_pouch";
@@ -7375,21 +7982,30 @@ class items
 								items=3;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhsusf_100Rnd_556x45_soft_pouch";
 									count=4;
 									ammoLeft=100;
 								};
-								class Item2
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -7414,7 +8030,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=155;
+				id=107;
 				type="I_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7481,7 +8097,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1381836,0.0014390945,0.59423828};
+					position[]={6.6787109,0.0014390945,1.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -7494,7 +8110,8 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_samr2";
+							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -7583,27 +8200,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -7622,33 +8248,33 @@ class items
 								};
 								class Item1
 								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item2
-								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=3;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=8;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
@@ -7668,7 +8294,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=156;
+				id=108;
 				type="I_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -7735,7 +8361,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1381836,0.0014390945,0.59423828};
+					position[]={7.6787109,0.0014390945,1.1425781};
 				};
 				side="Independent";
 				flags=5;
@@ -7748,6 +8374,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -7826,27 +8453,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
+									name="hlc_12Rnd_357SIG_B_P226";
+									count=1;
+									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item1
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
 								{
-									name="hlc_12Rnd_357SIG_B_P226";
+									name="ACE_tourniquet";
 									count=1;
-									ammoLeft=12;
 								};
 							};
 						};
@@ -7856,7 +8492,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=157;
+				id=109;
 				type="I_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7922,7 +8558,7 @@ class items
 		class Attributes
 		{
 		};
-		id=147;
+		id=99;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -7959,20 +8595,21 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,-1.4057617};
+					position[]={-6.3193359,0.0014390945,-1.5200195};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="MMG Team Leader";
+					description="MMG Team Leader@MMG";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -8077,27 +8714,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -8168,15 +8814,88 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=159;
+				id=111;
 				type="I_Soldier_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=2;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,-1.4057617};
+					position[]={-5.3188477,0.0014390945,-1.5205078};
 				};
 				side="Independent";
 				flags=5;
@@ -8188,10 +8907,10 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_lmg_M60E4";
+							name="hlc_lmg_MG3KWS_b";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_100Rnd_762x51_m61_ap";
+								name="hlc_100Rnd_762x51_M_M60E4";
 								ammoLeft=100;
 							};
 						};
@@ -8263,15 +8982,24 @@ class items
 								items=2;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -8281,17 +9009,11 @@ class items
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=2;
+								items=1;
 								class Item0
 								{
-									name="rhsusf_100Rnd_762x51_m61_ap";
+									name="hlc_100Rnd_762x51_M_M60E4";
 									count=4;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhsusf_100Rnd_762x51_m62_tracer";
-									count=1;
 									ammoLeft=100;
 								};
 							};
@@ -8302,7 +9024,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=160;
+				id=112;
 				type="I_Soldier_AR_F";
 			};
 			class Item2
@@ -8310,7 +9032,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8618164,0.0014390945,-1.4057617};
+					position[]={-4.3188477,0.0014390945,-1.5205078};
 				};
 				side="Independent";
 				flags=5;
@@ -8323,6 +9045,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -8397,27 +9120,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -8427,17 +9159,11 @@ class items
 							isBackpack=1;
 							class MagazineCargo
 							{
-								items=2;
+								items=1;
 								class Item0
 								{
-									name="rhsusf_100Rnd_762x51_m61_ap";
+									name="hlc_100Rnd_762x51_M_M60E4";
 									count=4;
-									ammoLeft=100;
-								};
-								class Item1
-								{
-									name="rhsusf_100Rnd_762x51_m62_tracer";
-									count=1;
 									ammoLeft=100;
 								};
 							};
@@ -8448,14 +9174,14 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=161;
+				id=113;
 				type="I_Soldier_AAR_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=158;
+		id=110;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -8492,20 +9218,21 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86181641,0.0014390945,-1.4057617};
+					position[]={-0.076171875,0.0014390945,-1.5532227};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="MAT Team Leader";
+					description="MAT Team Leader@MAT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145_m320";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -8610,27 +9337,36 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=6;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=4;
 									ammoLeft=30;
 								};
-								class Item4
+								class Item3
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item4
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -8701,15 +9437,88 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=163;
+				id=115;
 				type="I_Soldier_TL_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=2;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13818359,0.0014390945,-1.4057617};
+					position[]={0.92333984,0.0014390945,-1.5527344};
 				};
 				side="Independent";
 				flags=5;
@@ -8722,6 +9531,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -8805,27 +9615,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -8856,7 +9675,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=164;
+				id=116;
 				type="I_Soldier_AT_F";
 			};
 			class Item2
@@ -8864,7 +9683,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.1381836,0.0014390945,-1.4057617};
+					position[]={1.9233398,0.0014390945,-1.5527344};
 				};
 				side="Independent";
 				flags=5;
@@ -8877,6 +9696,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -8951,27 +9771,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -9002,14 +9831,14 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=165;
+				id=117;
 				type="I_Soldier_AAT_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=162;
+		id=114;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9046,24 +9875,25 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,-3.4057617};
+					position[]={-6.5800781,0.0014390945,-4.1889648};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="DMT Team Leader";
+					description="DMT Team Leader@DMT";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_hk416d145_m320";
-							muzzle="rhsusf_acc_rotex5_grey";
+							name="rhs_weap_hk416d10_m320";
+							muzzle="rhsusf_acc_nt4_black";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
-								name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 								ammoLeft=30;
 							};
 							class secondaryMuzzleMag
@@ -9156,53 +9986,53 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=7;
 								class Item0
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-									count=3;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-									count=1;
-									ammoLeft=30;
-								};
-								class Item2
 								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item1
 								{
 									name="1Rnd_SmokeRed_Grenade_shell";
-									count=2;
+									count=1;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="1Rnd_SmokeGreen_Grenade_shell";
 									count=1;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="ACE_HuntIR_M203";
 									count=4;
 									ammoLeft=1;
 								};
-								class Item6
+								class Item4
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
-									count=3;
+									count=1;
 									ammoLeft=12;
+								};
+								class Item5
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item6
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									count=1;
+									ammoLeft=30;
 								};
 							};
 							class ItemCargo
 							{
-								items=3;
+								items=4;
 								class Item0
 								{
 									name="ACE_IR_Strobe_Item";
@@ -9218,6 +10048,11 @@ class items
 									name="ACE_microDAGR";
 									count=1;
 								};
+								class Item3
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
 							};
 						};
 						map="ItemMap";
@@ -9227,15 +10062,88 @@ class items
 						headgear="cnto_flecktarn_h_boo_mediterranean";
 					};
 				};
-				id=167;
+				id=119;
 				type="I_Spotter_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=2;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,-3.4057617};
+					position[]={-5.5800781,0.0014390945,-4.1894531};
 				};
 				side="Independent";
 				flags=5;
@@ -9247,11 +10155,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="hlc_rifle_M14_Rail";
+							name="hlc_rifle_PSG1A1_RIS";
 							optics="optic_SOS";
 							class primaryMuzzleMag
 							{
-								name="hlc_20Rnd_762x51_barrier_M14";
+								name="hlc_20rnd_762x51_Mk316_G3";
 								ammoLeft=20;
 							};
 						};
@@ -9354,26 +10262,31 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=1;
+								items=2;
 								class Item0
 								{
-									name="hlc_20Rnd_762x51_barrier_M14";
+									name="hlc_20rnd_762x51_Mk316_G3";
 									count=4;
 									ammoLeft=20;
 								};
 								class Item1
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
-									count=5;
+									count=1;
 									ammoLeft=12;
 								};
 							};
 							class ItemCargo
 							{
-								items=1;
+								items=2;
 								class Item0
 								{
 									name="ACE_IR_Strobe_Item";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_tourniquet";
 									count=1;
 								};
 							};
@@ -9385,14 +10298,14 @@ class items
 						headgear="cnto_flecktarn_h_boo_mediterranean";
 					};
 				};
-				id=168;
+				id=120;
 				type="I_Spotter_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=166;
+		id=118;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9429,20 +10342,22 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86181641,0.0014390945,-3.4057617};
+					position[]={-0.44921875,0.0014390945,-4.25};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Mortar Ass. Gunner";
+					description="Mortar Ass. Gunner@MTR";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							flashlight="rhsusf_acc_anpeq16a";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -9542,39 +10457,48 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
+									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item2
 								{
-									name="SmokeShellGreen";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShellBlue";
 									count=1;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item3
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item5
+								class Item4
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item6
+								class Item5
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item6
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -9590,15 +10514,88 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=170;
+				id=122;
 				type="I_support_AMort_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=2;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13818359,0.0014390945,-3.4057617};
+					position[]={0.55175781,0.0014390945,-4.25};
 				};
 				side="Independent";
 				flags=5;
@@ -9611,6 +10608,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -9695,27 +10693,36 @@ class items
 								items=4;
 								class Item0
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item1
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=8;
 									ammoLeft=30;
 								};
-								class Item2
+								class Item1
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 									count=2;
 									ammoLeft=30;
 								};
-								class Item3
+								class Item2
 								{
 									name="hlc_12Rnd_357SIG_B_P226";
 									count=1;
 									ammoLeft=12;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -9730,14 +10737,14 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=171;
+				id=123;
 				type="I_support_Mort_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=169;
+		id=121;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9774,20 +10781,22 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1381836,0.0014390945,-1.4057617};
+					position[]={4.8188477,0.0014390945,-1.5151367};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Engineer Team Leader";
+					description="Engineer Team Leader@ENG";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							flashlight="rhsusf_acc_anpeq16a";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -9872,20 +10881,20 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
 							};
 							class ItemCargo
 							{
-								items=4;
+								items=5;
 								class Item0
 								{
 									name="ACE_M26_Clacker";
@@ -9904,6 +10913,11 @@ class items
 								class Item3
 								{
 									name="ACE_wirecutter";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_tourniquet";
 									count=1;
 								};
 							};
@@ -9929,15 +10943,88 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=173;
+				id=125;
 				type="I_engineer_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=2;
+				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1381836,0.0014390945,-1.4057617};
+					position[]={5.8188477,0.0014390945,-1.515625};
 				};
 				side="Independent";
 				flags=5;
@@ -9950,6 +11037,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -10029,20 +11117,20 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
 							};
 							class ItemCargo
 							{
-								items=4;
+								items=5;
 								class Item0
 								{
 									name="ACE_M26_Clacker";
@@ -10061,6 +11149,11 @@ class items
 								class Item3
 								{
 									name="ACE_wirecutter";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_tourniquet";
 									count=1;
 								};
 							};
@@ -10086,7 +11179,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=174;
+				id=126;
 				type="I_engineer_F";
 			};
 			class Item2
@@ -10094,7 +11187,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1381836,0.0014390945,-1.4057617};
+					position[]={6.8188477,0.0014390945,-1.515625};
 				};
 				side="Independent";
 				flags=5;
@@ -10107,6 +11200,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -10186,20 +11280,20 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
 							};
 							class ItemCargo
 							{
-								items=4;
+								items=5;
 								class Item0
 								{
 									name="ACE_M26_Clacker";
@@ -10218,6 +11312,11 @@ class items
 								class Item3
 								{
 									name="ACE_wirecutter";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_tourniquet";
 									count=1;
 								};
 							};
@@ -10243,7 +11342,7 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=175;
+				id=127;
 				type="I_engineer_F";
 			};
 			class Item3
@@ -10251,7 +11350,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1381836,0.0014390945,-1.4057617};
+					position[]={7.8188477,0.0014390945,-1.515625};
 				};
 				side="Independent";
 				flags=5;
@@ -10264,6 +11363,7 @@ class items
 						class primaryWeapon
 						{
 							name="rhs_weap_hk416d145";
+							underBarrel="rhsusf_acc_grip2";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
@@ -10343,20 +11443,20 @@ class items
 								};
 								class Item1
 								{
-									name="MiniGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
 									name="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 									count=4;
 									ammoLeft=30;
 								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
 							};
 							class ItemCargo
 							{
-								items=4;
+								items=5;
 								class Item0
 								{
 									name="ACE_M26_Clacker";
@@ -10375,6 +11475,11 @@ class items
 								class Item3
 								{
 									name="ACE_wirecutter";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACE_tourniquet";
 									count=1;
 								};
 							};
@@ -10400,14 +11505,14 @@ class items
 						headgear="cnto_flecktarn_h_s_mediterranean";
 					};
 				};
-				id=176;
+				id=128;
 				type="I_engineer_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=172;
+		id=124;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -10444,24 +11549,24 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8618164,0.0014390945,-5.4057617};
+					position[]={-6.8491211,0.0014390945,-6.8662109};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Vehicle Commander ""Dagger""";
+					description="Vehicle Commander ""Dagger""@DGR";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhsusf_weap_MP7A2";
+							name="hlc_smg_mp5k_PDW";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_mag_40Rnd_46x30_JHP";
-								ammoLeft=40;
+								name="hlc_30Rnd_9x19_B_MP5";
+								ammoLeft=30;
 							};
 						};
 						class handgun
@@ -10480,7 +11585,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="rhs_uniform_gorka_r_g";
+							typeName="NatoU_Green_rs";
 							isBackpack=0;
 							class ItemCargo
 							{
@@ -10554,15 +11659,24 @@ class items
 								};
 								class Item3
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item4
 								{
-									name="rhsusf_mag_40Rnd_46x30_JHP";
+									name="hlc_30Rnd_9x19_B_MP5";
 									count=4;
-									ammoLeft=40;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -10571,14 +11685,33 @@ class items
 						watch="ItemWatch";
 						gps="ItemGPS";
 						hmd="ACE_NVG_Wide";
-						headgear="H_HelmetCrew_B";
+						headgear="H_HelmetCrew_I";
 					};
 				};
-				id=178;
+				id=130;
 				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -10642,7 +11775,57 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute2
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -10650,7 +11833,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8618164,0.0014390945,-5.4057617};
+					position[]={-5.8491211,0.0014390945,-6.8662109};
 				};
 				side="Independent";
 				flags=5;
@@ -10662,11 +11845,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhsusf_weap_MP7A2";
+							name="hlc_smg_mp5k_PDW";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_mag_40Rnd_46x30_JHP";
-								ammoLeft=40;
+								name="hlc_30Rnd_9x19_B_MP5";
+								ammoLeft=30;
 							};
 						};
 						class handgun
@@ -10681,7 +11864,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="rhs_uniform_gorka_r_g";
+							typeName="NatoU_Green_rs";
 							isBackpack=0;
 							class ItemCargo
 							{
@@ -10740,15 +11923,24 @@ class items
 								};
 								class Item3
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item4
 								{
-									name="rhsusf_mag_40Rnd_46x30_JHP";
+									name="hlc_30Rnd_9x19_B_MP5";
 									count=4;
-									ammoLeft=40;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -10771,17 +11963,17 @@ class items
 						watch="ItemWatch";
 						gps="ItemGPS";
 						hmd="ACE_NVG_Wide";
-						headgear="H_HelmetCrew_B";
+						headgear="H_HelmetCrew_I";
 					};
 				};
-				id=179;
+				id=131;
 				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -10805,7 +11997,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8618164,0.0014390945,-5.4057617};
+					position[]={-4.8491211,0.0014390945,-6.8662109};
 				};
 				side="Independent";
 				flags=5;
@@ -10818,11 +12010,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhsusf_weap_MP7A2";
+							name="hlc_smg_mp5k_PDW";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_mag_40Rnd_46x30_JHP";
-								ammoLeft=40;
+								name="hlc_30Rnd_9x19_B_MP5";
+								ammoLeft=30;
 							};
 						};
 						class handgun
@@ -10837,7 +12029,7 @@ class items
 						};
 						class uniform
 						{
-							typeName="rhs_uniform_gorka_r_g";
+							typeName="NatoU_Green_rs";
 							isBackpack=0;
 							class ItemCargo
 							{
@@ -10896,15 +12088,24 @@ class items
 								};
 								class Item3
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item4
 								{
-									name="rhsusf_mag_40Rnd_46x30_JHP";
+									name="hlc_30Rnd_9x19_B_MP5";
 									count=4;
-									ammoLeft=40;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -10912,17 +12113,17 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						hmd="ACE_NVG_Wide";
-						headgear="H_HelmetCrew_B";
+						headgear="H_HelmetCrew_I";
 					};
 				};
-				id=180;
+				id=132;
 				type="I_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -10945,7 +12146,7 @@ class items
 		class Attributes
 		{
 		};
-		id=177;
+		id=129;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -10982,24 +12183,24 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.86181641,0.0014390945,-5.4057617};
+					position[]={-0.56933594,0.0014390945,-7.0551758};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Pilot ""Nightbird""";
+					description="Pilot ""Nightbird""@NB";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhsusf_weap_MP7A2";
+							name="hlc_smg_mp5k_PDW";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_mag_40Rnd_46x30_JHP";
-								ammoLeft=40;
+								name="hlc_30Rnd_9x19_B_MP5";
+								ammoLeft=30;
 							};
 						};
 						class handgun
@@ -11092,15 +12293,24 @@ class items
 								};
 								class Item3
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item4
 								{
-									name="rhsusf_mag_40Rnd_46x30_JHP";
+									name="hlc_30Rnd_9x19_B_MP5";
 									count=4;
-									ammoLeft=40;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -11112,14 +12322,33 @@ class items
 						headgear="H_PilotHelmetHeli_B";
 					};
 				};
-				id=182;
+				id=134;
 				type="I_pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -11135,7 +12364,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11199,7 +12428,57 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -11207,7 +12486,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.13818359,0.0014390945,-5.4057617};
+					position[]={0.43066406,0.0014390945,-7.0546875};
 				};
 				side="Independent";
 				flags=5;
@@ -11219,11 +12498,11 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhsusf_weap_MP7A2";
+							name="hlc_smg_mp5k_PDW";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_mag_40Rnd_46x30_JHP";
-								ammoLeft=40;
+								name="hlc_30Rnd_9x19_B_MP5";
+								ammoLeft=30;
 							};
 						};
 						class handgun
@@ -11316,15 +12595,24 @@ class items
 								};
 								class Item3
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item4
 								{
-									name="rhsusf_mag_40Rnd_46x30_JHP";
+									name="hlc_30Rnd_9x19_B_MP5";
 									count=4;
-									ammoLeft=40;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -11350,14 +12638,14 @@ class items
 						headgear="H_PilotHelmetHeli_B";
 					};
 				};
-				id=183;
+				id=135;
 				type="I_pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -11444,7 +12732,7 @@ class items
 		class Attributes
 		{
 		};
-		id=181;
+		id=133;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11481,24 +12769,24 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.1381836,0.0014390945,-5.4057617};
+					position[]={3.1669922,0.0014390945,-7.184082};
 				};
 				side="Independent";
 				flags=7;
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Jet Pilot ""Falcon""";
+					description="Jet Pilot ""Falcon""@FALCON";
 					isPlayable=1;
 					class Inventory
 					{
 						class primaryWeapon
 						{
-							name="rhsusf_weap_MP7A2";
+							name="hlc_smg_mp5k_PDW";
 							class primaryMuzzleMag
 							{
-								name="rhsusf_mag_40Rnd_46x30_JHP";
-								ammoLeft=40;
+								name="hlc_30Rnd_9x19_B_MP5";
+								ammoLeft=30;
 							};
 						};
 						class handgun
@@ -11591,15 +12879,24 @@ class items
 								};
 								class Item3
 								{
-									name="MiniGrenade";
+									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
 								class Item4
 								{
-									name="rhsusf_mag_40Rnd_46x30_JHP";
+									name="hlc_30Rnd_9x19_B_MP5";
 									count=4;
-									ammoLeft=40;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="ACE_tourniquet";
+									count=1;
 								};
 							};
 						};
@@ -11615,14 +12912,33 @@ class items
 						headgear="H_PilotHelmetFighter_I";
 					};
 				};
-				id=185;
+				id=137;
 				type="I_pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
+						property="Enh_featureType";
+						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="0";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="ace_isEngineer";
-						expression="if (_value != -1) then {_this setVariable ['ace_isEngineer',_value, true];}";
+						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
 						{
 							class data
@@ -11638,7 +12954,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11702,14 +13018,64 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute3
+					{
+						property="Enh_ambientAnimParams";
+						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=2;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+									class Item1
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ASIS";
+										};
+									};
+								};
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=184;
+		id=136;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11739,7 +13105,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.1381836,0.28405476,-5.4560547};
+			position[]={7.2988281,0.28405476,-5.6054688};
 		};
 		side="Empty";
 		flags=4;
@@ -11747,7 +13113,7 @@ class items
 		{
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
-		id=186;
+		id=138;
 		type="Box_IND_Ammo_F";
 		class CustomAttributes
 		{
@@ -11766,7 +13132,7 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_m72a7""],[1]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""MiniGrenade"",""1Rnd_HE_Grenade_shell""],[24,6,4,12,10,5]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
+						value="[[[[""rhs_weap_m72a7""],[1]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""1Rnd_HE_Grenade_shell"",""HandGrenade""],[24,6,4,12,5,10]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
 					};
 				};
 			};
@@ -11778,7 +13144,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={6.1381836,0.89242268,-3.4560547};
+			position[]={7.3525391,0.89242268,-7.9868164};
 		};
 		side="Empty";
 		flags=4;
@@ -11786,7 +13152,7 @@ class items
 		{
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
-		id=187;
+		id=139;
 		type="I_supplyCrate_F";
 		class CustomAttributes
 		{
@@ -11805,57 +13171,65 @@ class items
 								"STRING"
 							};
 						};
-						value="[[[[""rhs_weap_m72a7""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""MiniGrenade"",""1Rnd_HE_Grenade_shell"",""rhsusf_100Rnd_762x51_m61_ap"",""hlc_20Rnd_762x51_barrier_M14"",""MRAWS_HEAT_F"",""MRAWS_HE_F""],[80,20,12,30,8,4,24,15,4,8,6,3]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,10]],[[],[]]],false]";
+						value="[[[[""rhs_weap_m72a7""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""1Rnd_HE_Grenade_shell"",""MRAWS_HEAT_F"",""MRAWS_HE_F"",""hlc_100Rnd_762x51_M_M60E4"",""HandGrenade"",""hlc_20rnd_762x51_Mk316_G3""],[80,20,12,30,8,4,15,6,3,4,24,8]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,10]],[[],[]]],false]";
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="Enh_featureType";
+				expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="0";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item14
 	{
 		dataType="Marker";
-		position[]={4.1381836,1.3349106e+013,-3.4560547};
+		position[]={3.7441406,1.3349106e+013,-3.40625};
 		name="respawn_guerrila";
 		type="respawn_unknown";
-		id=188;
+		id=140;
 		atlOffset=1.3349106e+013;
 	};
 	class Item15
 	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={4.1381836,0,-5.4558105};
-		};
-		title="v1.09";
-		description="Current composition version.";
-		id=189;
-	};
-	class Item16
-	{
 		dataType="Marker";
-		position[]={6.1381836,0,-4.4560547};
+		position[]={6.1523438,0,-6.5068359};
 		name="resupply_marker";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=190;
+		id=141;
 	};
-	class Item17
+	class Item16
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.2495117,0.14963102,-5.1237793};
-			angles[]={0,4.7330365,0};
+			position[]={5.1806641,0.14963102,-6.9160156};
+			angles[]={-0,4.7330365,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 		};
-		id=191;
+		id=142;
 		type="Box_IND_WpsLaunch_F";
 		class CustomAttributes
 		{
@@ -11880,5 +13254,16 @@ class items
 			};
 			nAttributes=1;
 		};
+	};
+	class Item17
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={3.0927734,0,-5.0048828};
+		};
+		title="v1.13.3";
+		description="Current composition version.";
+		id=143;
 	};
 };

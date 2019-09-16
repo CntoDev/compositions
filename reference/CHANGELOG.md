@@ -28,7 +28,7 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
-- v1.13.4
+- v1.13.4 
   - ALL Added @ Squad/Team names to leaders so that Team name appears in role select
   - TFN Changed M249 to the FN MINIMI
 - v1.13.3
