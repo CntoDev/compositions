@@ -1,19 +1,19 @@
 version=53;
-center[]={7026.8218,5,4723.2212};
+center[]={3031.0161,5,6235.9502};
 class items
 {
-	items=16;
+	items=21;
 	class Item0
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.6787109,0,0.45068359};
+			position[]={-3.0483398,0,2.0942383};
 		};
-		name="HC_2";
+		name="HC_4";
 		isPlayer=1;
 		isPlayable=1;
-		id=45;
+		id=67;
 		type="HeadlessClient_F";
 	};
 	class Item1
@@ -21,11 +21,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.6787109,0,-0.54931641};
+			position[]={-3.0483398,0,0.094238281};
 		};
-		name="HC_3";
+		name="HC_5";
 		isPlayable=1;
-		id=46;
+		id=68;
 		type="HeadlessClient_F";
 	};
 	class Item2
@@ -33,11 +33,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.6787109,0,-1.5493164};
+			position[]={-3.0483398,0,-1.9057617};
 		};
-		name="Spectator_2";
+		name="Spectator_4";
 		isPlayable=1;
-		id=47;
+		id=69;
 		type="VirtualSpectator_F";
 		class CustomAttributes
 		{
@@ -143,11 +143,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.6787109,0,-2.5493164};
+			position[]={-3.0483398,0,-3.9057617};
 		};
-		name="Spectator_3";
+		name="Spectator_5";
 		isPlayable=1;
-		id=48;
+		id=70;
 		type="VirtualSpectator_F";
 		class CustomAttributes
 		{
@@ -253,9 +253,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4882813,0,1.3911133};
+			position[]={0.95166016,0,2.0942383};
 		};
-		id=49;
+		id=71;
 		type="basic_vehicle_cargo_filler";
 	};
 	class Item5
@@ -263,9 +263,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4882813,0,0.39111328};
+			position[]={0.95166016,0,0.094238281};
 		};
-		id=50;
+		id=72;
 		type="a3ee_locality_transfer";
 		class CustomAttributes
 		{
@@ -315,9 +315,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.084960938,0,0.43603516};
+			position[]={-1.0483398,0,0.094238281};
 		};
-		id=69;
+		id=73;
 		type="acre_api_nameChannels";
 		class CustomAttributes
 		{
@@ -538,9 +538,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4614258,0,-2.5273438};
+			position[]={0.95166016,0,-5.9057617};
 		};
-		id=71;
+		id=74;
 		type="a3ee_exec_code";
 		class CustomAttributes
 		{
@@ -704,9 +704,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4614258,0,-3.5273438};
+			position[]={0.95166016,0,-7.9057617};
 		};
-		id=72;
+		id=75;
 		type="a3ee_exec_code_3den";
 		class CustomAttributes
 		{
@@ -737,39 +737,39 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-1.6787109,0,1.4506836};
+			position[]={-3.0483398,0,4.0942383};
 		};
 		title="HC/Spect";
-		id=73;
+		id=76;
 	};
 	class Item10
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.084960938,0,2.4360352};
+			position[]={-1.0483398,0,4.0942383};
 		};
 		title="ACRE2";
-		id=75;
+		id=77;
 	};
 	class Item11
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={1.4882813,0,2.3911133};
+			position[]={0.95166016,0,4.0942383};
 		};
 		title="CNTO";
-		id=76;
+		id=78;
 	};
 	class Item12
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4882813,0,-0.60888672};
+			position[]={0.95166016,0,-1.9057617};
 		};
-		id=77;
+		id=79;
 		type="a3ee_kill_on_jip";
 		class CustomAttributes
 		{
@@ -800,9 +800,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.084960938,0,1.4360352};
+			position[]={-1.0483398,0,2.0942383};
 		};
-		id=78;
+		id=80;
 		type="acre_api_basicMissionSetup";
 		class CustomAttributes
 		{
@@ -928,20 +928,542 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-1.6787109,0,2.4506836};
+			position[]={-3.0483398,0,6.0942383};
 		};
-		title="v1.05";
+		title="v1.07";
 		description="Current composition version.";
-		id=79;
+		id=81;
 	};
 	class Item15
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.4614258,0,-1.5273438};
+			position[]={0.95166016,0,-3.9057617};
 		};
-		id=80;
+		id=82;
 		type="a3ee_aresenal_respawn";
+	};
+	class Item16
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.9516602,0,2.0942383};
+		};
+		id=83;
+		type="a3ee_briefing";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_briefing_command";
+				expression="_this setVariable [""command_signal"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3ee_briefing_mission";
+				expression="_this setVariable [""mission"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3ee_briefingfor";
+				expression="_this setVariable [""briefingfor"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="side_blufor";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3ee_briefing_situation";
+				expression="_this setVariable [""situation"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3ee_briefing_logistics";
+				expression="_this setVariable [""admin_logistics"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3ee_briefing_execution";
+				expression="_this setVariable [""execution"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			nAttributes=6;
+		};
+	};
+	class Item17
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={2.9516602,0,4.0942383};
+		};
+		title="Briefing";
+		id=84;
+	};
+	class Item18
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.9516602,0,0.094238281};
+		};
+		id=85;
+		type="a3ee_briefing";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_briefing_command";
+				expression="_this setVariable [""command_signal"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3ee_briefing_mission";
+				expression="_this setVariable [""mission"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3ee_briefingfor";
+				expression="_this setVariable [""briefingfor"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="side_opfor";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3ee_briefing_situation";
+				expression="_this setVariable [""situation"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3ee_briefing_logistics";
+				expression="_this setVariable [""admin_logistics"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3ee_briefing_execution";
+				expression="_this setVariable [""execution"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			nAttributes=6;
+		};
+	};
+	class Item19
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.9516602,0,-1.9057617};
+		};
+		id=86;
+		type="a3ee_briefing";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_briefing_command";
+				expression="_this setVariable [""command_signal"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3ee_briefing_mission";
+				expression="_this setVariable [""mission"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3ee_briefingfor";
+				expression="_this setVariable [""briefingfor"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="side_indep";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3ee_briefing_situation";
+				expression="_this setVariable [""situation"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3ee_briefing_logistics";
+				expression="_this setVariable [""admin_logistics"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3ee_briefing_execution";
+				expression="_this setVariable [""execution"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			nAttributes=6;
+		};
+	};
+	class Item20
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.9516602,0,-3.9057617};
+		};
+		id=87;
+		type="a3ee_briefing";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_briefing_command";
+				expression="_this setVariable [""command_signal"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3ee_briefing_mission";
+				expression="_this setVariable [""mission"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3ee_briefingfor";
+				expression="_this setVariable [""briefingfor"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="side_civ";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3ee_briefing_situation";
+				expression="_this setVariable [""situation"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3ee_briefing_logistics";
+				expression="_this setVariable [""admin_logistics"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3ee_briefing_execution";
+				expression="_this setVariable [""execution"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			nAttributes=6;
+		};
 	};
 };

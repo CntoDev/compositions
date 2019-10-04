@@ -1,5 +1,5 @@
 version=53;
-center[]={2990.3696,5,6234.3721};
+center[]={2990.3701,5,6234.3716};
 class items
 {
 	items=27;
@@ -8,7 +8,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.3696289,0,1.6279297};
+			position[]={-4.3701172,0,1.628418};
 		};
 		name="HC_0";
 		isPlayable=1;
@@ -20,7 +20,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.3696289,0,-0.37207031};
+			position[]={-4.3701172,0,-0.37158203};
 		};
 		name="HC_1";
 		isPlayable=1;
@@ -32,7 +32,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.3696289,0,-2.3720703};
+			position[]={-4.3701172,0,-2.371582};
 		};
 		name="Spectator_0";
 		isPlayable=1;
@@ -142,7 +142,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.3696289,0,-4.3720703};
+			position[]={-4.3701172,0,-4.371582};
 		};
 		name="Spectator_1";
 		isPlayable=1;
@@ -252,7 +252,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.36962891,0,1.6279297};
+			position[]={-0.37011719,0,1.628418};
 		};
 		id=6;
 		type="basic_vehicle_cargo_filler";
@@ -262,7 +262,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.36962891,0,-0.37207031};
+			position[]={-0.37011719,0,-0.37158203};
 		};
 		id=7;
 		type="a3ee_locality_transfer";
@@ -314,7 +314,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.3696289,0,1.6279297};
+			position[]={-2.3701172,0,1.628418};
 		};
 		id=8;
 		type="acre_api_basicMissionSetup";
@@ -442,7 +442,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-2.3696289,0,-0.37207031};
+			position[]={-2.3701172,0,-0.37158203};
 		};
 		id=9;
 		type="acre_api_nameChannels";
@@ -665,7 +665,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.36962891,0,-4.3720703};
+			position[]={-0.37011719,0,-4.371582};
 		};
 		id=10;
 		type="a3ee_exec_code";
@@ -828,104 +828,71 @@ class items
 	};
 	class Item9
 	{
-		dataType="Logic";
+		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.38354492,0,-6.3535156};
+			position[]={-4.3701172,0,3.628418};
 		};
-		id=11;
-		type="a3ee_exec_code_3den";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_3den_code";
-				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="/* " \n " * Refer to " \n " * https://community.bistudio.com/wiki/Eden_Editor:_Setting_Attributes " \n " * " \n " * To get existing value for an attribute, put this in debug line: " \n " *   <section> get3DENMissionAttribute <name> " \n " * ie. " \n " *   ""Multiplayer"" get3DENMissionAttribute ""Respawn"" " \n " */ " \n "set3DENMissionAttributes [ " \n "    [""Scenario"", ""Saving"", false], " \n "    [""Scenario"", ""EnableDebugConsole"", 1], " \n "    [""Scenario"", ""SaveBinarized"", false], " \n "    [""Multiplayer"", ""GameType"", ""Coop""], " \n "    [""Multiplayer"", ""DisabledAI"", true], " \n "    [""Multiplayer"", ""Respawn"", 3],  // on custom location " \n "    [""Multiplayer"", ""RespawnTemplates"", []], " \n "    [""Multiplayer"", ""RespawnDelay"", 10], " \n "    [""Multiplayer"", ""RespawnVehicleDelay"", 10], " \n "    [""Multiplayer"", ""RespawnDialog"", false], " \n "    [""Multiplayer"", ""AIKills"", false] " \n "];";
-					};
-				};
-			};
-			nAttributes=1;
-		};
+		title="HC/Spect";
+		id=12;
 	};
 	class Item10
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-4.3696289,0,3.6279297};
+			position[]={-2.3701172,0,3.628418};
 		};
-		title="HC/Spect";
-		id=12;
+		title="ACRE2";
+		id=13;
 	};
 	class Item11
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-2.3696289,0,3.6279297};
+			position[]={-0.37011719,0,3.628418};
 		};
-		title="ACRE2";
-		id=13;
+		title="CNTO";
+		id=14;
 	};
 	class Item12
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.36962891,0,3.6279297};
+			position[]={-4.3701172,0,5.628418};
 		};
-		title="CNTO";
-		id=14;
+		title="v1.07";
+		description="Current composition version.";
+		id=15;
 	};
 	class Item13
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-4.3696289,0,5.6279297};
-		};
-		title="v1.07";
-		description="Current composition version.";
-		id=15;
-	};
-	class Item14
-	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={1.6303711,0,3.6279297};
+			position[]={1.6298828,0,3.628418};
 		};
 		title="TTPs";
 		id=16;
+	};
+	class Item14
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-0.37011719,0,-2.371582};
+		};
+		id=17;
+		type="a3ee_aresenal_respawn";
 	};
 	class Item15
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.36962891,0,-2.3720703};
-		};
-		id=17;
-		type="a3ee_aresenal_respawn";
-	};
-	class Item16
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={1.621582,0,-6.3447266};
+			position[]={1.6210938,0,-6.3442383};
 		};
 		id=18;
 		type="ModuleCreateDiaryRecord_F";
@@ -1029,12 +996,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item17
+	class Item16
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6303711,0,-4.3720703};
+			position[]={1.6298828,0,-4.371582};
 		};
 		id=19;
 		type="ModuleCreateDiaryRecord_F";
@@ -1138,12 +1105,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item18
+	class Item17
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6303711,0,-2.3720703};
+			position[]={1.6298828,0,-2.371582};
 		};
 		id=20;
 		type="ModuleCreateDiaryRecord_F";
@@ -1247,12 +1214,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item19
+	class Item18
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6303711,0,-0.37207031};
+			position[]={1.6298828,0,-0.37158203};
 		};
 		id=21;
 		type="ModuleCreateDiaryRecord_F";
@@ -1356,12 +1323,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item20
+	class Item19
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={1.6303711,0,1.6279297};
+			position[]={1.6298828,0,1.628418};
 		};
 		id=22;
 		type="ModuleCreateDiaryRecord_F";
@@ -1465,22 +1432,22 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item21
+	class Item20
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={3.6303711,0,3.6279297};
+			position[]={3.6298828,0,3.628418};
 		};
 		title="Etiquette";
 		id=23;
 	};
-	class Item22
+	class Item21
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.6303711,0,-2.3720703};
+			position[]={3.6298828,0,-2.371582};
 		};
 		id=24;
 		type="ModuleCreateDiaryRecord_F";
@@ -1584,12 +1551,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item23
+	class Item22
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.6303711,0,-0.37207031};
+			position[]={3.6298828,0,-0.37158203};
 		};
 		id=25;
 		type="ModuleCreateDiaryRecord_F";
@@ -1693,12 +1660,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item24
+	class Item23
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.6303711,0,1.6279297};
+			position[]={3.6298828,0,1.628418};
 		};
 		id=26;
 		type="ModuleCreateDiaryRecord_F";
@@ -1802,12 +1769,12 @@ class items
 			nAttributes=5;
 		};
 	};
-	class Item25
+	class Item24
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={5.6303711,0,1.6279297};
+			position[]={5.6298828,0,1.628418};
 		};
 		id=27;
 		type="a3ee_briefing";
@@ -1930,14 +1897,47 @@ class items
 			nAttributes=6;
 		};
 	};
-	class Item26
+	class Item25
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={5.6303711,0,3.6279297};
+			position[]={5.6298828,0,3.628418};
 		};
 		title="Briefing";
 		id=28;
+	};
+	class Item26
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-0.37011719,0,-6.371582};
+		};
+		id=88;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="/* " \n " * Refer to " \n " * https://community.bistudio.com/wiki/Eden_Editor:_Setting_Attributes " \n " * " \n " * To get existing value for an attribute, put this in debug line: " \n " *   <section> get3DENMissionAttribute <name> " \n " * ie. " \n " *   ""Multiplayer"" get3DENMissionAttribute ""Respawn"" " \n " */ " \n "set3DENMissionAttributes [ " \n "    [""Scenario"", ""Saving"", false], " \n "    [""Scenario"", ""EnableDebugConsole"", 1], " \n "    [""Scenario"", ""SaveBinarized"", false], " \n "    [""Multiplayer"", ""GameType"", ""DM""], " \n "    [""Multiplayer"", ""DisabledAI"", true], " \n "    [""Multiplayer"", ""Respawn"", 1],  // to spectator " \n "    [""Multiplayer"", ""RespawnTemplates"", [""EndMission"",""Spectator""]], " \n "    [""Multiplayer"", ""RespawnButton"", 0], " \n "    [""Multiplayer"", ""AIKills"", false] " \n "];";
+					};
+				};
+			};
+			nAttributes=1;
+		};
 	};
 };
