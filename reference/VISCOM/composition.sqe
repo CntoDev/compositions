@@ -1,5 +1,5 @@
 version=53;
-center[]={4000,8.9683102e-044,4000};
+center[]={3018.2896,0,6253.9316};
 class items
 {
 	items=5;
@@ -8,7 +8,43 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0,0,0};
+			position[]={-0.25,6.7820787,0};
+			angles[]={-0,4.7252698,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
+			disableSimulation=1;
+		};
+		id=65;
+		type="Land_Laptop_unfolded_F";
+		atlOffset=0.8130002;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.25,6.7820787,0};
+			angles[]={-0,1.5836768,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
+			disableSimulation=1;
+		};
+		id=66;
+		type="Land_Laptop_unfolded_F";
+		atlOffset=0.8130002;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,13.478737,0};
 			angles[]={0,3.1416116,0};
 		};
 		side="Empty";
@@ -17,62 +53,24 @@ class items
 		{
 			disableSimulation=1;
 		};
-		id=35;
+		id=63;
 		type="Land_TTowerSmall_2_F";
-	};
-	class Item1
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={0,0,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-			disableSimulation=1;
-		};
-		id=36;
-		type="Land_CampingTable_small_F";
-	};
-	class Item2
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-0.25,0,0};
-			angles[]={-0,4.7252698,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
-			disableSimulation=1;
-		};
-		id=37;
-		type="Land_Laptop_unfolded_F";
-		atlOffset=0.813;
 	};
 	class Item3
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.25,0,0};
-			angles[]={-0,1.5836768,0};
+			position[]={0,5.4052014,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
 			disableSimulation=1;
 		};
-		id=38;
-		type="Land_Laptop_unfolded_F";
-		atlOffset=0.813;
+		id=64;
+		type="Land_CampingTable_small_F";
 	};
 	class Item4
 	{
@@ -82,7 +80,7 @@ class items
 		text="VISCOM";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=39;
+		id=62;
 		atlOffset=-5;
 	};
 };
