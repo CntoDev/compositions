@@ -29,11 +29,9 @@ well (in the Eden editor or manually via notepad - look for
 Player factions
 ---------------
 - v1.13.5
-  - ALL Added respective GM's to all three Standard Faction Compositions for convenience / time saving
-  - ALL Added base clean-up module to all three Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters
-  - Authors changed of all Default Compositions to "CNTO Mission Making Team" to reflect iterative changes by multiple Mission Making Members
-  - Added Briefing Modules too all "Default Modules" compositions for convenience / time saving
-  - Added a new "Coop Default Modules" composition to cover 1-life-rule events
+  - ALL Added respective GM's to (`west`/`east`/`indep`) Standard Faction Compositions for convenience / time saving
+  - ALL Added base clean-up module to (`west`/`east`/`indep`) Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters
+  - ALL Authors changed of all Standard Faction Compositions to "CNTO Mission Making Team" to reflect iterative changes by multiple Mission Making Members
 - v1.13.4 
   - ALL Added @ Squad/Team names to leaders so that Team name appears in role select
   - TFN Changed M249 to the FN MINIMI
@@ -154,5 +152,9 @@ Player factions
   
 Module composition
 ---------------
+- v1.07
+  - Authors changed of all "Default Modules" Compositions to "CNTO Mission Making Team" to reflect iterative changes by multiple Mission Making Members
+  - Added Briefing Modules to all "Default Modules" Compositions for convenience / time saving
+  - Added a new "Coop - No Respawns" Default Module composition to cover 1-life-rule events
 - v1.06
   - updated current version is v1.06.
