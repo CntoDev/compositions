@@ -1,8 +1,8 @@
 version=53;
-center[]={4452.5864,5,6056.7925};
+center[]={6364.9365,5,2531.926};
 class items
 {
-	items=18;
+	items=20;
 	class Item0
 	{
 		dataType="Group";
@@ -15,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.7172852,0.0014390945,7.953125};
+					position[]={-5.6733398,0.0014390945,7.4255371};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -23,7 +23,8 @@ class items
 				class Attributes
 				{
 					rank="MAJOR";
-					description="Platoon Commander@PLT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Platoon Commander@PLATOON";
 					isPlayable=1;
 					class Inventory
 					{
@@ -217,30 +218,11 @@ class items
 						headgear="rhs_fieldcap_digi";
 					};
 				};
-				id=1;
+				id=229;
 				type="O_officer_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -304,57 +286,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=3;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -362,14 +294,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.7172852,0.0014390945,7.9643555};
-					angles[]={0,6.2723861,0};
+					position[]={-4.6733398,0.0014390945,7.4367676};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CAPTAIN";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Platoon Sergeant";
 					isPlayable=1;
 					class Inventory
@@ -505,7 +438,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=2;
+				id=230;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -581,13 +514,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.7172852,0.0014390945,7.9750977};
-					angles[]={0,6.2723861,0};
+					position[]={-3.6733398,0.0014390945,7.4475098};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Platoon Medic";
 					isPlayable=1;
 					class Inventory
@@ -783,7 +717,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=3;
+				id=231;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -831,13 +765,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.7172852,0.0014390945,7.9858398};
-					angles[]={0,6.2723861,0};
+					position[]={-2.6733398,0.0014390945,7.4587402};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Platoon Rifleman";
 					isPlayable=1;
 					class Inventory
@@ -952,7 +887,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=4;
+				id=232;
 				type="O_Soldier_F";
 				class CustomAttributes
 				{
@@ -999,7 +934,7 @@ class items
 		class Attributes
 		{
 		};
-		id=0;
+		id=228;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1017,11 +952,30 @@ class items
 								"STRING"
 							};
 						};
-						value="PLT";
+						value="PLATOON";
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="PLATOON";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item1
@@ -1036,7 +990,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.9746094,0.0014390945,5.253418};
+					position[]={-5.9316406,0.0014390945,4.7260742};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -1044,6 +998,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha Squad Leader@ALPHA";
 					isPlayable=1;
 					class Inventory
@@ -1249,30 +1204,11 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=6;
+				id=234;
 				type="O_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -1322,57 +1258,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=3;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -1380,13 +1266,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.9741211,0.0014390945,5.2641602};
-					angles[]={0,6.2723861,0};
+					position[]={-4.9301758,0.0014390945,4.7365723};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha Squad Medic";
 					isPlayable=1;
 					class Inventory
@@ -1582,7 +1469,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=7;
+				id=235;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -1630,14 +1517,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.9526367,0.0014390945,3.253418};
-					angles[]={0,6.2723861,0};
+					position[]={-5.9091797,0.0014390945,2.7258301};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 1 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
@@ -1826,7 +1714,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=8;
+				id=236;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -1893,13 +1781,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.9526367,0.0014390945,3.2641602};
-					angles[]={0,6.2723861,0};
+					position[]={-4.9091797,0.0014390945,2.7365723};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 1 Autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -2028,7 +1917,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=9;
+				id=237;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -2095,14 +1984,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.9526367,0.0014390945,3.2749023};
-					angles[]={0,6.2723861,0};
+					position[]={-3.9091797,0.0014390945,2.7478027};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 1 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -2286,7 +2176,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=10;
+				id=238;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -2353,13 +2243,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.9526367,0.0014390945,3.2856445};
-					angles[]={0,6.2723861,0};
+					position[]={-2.9091797,0.0014390945,2.7575684};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 1 Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -2478,7 +2369,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=11;
+				id=239;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -2545,14 +2436,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.9306641,0.0014390945,1.253418};
-					angles[]={0,6.2723861,0};
+					position[]={-5.887207,0.0014390945,0.72583008};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 2 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
@@ -2741,7 +2633,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=12;
+				id=240;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -2808,13 +2700,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.9311523,0.0014390945,1.2641602};
-					angles[]={0,6.2723861,0};
+					position[]={-4.887207,0.0014390945,0.73657227};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 2 Autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -2943,7 +2836,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=13;
+				id=241;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -3010,14 +2903,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.9311523,0.0014390945,1.2749023};
-					angles[]={0,6.2723861,0};
+					position[]={-3.887207,0.0014390945,0.74780273};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 2 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -3201,7 +3095,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=14;
+				id=242;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -3268,13 +3162,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.9311523,0.0014390945,1.2861328};
-					angles[]={0,6.2723861,0};
+					position[]={-2.887207,0.0014390945,0.75854492};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha 2 Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -3393,7 +3288,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=15;
+				id=243;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -3459,7 +3354,7 @@ class items
 		class Attributes
 		{
 		};
-		id=5;
+		id=233;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -3481,7 +3376,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="ALPHA";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item2
@@ -3496,7 +3410,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.76464844,0.0014390945,5.6762695};
+					position[]={-0.72119141,0.0014390945,5.1486816};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -3504,6 +3418,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo Squad Leader@BRAVO";
 					isPlayable=1;
 					class Inventory
@@ -3709,30 +3624,11 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=17;
+				id=245;
 				type="O_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -3782,57 +3678,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=3;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -3840,13 +3686,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.23583984,0.0014390945,5.6870117};
-					angles[]={0,6.2723861,0};
+					position[]={0.27978516,0.0014390945,5.1599121};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo Squad Medic";
 					isPlayable=1;
 					class Inventory
@@ -4042,7 +3889,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=18;
+				id=246;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -4090,14 +3937,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.74267578,0.0014390945,3.6762695};
-					angles[]={0,6.2723861,0};
+					position[]={-0.69921875,0.0014390945,3.1486816};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 1 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
@@ -4286,7 +4134,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=19;
+				id=247;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -4353,13 +4201,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.25732422,0.0014390945,3.6870117};
-					angles[]={0,6.2723861,0};
+					position[]={0.30078125,0.0014390945,3.1599121};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 1 Autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -4488,7 +4337,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=20;
+				id=248;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -4555,14 +4404,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.2573242,0.0014390945,3.6977539};
-					angles[]={0,6.2723861,0};
+					position[]={1.3007813,0.0014390945,3.1696777};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 1 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -4746,7 +4596,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=21;
+				id=249;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -4813,13 +4663,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.2573242,0.0014390945,3.7084961};
-					angles[]={0,6.2723861,0};
+					position[]={2.3007813,0.0014390945,3.1809082};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 1 Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -4938,7 +4789,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=22;
+				id=250;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -5005,14 +4856,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.72119141,0.0014390945,1.6762695};
-					angles[]={0,6.2723861,0};
+					position[]={-0.67724609,0.0014390945,1.1486816};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 2 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
@@ -5201,7 +5053,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=23;
+				id=251;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -5268,13 +5120,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.27880859,0.0014390945,1.6870117};
-					angles[]={0,6.2723861,0};
+					position[]={0.32275391,0.0014390945,1.1599121};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 2 Autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -5403,7 +5256,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=24;
+				id=252;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -5470,14 +5323,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.2788086,0.0014390945,1.6977539};
-					angles[]={0,6.2723861,0};
+					position[]={1.3227539,0.0014390945,1.1696777};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 2 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -5661,7 +5515,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=25;
+				id=253;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -5728,13 +5582,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.2788086,0.0014390945,1.7084961};
-					angles[]={0,6.2723861,0};
+					position[]={2.3227539,0.0014390945,1.1809082};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Bravo 2 Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -5853,7 +5708,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=26;
+				id=254;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -5919,7 +5774,7 @@ class items
 		class Attributes
 		{
 		};
-		id=16;
+		id=244;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -5941,7 +5796,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="BRAVO";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item3
@@ -5956,7 +5830,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.6425781,0.0014390945,6.2011719};
+					position[]={4.6870117,0.0014390945,5.673584};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -5964,6 +5838,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie Squad Leader@CHARLIE";
 					isPlayable=1;
 					class Inventory
@@ -6169,30 +6044,11 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=28;
+				id=256;
 				type="O_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -6242,57 +6098,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=3;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -6300,13 +6106,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.6420898,0.0014390945,6.2124023};
-					angles[]={0,6.2723861,0};
+					position[]={5.6860352,0.0014390945,5.6848145};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie Squad Medic";
 					isPlayable=1;
 					class Inventory
@@ -6502,7 +6309,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=29;
+				id=257;
 				type="O_medic_F";
 				class CustomAttributes
 				{
@@ -6550,14 +6357,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.6635742,0.0014390945,4.2016602};
-					angles[]={0,6.2723861,0};
+					position[]={4.7080078,0.0014390945,3.673584};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 1 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
@@ -6746,7 +6554,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=30;
+				id=258;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -6813,13 +6621,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.6635742,0.0014390945,4.2124023};
-					angles[]={0,6.2723861,0};
+					position[]={5.7080078,0.0014390945,3.6848145};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 1 Autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -6948,7 +6757,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=31;
+				id=259;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7015,14 +6824,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.6635742,0.0014390945,4.2236328};
-					angles[]={0,6.2723861,0};
+					position[]={6.7080078,0.0014390945,3.6955566};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 1 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -7206,7 +7016,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=32;
+				id=260;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -7273,13 +7083,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.6635742,0.0014390945,4.234375};
-					angles[]={0,6.2723861,0};
+					position[]={7.7080078,0.0014390945,3.7067871};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 1 Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -7398,7 +7209,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=33;
+				id=261;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7465,14 +7276,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.6855469,0.0014390945,2.2021484};
-					angles[]={0,6.2723861,0};
+					position[]={4.7299805,0.0014390945,1.6745605};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="SERGEANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 2 Fireteam Leader";
 					isPlayable=1;
 					class Inventory
@@ -7661,7 +7473,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=34;
+				id=262;
 				type="O_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -7728,13 +7540,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.6855469,0.0014390945,2.2128906};
-					angles[]={0,6.2723861,0};
+					position[]={5.7299805,0.0014390945,1.685791};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 2 Autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -7863,7 +7676,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=35;
+				id=263;
 				type="O_Soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7930,14 +7743,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.6850586,0.0014390945,2.2236328};
-					angles[]={0,6.2723861,0};
+					position[]={6.7290039,0.0014390945,1.6955566};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 2 Assist. autorifleman";
 					isPlayable=1;
 					class Inventory
@@ -8121,7 +7935,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=36;
+				id=264;
 				type="O_Soldier_AAR_F";
 				class CustomAttributes
 				{
@@ -8188,13 +8002,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.6850586,0.0014390945,2.234375};
-					angles[]={0,6.2723861,0};
+					position[]={7.7290039,0.0014390945,1.7067871};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Charlie 2 Rifleman AT";
 					isPlayable=1;
 					class Inventory
@@ -8313,7 +8128,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=37;
+				id=265;
 				type="O_Soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -8379,7 +8194,7 @@ class items
 		class Attributes
 		{
 		};
-		id=27;
+		id=255;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -8401,7 +8216,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="CHARLIE";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item4
@@ -8416,7 +8250,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.3012695,0.0014390945,-1.6796875};
+					position[]={-6.2573242,0.0014390945,-2.2070313};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -8424,7 +8258,8 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="MMG Team Leader@MMG";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="MMG Team Leader@MEDIUM MACHINE GUN";
 					isPlayable=1;
 					class Inventory
 					{
@@ -8629,94 +8464,22 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=39;
+				id=267;
 				type="O_Soldier_TL_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.3012695,0.0014390945,-1.668457};
-					angles[]={0,6.2723861,0};
+					position[]={-5.2573242,0.0014390945,-2.1960449};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="MMG Gunner";
 					isPlayable=1;
 					class Inventory
@@ -8839,7 +8602,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=40;
+				id=268;
 				type="O_Soldier_AR_F";
 			};
 			class Item2
@@ -8847,13 +8610,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.3012695,0.0014390945,-1.6577148};
-					angles[]={0,6.2723861,0};
+					position[]={-4.2573242,0.0014390945,-2.1853027};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="MMG Ammo Bearer";
 					isPlayable=1;
 					class Inventory
@@ -8983,14 +8747,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=41;
+				id=269;
 				type="O_Soldier_AAR_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=38;
+		id=266;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9012,7 +8776,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="MMG";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item5
@@ -9027,7 +8810,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.69726563,0.0014390945,-1.909668};
+					position[]={-0.65332031,0.0014390945,-2.4370117};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9035,7 +8818,8 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="MAT Team Leader@MAT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="MAT Team Leader@MEDIUM ANTI-TANK";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9240,94 +9024,22 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=43;
+				id=271;
 				type="O_Soldier_TL_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.30224609,0.0014390945,-1.8989258};
-					angles[]={0,6.2723861,0};
+					position[]={0.34570313,0.0014390945,-2.4265137};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="MAT Gunner";
 					isPlayable=1;
 					class Inventory
@@ -9473,7 +9185,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=44;
+				id=272;
 				type="O_Soldier_AT_F";
 			};
 			class Item2
@@ -9481,13 +9193,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.3022461,0.0014390945,-1.8881836};
-					angles[]={0,6.2723861,0};
+					position[]={1.3457031,0.0014390945,-2.4152832};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="MAT Ammo Bearer";
 					isPlayable=1;
 					class Inventory
@@ -9623,14 +9336,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=45;
+				id=273;
 				type="O_Soldier_AAT_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=42;
+		id=270;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -9652,7 +9365,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="MAT";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item6
@@ -9667,7 +9399,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.3154297,0.0014390945,-4.7148438};
+					position[]={-6.2705078,0.0014390945,-5.2419434};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9675,7 +9407,8 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="DMT Team Leader@DMT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="DMT Team Leader@DESIGNATED MARKSMAN TEAM";
 					isPlayable=1;
 					class Inventory
 					{
@@ -9836,94 +9569,22 @@ class items
 						headgear="rhs_fieldcap_digi2";
 					};
 				};
-				id=47;
+				id=275;
 				type="B_spotter_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.3149414,0.0014390945,-4.7036133};
-					angles[]={0,6.2723861,0};
+					position[]={-5.2709961,0.0014390945,-5.2312012};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="DMT Marksman";
 					isPlayable=1;
 					class Inventory
@@ -10072,14 +9733,14 @@ class items
 						headgear="rhs_fieldcap_digi2";
 					};
 				};
-				id=48;
+				id=276;
 				type="B_spotter_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=46;
+		id=274;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -10101,7 +9762,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="DMT";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item7
@@ -10116,7 +9796,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.55566406,0.0014390945,-5.0698242};
+					position[]={-0.51220703,0.0014390945,-5.5974121};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10124,7 +9804,8 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Mortar 1 Ass. Gunner@MTR";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Mortar 1 Ass. Gunner@MORTAR";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10281,94 +9962,22 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=50;
+				id=278;
 				type="O_support_AMort_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.44384766,0.0014390945,-5.059082};
-					angles[]={0,6.2723861,0};
+					position[]={0.48779297,0.0014390945,-5.5861816};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Mortar Gunner";
 					isPlayable=1;
 					class Inventory
@@ -10498,14 +10107,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=51;
+				id=279;
 				type="O_support_Mort_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=49;
+		id=277;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -10523,11 +10132,30 @@ class items
 								"STRING"
 							};
 						};
-						value="MTR";
+						value="MORTAR";
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="MORTAR";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item8
@@ -10542,7 +10170,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.8154297,0.0014390945,-1.7207031};
+					position[]={4.8588867,0.0014390945,-2.248291};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10550,7 +10178,8 @@ class items
 				class Attributes
 				{
 					rank="SERGEANT";
-					description="Engineer Team Leader@ENG";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Engineer Team Leader@ENGINEERS";
 					isPlayable=1;
 					class Inventory
 					{
@@ -10703,94 +10332,22 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=53;
+				id=281;
 				type="O_engineer_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=2;
-				};
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.815918,0.0014390945,-1.7099609};
-					angles[]={0,6.2723861,0};
+					position[]={5.8598633,0.0014390945,-2.2370605};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Engineer Rifleman";
 					isPlayable=1;
 					class Inventory
@@ -10939,7 +10496,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=54;
+				id=282;
 				type="O_engineer_F";
 			};
 			class Item2
@@ -10947,13 +10504,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.815918,0.0014390945,-1.6987305};
-					angles[]={0,6.2723861,0};
+					position[]={6.8598633,0.0014390945,-2.2263184};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Engineer Rifleman";
 					isPlayable=1;
 					class Inventory
@@ -11102,7 +10660,7 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=55;
+				id=283;
 				type="O_engineer_F";
 			};
 			class Item3
@@ -11110,13 +10668,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.815918,0.0014390945,-1.6879883};
-					angles[]={0,6.2723861,0};
+					position[]={7.8598633,0.0014390945,-2.2150879};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Engineer Rifleman";
 					isPlayable=1;
 					class Inventory
@@ -11265,14 +10824,14 @@ class items
 						headgear="Helmet_SF_green";
 					};
 				};
-				id=56;
+				id=284;
 				type="O_engineer_F";
 			};
 		};
 		class Attributes
 		{
 		};
-		id=52;
+		id=280;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11294,7 +10853,26 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="ENG";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item9
@@ -11309,7 +10887,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.2236328,0.0014390945,-7.8764648};
+					position[]={-6.1801758,0.0014390945,-8.4040527};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11317,7 +10895,8 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Vehicle Commander ""Dagger""@DGR";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Vehicle Commander ""Dagger""@DAGGER";
 					isPlayable=1;
 					class Inventory
 					{
@@ -11448,30 +11027,11 @@ class items
 						headgear="rhs_tsh4";
 					};
 				};
-				id=58;
+				id=286;
 				type="O_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -11535,57 +11095,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=3;
+					nAttributes=1;
 				};
 			};
 			class Item1
@@ -11593,13 +11103,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.2236328,0.0014390945,-7.8657227};
-					angles[]={0,6.2723861,0};
+					position[]={-5.1801758,0.0014390945,-8.3933105};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Vehicle Driver ""Dagger""";
 					isPlayable=1;
 					class Inventory
@@ -11726,7 +11237,7 @@ class items
 						headgear="rhs_tsh4";
 					};
 				};
-				id=59;
+				id=287;
 				type="O_crew_F";
 				class CustomAttributes
 				{
@@ -11757,14 +11268,15 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.2236328,0.0014390945,-7.8549805};
-					angles[]={0,6.2723861,0};
+					position[]={-4.1801758,0.0014390945,-8.3820801};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="CORPORAL";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Vehicle Gunner ""Dagger""";
 					isPlayable=1;
 					class Inventory
@@ -11876,7 +11388,7 @@ class items
 						headgear="rhs_tsh4";
 					};
 				};
-				id=60;
+				id=288;
 				type="O_crew_F";
 				class CustomAttributes
 				{
@@ -11906,7 +11418,7 @@ class items
 		class Attributes
 		{
 		};
-		id=57;
+		id=285;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11924,11 +11436,30 @@ class items
 								"STRING"
 							};
 						};
-						value="DGR";
+						value="DAGGER";
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="DAGGER";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item10
@@ -11943,7 +11474,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.40332031,0.0014390945,-8.2226563};
+					position[]={-0.35888672,0.0014390945,-8.7502441};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11951,7 +11482,8 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
-					description="Pilot ""Nightbird""@NB";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Pilot ""Nightbird""@NIGHTBIRD";
 					isPlayable=1;
 					class Inventory
 					{
@@ -12082,30 +11614,11 @@ class items
 						headgear="rhs_zsh7a_mike_green_alt";
 					};
 				};
-				id=62;
+				id=290;
 				type="O_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="ace_isEngineer";
 						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
@@ -12124,7 +11637,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -12188,57 +11701,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -12246,13 +11709,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.59667969,0.0014390945,-8.2124023};
-					angles[]={0,6.2723861,0};
+					position[]={0.64111328,0.0014390945,-8.7404785};
+					angles[]={0,6.2723818,0};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Co-Pilot ""Nightbird""";
 					isPlayable=1;
 					class Inventory
@@ -12398,7 +11862,7 @@ class items
 						headgear="rhs_zsh7a_mike_green_alt";
 					};
 				};
-				id=63;
+				id=291;
 				type="O_Pilot_F";
 				class CustomAttributes
 				{
@@ -12492,7 +11956,7 @@ class items
 		class Attributes
 		{
 		};
-		id=61;
+		id=289;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -12510,11 +11974,30 @@ class items
 								"STRING"
 							};
 						};
-						value="NB";
+						value="NIGHTBIRD";
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="NIGHTBIRD";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item11
@@ -12529,7 +12012,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.3847656,0.0014390945,-8.3398438};
+					position[]={3.4287109,0.0014390945,-8.8669434};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -12537,6 +12020,7 @@ class items
 				class Attributes
 				{
 					rank="LIEUTENANT";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Jet Pilot ""Falcon""@FALCON";
 					isPlayable=1;
 					class Inventory
@@ -12672,30 +12156,11 @@ class items
 						headgear="H_PilotHelmetFighter_O";
 					};
 				};
-				id=65;
+				id=293;
 				type="O_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="Enh_featureType";
-						expression="if (_value isEqualType 0) then {_this setFeatureType _value}; if (_value isEqualType 'STRING') then {_this setFeatureType parseNumber _value}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="0";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="ace_isEngineer";
 						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
@@ -12714,7 +12179,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3ee_acre_chlist";
 						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
@@ -12778,64 +12243,14 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="Enh_ambientAnimParams";
-						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if ((_value # 0 != '') && !isMultiplayer) then		{			[_unit,_value # 0,_value # 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"ARRAY"
-									};
-								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ASIS";
-										};
-									};
-								};
-							};
-						};
-					};
-					nAttributes=4;
+					nAttributes=2;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=64;
+		id=292;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -12853,11 +12268,30 @@ class items
 								"STRING"
 							};
 						};
-						value="FC";
+						value="FALCON";
 					};
 				};
 			};
-			nAttributes=1;
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="FALCON";
+					};
+				};
+			};
+			nAttributes=2;
 		};
 	};
 	class Item12
@@ -12865,7 +12299,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.8183594,0.28405476,-5.4370117};
+			position[]={7.8623047,0.28405476,-5.9645996};
 			angles[]={-0,6.2723818,0};
 		};
 		side="Empty";
@@ -12874,7 +12308,7 @@ class items
 		{
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
-		id=66;
+		id=294;
 		type="Box_East_Ammo_F";
 		class CustomAttributes
 		{
@@ -12905,7 +12339,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.8344727,0.89242268,-7.8789063};
+			position[]={7.878418,0.89242268,-8.4064941};
 			angles[]={-0,6.2723818,0};
 		};
 		side="Empty";
@@ -12914,7 +12348,7 @@ class items
 		{
 			init="[this, 200] call a3ee_fnc_boxGuard";
 		};
-		id=67;
+		id=295;
 		type="O_supplyCrate_F";
 		class CustomAttributes
 		{
@@ -12943,30 +12377,30 @@ class items
 	class Item14
 	{
 		dataType="Marker";
-		position[]={2.4765625,2.4371225e+032,-4.8071289};
+		position[]={2.5205078,2.4371225e+032,-5.3347168};
 		name="respawn_east";
 		type="respawn_unknown";
 		angle=359.38113;
-		id=68;
+		id=296;
 		atlOffset=2.4371225e+032;
 	};
 	class Item15
 	{
 		dataType="Marker";
-		position[]={6.7197266,0,-6.5297852};
+		position[]={6.7636719,0,-7.057373};
 		name="resupply_marker_1";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
 		angle=359.38113;
-		id=69;
+		id=297;
 	};
 	class Item16
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={5.6713867,0.14963102,-7.0844727};
+			position[]={5.715332,0.14963102,-7.6120605};
 			angles[]={-0,1.5418237,0};
 		};
 		side="Empty";
@@ -12974,7 +12408,7 @@ class items
 		class Attributes
 		{
 		};
-		id=70;
+		id=298;
 		type="Box_East_WpsLaunch_F";
 		class CustomAttributes
 		{
@@ -13005,10 +12439,345 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={4.6425781,0,-5.1333008};
+			position[]={4.6875,0,-5.6599121};
 		};
-		title="v1.13.2";
-		description="Current composition version.";
-		id=71;
+		title="v1.13.6";
+		description="-v1.13.6" \n "  - ALL Added persistent Call-Signs for all GM's (where not included in v1.13.4)" \n "  - ALL Added the code`this disableAI ""MOVE""; this setSpeaker ""NoVoice""; enableRadio false;` to all playable units to prevent them from running off and spamming the vanilla-radio during local testing." \n "  - ALL Changed persistent call-signs (map markers) to a consistent formula: ≤ 2 syllables = written out call-sing. ≥ 3 syllables = abbreviated call-sign." \n "  - ALL Added full changelog to all factions for quick in-game reference" \n "  - TFN Added new yellow owl insignia patches to all uniforms" \n "" \n "- v1.13.5" \n "  - ALL Added respective GM's to Standard Faction Compositions for convenience / time saving " \n "  - ALL Added base clean-up module to Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters" \n "" \n "- v1.13.4 " \n "  - ALL Added @ Squad/Team names to leaders so that Team name appears in role select" \n "  - TFN Changed M249 to the FN MINIMI" \n "" \n "- v1.13.3" \n "  - US Added Improved Bipod/SAW Grip to AR M249" \n "  - US Removed M14 Mags" \n "  - TFN Added Bipod to M249" \n "" \n "- v1.13.2" \n "  - ALL Added 1 Extra Tourniquet to every Unit" \n "  - TFN DMT Lead Rifle Changed to D10 Version" \n "  - TFN DMT given extra pistol mag to bring in line with other units" \n "  - TFN AAR Weapon changed to HK416 D14.5" \n "  - TFN Lead Elements Given AN/PEQ-16A's" \n "  - US Alpha Fireteam 2 AAR vest changed to ALT variant to match rest of faction" \n "  - US Lead Elements Given AN/PEQ-16A's" \n "  - US DMT given extra pistol mag to bring in line with other units" \n "  - US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions" \n "  - US DMT Bipod Changed to Harris Bipod" \n "  - US DMT Marksman Rifle changed to black version of same rifle" \n "  - US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11" \n "  - RUS DMT given extra pistol mag to bring in line with other units" \n "  - RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets" \n "  - RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets" \n "  - RUS Removed RIS Rail adaptors from AK rifles" \n "  - RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an  increased effective range but is less powerful due to decreased payload" \n "" \n "- v1.12.2" \n "  - Hotfixed US Vests across the Squads to match V.12 changes. Whoops." \n "  - Added Angled Grip to TFN HK416s where possible. " \n "" \n "- v1.12" \n "  - Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd." \n "  - Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag." \n "  - Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey" \n "  - Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]" \n "  - Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP" \n "  - Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP" \n "  - Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP" \n "  - Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP" \n "  - Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP" \n "  - Fixed US DMT Marksman Rifle Loaded Mag to correct varient." \n "  - Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]" \n "  - Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black" \n "  - Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]" \n "  - Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2." \n "  - Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)" \n "  - Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues" \n "  - Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000" \n "  - Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US." \n "  - Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "  - Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "" \n "- v1.11" \n "  - changed m40 mini grenades to m67 fragmentation" \n "  - replaced mp7 weapons with mp5k-pdw" \n "  - changed ak105 to ak74m (plum) " \n "  - changed PKM to PKP" \n "  - changed RUS PKM ammo boxes. MMG now loads with 7TZ (AP rounds)" \n "  - added vert grip to us weapons" \n "  - replaced m14 with HK PSG1A1" \n "  - replaced m260e4 with mg3" \n "  - updated all ammo boxes respectively. " \n "" \n "- v1.10" \n "  - changed Medic loadouts from 6 x 1000ml blood bags to 2 x 1000ml and 8 x 500ml." \n "" \n "- v1.09" \n "  - updated Fireteam colours A1 Red A2 Yellow, B1 Green B2 Blue, C1 Red C2 Yellow." \n "" \n "- v1.08" \n "  - changed ""Reaper"" to ""Nightbird"", ""RPR"" to ""NB""" \n "  - changed ""Paladin"" to ""Falcon"", ""PAL"" to ""FC""" \n "  - changed ""DAGGER"" to ""DGR""" \n "" \n "- v1.07" \n "  - US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)" \n "  - overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look" \n "  - overhauled the US faction: updated helmets and vests to armour rating of IV" \n "  - corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)" \n "  - overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)" \n "" \n "- v1.05" \n "  - Added a MAT ammo box on spawn." \n "" \n "- v1.04" \n "  - All MAT Teams carrying RPG's got the ver3 scopes with ranges for all types" \n "    of ammo." \n "  - All Callsigns were changed to be uniformed throught no matter the faction." \n "" \n "- v1.03" \n "  - set crew driver/gunner and pilot/copilot/jetpilot as Engineers through the" \n "    Object: ACE Options menu in unit attributes" \n "  - overhauled the TFN faction (weapons, helmets, etc.), changes not applicable" \n "    to derived factions" \n "" \n "- v1.02" \n "  - loadout overhaul for DMT, made them lighter + gave them tools for recon" \n "  - specified preset ACRE2 radio channels for most units" \n "" \n "- v1.01" \n "  - updated team colors func to `a3ee_team_colors_fnc_setColor`, just load+save" \n "    the composition in editor, this fixes it" \n "  - changed RPG-7 using MAT teams to carry Kitbags" \n "  - removed one PKM ammo box from AAR, MMG gunner, MMG bearer (fixes overload)" \n "  - moved 1-2 AR boxes from AAR to AR, gave AR an Assaultpack" \n "  - added 1-2 more AR boxes to AR's Assaultpack (if enough space)" \n "  - changed HEDP to HE rockets for Carl Gustav (M3MAAWS)" \n "  - changed US crew uniform and helmet to match grey color scheme of US pilots" \n "  - changed backpacks of driver/copilot to use less contrasting colors compared" \n "    to their respective uniform/vest colors" \n "  - changed Carryall backpacks of TFN Engineers to use custom Flecktarn Carryall" \n "  - changed all (GP-25 and normal) AK74m rifles to be the non-NPZ variants" \n "  - removed secondary long-range (PRC148) from Engineers" \n "" \n "- v1.00 (and before)" \n "  - added a Comment object with version number (`v1.00`)" \n "  - added `respawn_west`, `respawn_east`, `respawn_guerrila` markers" \n "  - added `[this, 200] call a3ee_fnc_boxGuard` to init lines of resupply boxes" \n "  - added `Resupply` green triangle markers on the position of resupply boxes";
+		id=299;
+	};
+	class Item18
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={4.8598633,0.0014390945,-5.5974121};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="COLONEL";
+					init="call{this call a3ee_fnc_godlike;" \n "" \n "this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Game Master@GAME MASTER";
+					isPlayable=1;
+					class Inventory
+					{
+						class handgun
+						{
+							name="rhs_weap_pya";
+							class primaryMuzzleMag
+							{
+								name="rhs_mag_9x19_17";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_Protagonist_VR";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_mag_9x19_17";
+									count=10;
+									ammoLeft=17;
+								};
+							};
+							class ItemCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item1
+								{
+									name="rhs_acc_2dpZenit";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACRE_PRC148";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						goggles="G_Goggles_VR";
+					};
+				};
+				id=301;
+				type="O_Protagonist_VR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="insta_zeus_unit_curator";
+						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={5.8598633,0.0014390945,-5.5974121};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="COLONEL";
+					init="call{this call a3ee_fnc_godlike;" \n "" \n "this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					description="Co-Game Master";
+					isPlayable=1;
+					class Inventory
+					{
+						class handgun
+						{
+							name="rhs_weap_pya";
+							class primaryMuzzleMag
+							{
+								name="rhs_mag_9x19_17";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_Protagonist_VR";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhs_mag_9x19_17";
+									count=10;
+									ammoLeft=17;
+								};
+							};
+							class ItemCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="ACE_MapTools";
+									count=1;
+								};
+								class Item1
+								{
+									name="rhs_acc_2dpZenit";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+								class Item3
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item4
+								{
+									name="ACRE_PRC148";
+									count=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						gps="ItemGPS";
+						goggles="G_Goggles_VR";
+					};
+				};
+				id=302;
+				type="O_Protagonist_VR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="insta_zeus_unit_curator";
+						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					nAttributes=1;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=300;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_persistent_callsign";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="GM";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="groupID";
+				expression="[_this, _value] call CBA_fnc_setCallsign";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="GM";
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item19
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.36376953,0,-0.87426758};
+		};
+		areaSize[]={200,0,200};
+		areaIsRectangle=1;
+		flags=1;
+		id=303;
+		type="a3ee_custom_location";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_loctype";
+				expression="_this setVariable [""loctype"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="NameVillage";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3ee_locname";
+				expression="_this setVariable [""locname"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3ee_delcorpse";
+				expression="_this setVariable [""delcorpse"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=3;
+		};
 	};
 };
