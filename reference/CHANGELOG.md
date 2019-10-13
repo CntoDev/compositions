@@ -28,6 +28,12 @@ well (in the Eden editor or manually via notepad - look for
 
 Player factions
 ---------------
+- v1.13.6
+  - ALL Added persistent Call-Signs for all GM's (where not included in v1.13.4)
+  - ALL Added the code `this disableAI "MOVE"; this setSpeaker "NoVoice"; enableRadio false;` to all playable units to prevent them from running off and spamming the vanilla-radio during local testing.
+  - ALL Changed persistent call-signs (map markers) to a consistent formula: ≤ 2 syllables = written out call-sing. ≥ 3 syllables = abbreviated call-sign.
+  - ALL Added full changelog to all factions for quick in-game reference
+  - TFN Added new yellow owl insignia patches to all uniforms
 - v1.13.5
   - ALL Added respective GM's to (`west`/`east`/`indep`) Standard Faction Compositions for convenience / time saving
   - ALL Added base clean-up module to (`west`/`east`/`indep`) Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters
