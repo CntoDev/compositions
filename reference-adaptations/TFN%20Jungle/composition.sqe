@@ -1,5 +1,5 @@
 version=53;
-center[]={3321.9492,5,6645.7407};
+center[]={1009.0563,5,5266.1709};
 class items
 {
 	items=2;
@@ -8,10 +8,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.0583496,0,-0.054199219};
+			position[]={-5.090332,0,-0.04296875};
 		};
-		name="TFN_Jungle_Vehicles";
-		id=1773;
+		id=25;
 		type="a3ee_exec_code";
 		class CustomAttributes
 		{
@@ -175,10 +174,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-3.0581055,0,0.054199219};
+			position[]={5.090332,0,0.043457031};
 		};
-		name="TFN_Jungle";
-		id=1774;
+		id=27;
 		type="a3ee_exec_code_3den";
 		class CustomAttributes
 		{
@@ -197,7 +195,7 @@ class items
 								"STRING"
 							};
 						};
-						value="private _replace_strings = { " \n " params [""_from"", ""_to"", ""_gear""]; " \n " { " \n "  if (_x isEqualType []) then { " \n "   [_from, _to, _x] call _replace_strings; " \n "  } else { " \n "   if (_x isEqualType """" && {_x find ""cnto_flecktarn_"" == 0}) then { " \n "    private _off = _x find _from; " \n "    if (_off != -1) then { " \n "     _gear set [_forEachIndex, (_x select [0, _off]) +  " \n "          _to + (_x select [_off + count _from])]; " \n "    }; " \n "   }; " \n "  }; " \n " } forEach _gear; " \n "}; " \n " " \n "private _swap_weapons = { " \n "    params [""_camo"", ""_gear""]; " \n "    private _weaparr = _gear select 0; " \n "    if (count _weaparr < 1) exitWith {}; " \n "    private _new = switch (_camo) do { " \n "        case ""desert"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""rhs_weap_hk416d10"":       { ""cnto_hk416_d10"" }; " \n "                case ""rhs_weap_hk416d10_m320"":  { ""cnto_hk416_d10_m320"" }; " \n "                case ""rhs_weap_hk416d145"":      { ""cnto_hk416_d145"" }; " \n "                case ""rhs_weap_hk416d145_m320"": { ""cnto_hk416_d145_m320"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        case ""mediterranean"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""rhs_weap_hk416d10"":       { ""cnto_hk416_d10"" }; " \n "                case ""rhs_weap_hk416d10_m320"":  { ""cnto_hk416_d10_m320"" }; " \n "                case ""rhs_weap_hk416d145"":      { ""cnto_hk416_d145"" }; " \n "                case ""rhs_weap_hk416d145_m320"": { ""cnto_hk416_d145_m320"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        case ""snow"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""rhs_weap_hk416d10"":       { ""cnto_hk416_d10s"" }; " \n "                case ""rhs_weap_hk416d10_m320"":  { ""cnto_hk416_d10_m320s"" }; " \n "                case ""rhs_weap_hk416d145"":      { ""cnto_hk416_d145s"" }; " \n "                case ""rhs_weap_hk416d145_m320"": { ""cnto_hk416_d145_m320s"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        case ""grassland"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""cnto_hk416_d10"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320"": { ""rhs_weap_hk416d145_m320"" }; " \n "                case ""cnto_hk416_d10s"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320s"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145s"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320s"": { ""rhs_weap_hk416d145_m320"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        case ""forest"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""cnto_hk416_d10"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320"": { ""rhs_weap_hk416d145_m320"" }; " \n "                case ""cnto_hk416_d10s"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320s"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145s"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320s"": { ""rhs_weap_hk416d145_m320"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        case ""jungle"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""cnto_hk416_d10"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320"": { ""rhs_weap_hk416d145_m320"" }; " \n "                case ""cnto_hk416_d10s"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320s"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145s"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320s"": { ""rhs_weap_hk416d145_m320"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        case ""urban"": { " \n "            switch (_weaparr select 0) do { " \n "                case ""cnto_hk416_d10"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320"": { ""rhs_weap_hk416d145_m320"" }; " \n "                case ""cnto_hk416_d10s"":       { ""rhs_weap_hk416d10"" }; " \n "                case ""cnto_hk416_d10_m320s"":  { ""rhs_weap_hk416d10_m320"" }; " \n "                case ""cnto_hk416_d145s"":      { ""rhs_weap_hk416d145"" }; " \n "                case ""cnto_hk416_d145_m320s"": { ""rhs_weap_hk416d145_m320"" }; " \n "                default {}; " \n "            }; " \n "        }; " \n "        default {}; " \n "    }; " \n "    if (!isNil ""_new"") then { " \n "        _weaparr set [0, _new]; " \n "    }; " \n "}; " \n " " \n "{ " \n "    private _unit = _x; " \n " private _new_camo = ""jungle""; " \n " " \n " private _gear = getUnitLoadout _unit; " \n " [""grassland"", _new_camo, _gear] call _replace_strings; " \n " [""mediterranean"", _new_camo, _gear] call _replace_strings; " \n " [""desert"", _new_camo, _gear] call _replace_strings; " \n " [""urban"", _new_camo, _gear] call _replace_strings; " \n " [""forest"", _new_camo, _gear] call _replace_strings; " \n " [""snow"", _new_camo, _gear] call _replace_strings; " \n " [_new_camo, _gear] call _swap_weapons; " \n " _unit setUnitLoadout _gear; " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
+						value="private _replace_strings = { " \n " params [""_from"", ""_to"", ""_gear""]; " \n " { " \n "  if (_x isEqualType []) then { " \n "   [_from, _to, _x] call _replace_strings; " \n "  } else { " \n "   if (_x isEqualType """" && {_x find ""cnto_flecktarn_"" == 0}) then { " \n "    private _off = _x find _from; " \n "    if (_off != -1) then { " \n "     _gear set [_forEachIndex, (_x select [0, _off]) + " \n "          _to + (_x select [_off + count _from])]; " \n "    }; " \n "   }; " \n "  }; " \n " } forEach _gear; " \n "}; " \n " " \n "{ " \n "    private _unit = _x; " \n " private _new_camo = ""jungle""; " \n "  " \n " private _gear = getUnitLoadout _unit; " \n " [""mediterranean"", _new_camo, _gear] call _replace_strings; " \n " _unit setUnitLoadout _gear; " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
 					};
 				};
 			};
