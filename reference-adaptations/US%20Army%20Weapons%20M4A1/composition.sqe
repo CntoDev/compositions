@@ -1,0 +1,35 @@
+version=53;
+center[]={3332.46,5,1250.954};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=1045;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="[_this, _value] call a3ee_execute_code_fnc_exec3DEN";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="{  " \n "// Array check for pre-defined soldier classes. " \n "if ((typeOf _x) in [""B_soldier_AAR_F"",""B_Soldier_F""]) " \n " " \n "  then " \n " { " \n "  _x removeWeapon primaryWeapon _x; " \n "  _x addWeapon ""rhs_weap_m4a1_carryhandle""; " \n "  _x addPrimaryWeaponItem ""rhsusf_acc_grip3""; " \n "  _x addItem ""rhs_mag_30Rnd_556x45_M855A1_PMAG""; // adds a PMAG to the vest since the AI automatically loads a regular PMAG " \n " };  " \n " " \n "// Array check for pre-defined soldier classes. " \n " if ((typeOf _x) in [""B_officer_F"",""B_Soldier_SL_F""]) " \n " " \n "  then " \n " { " \n "  _x removeWeapon primaryWeapon _x; " \n "  _x addWeapon ""rhs_weap_m4a1_carryhandle_m203S""; " \n "  _x addPrimaryWeaponItem ""rhsusf_acc_anpeq16a""; " \n "  _x addItem ""rhs_mag_30Rnd_556x45_M855A1_PMAG""; // adds a PMAG to the vest since the AI automatically loads a regular PMAG " \n "  _x addItem ""1Rnd_HE_Grenade_shell""; // adds an HE GL round to the backpack since the AI automatically loads a backpack gl round " \n " };  " \n " " \n "} forEach playableUnits;  " \n "  " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
