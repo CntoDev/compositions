@@ -1,0 +1,36 @@
+version=53;
+center[]={1814.855,5,4317.21};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		name="AFRF_EMR_Summer_Camo";
+		id=80;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="[_this, _value] call a3ee_execute_code_fnc_exec3DEN";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="private _replace_strings = {  " \n " params [""_from"", ""_to"", ""_gear""];  " \n " {  " \n "  if (_x isEqualType []) then {  " \n "   [_from, _to, _x] call _replace_strings;  " \n "  } else {  " \n "   if (_x isEqualType """") then {  " \n "    private _off = _x find _from;  " \n "    if (_off != -1) then {  " \n "     _gear set [_forEachIndex, (_x select [0, _off]) +  " \n "          _to + (_x select [_off + count _from])];  " \n "    };  " \n "   };  " \n "  };  " \n " } forEach _gear;  " \n "};  " \n "  " \n "{  " \n "    private _unit = _x;  " \n " private _new_camo = ""emr"";  " \n "   " \n " private _gear = getUnitLoadout _unit;  " \n " private _replacement_table = [  " \n "  [""flora"", ""emr""], " \n "  [""6b23_6sh92"", ""6b23_digi_6sh92""], " \n "  [""6b23_medic"",""6b23_digi_medic""], " \n "  [""6b27m_digi"",""6b47""], " \n "  [""6b27m_digi_ess"",""6b47_ess""], " \n "  [""6b27m_green"",""6b47""], " \n "  [""6b26_ess_green"",""6b47_ess""], " \n "  [""6b26_ess_bala_green"",""6b47_ess_bala""], " \n "  [""6b26_green"",""6b47""], " \n "  [""fieldcap_vsr"",""fieldcap_digi2""] " \n " ];  " \n "   " \n " {  " \n "  [_x select 0, _x select 1, _gear] call _replace_strings;  " \n " } forEach _replacement_table;  " \n "   " \n " _unit setUnitLoadout _gear;  " \n "} forEach playableUnits;  " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

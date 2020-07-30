@@ -1,0 +1,36 @@
+version=53;
+center[]={3180.5659,5,1204.6331};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		name="AFRF_AK74M_Weapon_Replacer";
+		id=810;
+		type="a3ee_exec_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3ee_3den_code";
+				expression="[_this, _value] call a3ee_execute_code_fnc_exec3DEN";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="{  " \n "// Array check for pre-defined soldier classes. " \n "if ((typeOf _x) in [""O_medic_F"",""O_Soldier_LAT_F"",""O_Soldier_AT_F"",""O_engineer_F"",""O_support_Mort_F"",""O_support_AMort_F""]) " \n " " \n "  then " \n " { " \n "  _x removeWeapon primaryWeapon _x; " \n "  _x addWeapon ""rhs_weap_ak74m_fullplum""; " \n "  _x addPrimaryWeaponItem ""rhs_acc_dtk""; " \n "  _x addPrimaryWeaponItem ""rhs_30Rnd_545x39_7N22_plum_AK""; // ensures the loaded mag is a standard non-tracer mag. " \n "  _x addItem ""rhs_30Rnd_545x39_AK_plum_green""; // necessary step because during 'addWeapon' the AI immediately loads automatically one vest tracer-mag into the rifle. That mag gets deleted entirely by the previous line of code. " \n " };  " \n " " \n "} forEach playableUnits;  " \n "  " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
