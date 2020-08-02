@@ -12,13 +12,13 @@ class items
 		};
 		name="TFN_Mediterranean_Vehicles";
 		id=1727;
-		type="a3ee_exec_code";
+		type="a3aa_ee_execute_code";
 		class CustomAttributes
 		{
 			class Attribute0
 			{
-				property="a3ee_code";
-				expression="_this setVariable [""code"",_value]";
+				property="a3aa_ee_execute_code_code";
+				expression="_this setVariable [""a3aa_ee_execute_code_code"",_value]";
 				class Value
 				{
 					class data
@@ -179,13 +179,13 @@ class items
 		};
 		name="TFN_Mediterranean";
 		id=1728;
-		type="a3ee_exec_code_3den";
+		type="a3aa_ee_execute_code_3den";
 		class CustomAttributes
 		{
 			class Attribute0
 			{
-				property="a3ee_3den_code";
-				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
+				property="a3aa_ee_execute_code_3den_code";
+				expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
 				class Value
 				{
 					class data
