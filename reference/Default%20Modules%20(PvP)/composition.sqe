@@ -1,19 +1,19 @@
 version=53;
-center[]={3031.0161,5,6235.9502};
+center[]={1042.4706,5,6604.7061};
 class items
 {
-	items=21;
+	items=17;
 	class Item0
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-3.0483398,0,2.0942383};
+			position[]={-2.4705811,0,1.2939453};
 		};
 		name="HC_4";
 		isPlayer=1;
 		isPlayable=1;
-		id=67;
+		id=1;
 		type="HeadlessClient_F";
 	};
 	class Item1
@@ -21,11 +21,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-3.0483398,0,0.094238281};
+			position[]={-2.4705811,0,-0.70605469};
 		};
 		name="HC_5";
 		isPlayable=1;
-		id=68;
+		id=2;
 		type="HeadlessClient_F";
 	};
 	class Item2
@@ -33,11 +33,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-3.0483398,0,-1.9057617};
+			position[]={-2.4705811,0,-2.7060547};
 		};
 		name="Spectator_4";
 		isPlayable=1;
-		id=69;
+		id=3;
 		type="VirtualSpectator_F";
 		class CustomAttributes
 		{
@@ -143,11 +143,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-3.0483398,0,-3.9057617};
+			position[]={-2.4705811,0,-4.7060547};
 		};
 		name="Spectator_5";
 		isPlayable=1;
-		id=70;
+		id=4;
 		type="VirtualSpectator_F";
 		class CustomAttributes
 		{
@@ -253,71 +253,9 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.95166016,0,2.0942383};
+			position[]={-0.47058105,0,-0.70605469};
 		};
-		id=71;
-		type="basic_vehicle_cargo_filler";
-	};
-	class Item5
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={0.95166016,0,0.094238281};
-		};
-		id=72;
-		type="a3ee_locality_transfer";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_hcs_required";
-				expression="_this setVariable [""hcs_required"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_locality_structured_hint";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=2;
-		};
-	};
-	class Item6
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-1.0483398,0,0.094238281};
-		};
-		id=73;
+		id=5;
 		type="acre_api_nameChannels";
 		class CustomAttributes
 		{
@@ -533,276 +471,44 @@ class items
 			nAttributes=11;
 		};
 	};
-	class Item7
+	class Item5
 	{
-		dataType="Logic";
+		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={0.95166016,0,-5.9057617};
+			position[]={-2.4705811,0,3.2939453};
 		};
-		id=74;
-		type="a3ee_exec_code";
-		class CustomAttributes
+		title="HC/Spect";
+		id=6;
+	};
+	class Item6
+	{
+		dataType="Comment";
+		class PositionInfo
 		{
-			class Attribute0
-			{
-				property="a3ee_code";
-				expression="_this setVariable [""code"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="/*" \n " * Chat channel disablement; PvP - all except global+side+group (0+1+3)" \n " */" \n "" \n "{ _x enableChannel false } forEach [2,4,5]";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_runoninit";
-				expression="_this setVariable [""runoninit"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_forjip";
-				expression="_this setVariable [""forjip"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="a3ee_keepmodule";
-				expression="_this setVariable [""keepmodule"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="a3ee_runonrespawn";
-				expression="_this setVariable [""runonrespawn"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="a3ee_execonmp";
-				expression="_this setVariable [""execonmp"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute6
-			{
-				property="a3ee_enabledexec";
-				expression="_this setVariable [""enabledexec"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute7
-			{
-				property="a3ee_execenv";
-				expression="_this setVariable [""execenv"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			nAttributes=8;
+			position[]={-0.47058105,0,3.2939453};
 		};
+		title="ACRE2";
+		id=7;
+	};
+	class Item7
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={1.5294189,0,3.2939453};
+		};
+		title="CNTO";
+		id=8;
 	};
 	class Item8
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.95166016,0,-7.9057617};
+			position[]={-0.47058105,0,1.2939453};
 		};
-		id=75;
-		type="a3ee_exec_code_3den";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_3den_code";
-				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="/* " \n " * Refer to " \n " * https://community.bistudio.com/wiki/Eden_Editor:_Setting_Attributes " \n " * " \n " * To get existing value for an attribute, put this in debug line: " \n " *   <section> get3DENMissionAttribute <name> " \n " * ie. " \n " *   ""Multiplayer"" get3DENMissionAttribute ""Respawn"" " \n " */ " \n "set3DENMissionAttributes [ " \n "    [""Scenario"", ""Saving"", false], " \n "    [""Scenario"", ""EnableDebugConsole"", 1], " \n "    [""Scenario"", ""SaveBinarized"", false], " \n "    [""Multiplayer"", ""GameType"", ""DM""], " \n "    [""Multiplayer"", ""DisabledAI"", true], " \n "    [""Multiplayer"", ""Respawn"", 1],  // to spectator " \n "    [""Multiplayer"", ""RespawnTemplates"", [""EndMission"",""Spectator""]], " \n "    [""Multiplayer"", ""RespawnButton"", 0], " \n "    [""Multiplayer"", ""AIKills"", false] " \n "];";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item9
-	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={-3.0483398,0,4.0942383};
-		};
-		title="HC/Spect";
-		id=76;
-	};
-	class Item10
-	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={-1.0483398,0,4.0942383};
-		};
-		title="ACRE2";
-		id=77;
-	};
-	class Item11
-	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={0.95166016,0,4.0942383};
-		};
-		title="CNTO";
-		id=78;
-	};
-	class Item12
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={0.95166016,0,-1.9057617};
-		};
-		id=79;
-		type="a3ee_kill_on_jip";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_kill_on_jip_structured_hint";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item13
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-1.0483398,0,2.0942383};
-		};
-		id=80;
+		id=9;
 		type="acre_api_basicMissionSetup";
 		class CustomAttributes
 		{
@@ -923,42 +629,389 @@ class items
 			nAttributes=6;
 		};
 	};
-	class Item14
+	class Item9
 	{
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-3.0483398,0,6.0942383};
+			position[]={-2.4705811,0,5.2939453};
 		};
-		title="v1.07";
+		title="v1.08";
 		description="Current composition version.";
-		id=81;
+		id=10;
+	};
+	class Item10
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={3.5294189,0,3.2939453};
+		};
+		title="Briefing";
+		id=11;
+	};
+	class Item11
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={3.5294189,0,1.2939453};
+		};
+		id=12;
+		type="a3aa_ee_briefing";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_briefing_situation";
+				expression="_this setVariable [""a3aa_ee_briefing_situation"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3aa_ee_briefing_mission";
+				expression="_this setVariable [""a3aa_ee_briefing_mission"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3aa_ee_briefing_execution";
+				expression="_this setVariable [""a3aa_ee_briefing_execution"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3aa_ee_briefing_admin_logistics";
+				expression="_this setVariable [""a3aa_ee_briefing_admin_logistics"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3aa_ee_briefing_briefingfor";
+				expression="_this setVariable [""a3aa_ee_briefing_briefingfor"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="everyone";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3aa_ee_briefing_command_signal";
+				expression="_this setVariable [""a3aa_ee_briefing_command_signal"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			nAttributes=6;
+		};
+	};
+	class Item12
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={1.5294189,0,1.2939453};
+		};
+		id=13;
+		type="a3aa_ee_basic_vehicle_cargo";
+	};
+	class Item13
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={1.5294189,0,-0.70605469};
+		};
+		id=14;
+		type="a3aa_ee_locality_transfer";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_locality_transfer_hcs_required";
+				expression="_this setVariable [""a3aa_ee_locality_transfer_hcs_required"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item14
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={1.5294189,0,-2.7060547};
+		};
+		id=15;
+		type="a3aa_ee_aresenal_respawn";
 	};
 	class Item15
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.95166016,0,-3.9057617};
+			position[]={1.5294189,0,-4.7060547};
 		};
-		id=82;
-		type="a3ee_aresenal_respawn";
+		id=16;
+		type="a3aa_ee_execute_code";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_execute_code_runoninit";
+				expression="_this setVariable [""a3aa_ee_execute_code_runoninit"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3aa_ee_execute_code_keepmodule";
+				expression="_this setVariable [""a3aa_ee_execute_code_keepmodule"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3aa_ee_execute_code_code";
+				expression="_this setVariable [""a3aa_ee_execute_code_code"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="/* " \n " * Chat channel disablement; PvP - all except global+side+group (0+1+3) " \n " */ " \n " " \n "{ _x enableChannel false } forEach [2,4,5]";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3aa_ee_execute_code_runonrespawn";
+				expression="_this setVariable [""a3aa_ee_execute_code_runonrespawn"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3aa_ee_execute_code_enabledexec";
+				expression="_this setVariable [""a3aa_ee_execute_code_enabledexec"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3aa_ee_execute_code_execenv";
+				expression="_this setVariable [""a3aa_ee_execute_code_execenv"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="a3aa_ee_execute_code_forjip";
+				expression="_this setVariable [""a3aa_ee_execute_code_forjip"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="a3aa_ee_execute_code_execonmp";
+				expression="_this setVariable [""a3aa_ee_execute_code_execonmp"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=8;
+		};
 	};
 	class Item16
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={2.9516602,0,2.0942383};
+			position[]={1.5294189,0,-6.7060547};
 		};
-		id=83;
-		type="a3ee_briefing";
+		id=17;
+		type="a3aa_ee_execute_code_3den";
 		class CustomAttributes
 		{
 			class Attribute0
 			{
-				property="a3ee_briefing_command";
-				expression="_this setVariable [""command_signal"",_value]";
+				property="a3aa_ee_execute_code_3den_code";
+				expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
 				class Value
 				{
 					class data
@@ -970,500 +1023,11 @@ class items
 								"STRING"
 							};
 						};
-						value="";
+						value="/*  " \n " * Refer to  " \n " * https://community.bistudio.com/wiki/Eden_Editor:_Setting_Attributes  " \n " *  " \n " * To get existing value for an attribute, put this in debug line:  " \n " *   <section> get3DENMissionAttribute <name>  " \n " * ie.  " \n " *   ""Multiplayer"" get3DENMissionAttribute ""Respawn""  " \n " */  " \n "set3DENMissionAttributes [  " \n "    [""Scenario"", ""Saving"", false],  " \n "    [""Scenario"", ""EnableDebugConsole"", 1],  " \n "    [""Scenario"", ""SaveBinarized"", false],  " \n "    [""Multiplayer"", ""GameType"", ""DM""],  " \n "    [""Multiplayer"", ""DisabledAI"", true],  " \n "    [""Multiplayer"", ""Respawn"", 1],  // to spectator  " \n "    [""Multiplayer"", ""RespawnTemplates"", [""EndMission"",""Spectator""]],  " \n "    [""Multiplayer"", ""RespawnButton"", 0],  " \n "    [""Multiplayer"", ""AIKills"", false]  " \n "];";
 					};
 				};
 			};
-			class Attribute1
-			{
-				property="a3ee_briefing_mission";
-				expression="_this setVariable [""mission"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_briefingfor";
-				expression="_this setVariable [""briefingfor"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="side_blufor";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="a3ee_briefing_situation";
-				expression="_this setVariable [""situation"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="a3ee_briefing_logistics";
-				expression="_this setVariable [""admin_logistics"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="a3ee_briefing_execution";
-				expression="_this setVariable [""execution"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			nAttributes=6;
-		};
-	};
-	class Item17
-	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={2.9516602,0,4.0942383};
-		};
-		title="Briefing";
-		id=84;
-	};
-	class Item18
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={2.9516602,0,0.094238281};
-		};
-		id=85;
-		type="a3ee_briefing";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_briefing_command";
-				expression="_this setVariable [""command_signal"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_briefing_mission";
-				expression="_this setVariable [""mission"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_briefingfor";
-				expression="_this setVariable [""briefingfor"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="side_opfor";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="a3ee_briefing_situation";
-				expression="_this setVariable [""situation"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="a3ee_briefing_logistics";
-				expression="_this setVariable [""admin_logistics"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="a3ee_briefing_execution";
-				expression="_this setVariable [""execution"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			nAttributes=6;
-		};
-	};
-	class Item19
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={2.9516602,0,-1.9057617};
-		};
-		id=86;
-		type="a3ee_briefing";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_briefing_command";
-				expression="_this setVariable [""command_signal"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_briefing_mission";
-				expression="_this setVariable [""mission"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_briefingfor";
-				expression="_this setVariable [""briefingfor"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="side_indep";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="a3ee_briefing_situation";
-				expression="_this setVariable [""situation"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="a3ee_briefing_logistics";
-				expression="_this setVariable [""admin_logistics"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="a3ee_briefing_execution";
-				expression="_this setVariable [""execution"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			nAttributes=6;
-		};
-	};
-	class Item20
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={2.9516602,0,-3.9057617};
-		};
-		id=87;
-		type="a3ee_briefing";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_briefing_command";
-				expression="_this setVariable [""command_signal"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_briefing_mission";
-				expression="_this setVariable [""mission"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_briefingfor";
-				expression="_this setVariable [""briefingfor"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="side_civ";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="a3ee_briefing_situation";
-				expression="_this setVariable [""situation"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="a3ee_briefing_logistics";
-				expression="_this setVariable [""admin_logistics"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="a3ee_briefing_execution";
-				expression="_this setVariable [""execution"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			nAttributes=6;
+			nAttributes=1;
 		};
 	};
 };
