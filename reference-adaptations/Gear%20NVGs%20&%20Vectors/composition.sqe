@@ -8,13 +8,13 @@ class items
 		dataType="Logic";
 		name="NVG_Vector";
 		id=0;
-		type="a3ee_exec_code_3den";
+		type="a3aa_ee_execute_code_3den";
 		class CustomAttributes
 		{
 			class Attribute0
 			{
-				property="a3ee_3den_code";
-				expression="if (is3DEN) then { [] call (compile (_value call a3ee_execute_code_fnc_decomment)) } else { deleteVehicle _this }";
+				property="a3aa_ee_execute_code_3den_code";
+				expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
 				class Value
 				{
 					class data
