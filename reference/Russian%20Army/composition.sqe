@@ -1,5 +1,5 @@
 version=53;
-center[]={6463.8857,5,5604.0308};
+center[]={6632.4009,5,3928.658};
 class items
 {
 	items=21;
@@ -15,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.9975586,0.0014390945,8.1503906};
+					position[]={-5.8227539,0.0014390945,8.7497559};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -244,8 +244,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -254,55 +254,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="4";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="5";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -314,7 +269,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.9975586,0.0014390945,8.1621094};
+					position[]={-4.8227539,0.0014390945,8.7282715};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -498,8 +453,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -508,55 +463,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="4";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -568,7 +478,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.9975586,0.0014390945,8.1728516};
+					position[]={-3.8227539,0.0014390945,8.7497559};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -797,8 +707,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -807,27 +717,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="4";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -839,7 +732,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.9975586,0.0014390945,8.1835938};
+					position[]={-2.8227539,0.0014390945,8.7497559};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -987,8 +880,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -997,27 +890,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="4";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -1029,29 +905,6 @@ class items
 		{
 		};
 		id=0;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="PLATOON";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item1
 	{
@@ -1065,7 +918,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.2558594,0.0014390945,5.4511719};
+					position[]={-6.0810547,0.0014390945,6.017334};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -1075,7 +928,6 @@ class items
 					rank="LIEUTENANT";
 					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Alpha Squad Leader@ALPHA";
-					isPlayer=1;
 					isPlayable=1;
 					class Inventory
 					{
@@ -1306,8 +1158,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -1316,41 +1168,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -1362,7 +1183,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.2543945,0.0014390945,5.4619141};
+					position[]={-5.0795898,0.0014390945,6.0280762};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -1591,8 +1412,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -1601,27 +1422,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -1633,7 +1437,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.2333984,0.0014390945,3.4511719};
+					position[]={-6.0585938,0.0014390945,4.017334};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -1837,25 +1641,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -1873,10 +1658,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -1885,31 +1670,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item3
@@ -1917,7 +1685,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.2333984,0.0014390945,3.4619141};
+					position[]={-5.0585938,0.0014390945,4.0280762};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -2061,25 +1829,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -2097,10 +1846,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -2109,31 +1858,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item4
@@ -2141,7 +1873,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.2333984,0.0014390945,3.4726563};
+					position[]={-4.0585938,0.0014390945,4.0388184};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -2334,25 +2066,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -2370,10 +2083,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -2382,31 +2095,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item5
@@ -2414,7 +2110,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.2333984,0.0014390945,3.4824219};
+					position[]={-3.0585938,0.0014390945,4.048584};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -2547,25 +2243,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -2583,10 +2260,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -2595,31 +2272,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item6
@@ -2627,7 +2287,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.2114258,0.0014390945,1.4511719};
+					position[]={-6.0366211,0.0014390945,2.017334};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -2831,25 +2491,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -2867,10 +2508,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -2879,31 +2520,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item7
@@ -2911,7 +2535,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.2114258,0.0014390945,1.4619141};
+					position[]={-5.0366211,0.0014390945,2.0280762};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -3055,25 +2679,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -3091,10 +2696,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -3103,31 +2708,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item8
@@ -3135,7 +2723,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.2114258,0.0014390945,1.4726563};
+					position[]={-4.0366211,0.0014390945,2.0388184};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -3328,25 +2916,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -3364,10 +2933,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -3376,31 +2945,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item9
@@ -3408,7 +2960,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.2114258,0.0014390945,1.4833984};
+					position[]={-3.0366211,0.0014390945,2.0495605};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -3541,25 +3093,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -3577,10 +3110,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -3589,31 +3122,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 		};
@@ -3621,29 +3137,6 @@ class items
 		{
 		};
 		id=5;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="ALPHA";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item2
 	{
@@ -3657,7 +3150,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.0454102,0.0014390945,5.8740234};
+					position[]={-0.87060547,0.0014390945,6.4401855};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -3897,8 +3390,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -3907,41 +3400,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -3953,7 +3415,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.044433594,0.0014390945,5.8847656};
+					position[]={0.13037109,0.0014390945,6.4509277};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -4182,8 +3644,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -4192,27 +3654,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -4224,7 +3669,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.0234375,0.0014390945,3.8740234};
+					position[]={-0.84863281,0.0014390945,4.4401855};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -4428,25 +3873,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="GREEN";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -4464,10 +3890,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -4476,31 +3902,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item3
@@ -4508,7 +3917,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.0234375,0.0014390945,3.8847656};
+					position[]={0.15136719,0.0014390945,4.4509277};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -4652,25 +4061,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="GREEN";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -4688,10 +4078,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -4700,31 +4090,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item4
@@ -4732,7 +4105,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.9765625,0.0014390945,3.8945313};
+					position[]={1.1513672,0.0014390945,4.4606934};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -4925,25 +4298,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="GREEN";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -4961,10 +4315,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -4973,31 +4327,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item5
@@ -5005,7 +4342,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.9765625,0.0014390945,3.90625};
+					position[]={2.1513672,0.0014390945,4.4724121};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -5138,25 +4475,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="GREEN";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -5174,10 +4492,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -5186,31 +4504,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item6
@@ -5218,7 +4519,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.0014648,0.0014390945,1.8740234};
+					position[]={-0.82666016,0.0014390945,2.4401855};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -5422,25 +4723,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="BLUE";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -5458,10 +4740,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -5470,31 +4752,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item7
@@ -5502,7 +4767,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.0014648438,0.0014390945,1.8847656};
+					position[]={0.17333984,0.0014390945,2.4509277};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -5646,25 +4911,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="BLUE";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -5682,10 +4928,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -5694,31 +4940,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item8
@@ -5726,7 +4955,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.99853516,0.0014390945,1.8945313};
+					position[]={1.1733398,0.0014390945,2.4606934};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -5919,25 +5148,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="BLUE";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -5955,10 +5165,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -5967,31 +5177,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item9
@@ -5999,7 +5192,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.9985352,0.0014390945,1.90625};
+					position[]={2.1733398,0.0014390945,2.4724121};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -6132,25 +5325,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="BLUE";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -6168,10 +5342,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -6180,31 +5354,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 		};
@@ -6212,29 +5369,6 @@ class items
 		{
 		};
 		id=16;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="BRAVO";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item3
 	{
@@ -6248,7 +5382,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.362793,0.0014390945,6.3984375};
+					position[]={4.5375977,0.0014390945,6.9645996};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -6488,8 +5622,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -6498,41 +5632,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=2;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -6544,7 +5647,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.3618164,0.0014390945,6.4101563};
+					position[]={5.5366211,0.0014390945,6.9763184};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -6773,8 +5876,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -6783,27 +5886,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -6815,7 +5901,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.3837891,0.0014390945,4.3984375};
+					position[]={4.5585938,0.0014390945,4.9645996};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -7019,25 +6105,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -7055,10 +6122,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -7067,31 +6134,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item3
@@ -7099,7 +6149,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.3837891,0.0014390945,4.4101563};
+					position[]={5.5585938,0.0014390945,4.9763184};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -7243,25 +6293,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -7279,10 +6310,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -7291,31 +6322,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item4
@@ -7323,7 +6337,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.3837891,0.0014390945,4.4208984};
+					position[]={6.5585938,0.0014390945,4.9870605};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -7516,25 +6530,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -7552,10 +6547,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -7564,31 +6559,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item5
@@ -7596,7 +6574,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.3837891,0.0014390945,4.4316406};
+					position[]={7.5585938,0.0014390945,4.9978027};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -7729,25 +6707,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -7765,10 +6724,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -7777,31 +6736,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item6
@@ -7809,7 +6751,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4057617,0.0014390945,2.3994141};
+					position[]={4.5805664,0.0014390945,2.9655762};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -8013,25 +6955,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -8049,10 +6972,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -8061,31 +6984,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item7
@@ -8093,7 +6999,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.4057617,0.0014390945,2.4111328};
+					position[]={5.5805664,0.0014390945,2.9772949};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -8237,25 +7143,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -8273,10 +7160,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -8285,31 +7172,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item8
@@ -8317,7 +7187,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4047852,0.0014390945,2.4208984};
+					position[]={6.5795898,0.0014390945,2.9870605};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -8510,25 +7380,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -8546,10 +7397,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -8558,31 +7409,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 			class Item9
@@ -8590,7 +7424,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.4047852,0.0014390945,2.4316406};
+					position[]={7.5795898,0.0014390945,2.9978027};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -8723,25 +7557,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="a3ee_teamcolor";
-						expression="[_this, _value] call a3ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
 						class Value
@@ -8759,10 +7574,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -8771,31 +7586,14 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=1;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 		};
@@ -8803,29 +7601,6 @@ class items
 		{
 		};
 		id=27;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="CHARLIE";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item4
 	{
@@ -8839,7 +7614,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.581543,0.0014390945,-1.4819336};
+					position[]={-6.4067383,0.0014390945,-0.91577148};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9077,7 +7852,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -9085,7 +7879,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.581543,0.0014390945,-1.4707031};
+					position[]={-5.4067383,0.0014390945,-0.90454102};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9233,7 +8027,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item2
@@ -9241,7 +8054,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.581543,0.0014390945,-1.4599609};
+					position[]={-4.4067383,0.0014390945,-0.89379883};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9402,7 +8215,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 		};
@@ -9410,29 +8242,6 @@ class items
 		{
 		};
 		id=38;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MMG";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item5
 	{
@@ -9446,7 +8255,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.97753906,0.0014390945,-1.7119141};
+					position[]={-0.80273438,0.0014390945,-1.145752};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9684,7 +8493,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -9692,7 +8520,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.021484375,0.0014390945,-1.7011719};
+					position[]={0.19628906,0.0014390945,-1.1350098};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -9869,7 +8697,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item2
@@ -9877,7 +8724,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.0214844,0.0014390945,-1.6904297};
+					position[]={1.1962891,0.0014390945,-1.1242676};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10050,7 +8897,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 		};
@@ -10058,29 +8924,6 @@ class items
 		{
 		};
 		id=42;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MAT";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item6
 	{
@@ -10094,7 +8937,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.5947266,0.0014390945,-4.5166016};
+					position[]={-6.4199219,0.0014390945,-3.9504395};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10283,7 +9126,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -10291,7 +9153,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.5952148,0.0014390945,-4.5058594};
+					position[]={-5.4204102,0.0014390945,-3.9396973};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10475,7 +9337,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 		};
@@ -10483,29 +9364,6 @@ class items
 		{
 		};
 		id=46;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="DMT";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item7
 	{
@@ -10519,7 +9377,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.83642578,0.0014390945,-4.8720703};
+					position[]={-0.66162109,0.0014390945,-4.3059082};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10703,7 +9561,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -10711,7 +9588,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.16357422,0.0014390945,-4.8613281};
+					position[]={0.33837891,0.0014390945,-4.295166};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -10871,7 +9748,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 		};
@@ -10879,29 +9775,6 @@ class items
 		{
 		};
 		id=49;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="MORTAR";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item8
 	{
@@ -10915,7 +9788,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.534668,0.0014390945,-1.5234375};
+					position[]={4.7094727,0.0014390945,-0.95727539};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11095,7 +9968,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item1
@@ -11103,7 +9995,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.5356445,0.0014390945,-1.5117188};
+					position[]={5.7104492,0.0014390945,-0.94555664};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11277,7 +10169,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item2
@@ -11285,7 +10196,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.5356445,0.0014390945,-1.5009766};
+					position[]={6.7104492,0.0014390945,-0.93481445};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11459,7 +10370,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 			class Item3
@@ -11467,7 +10397,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.5356445,0.0014390945,-1.4902344};
+					position[]={7.7104492,0.0014390945,-0.92407227};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11641,7 +10571,26 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 		};
@@ -11649,29 +10598,6 @@ class items
 		{
 		};
 		id=52;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="ENG";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item9
 	{
@@ -11685,7 +10611,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.5043945,0.0014390945,-7.6787109};
+					position[]={-6.3295898,0.0014390945,-7.1125488};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -11850,8 +10776,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -11860,55 +10786,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="2";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -11920,7 +10801,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.5043945,0.0014390945,-7.6679688};
+					position[]={-5.3295898,0.0014390945,-7.1018066};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -12060,25 +10941,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="ace_isEngineer";
 						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
@@ -12096,7 +10958,45 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute1
+					{
+						property="lambs_danger_disableAI";
+						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -12104,7 +11004,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5043945,0.0014390945,-7.6572266};
+					position[]={-4.3295898,0.0014390945,-7.0910645};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -12230,25 +11130,6 @@ class items
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="ace_isEngineer";
 						expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 						class Value
@@ -12266,7 +11147,45 @@ class items
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute1
+					{
+						property="lambs_danger_disableAI";
+						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 		};
@@ -12274,29 +11193,6 @@ class items
 		{
 		};
 		id=57;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="DAGGER";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item10
 	{
@@ -12310,7 +11206,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.68310547,0.0014390945,-8.0253906};
+					position[]={-0.50830078,0.0014390945,-7.4592285};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -12494,8 +11390,8 @@ class items
 					};
 					class Attribute2
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -12504,55 +11400,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -12564,7 +11415,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.31689453,0.0014390945,-8.015625};
+					position[]={0.49169922,0.0014390945,-7.4494629};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -12761,8 +11612,8 @@ class items
 					};
 					class Attribute2
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -12771,55 +11622,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -12831,29 +11637,6 @@ class items
 		{
 		};
 		id=61;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="NIGHTBIRD";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item11
 	{
@@ -12867,7 +11650,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1044922,0.0014390945,-8.1416016};
+					position[]={3.2792969,0.0014390945,-7.5754395};
 					angles[]={0,6.2723818,0};
 				};
 				side="East";
@@ -13055,8 +11838,8 @@ class items
 					};
 					class Attribute2
 					{
-						property="a3ee_acre_chlist";
-						expression="_this setVariable [""a3ee_acre_chlist"",_value,true]";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -13065,55 +11848,10 @@ class items
 								{
 									type[]=
 									{
-										"ARRAY"
+										"STRING"
 									};
 								};
-								class value
-								{
-									items=3;
-									class Item0
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="0";
-										};
-									};
-									class Item1
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1";
-										};
-									};
-									class Item2
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="3";
-										};
-									};
-								};
+								value="CNTOpatchAlt";
 							};
 						};
 					};
@@ -13125,57 +11863,34 @@ class items
 		{
 		};
 		id=64;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="FALCON";
-					};
-				};
-			};
-			nAttributes=1;
-		};
 	};
 	class Item12
 	{
 		dataType="Marker";
-		position[]={2.3408203,2.4371225e+032,-4.8217773};
+		position[]={2.515625,2.4371225e+032,-4.2556152};
 		name="respawn_east";
 		type="respawn_unknown";
 		angle=359.38113;
-		id=68;
+		id=66;
 		atlOffset=2.4371225e+032;
 	};
 	class Item13
 	{
 		dataType="Marker";
-		position[]={6.7788086,0,-6.5415039};
-		name="resupply_marker";
+		position[]={6.9536133,0,-5.9753418};
+		name="resupply_marker_1";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
 		angle=359.38086;
-		id=69;
+		id=67;
 	};
 	class Item14
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={5.3911133,0.14963102,-6.8867188};
+			position[]={5.565918,0.14963102,-6.3205566};
 			angles[]={-0,1.5418237,0};
 		};
 		side="Empty";
@@ -13183,7 +11898,7 @@ class items
 		class Attributes
 		{
 		};
-		id=70;
+		id=68;
 		type="Box_East_WpsLaunch_F";
 		class CustomAttributes
 		{
@@ -13214,11 +11929,11 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={2.5712891,0,-3.6625977};
+			position[]={2.7460938,0,-3.0959473};
 		};
-		title="v1.14.0";
-		description="-v1.14.0" \n "PL: " \n "- Headgear changed from RHS ""Field Cap EMR-Summer"" to RHS ""Field Cap VSR"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/Headset/Mapcase)"" for more visual diversity in the platoon. " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: increased GL smoke white from 3x to 5x to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n " Platoon Sergeant: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B26 (ESS)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest content: removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack added 3CB ""Radio Backpack MR3000"" and filled it with the ACRE2 ""AN/PRC-117F"" backpack radio. This gives more incentive to bring the PLT Sgt along since he is the only one who can act as a max range radio man for the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "Platoon Medic: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B26"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer (Medic)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Kitback (green)"" to 3CB ""Knapsack Medical (Khaki)"" to visually make the Vest medical bag look like the primary backpack. " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "Platoon Rifleman: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B26 (ESS/Balaclava)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer (6Sh116)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "SL: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/VOG/Radio) SpNz"".  " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: added 1x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest.  " \n " " \n "SL Medic: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" semi-randomly to RHS ""6B23 EMR-Summer (Medic)"" or RHS ""6B23 (Medic)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Kitback (green)"" to 3CB ""Knapsack Medical (Khaki)"" to visually make the Vest medical bag look like the primary backpack. " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "FTL: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" semi-randomly to RHS ""6B23 EMR-Summer (6Sh92/VOG/Headset)"" or RHS ""6B23 (6Sh92/VOG/Headset)"". " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack (Engineer)"" for a more Russian/breacher look. " \n "- Backpack content: added 2x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "AR: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" semi-randomly to RHS ""6B23 EMR-Summer (Vydra-3M)"" or RHS ""6B23 (Vydra-3M)"" " \n "- Vest content: added 1x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracers every 3)"" " \n "- Backpack changed from vanilla ""Assaultpack (green)"" to RHS ""Sidor"" for a more Russian look. " \n "- Backpack content: added 2x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracers every 3)"" and 1x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracer)"" " \n "- Rifle changed from RHS ""PKP"" to HLC ""RPK"". " \n "- Rifle muzzle attachment added RHS ""Surefire SF3P-762"". " \n " " \n "AAR: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" semi-randomly to RHS ""6B23 EMR-Summer (6Sh92/Headset)"" or RHS ""6B23 (6Sh92/Headset)"". " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack content: added RHS 2x ""30Rnd AK-74 (Plum) 7N22"" and 3x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracers every 3)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "" \n "LAT: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest variety changed semi-randomly to RHS ""6B23 (6Sh116)"" and RHS ""6B23 EMR-Summer (6Sh116)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MMG Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M EMR-Summer"" " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/VOG/Radio) SpNz"".  " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: added 1x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "MMG Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M (ESS)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer (Rifleman)"". " \n " " \n "MMG Asst. Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MAT Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M EMR-Summer"" " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/VOG/Radio) SpNz"".  " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: added 1x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MAT Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M (ESS)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MAT Asst. Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer ""(6Sh92/Headset)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "DMT Marksman " \n "- Added scope RHS ""IPN34"" to the vest gear. This is a somewhat equivalent NVG scope to the US Army Faction. " \n "  " \n "ENG Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""Altyn (visor up)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B13 EMR-Summer ""(6Sh92/Radio)"". " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "ENG Rifleman: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""Altyn (visor down)"" or RHS ""Altyn (visor up Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B13 EMR-Summer ""(6Sh92)"". " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "Mortar Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/Radio)"". " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "Mortar Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M (ESS)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92)"". " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "All Units: " \n "- Disabled LAMBS AI " \n " " \n "Alpha SL: " \n "- Enabled ""is Player"". This makes it easier for Mission Makers to quickly test a mission in the editor by just hitting ""play"" instead of having to select a specific unit every time beforehand to avoid ending up in spectator mode by default. " \n " " \n "Crates: " \n "- Added an ACE3 medical crate with our usual base script. " \n "- Fireteam ammo crate: removed 4x 100Rnd PKM Box and replaced it with 4x 75Rnd RPK Mag and 1x 75Rnd RPK Tracer Mag. " \n "- Squad ammo crate: removed 13x 100Rnd PKM Tracer Box and added 12x 75Rnd RPK Mag & 4x 75Rnd RPK Tracer Mag" \n "" \n "" \n "-v1.13.6" \n "  - ALL Added persistent Call-Signs for all GM's (where not included in v1.13.4)" \n "  - ALL Added the code`this disableAI ""MOVE""; this setSpeaker ""NoVoice""; enableRadio false;` to all playable units to prevent them from running off and spamming the vanilla-radio during local testing." \n "  - ALL Changed persistent call-signs (map markers) to a consistent formula: ≤ 2 syllables = written out call-sing. ≥ 3 syllables = abbreviated call-sign." \n "  - ALL Added full changelog to all factions for quick in-game reference" \n "  - TFN Added new yellow owl insignia patches to all uniforms" \n "" \n "- v1.13.5" \n "  - ALL Added respective GM's to Standard Faction Compositions for convenience / time saving " \n "  - ALL Added base clean-up module to Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters" \n "" \n "- v1.13.4 " \n "  - ALL Added @ Squad/Team names to leaders so that Team name appears in role select" \n "  - TFN Changed M249 to the FN MINIMI" \n "" \n "- v1.13.3" \n "  - US Added Improved Bipod/SAW Grip to AR M249" \n "  - US Removed M14 Mags" \n "  - TFN Added Bipod to M249" \n "" \n "- v1.13.2" \n "  - ALL Added 1 Extra Tourniquet to every Unit" \n "  - TFN DMT Lead Rifle Changed to D10 Version" \n "  - TFN DMT given extra pistol mag to bring in line with other units" \n "  - TFN AAR Weapon changed to HK416 D14.5" \n "  - TFN Lead Elements Given AN/PEQ-16A's" \n "  - US Alpha Fireteam 2 AAR vest changed to ALT variant to match rest of faction" \n "  - US Lead Elements Given AN/PEQ-16A's" \n "  - US DMT given extra pistol mag to bring in line with other units" \n "  - US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions" \n "  - US DMT Bipod Changed to Harris Bipod" \n "  - US DMT Marksman Rifle changed to black version of same rifle" \n "  - US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11" \n "  - RUS DMT given extra pistol mag to bring in line with other units" \n "  - RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets" \n "  - RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets" \n "  - RUS Removed RIS Rail adaptors from AK rifles" \n "  - RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an  increased effective range but is less powerful due to decreased payload" \n "" \n "- v1.12.2" \n "  - Hotfixed US Vests across the Squads to match V.12 changes. Whoops." \n "  - Added Angled Grip to TFN HK416s where possible. " \n "" \n "- v1.12" \n "  - Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd." \n "  - Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag." \n "  - Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey" \n "  - Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]" \n "  - Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP" \n "  - Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP" \n "  - Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP" \n "  - Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP" \n "  - Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP" \n "  - Fixed US DMT Marksman Rifle Loaded Mag to correct varient." \n "  - Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]" \n "  - Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black" \n "  - Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]" \n "  - Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2." \n "  - Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)" \n "  - Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues" \n "  - Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000" \n "  - Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US." \n "  - Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "  - Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "" \n "- v1.11" \n "  - changed m40 mini grenades to m67 fragmentation" \n "  - replaced mp7 weapons with mp5k-pdw" \n "  - changed ak105 to ak74m (plum) " \n "  - changed PKM to PKP" \n "  - changed RUS PKM ammo boxes. MMG now loads with 7TZ (AP rounds)" \n "  - added vert grip to us weapons" \n "  - replaced m14 with HK PSG1A1" \n "  - replaced m260e4 with mg3" \n "  - updated all ammo boxes respectively. " \n "" \n "- v1.10" \n "  - changed Medic loadouts from 6 x 1000ml blood bags to 2 x 1000ml and 8 x 500ml." \n "" \n "- v1.09" \n "  - updated Fireteam colours A1 Red A2 Yellow, B1 Green B2 Blue, C1 Red C2 Yellow." \n "" \n "- v1.08" \n "  - changed ""Reaper"" to ""Nightbird"", ""RPR"" to ""NB""" \n "  - changed ""Paladin"" to ""Falcon"", ""PAL"" to ""FC""" \n "  - changed ""DAGGER"" to ""DGR""" \n "" \n "- v1.07" \n "  - US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)" \n "  - overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look" \n "  - overhauled the US faction: updated helmets and vests to armour rating of IV" \n "  - corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)" \n "  - overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)" \n "" \n "- v1.05" \n "  - Added a MAT ammo box on spawn." \n "" \n "- v1.04" \n "  - All MAT Teams carrying RPG's got the ver3 scopes with ranges for all types" \n "    of ammo." \n "  - All Callsigns were changed to be uniformed throught no matter the faction." \n "" \n "- v1.03" \n "  - set crew driver/gunner and pilot/copilot/jetpilot as Engineers through the" \n "    Object: ACE Options menu in unit attributes" \n "  - overhauled the TFN faction (weapons, helmets, etc.), changes not applicable" \n "    to derived factions" \n "" \n "- v1.02" \n "  - loadout overhaul for DMT, made them lighter + gave them tools for recon" \n "  - specified preset ACRE2 radio channels for most units" \n "" \n "- v1.01" \n "  - updated team colors func to `a3ee_team_colors_fnc_setColor`, just load+save" \n "    the composition in editor, this fixes it" \n "  - changed RPG-7 using MAT teams to carry Kitbags" \n "  - removed one PKM ammo box from AAR, MMG gunner, MMG bearer (fixes overload)" \n "  - moved 1-2 AR boxes from AAR to AR, gave AR an Assaultpack" \n "  - added 1-2 more AR boxes to AR's Assaultpack (if enough space)" \n "  - changed HEDP to HE rockets for Carl Gustav (M3MAAWS)" \n "  - changed US crew uniform and helmet to match grey color scheme of US pilots" \n "  - changed backpacks of driver/copilot to use less contrasting colors compared" \n "    to their respective uniform/vest colors" \n "  - changed Carryall backpacks of TFN Engineers to use custom Flecktarn Carryall" \n "  - changed all (GP-25 and normal) AK74m rifles to be the non-NPZ variants" \n "  - removed secondary long-range (PRC148) from Engineers" \n "" \n "- v1.00 (and before)" \n "  - added a Comment object with version number (`v1.00`)" \n "  - added `respawn_west`, `respawn_east`, `respawn_guerrila` markers" \n "  - added `[this, 200] call a3ee_fnc_boxGuard` to init lines of resupply boxes" \n "  - added `Resupply` green triangle markers on the position of resupply boxes";
-		id=71;
+		title="v1.14.1";
+		description="-v1.14.1" \n " - A3EE box guard updated to A3AA." \n " - Custom location re-added." \n "" \n "-v1.14.0" \n "PL: " \n "- Headgear changed from RHS ""Field Cap EMR-Summer"" to RHS ""Field Cap VSR"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/Headset/Mapcase)"" for more visual diversity in the platoon. " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: increased GL smoke white from 3x to 5x to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n " Platoon Sergeant: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B26 (ESS)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest content: removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack added 3CB ""Radio Backpack MR3000"" and filled it with the ACRE2 ""AN/PRC-117F"" backpack radio. This gives more incentive to bring the PLT Sgt along since he is the only one who can act as a max range radio man for the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "Platoon Medic: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B26"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer (Medic)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Kitback (green)"" to 3CB ""Knapsack Medical (Khaki)"" to visually make the Vest medical bag look like the primary backpack. " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "Platoon Rifleman: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B26 (ESS/Balaclava)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer (6Sh116)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "SL: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/VOG/Radio) SpNz"".  " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: added 1x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest.  " \n " " \n "SL Medic: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" semi-randomly to RHS ""6B23 EMR-Summer (Medic)"" or RHS ""6B23 (Medic)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Kitback (green)"" to 3CB ""Knapsack Medical (Khaki)"" to visually make the Vest medical bag look like the primary backpack. " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "FTL: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" semi-randomly to RHS ""6B23 EMR-Summer (6Sh92/VOG/Headset)"" or RHS ""6B23 (6Sh92/VOG/Headset)"". " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack (Engineer)"" for a more Russian/breacher look. " \n "- Backpack content: added 2x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "AR: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" semi-randomly to RHS ""6B23 EMR-Summer (Vydra-3M)"" or RHS ""6B23 (Vydra-3M)"" " \n "- Vest content: added 1x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracers every 3)"" " \n "- Backpack changed from vanilla ""Assaultpack (green)"" to RHS ""Sidor"" for a more Russian look. " \n "- Backpack content: added 2x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracers every 3)"" and 1x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracer)"" " \n "- Rifle changed from RHS ""PKP"" to HLC ""RPK"". " \n "- Rifle muzzle attachment added RHS ""Surefire SF3P-762"". " \n " " \n "AAR: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" semi-randomly to RHS ""6B23 EMR-Summer (6Sh92/Headset)"" or RHS ""6B23 (6Sh92/Headset)"". " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack content: added RHS 2x ""30Rnd AK-74 (Plum) 7N22"" and 3x HLC ""7.62mm 75Rnd FMJ RPK Magazine (Tracers every 3)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "" \n "LAT: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""6B27M"" or RHS ""6B27M (ESS)"" or RHS ""6B27M (Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest variety changed semi-randomly to RHS ""6B23 (6Sh116)"" and RHS ""6B23 EMR-Summer (6Sh116)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MMG Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M EMR-Summer"" " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/VOG/Radio) SpNz"".  " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: added 1x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "MMG Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M (ESS)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer (Rifleman)"". " \n " " \n "MMG Asst. Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MAT Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M EMR-Summer"" " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/VOG/Radio) SpNz"".  " \n "- Vest content: moved 2x RGO grenades to backpack, removed 3x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 4x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Backpack changed from vanilla ""Assaultpack green"" to RHS ""UMBTS Backpack"" for a more Russian look. " \n "- Backpack content: added 1x RHS ""VOG-25"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MAT Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M (ESS)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n " " \n "MAT Asst. Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B23 EMR-Summer ""(6Sh92/Headset)"". " \n "- Vest content: removed 1x RHS ""30Rnd AK-74 (Plum) 7N22"" and added 2x RHS ""30Rnd AK-74 (Plum) 7T3M (tracer)"" to match TFN and US Army loadouts. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "DMT Marksman " \n "- Added scope RHS ""IPN34"" to the vest gear. This is a somewhat equivalent NVG scope to the US Army Faction. " \n "  " \n "ENG Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""Altyn (visor up)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B13 EMR-Summer ""(6Sh92/Radio)"". " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "ENG Rifleman: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" semi-randomly to RHS ""Altyn (visor down)"" or RHS ""Altyn (visor up Balaclava)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116)"" to RHS ""6B13 EMR-Summer ""(6Sh92)"". " \n "- Rifle changed from RHS ""AK-74M"" to RHS ""AK-105"" for more weapon variety in the platoon. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "Mortar Leader: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92/Radio)"". " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "Mortar Gunner: " \n "- Helmet changed from FFCP ""Combat SF Helmet Green"" to RHS ""6B27M (ESS)"". " \n "- Uniform changed from RHS ""EMR-Summer"" to RHS ""Flora"" for a kit-bash look. " \n "- Uniform content: moved 1x tourniquet from to vest to avoid potentially overloading the uniform with radios. " \n "- Vest changed from RHS ""6B23 (6Sh116/VOG)"" to RHS ""6B23 EMR-Summer (6Sh92)"". " \n "- Rifle changed from RHS ""AK-74M (Plum)"" to RHS ""AKS-74U"" for more rifle diversity in the platoon. Slightly lower accuracy at range but lighter carry weight. " \n "- Rifle mag changed from RHS ""30Rnd AK-74 (Plum) 7N10"" to RHS ""30Rnd AK-74 (Plum) 7N22"" to match the other mags in the vest. " \n "  " \n "All Units: " \n "- Disabled LAMBS AI " \n " " \n "Alpha SL: " \n "- Enabled ""is Player"". This makes it easier for Mission Makers to quickly test a mission in the editor by just hitting ""play"" instead of having to select a specific unit every time beforehand to avoid ending up in spectator mode by default. " \n " " \n "Crates: " \n "- Added an ACE3 medical crate with our usual base script. " \n "- Fireteam ammo crate: removed 4x 100Rnd PKM Box and replaced it with 4x 75Rnd RPK Mag and 1x 75Rnd RPK Tracer Mag. " \n "- Squad ammo crate: removed 13x 100Rnd PKM Tracer Box and added 12x 75Rnd RPK Mag & 4x 75Rnd RPK Tracer Mag" \n "" \n "" \n "-v1.13.6" \n "  - ALL Added persistent Call-Signs for all GM's (where not included in v1.13.4)" \n "  - ALL Added the code`this disableAI ""MOVE""; this setSpeaker ""NoVoice""; enableRadio false;` to all playable units to prevent them from running off and spamming the vanilla-radio during local testing." \n "  - ALL Changed persistent call-signs (map markers) to a consistent formula: ≤ 2 syllables = written out call-sing. ≥ 3 syllables = abbreviated call-sign." \n "  - ALL Added full changelog to all factions for quick in-game reference" \n "  - TFN Added new yellow owl insignia patches to all uniforms" \n "" \n "- v1.13.5" \n "  - ALL Added respective GM's to Standard Faction Compositions for convenience / time saving " \n "  - ALL Added base clean-up module to Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters" \n "" \n "- v1.13.4 " \n "  - ALL Added @ Squad/Team names to leaders so that Team name appears in role select" \n "  - TFN Changed M249 to the FN MINIMI" \n "" \n "- v1.13.3" \n "  - US Added Improved Bipod/SAW Grip to AR M249" \n "  - US Removed M14 Mags" \n "  - TFN Added Bipod to M249" \n "" \n "- v1.13.2" \n "  - ALL Added 1 Extra Tourniquet to every Unit" \n "  - TFN DMT Lead Rifle Changed to D10 Version" \n "  - TFN DMT given extra pistol mag to bring in line with other units" \n "  - TFN AAR Weapon changed to HK416 D14.5" \n "  - TFN Lead Elements Given AN/PEQ-16A's" \n "  - US Alpha Fireteam 2 AAR vest changed to ALT variant to match rest of faction" \n "  - US Lead Elements Given AN/PEQ-16A's" \n "  - US DMT given extra pistol mag to bring in line with other units" \n "  - US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions" \n "  - US DMT Bipod Changed to Harris Bipod" \n "  - US DMT Marksman Rifle changed to black version of same rifle" \n "  - US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11" \n "  - RUS DMT given extra pistol mag to bring in line with other units" \n "  - RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets" \n "  - RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets" \n "  - RUS Removed RIS Rail adaptors from AK rifles" \n "  - RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an  increased effective range but is less powerful due to decreased payload" \n "" \n "- v1.12.2" \n "  - Hotfixed US Vests across the Squads to match V.12 changes. Whoops." \n "  - Added Angled Grip to TFN HK416s where possible. " \n "" \n "- v1.12" \n "  - Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd." \n "  - Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag." \n "  - Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey" \n "  - Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]" \n "  - Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP" \n "  - Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP" \n "  - Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP" \n "  - Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP" \n "  - Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP" \n "  - Fixed US DMT Marksman Rifle Loaded Mag to correct varient." \n "  - Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]" \n "  - Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black" \n "  - Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]" \n "  - Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2." \n "  - Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)" \n "  - Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues" \n "  - Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000" \n "  - Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US." \n "  - Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "  - Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "" \n "- v1.11" \n "  - changed m40 mini grenades to m67 fragmentation" \n "  - replaced mp7 weapons with mp5k-pdw" \n "  - changed ak105 to ak74m (plum) " \n "  - changed PKM to PKP" \n "  - changed RUS PKM ammo boxes. MMG now loads with 7TZ (AP rounds)" \n "  - added vert grip to us weapons" \n "  - replaced m14 with HK PSG1A1" \n "  - replaced m260e4 with mg3" \n "  - updated all ammo boxes respectively. " \n "" \n "- v1.10" \n "  - changed Medic loadouts from 6 x 1000ml blood bags to 2 x 1000ml and 8 x 500ml." \n "" \n "- v1.09" \n "  - updated Fireteam colours A1 Red A2 Yellow, B1 Green B2 Blue, C1 Red C2 Yellow." \n "" \n "- v1.08" \n "  - changed ""Reaper"" to ""Nightbird"", ""RPR"" to ""NB""" \n "  - changed ""Paladin"" to ""Falcon"", ""PAL"" to ""FC""" \n "  - changed ""DAGGER"" to ""DGR""" \n "" \n "- v1.07" \n "  - US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)" \n "  - overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look" \n "  - overhauled the US faction: updated helmets and vests to armour rating of IV" \n "  - corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)" \n "  - overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)" \n "" \n "- v1.05" \n "  - Added a MAT ammo box on spawn." \n "" \n "- v1.04" \n "  - All MAT Teams carrying RPG's got the ver3 scopes with ranges for all types" \n "    of ammo." \n "  - All Callsigns were changed to be uniformed throught no matter the faction." \n "" \n "- v1.03" \n "  - set crew driver/gunner and pilot/copilot/jetpilot as Engineers through the" \n "    Object: ACE Options menu in unit attributes" \n "  - overhauled the TFN faction (weapons, helmets, etc.), changes not applicable" \n "    to derived factions" \n "" \n "- v1.02" \n "  - loadout overhaul for DMT, made them lighter + gave them tools for recon" \n "  - specified preset ACRE2 radio channels for most units" \n "" \n "- v1.01" \n "  - updated team colors func to `a3ee_team_colors_fnc_setColor`, just load+save" \n "    the composition in editor, this fixes it" \n "  - changed RPG-7 using MAT teams to carry Kitbags" \n "  - removed one PKM ammo box from AAR, MMG gunner, MMG bearer (fixes overload)" \n "  - moved 1-2 AR boxes from AAR to AR, gave AR an Assaultpack" \n "  - added 1-2 more AR boxes to AR's Assaultpack (if enough space)" \n "  - changed HEDP to HE rockets for Carl Gustav (M3MAAWS)" \n "  - changed US crew uniform and helmet to match grey color scheme of US pilots" \n "  - changed backpacks of driver/copilot to use less contrasting colors compared" \n "    to their respective uniform/vest colors" \n "  - changed Carryall backpacks of TFN Engineers to use custom Flecktarn Carryall" \n "  - changed all (GP-25 and normal) AK74m rifles to be the non-NPZ variants" \n "  - removed secondary long-range (PRC148) from Engineers" \n "" \n "- v1.00 (and before)" \n "  - added a Comment object with version number (`v1.00`)" \n "  - added `respawn_west`, `respawn_east`, `respawn_guerrila` markers" \n "  - added `[this, 200] call a3ee_fnc_boxGuard` to init lines of resupply boxes" \n "  - added `Resupply` green triangle markers on the position of resupply boxes";
+		id=69;
 	};
 	class Item16
 	{
@@ -13232,14 +11947,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.5361328,0.0014390945,-4.8720703};
+					position[]={4.7114258,0.0014390945,-4.3061523};
 				};
 				side="East";
 				flags=7;
 				class Attributes
 				{
 					rank="COLONEL";
-					init="call{this call a3ee_fnc_godlike;" \n "" \n "this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Game Master@GAME MASTER";
 					isPlayable=1;
 					class Inventory
@@ -13304,30 +12019,11 @@ class items
 						headgear="rhs_beret_mvd";
 					};
 				};
-				id=73;
+				id=71;
 				type="O_Protagonist_VR_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="a3ee_extgear_insignia";
-						expression="[_this, _value] call a3ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Curator";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
@@ -13346,10 +12042,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="insta_zeus_unit_curator";
-						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
+						property="speaker";
+						expression="_this setspeaker _value;";
 						class Value
 						{
 							class data
@@ -13358,14 +12054,52 @@ class items
 								{
 									type[]=
 									{
-										"BOOL"
+										"STRING"
 									};
 								};
-								value=1;
+								value="Male03PER";
 							};
 						};
 					};
-					nAttributes=3;
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.98000002;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CNTOpatchAlt";
+							};
+						};
+					};
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -13373,14 +12107,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.5356445,0.0014390945,-4.871582};
+					position[]={5.7104492,0.0014390945,-4.3054199};
 				};
 				side="East";
 				flags=5;
 				class Attributes
 				{
 					rank="COLONEL";
-					init="call{this call a3ee_fnc_godlike;" \n "" \n "this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
+					init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
 					description="Co-Game Master";
 					isPlayable=1;
 					class Inventory
@@ -13445,30 +12179,11 @@ class items
 						headgear="rhs_beret_mvd";
 					};
 				};
-				id=74;
+				id=72;
 				type="O_Protagonist_VR_F";
 				class CustomAttributes
 				{
 					class Attribute0
-					{
-						property="a3ee_extgear_insignia";
-						expression="[_this, _value] call a3ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Curator";
-							};
-						};
-					};
-					class Attribute1
 					{
 						property="lambs_danger_disableAI";
 						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
@@ -13487,10 +12202,10 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
-						property="insta_zeus_unit_curator";
-						expression="[_this, _value] call Insta_Zeus_fnc_createUnitCurator";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
 						class Value
 						{
 							class data
@@ -13499,133 +12214,36 @@ class items
 								{
 									type[]=
 									{
-										"BOOL"
+										"STRING"
 									};
 								};
-								value=1;
+								value="CNTOpatchAlt";
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=2;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=72;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_persistent_callsign";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="GM";
-					};
-				};
-			};
-			nAttributes=1;
-		};
+		id=70;
 	};
 	class Item17
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={0.039550781,0,-0.14941406};
-		};
-		areaSize[]={200,0,200};
-		areaIsRectangle=1;
-		flags=1;
-		id=75;
-		type="a3ee_custom_location";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3ee_loctype";
-				expression="_this setVariable [""loctype"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="NameVillage";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_locname";
-				expression="_this setVariable [""locname"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_delcorpse";
-				expression="_this setVariable [""delcorpse"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=3;
-		};
-	};
-	class Item18
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.6572266,0,-3.6176758};
+			position[]={7.8325195,0,-3.0512695};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{[this, 200] call a3ee_fnc_boxGuard}";
+			init="call{[this, 200] call a3aa_fnc_boxGuard}";
 		};
-		id=76;
+		id=73;
 		type="ACE_medicalSupplyCrate";
 		class CustomAttributes
 		{
@@ -13651,20 +12269,20 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item19
+	class Item18
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.5483398,0.89242268,-7.6367188};
+			position[]={7.7231445,0.89242268,-7.0703125};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{[this, 200] call a3ee_fnc_boxGuard}";
+			init="call{[this, 200] call a3aa_fnc_boxGuard}";
 		};
-		id=77;
+		id=74;
 		type="O_supplyCrate_F";
 		class CustomAttributes
 		{
@@ -13690,20 +12308,20 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item20
+	class Item19
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.6206055,0.28405476,-5.2719727};
+			position[]={7.7954102,0.28405476,-4.7062988};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{[this, 200] call a3ee_fnc_boxGuard}";
+			init="call{[this, 200] call a3aa_fnc_boxGuard}";
 		};
-		id=78;
+		id=75;
 		type="Box_East_Ammo_F";
 		class CustomAttributes
 		{
@@ -13727,6 +12345,80 @@ class items
 				};
 			};
 			nAttributes=1;
+		};
+	};
+	class Item20
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.17724609,0,0.69970703};
+		};
+		areaSize[]={40,-1,20};
+		areaIsRectangle=1;
+		flags=1;
+		id=76;
+		type="a3aa_ee_custom_location";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_custom_location_delcorpse";
+				expression="_this setVariable [""a3aa_ee_custom_location_delcorpse"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3aa_ee_custom_location_locname";
+				expression="_this setVariable [""a3aa_ee_custom_location_locname"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3aa_ee_custom_location_loctype";
+				expression="_this setVariable [""a3aa_ee_custom_location_loctype"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="NameVillage";
+					};
+				};
+			};
+			nAttributes=3;
 		};
 	};
 };
