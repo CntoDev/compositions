@@ -1,0 +1,92 @@
+version=53;
+center[]={5177.0615,5,2833.7578};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0014648438,0.9696579,0.022216797};
+			angles[]={-0,1.5707964,0};
+		};
+		side="Empty";
+		class Attributes
+		{
+			init="call{private _addScopes = { " \n "   private _allWeaponOptics = [primaryWeapon player,""optic""] call CBA_fnc_compatibleItems; " \n "   private _allWeaponEligibleOptics = _allWeaponOptics select { " \n "      private _optic = _x; " \n "      private _opticCfg = (configfile >> ""CfgWeapons"" >> _optic >> ""ItemInfo"" >> ""OpticsModes""); " \n "      private _opticSubClasses = [_opticCfg,2] call BIS_fnc_returnChildren; " \n "      private _opticExtremes = [_opticSubClasses,[""opticsZoomMin""]] call BIS_fnc_configExtremes; " \n "      private _opticZoom = (_opticExtremes select 0) select 0; " \n "      private _cfgScope = getNumber (configfile >> ""CfgWeapons"" >> _optic >> ""scope""); " \n "      _opticZoom >= 0.25 && _cfgScope == 2; " \n "   }; " \n " " \n "   { " \n "       _x params [""_classname""]; " \n "       _text = format [""<t color='#33cc33'>%1</t>"",getText (configfile >> ""CfgWeapons"" >> _className >> ""displayName"")]; " \n "       _this addAction [ " \n "           _text, " \n "           compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "           nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "       ]; " \n "   } forEach _allWeaponEligibleOptics; " \n "}; " \n "this call _addScopes; " \n "this addAction " \n "   [ " \n "      ""<t color='#0000cc'>REFRESH SCOPEBOX</t>"", " \n "      { " \n "         params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n "         _arguments params [""_addScopes""]; " \n "         { " \n "            _target removeAction _x " \n "         } forEach ((actionIDs _target) - [_actionId]); " \n "         _target call _addScopes; " \n "      }, " \n "      _addScopes, 10, true, true, """", ""(_target distance _this) < 3"" " \n "   ]; " \n "}";
+			disableSimulation=1;
+		};
+		id=4;
+		type="Land_PlasticCase_01_small_F";
+		atlOffset=0.8130002;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ENH_virtualArsenal";
+				expression="if (!is3DEN && {_value}) then {['AmmoboxInit',[_this,true]] spawn BIS_fnc_arsenal}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item1
+	{
+		dataType="Marker";
+		position[]={0.0029296875,0,0.0009765625};
+		name="scopebox_marker_mixed_1";
+		text="Scopebox";
+		type="mil_triangle";
+		colorName="ColorGreen";
+		id=5;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0048828125,0.40520144,-0.0234375};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=9;
+		type="Land_CampingTable_small_F";
+	};
+};
