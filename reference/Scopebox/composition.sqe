@@ -1,27 +1,47 @@
 version=53;
-center[]={3008.2744,5,6254.5557};
+center[]={7526.1729,5,6058.0195};
 class items
 {
-	items=2;
+	items=3;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.0014648438,0.1566577,-0.0053710938};
-			angles[]={-0,1.5911639,0};
+			position[]={0.0009765625,0.9696579,0.022460938};
+			angles[]={-0,1.5707964,0};
 		};
 		side="Empty";
-		flags=4;
 		class Attributes
 		{
-			init="call{{ " \n "    _x params [""_classname"", ""_text""]; " \n "    this addAction [ " \n "        _text, " \n "        compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "        nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "    ]; " \n "} forEach [ " \n " " \n "    [""optic_ACO_grn"",     ""<t color='#33cc33'>ACO Green</t>""], " \n "    [""optic_Aco"",         ""<t color='#33cc33'>ACO Red</t>""], " \n "    [""optic_ACO_grn_smg"", ""<t color='#33cc33'>ACO SMG Green</t>""], " \n "    [""optic_Aco_smg"",     ""<t color='#33cc33'>ACO SMG Red</t>""], " \n "    [""rhsusf_acc_eotech_xps3"",      ""<t color='#0000cc'>XPS3</t>""], " \n "    [""rhsusf_acc_eotech_552"",    ""<t color='#0000cc'>M552 CCO</t>""], " \n "    [""rhsusf_acc_mrds"",    ""<t color='#0000cc'>MRDS</t>""], " \n "    [""rhsusf_acc_rm05"",    ""<t color='#0000cc'>RM05</t>""], " \n "    [""rhsusf_acc_rx01_nofilter"",    ""<t color='#0000cc'>RX01</t>""], " \n "    [""rh_barska_rds"",      ""<t color='#33cc33'>Barska</t>""], " \n "    [""rh_cmore"",    ""<t color='#33cc33'>CMORE</t>""], " \n "    [""RH_zpoint"",       ""<t color='#33cc33'>Zeiss Z-point</t>""], " \n "    [""RH_LTdocter"",     ""<t color='#33cc33'>Larue Docter</t>""],  " \n "    [""RH_LTdocterl"",     ""<t color='#33cc33'>Larue Docter Low</t>""],  " \n "     [""RH_compM2"",           ""<t color='#0000cc'>Aimpoint CompM2</t>""], " \n "    [""RH_compM2l"",       ""<t color='#0000cc'>Aimpoint CompM2 Low</t>""], " \n "    [""RH_compM4s"",       ""<t color='#0000cc'>Aimpoint CompM4S</t>""], " \n "    [""rhsusf_acc_t1_high"",               ""<t color='#0000cc'>Aimpoint T1</t>""], " \n "    [""rhsusf_acc_t1_low"",               ""<t color='#0000cc'>Aimpoint T1 Low</t>""], " \n "    [""rhsusf_acc_compm4"",   ""<t color='#0000cc'>M68 CCO</t>""], " \n "    [""rhs_acc_rakurspm"",    ""<t color='#ff0000'>1P76 Rakurs-PM (RIS)</t>""], " \n "    [""rhs_acc_1p87"",    ""<t color='#ff0000'>1P87 (RIS)</t>""], " \n "    [""rhs_acc_ekp8_18"",    ""<t color='#ff0000'>EKP-8-18 (RIS)</t>""], " \n "    [""rhs_acc_1p63"",    ""<t color='#ff0000'>1P63</t>""], " \n "    [""rhs_acc_ekp8_02"",    ""<t color='#ff0000'>EKP-8-02</t>""], " \n "    [""rhs_acc_ekp1"",    ""<t color='#ff0000'>EKP-1S-03</t>""], " \n "    [""rhs_acc_pkas"",    ""<t color='#ff0000'>PK-AS</t>""] " \n "]}";
+			init="call{private _addScopes = { " \n "   private _allWeaponOptics = [primaryWeapon player,""optic""] call CBA_fnc_compatibleItems; " \n "   private _allWeaponEligibleOptics = _allWeaponOptics select { " \n "      private _optic = _x; " \n "      private _opticCfg = (configfile >> ""CfgWeapons"" >> _optic >> ""ItemInfo"" >> ""OpticsModes""); " \n "      private _opticVisionModes = [_opticCfg,2] call BIS_fnc_returnChildren; " \n "      private _opticVisionModeUseModelOptics = _opticVisionModes apply {getNumber (_x >> ""useModelOptics"")}; " \n "      private _opticUseModelOpticsFindNonZero = _opticVisionModeUseModelOptics findIf {_x != 0}; " \n "      private _cfgScope = getNumber (configfile >> ""CfgWeapons"" >> _optic >> ""scope""); " \n "      private _opticExtremes = [_opticVisionModes,[""opticsZoomMin""]] call BIS_fnc_configExtremes; " \n "      private _opticMaxZoom = (_opticExtremes select 0) select 0; " \n " " \n "      _opticMaxZoom >=0.25 && _cfgScope == 2 && _opticUseModelOpticsFindNonZero == -1; " \n "   }; " \n "   _allWeaponEligibleOptics sort true; " \n "   { " \n "       _x params [""_classname""]; " \n "       _text = format [""<t color='#33cc33'>%1</t>"",getText (configfile >> ""CfgWeapons"" >> _className >> ""displayName"")]; " \n "       _this addAction [ " \n "           _text, " \n "           compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "           nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "       ]; " \n "   } forEach _allWeaponEligibleOptics; " \n "}; " \n "this call _addScopes; " \n "this addAction " \n "   [ " \n "      ""<t color='#0000cc'>REFRESH SCOPEBOX</t>"", " \n "      { " \n "         params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n "         _arguments params [""_addScopes""]; " \n "         { " \n "            _target removeAction _x " \n "         } forEach ((actionIDs _target) - [_actionId]); " \n "         _target call _addScopes; " \n "      }, " \n "      _addScopes, -1, false, true, """", ""(_target distance _this) < 3"" " \n "   ];}";
+			disableSimulation=1;
 		};
-		id=61;
+		id=0;
 		type="Land_PlasticCase_01_small_F";
+		atlOffset=0.8130002;
 		class CustomAttributes
 		{
 			class Attribute0
+			{
+				property="ENH_virtualArsenal";
+				expression="if (!is3DEN && {_value}) then {['AmmoboxInit',[_this,true]] spawn BIS_fnc_arsenal}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute1
 			{
 				property="ammoBox";
 				expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -40,18 +60,33 @@ class items
 					};
 				};
 			};
-			nAttributes=1;
+			nAttributes=2;
 		};
 	};
 	class Item1
 	{
 		dataType="Marker";
-		position[]={-0.0014648438,0.29708433,0.0048828125};
-		name="scopebox_marker_mixed";
+		position[]={0.0024414063,0,0.0009765625};
+		name="scopebox_marker_mixed_1";
 		text="Scopebox";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		angle=2.1767128;
-		id=60;
+		id=1;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0053710938,0.40520144,-0.0234375};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=2;
+		type="Land_CampingTable_small_F";
 	};
 };
