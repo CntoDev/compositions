@@ -65,3 +65,8 @@ And double-check with git diff (ideally).
 
 (This makes sense only for factions based on the reference ones, for anything
 completely custom ignore the above.)
+
+
+# Copyright License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
