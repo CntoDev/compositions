@@ -1,14 +1,14 @@
 version=53;
-center[]={1891.3857,5,4066.375};
+center[]={1889.1694,5,4067.1973};
 class items
 {
-	items=2;
+	items=3;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.0032958984,0.9696579,0.022949219};
+			position[]={2.2196045,0.9696579,-0.79931641};
 			angles[]={-0,1.5707964,0};
 		};
 		side="Empty";
@@ -65,10 +65,20 @@ class items
 	};
 	class Item1
 	{
+		dataType="Marker";
+		position[]={2.2209473,0,-0.82104492};
+		name="scopebox_marker_mixed_1";
+		text="Scopebox";
+		type="mil_triangle";
+		colorName="ColorGreen";
+		id=1;
+	};
+	class Item2
+	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-0.0031738281,0.40520144,-0.023193359};
+			position[]={2.2131348,0.40520144,-0.84545898};
 		};
 		side="Empty";
 		flags=4;
