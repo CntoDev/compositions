@@ -1,14 +1,14 @@
 version=53;
-center[]={415.51794,5,3741.8494};
+center[]={416.15094,0,3740.7588};
 class items
 {
-	items=22;
+	items=30;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.6973877,0.28405476,-6.8652344};
+			position[]={7.0643921,5.2840548,-5.7746582};
 		};
 		side="Empty";
 		flags=4;
@@ -49,7 +49,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={5.7764893,0.14963102,-7.8896484};
+			position[]={5.1434937,5.149631,-6.7990723};
 			angles[]={-0,1.5258367,0};
 		};
 		side="Empty";
@@ -90,7 +90,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.8800049,0.89242268,-9.3393555};
+			position[]={7.2470093,5.8924227,-8.2487793};
 		};
 		side="Empty";
 		flags=4;
@@ -129,7 +129,7 @@ class items
 	class Item3
 	{
 		dataType="Marker";
-		position[]={2.0797119,2.4371225e+032,-4.8139648};
+		position[]={1.4467163,2.4371225e+032,-3.7233887};
 		name="respawn_west";
 		type="respawn_unknown";
 		angle=359.38086;
@@ -139,7 +139,7 @@ class items
 	class Item4
 	{
 		dataType="Marker";
-		position[]={6.9381104,0,-7.9838867};
+		position[]={6.3051147,5,-6.8933105};
 		name="resupply_marker_4";
 		text="Resupply";
 		type="mil_triangle";
@@ -151,7 +151,7 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={4.1590576,0.001999855,-6.0693359};
+			position[]={3.526062,5.0019999,-4.9787598};
 		};
 		title="v1.14.3";
 		description="-v1.14.3" \n "- Disabled BFT on GM: fixes #136  " \n "- Added Asssault Pack (black) to pilot including Toolkit, checked that ACE3 Option ""is Engineer"" is active: fixes #124  " \n "- Added 4x cargo slings to helo pilot and co-pilot: fixes #129  " \n "- Removed AN/PCR-148 from PLT Sergeant: fixes #116 " \n "" \n "" \n "- v1.14.2" \n "" \n "PL: " \n "- Headgear changed from RHS ""Patrol Cap OEF-CP"" to RHS ""ACH OEF-CP (Headset/Alt)"" to give leader a helmet (issue #82). " \n "- Uniform content: moved radios 152 & 148 to backpack (issue #95). " \n " " \n "Platoon Sergeant: " \n "- Headgear changed from RHS ""ACH (Tan/Headset/ESS)"" to RHS ""ACH OEF-CP (Headset/Alt)"" to fit the rest of the platoon (issue #112). " \n " " \n "Platoon Medic: " \n "- Headgear changed from RHS ""ACH (Tan)"" to RHS ""ACH OEF-CP (Alt)"" to fit the rest of the platoon (issue #112). " \n " " \n "Platoon Rifleman: " \n "- Headgear changed from RHS ""ACH (Tan/ESS)"" to RHS ""ACH OEF-CP (ESS/Alt)"" to fit the rest of the platoon (issue #112). " \n " " \n "SL: " \n "- Uniform content: moved radio 152 to backpack (issue #95). " \n " " \n "MMG Leader: " \n "- Uniform content: moved radio 152 to backpack (issue #95). " \n " " \n "MAT Leader: " \n "- Uniform content: moved radio 152 to backpack (issue #95). " \n " " \n "MAT Gunner: " \n "- Launcher replaced with TFN ""MAAWS Mk4 Mod 0 (olive)"" Launcher (issue #90). " \n " " \n "ENG Leader: " \n "- Uniform content: moved radio 152 to backpack (issue #95). " \n "- Backpack content: changed ammo count to 4 regular mags and 2 tracer mag (issue #83). " \n " " \n "ENG Rifleman: " \n "- Backpack content: changed ammo count to 5 regular mags and 1 tracer mag (issue #83). " \n " " \n "DMT Marksman: " \n "- Soldier class changed from ""B_spotter_F"" to ""B_soldier_M_F"" (issue #94). " \n " " \n "MTR Leader: " \n "- Vest content: changed ammo count to 5 regular mags and 1 tracer mag (issue #83). " \n " " \n "MTR Gunner: " \n "- Vest content: changed ammo count to 5 regular mags and 1 tracer mag (issue #83). " \n " " \n "Zeus: " \n "- Fixed missing Zeus status (issue #113). " \n " " \n "PLT & SQD Medic, Rifleman, LAT, MMG Ammo Bearer, MAT Gunner, MAT Ammo Bearer, Engineer: " \n "- Uniform content: added 1x Pistolmag to ensure Riflemags do not get split across uniform and vest (uniform container always gets filled first by the game). " \n " " \n "All Units: " \n "- Fixed missing standard ACRE2 radio channels (issue #110). " \n "- Uniform content: added 1x epinephrine (issue #107) and sorted all items in a more logical manner (issue #111). " \n "- Vest content: sorted all items in a more logical manner (issue #111). " \n "- Backpack content: sorted all items in a more logical manner (issue #111). " \n "- Fireteam members: fixed ST HUD colours for fireteam members of Alpha, Bravo and Charlie (issue #117). " \n " " \n "Crates: " \n "- Added a mortar supply crate (issue #77)." \n "" \n "" \n "-v1.14.1" \n " - A3EE box guard updated to A3AA." \n " - Custom location re-added." \n "" \n "- v1.14.0" \n "PL: " \n "- Backpack changed from vanilla ""Assault Pack MTP"" to vanilla ""Assault Pack Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Rifle changed from RHS ""M4A1 (M203s)"" to RHS ""M16A4 (Carryhandle/M203)"" for increased for increased weapon diversity in the platoon. PL has now a more accurate long-range shooting platform. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "Platoon Sergeant: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH (tan/headset/ESS)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Backpack added 3CB ""Radio Backpack MR3000"" and filled it with the ACRE2 ""AN/PRC-117F"" backpack radio. This gives more incentive to bring the PLT Sgt along since he is the only one who can act as a max range radio man for the platoon. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "Platoon Medic: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH (tan)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "Platoon Rifleman: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH (tan/ESS)"" to indicate association with platoon lead element and for more visual diversity in the platoon. " \n "- Rifle changed from RHS ""M4A1 PIP"" to RHS ""M16A4 (Carryhandle)"" for increased weapon diversity in the platoon. More accurate shooting platform to compensate the lack of interesting weaponry such as a LAT, an AR or a grenade launcher. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "SL: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/ESS/Alt)"". " \n "- Backpack changed from vanilla ""Assault Pack MTP"" to vanilla ""Assault Pack Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Rifle changed from RHS ""M4A1 (M203s)"" to RHS ""M16A4 (Carryhandle/M203)"" for increased for increased weapon diversity in the platoon. SL has now a more accurate long-range shooting platform. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "Medic: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Alt)"". " \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "FTL: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/ESS/Alt)"". " \n "- Vest changed from RHS ""SPCS (Team Leader Alt/OEF-CP)"" to RHS ""SPCS (Grenadier/OEF-CP)"" for more visual diversity in the platoon. Carry capacity remains the same. " \n "- Backpack changed from vanilla ""Assault Pack MTP"" to vanilla ""Assault Pack Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "AR: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (ESS/Alt)"" or RHS ""ACH OEF-CP (Alt)"". Both helmets are given out semi-randomly to increase visual variety in the platoon. " \n "- Backpack changed from vanilla ""Assault Pack MTP"" to vanilla ""Assault Pack Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Added muzzle attachment RHS ""SFMB-556 1/2-28"". " \n " " \n "AAR: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/Alt)"". " \n "- Vest changed from RHS ""SPCS (Rifleman Alt/OEF-CP)"" to RHS ""SPCS (Team Leader/OEF-CP)"" for more visual diversity in the platoon. Carry capacity remains the same. " \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Rifle changed from RHS ""M4A1 PIP"" to RHS ""M16A4 (Carryhandle)"" for increased weapon diversity in the platoon. More accurate shooting platform to compensate the lack of interesting weaponry such as a LAT, an AR or a grenade launcher. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "LAT: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (ESS/Alt)"" or RHS ""ACH OEF-CP (Alt)"". Both helmets are given out semi-randomly to increase visual variety in the platoon. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "MMG Teamleader: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/Alt)"". " \n "- Backpack changed from vanilla ""Assault Pack MTP"" to vanilla ""Assault Pack Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "MMG Gunner: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (ESS/Alt)""." \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Added muzzle attachment RHS ""ARDEC 4-Prong"". " \n " " \n "MMG Asst. Gunner: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Alt)"". " \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "MAT Teamleader: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/Alt)"". " \n "- Backpack changed from vanilla ""Assault Pack MTP"" to vanilla ""Assault Pack Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "MAT Gunner: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (ESS/Alt)""." \n "- Vest changed from RHS ""SPCS (Rifleman Alt/OEF-CP)"" to RHS ""SPCS (OEF-CP)"" for more visual diversity in the platoon. Carry capacity remains the same. " \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "MAT Asst. Gunner: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Alt)"". " \n "- Backpack changed from vanilla ""Kitbag MTP"" to vanilla ""Kitbag Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "ENG Leader: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/ESS/Alt)"". " \n "- Vest changed from RHS ""SPCS (Team Leader Alt/OEF-CP)"" to vanilla ""Carrier GL Rig (green)"" for a bulkier look to visually distinguish EOD/ENG from the rest of the platoon. " \n "- Backpack changed from vanilla ""Carryall MTP"" to vanilla ""Carryall Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "ENG Rifleman: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/Alt)"". " \n "- Vest changed from RHS ""SPCS (Team Leader Alt/OEF-CP)"" to vanilla ""Carrier GL Rig (green)"" for a bulkier look to visually distinguish EOD/ENG from the rest of the platoon. " \n "- Backpack changed from vanilla ""Carryall MTP"" to vanilla ""Carryall Coyote"" for more visual contrast. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "Mortar Leader: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Headset/Alt)"". " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "Mortar Gunner: " \n "- Helmet changed from vanilla ""Enhanced Combat Helmet (desert)"" to RHS ""ACH OEF-CP (Alt)"". " \n "- Vest changed from RHS ""SPCS (Rifleman Alt/OEF-CP)"" to RHS ""SPCS (SAW/OEF-CP)"" for more visual diversity in the platoon. Carry capacity remains the same. " \n "- Mags changed from RHS ""30Rnd STANAG M855A1"" to RHS ""30Rnd PMAG M855A1"" and from RHS ""30Rnd STANAG M856A1 (tracer)"" to RHS ""30Rnd PMAG M856A1 (tracer)"" for increased visual fidelity. " \n " " \n "DGR Commander: " \n "- Helmet changed from RHS ""ACVC-H MK-1697"" to RHS ""ACVC-H MK-1697 (ESS)"" to better visually indicate the element leader. " \n "- Rifle changed from vanilla ""Scorpion Evo 3 A1"" to NiArms ""H&K MP5A3"" to bring weaponry visually more in line with the rest of the platoon.  " \n " " \n "DGR Gunner & Driver: " \n "- Rifle changed from vanilla ""Scorpion Evo 3 A1"" to NiArms ""H&K MP5A3"" to bring weaponry visually more in line with the rest of the platoon.  " \n " " \n "DMT Marksman " \n "- Rifle scope changed from RH ""Leopold Mark 4 LR/T"" to RHS ""M8541A SSDS"" for more visual conformity with NVG variant of the same scope. Note: max. zoom is reduced from x20 to x15 however the Marksman gains a MRDS sight for CQB. " \n "- Added scope RHS ""M8541A + AN/PVS-27"" to the vest gear. This is the NVG version of the regular scope. " \n " " \n "Nightbird Pilot & Co-Pilot: " \n "- Rifle changed from vanilla ""Scorpion Evo 3 A1"" to NiArms ""H&K MP5A3"" to bring weaponry visually more in line with the rest of the platoon.  " \n " " \n "Falcon Pilot: " \n "- Rifle changed from vanilla ""Scorpion Evo 3 A1"" to NiArms ""H&K MP5A3"" to bring weaponry visually more in line with the rest of the platoon.  " \n " " \n "Zeus & Co-Zeus " \n "- Uniform changed from vanilla ""VR Suit NATO"" to RHS ""Combat Uniform OCP"" to make Zeus look a bit more like an HQ commander than a Tron character. " \n "- Headgear added RHS ""Patrol Cap OEF-CP"". " \n "- Facewear changed from vanilla ""VR Goggles"" to vanilla ""Aviator Glasses"". " \n "- Insignia added ""Zeus"". " \n " " \n "All Units: " \n "- Disabled LAMBS AI " \n " " \n "Alpha SL: " \n "- Enabled ""is Player"". This makes it easier for Mission Makers to quickly test a mission in the editor by just hitting ""play"" instead of having to select a specific unit every time beforehand to avoid ending up in spectator mode by default.  " \n " " \n "Crates: " \n "- Added an ACE3 medical crate with our usual base script." \n "" \n "" \n "-v1.13.6" \n "  - ALL Added persistent Call-Signs for all GM's (where not included in v1.13.4)" \n "  - ALL Added the code`this disableAI ""MOVE""; this setSpeaker ""NoVoice""; enableRadio false;` to all playable units to prevent them from running off and spamming the vanilla-radio during local testing." \n "  - ALL Changed persistent call-signs (map markers) to a consistent formula: ≤ 2 syllables = written out call-sing. ≥ 3 syllables = abbreviated call-sign." \n "  - ALL Added full changelog to all factions for quick in-game reference" \n "  - TFN Added new yellow owl insignia patches to all uniforms" \n "" \n "- v1.13.5" \n "  - ALL Added respective GM's to Standard Faction Compositions for convenience / time saving " \n "  - ALL Added base clean-up module to Standard Faction Compositions to ensure Mission Makers don't forget it in the future - radius set to 200x200 meters" \n "" \n "- v1.13.4 " \n "  - ALL Added @ Squad/Team names to leaders so that Team name appears in role select" \n "  - TFN Changed M249 to the FN MINIMI" \n "" \n "- v1.13.3" \n "  - US Added Improved Bipod/SAW Grip to AR M249" \n "  - US Removed M14 Mags" \n "  - TFN Added Bipod to M249" \n "" \n "- v1.13.2" \n "  - ALL Added 1 Extra Tourniquet to every Unit" \n "  - TFN DMT Lead Rifle Changed to D10 Version" \n "  - TFN DMT given extra pistol mag to bring in line with other units" \n "  - TFN AAR Weapon changed to HK416 D14.5" \n "  - TFN Lead Elements Given AN/PEQ-16A's" \n "  - US Alpha Fireteam 2 AAR vest changed to ALT variant to match rest of faction" \n "  - US Lead Elements Given AN/PEQ-16A's" \n "  - US DMT given extra pistol mag to bring in line with other units" \n "  - US DMT Sniper Rifle Given SU-260/P (MDO) to bring zoom level to the same as Russian and TFN factions" \n "  - US DMT Bipod Changed to Harris Bipod" \n "  - US DMT Marksman Rifle changed to black version of same rifle" \n "  - US DMT Marksman Magazines changed to SR-25 version, as RHS hotfix made M14 mags incompatible with MK11" \n "  - RUS DMT given extra pistol mag to bring in line with other units" \n "  - RUS DGR Helmets changed to TSH-4 to make distinct from US Helmets" \n "  - RUS NB Helmets changed to ZSH-7A to make distinct from US and TFN helmets" \n "  - RUS Removed RIS Rail adaptors from AK rifles" \n "  - RUS Added PG-7V rocket to MAT ammo crate. This rocket is lighter and packs less payload than the PG-7VL. This gives it an  increased effective range but is less powerful due to decreased payload" \n "" \n "- v1.12.2" \n "  - Hotfixed US Vests across the Squads to match V.12 changes. Whoops." \n "  - Added Angled Grip to TFN HK416s where possible. " \n "" \n "- v1.12" \n "  - Fixed TFN MMG Ammo preloaded into Rifle to 100RND mag from 50rnd." \n "  - Fixed TFN DMT Marksman Ammo loaded into Rifle to correct SBLR mag." \n "  - Changed TFN DMT Lead Suppressor to QDSS NT4 Black from Rotex-5 Grey" \n "  - Changed TFN Dagger Uniforms from Gorka R Green to FFCP Green Fatigues [RS]" \n "  - Changed US PLT Commander + Squad Leader Vest from SPCS Rifleman/OEF- CP to SPCS Squad Lead/OEF-CP" \n "  - Changed US Medic Vest from SPCS Rifleman/OEF-CP to SPCS Medic/OEF-CP" \n "  - Changed US PLT Rifleman Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US FTL Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US AR Vest from SPCS Rifleman/OEF-CP to SPCS SAW/OEF-CP" \n "  - Changed US AAR Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US Rifleman AT Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT/MMG/DMT/ENG/MTR Lead Vest from SPCS Rifleman/OEF-CP to SPCS Team Leader Alt/OEF-CP" \n "  - Changed US MMG Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Machinegunner/OEF-CP" \n "  - Changed US MMG/MAT Ammo Bearer Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US MAT Gunner Vest from SPCS OEF-CP to SPCS Rifleman Alt/OEF-CP" \n "  - Changed US DMT Marksman vest from SPCS OEF-CP to SPCS Sniper/OEF-CP" \n "  - Fixed US DMT Marksman Rifle Loaded Mag to correct varient." \n "  - Changed US Engineer Rifleman Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US MTR Gunner Vest from SPCS Rifleman/OEF-CP to SPCS Rifleman Alt/OEF-CP." \n "  - Changed US DGR Uniforms from FFCP ACU Fatigues to FFCP ACU Fatigues [RS]" \n "  - Changed US DGR Driver Backpack from Assault Pack Green to Assault Pack Black" \n "  - Changed US Heli Pilot/Copilot Uniforms from Heli pilot Coveralls to FFCP Nomad Fatigues [RS]" \n "  - Fixed US Heli/Jet Pilot Vest White Smoke grenade count to 2." \n "  - Changed US Heli Pilot/Copilot Helmet from Heli Pilot NATO to HGU-56/P (Black/Visor)" \n "  - Changed US Jet Pilot Uniform from Pilot Coveralls NATO to  FFCP Nomad Fatigues" \n "  - Changed RUS Vic/Heli/Jet Crew Weapons to PP-2000" \n "  - Upped RUS PP-2000 Ammo counts to 6x Mag to bring in line with ammo counts for TFN and US." \n "  - Changed RUS Heli Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Heli Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "  - Changed RUS Jet Pilot Uniforms from Pilot Coveralls CSAT to FFCP-Fatigues EMR [RS]" \n "  - Changed RUS Jet Pilot Vest from 6B23 (6Sh116) to FFCP Tactical Vest TigerVRS" \n "" \n "- v1.11" \n "  - changed m40 mini grenades to m67 fragmentation" \n "  - replaced mp7 weapons with mp5k-pdw" \n "  - changed ak105 to ak74m (plum) " \n "  - changed PKM to PKP" \n "  - changed RUS PKM ammo boxes. MMG now loads with 7TZ (AP rounds)" \n "  - added vert grip to us weapons" \n "  - replaced m14 with HK PSG1A1" \n "  - replaced m260e4 with mg3" \n "  - updated all ammo boxes respectively. " \n "" \n "- v1.10" \n "  - changed Medic loadouts from 6 x 1000ml blood bags to 2 x 1000ml and 8 x 500ml." \n "" \n "- v1.09" \n "  - updated Fireteam colours A1 Red A2 Yellow, B1 Green B2 Blue, C1 Red C2 Yellow." \n "" \n "- v1.08" \n "  - changed ""Reaper"" to ""Nightbird"", ""RPR"" to ""NB""" \n "  - changed ""Paladin"" to ""Falcon"", ""PAL"" to ""FC""" \n "  - changed ""DAGGER"" to ""DGR""" \n "" \n "- v1.07" \n "  - US and RU faction bumped to v1.07 to avoid confusion regarding version numbers (US and RU was 1.05, TFN was 1.06)" \n "  - overhauled the RU faction: updated helmets, uniforms, weapons to a more modern look" \n "  - overhauled the US faction: updated helmets and vests to armour rating of IV" \n "  - corrected some mistakes in all factions (grenade ammount of MMG gunner, ENG not having tourniquetes, DGR not having GPS-s)" \n "  - overhauled the medics of all factions to reflect recent cahnges to ACE medical (less QuikClots, more Elastic Bandages, etc.)" \n "" \n "- v1.05" \n "  - Added a MAT ammo box on spawn." \n "" \n "- v1.04" \n "  - All MAT Teams carrying RPG's got the ver3 scopes with ranges for all types" \n "    of ammo." \n "  - All Callsigns were changed to be uniformed throught no matter the faction." \n "" \n "- v1.03" \n "  - set crew driver/gunner and pilot/copilot/jetpilot as Engineers through the" \n "    Object: ACE Options menu in unit attributes" \n "  - overhauled the TFN faction (weapons, helmets, etc.), changes not applicable" \n "    to derived factions" \n "" \n "- v1.02" \n "  - loadout overhaul for DMT, made them lighter + gave them tools for recon" \n "  - specified preset ACRE2 radio channels for most units" \n "" \n "- v1.01" \n "  - updated team colors func to `a3ee_team_colors_fnc_setColor`, just load+save" \n "    the composition in editor, this fixes it" \n "  - changed RPG-7 using MAT teams to carry Kitbags" \n "  - removed one PKM ammo box from AAR, MMG gunner, MMG bearer (fixes overload)" \n "  - moved 1-2 AR boxes from AAR to AR, gave AR an Assaultpack" \n "  - added 1-2 more AR boxes to AR's Assaultpack (if enough space)" \n "  - changed HEDP to HE rockets for Carl Gustav (M3MAAWS)" \n "  - changed US crew uniform and helmet to match grey color scheme of US pilots" \n "  - changed backpacks of driver/copilot to use less contrasting colors compared" \n "    to their respective uniform/vest colors" \n "  - changed Carryall backpacks of TFN Engineers to use custom Flecktarn Carryall" \n "  - changed all (GP-25 and normal) AK74m rifles to be the non-NPZ variants" \n "  - removed secondary long-range (PRC148) from Engineers" \n "" \n "- v1.00 (and before)" \n "  - added a Comment object with version number (`v1.00`)" \n "  - added `respawn_west`, `respawn_east`, `respawn_guerrila` markers" \n "  - added `[this, 200] call a3ee_fnc_boxGuard` to init lines of resupply boxes" \n "  - added `Resupply` green triangle markers on the position of resupply boxes";
@@ -163,7 +163,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.6544189,0,-4.7714844};
+			position[]={7.0214233,5,-3.6809082};
 		};
 		side="Empty";
 		flags=4;
@@ -211,7 +211,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.8719482,0.0014390945,8.918457};
+					position[]={-6.5049438,5.0014391,10.009033};
 				};
 				side="West";
 				flags=7;
@@ -584,7 +584,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8719482,0.0014390945,8.9174805};
+					position[]={-5.5049438,5.0014391,10.008057};
 				};
 				side="West";
 				flags=5;
@@ -913,7 +913,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.87146,0.0014390945,8.9174805};
+					position[]={-4.5044556,5.0014391,10.008057};
 				};
 				side="West";
 				flags=5;
@@ -1216,7 +1216,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.87146,0.0014390945,8.9174805};
+					position[]={-3.5044556,5.0014391,10.008057};
 				};
 				side="West";
 				flags=5;
@@ -1498,7 +1498,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.8338623,0.0014390945,6.0014648};
+					position[]={-6.4668579,5.0014391,7.092041};
 				};
 				side="West";
 				flags=7;
@@ -1859,7 +1859,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8323975,0.0014390945,6.0004883};
+					position[]={-5.4653931,5.0014391,7.0910645};
 				};
 				side="West";
 				flags=5;
@@ -2162,7 +2162,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.8323975,0.0014390945,4.0004883};
+					position[]={-6.4653931,5.0014391,5.0910645};
 				};
 				side="West";
 				flags=5;
@@ -2478,7 +2478,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8323975,0.0014390945,4.0004883};
+					position[]={-5.4653931,5.0014391,5.0910645};
 				};
 				side="West";
 				flags=5;
@@ -2729,7 +2729,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8323975,0.0014390945,4.0004883};
+					position[]={-4.4653931,5.0014391,5.0910645};
 				};
 				side="West";
 				flags=5;
@@ -3039,7 +3039,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8323975,0.0014390945,4.0004883};
+					position[]={-3.4653931,5.0014391,5.0910645};
 				};
 				side="West";
 				flags=5;
@@ -3290,7 +3290,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.8323975,0.0014390945,2.0004883};
+					position[]={-6.4653931,5.0014391,3.0910645};
 				};
 				side="West";
 				flags=5;
@@ -3606,7 +3606,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8323975,0.0014390945,2.0004883};
+					position[]={-5.4653931,5.0014391,3.0910645};
 				};
 				side="West";
 				flags=5;
@@ -3857,7 +3857,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8323975,0.0014390945,2.0004883};
+					position[]={-4.4653931,5.0014391,3.0910645};
 				};
 				side="West";
 				flags=5;
@@ -4167,7 +4167,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.8323975,0.0014390945,2.0004883};
+					position[]={-3.4653931,5.0014391,3.0910645};
 				};
 				side="West";
 				flags=5;
@@ -4473,7 +4473,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.336792,0.0014390945,5.9663086};
+					position[]={-1.9697876,5.0014391,7.0568848};
 				};
 				side="West";
 				flags=7;
@@ -4833,7 +4833,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.33728027,0.0014390945,5.9663086};
+					position[]={-0.97027588,5.0014391,7.0568848};
 				};
 				side="West";
 				flags=5;
@@ -5136,7 +5136,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.3372803,0.0014390945,3.9663086};
+					position[]={-1.9702759,5.0014391,5.0568848};
 				};
 				side="West";
 				flags=5;
@@ -5452,7 +5452,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.33728027,0.0014390945,3.9663086};
+					position[]={-0.97027588,5.0014391,5.0568848};
 				};
 				side="West";
 				flags=5;
@@ -5703,7 +5703,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.66271973,0.0014390945,3.9663086};
+					position[]={0.029724121,5.0014391,5.0568848};
 				};
 				side="West";
 				flags=5;
@@ -6013,7 +6013,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.6627197,0.0014390945,3.9663086};
+					position[]={1.0297241,5.0014391,5.0568848};
 				};
 				side="West";
 				flags=5;
@@ -6264,7 +6264,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.3372803,0.0014390945,1.9663086};
+					position[]={-1.9702759,5.0014391,3.0568848};
 				};
 				side="West";
 				flags=5;
@@ -6580,7 +6580,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.33728027,0.0014390945,1.9663086};
+					position[]={-0.97027588,5.0014391,3.0568848};
 				};
 				side="West";
 				flags=5;
@@ -6831,7 +6831,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.66271973,0.0014390945,1.9663086};
+					position[]={0.029724121,5.0014391,3.0568848};
 				};
 				side="West";
 				flags=5;
@@ -7141,7 +7141,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.6627197,0.0014390945,1.9663086};
+					position[]={1.0297241,5.0014391,3.0568848};
 				};
 				side="West";
 				flags=5;
@@ -7447,7 +7447,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.9732666,0.0014390945,5.9624023};
+					position[]={3.340271,5.0014391,7.0529785};
 				};
 				side="West";
 				flags=7;
@@ -7807,7 +7807,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.9732666,0.0014390945,5.9614258};
+					position[]={4.340271,5.0014391,7.052002};
 				};
 				side="West";
 				flags=5;
@@ -8110,7 +8110,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.9732666,0.0014390945,3.9614258};
+					position[]={3.340271,5.0014391,5.052002};
 				};
 				side="West";
 				flags=5;
@@ -8426,7 +8426,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.9732666,0.0014390945,3.9614258};
+					position[]={4.340271,5.0014391,5.052002};
 				};
 				side="West";
 				flags=5;
@@ -8677,7 +8677,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9732666,0.0014390945,3.9614258};
+					position[]={5.340271,5.0014391,5.052002};
 				};
 				side="West";
 				flags=5;
@@ -8987,7 +8987,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.9732666,0.0014390945,3.9614258};
+					position[]={6.340271,5.0014391,5.052002};
 				};
 				side="West";
 				flags=5;
@@ -9238,7 +9238,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.9732666,0.0014390945,1.9614258};
+					position[]={3.340271,5.0014391,3.052002};
 				};
 				side="West";
 				flags=5;
@@ -9554,7 +9554,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.9732666,0.0014390945,1.9614258};
+					position[]={4.340271,5.0014391,3.052002};
 				};
 				side="West";
 				flags=5;
@@ -9805,7 +9805,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9732666,0.0014390945,1.9614258};
+					position[]={5.340271,5.0014391,3.052002};
 				};
 				side="West";
 				flags=5;
@@ -10115,7 +10115,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.9732666,0.0014390945,1.9614258};
+					position[]={6.340271,5.0014391,3.052002};
 				};
 				side="West";
 				flags=5;
@@ -10421,7 +10421,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.0721436,0.0014390945,-1.112793};
+					position[]={-6.7051392,5.0014391,-0.022216797};
 				};
 				side="West";
 				flags=7;
@@ -10781,7 +10781,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.0716553,0.0014390945,-1.112793};
+					position[]={-5.7046509,5.0014391,-0.022216797};
 				};
 				side="West";
 				flags=5;
@@ -11017,7 +11017,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.0716553,0.0014390945,-1.112793};
+					position[]={-4.7046509,5.0014391,-0.022216797};
 				};
 				side="West";
 				flags=5;
@@ -11321,7 +11321,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.96081543,0.0014390945,-1.2685547};
+					position[]={-1.593811,5.0014391,-0.17797852};
 				};
 				side="West";
 				flags=7;
@@ -11681,7 +11681,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.038696289,0.0014390945,-1.269043};
+					position[]={-0.59429932,5.0014391,-0.1784668};
 				};
 				side="West";
 				flags=5;
@@ -11939,7 +11939,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.0386963,0.0014390945,-1.269043};
+					position[]={0.40570068,5.0014391,-0.1784668};
 				};
 				side="West";
 				flags=5;
@@ -12243,7 +12243,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.4178467,0.0014390945,-4.2597656};
+					position[]={-7.0508423,5.0014391,-3.1691895};
 				};
 				side="West";
 				flags=6;
@@ -12583,7 +12583,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.4188232,0.0014390945,-4.2587891};
+					position[]={-6.0518188,5.0014391,-3.1682129};
 				};
 				side="West";
 				flags=4;
@@ -12942,7 +12942,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.96911621,0.0014390945,-4.9077148};
+					position[]={-1.6021118,5.0014391,-3.8171387};
 				};
 				side="West";
 				flags=7;
@@ -13168,7 +13168,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.029907227,0.0014390945,-4.9077148};
+					position[]={-0.60308838,5.0014391,-3.8171387};
 				};
 				side="West";
 				flags=5;
@@ -13436,7 +13436,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.9962158,0.0014390945,-1.159668};
+					position[]={3.3632202,5.0014391,-0.069091797};
 				};
 				side="West";
 				flags=7;
@@ -13776,7 +13776,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.9957275,0.0014390945,-1.1606445};
+					position[]={4.3627319,5.0014391,-0.070068359};
 				};
 				side="West";
 				flags=5;
@@ -14042,7 +14042,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.9957275,0.0014390945,-1.1606445};
+					position[]={5.3627319,5.0014391,-0.070068359};
 				};
 				side="West";
 				flags=5;
@@ -14308,7 +14308,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.9957275,0.0014390945,-1.1606445};
+					position[]={6.3627319,5.0014391,-0.070068359};
 				};
 				side="West";
 				flags=5;
@@ -14629,7 +14629,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.6346436,0.0014390945,-8.3364258};
+					position[]={-7.2676392,5.0014391,-7.2458496};
 				};
 				side="West";
 				flags=7;
@@ -14946,7 +14946,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.6361084,0.0014390945,-8.3374023};
+					position[]={-6.269104,5.0014391,-7.2468262};
 				};
 				side="West";
 				flags=5;
@@ -15178,7 +15178,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.6361084,0.0014390945,-8.3374023};
+					position[]={-5.269104,5.0014391,-7.2468262};
 				};
 				side="West";
 				flags=5;
@@ -15451,7 +15451,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.026947,0.0014390945,-8.0373535};
+					position[]={-1.6599426,5.0014391,-6.9467773};
 				};
 				side="West";
 				flags=7;
@@ -15806,7 +15806,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.026947021,0.0014390945,-8.0383301};
+					position[]={-0.65994263,5.0014391,-6.9477539};
 				};
 				side="West";
 				flags=5;
@@ -16215,7 +16215,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.9737549,0.0014390945,-8.0375977};
+					position[]={2.3407593,5.0014391,-6.9470215};
 				};
 				side="West";
 				flags=7;
@@ -16610,7 +16610,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.9957275,0.0014390945,-4.9072266};
+					position[]={3.3627319,5.0014391,-3.8166504};
 				};
 				side="West";
 				flags=7;
@@ -16888,7 +16888,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.9957275,0.0014390945,-4.9072266};
+					position[]={4.3627319,5.0014391,-3.8166504};
 				};
 				side="West";
 				flags=5;
@@ -17233,7 +17233,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.38635254,0,-0.34326172};
+			position[]={-0.24664307,5,0.74731445};
 		};
 		areaSize[]={200,-1,200};
 		areaIsRectangle=1;
@@ -17307,7 +17307,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={4.9752197,0.18872452,-9.8024902};
+			position[]={4.3422241,5.1887245,-8.7119141};
 		};
 		side="Empty";
 		flags=4;
@@ -17342,5 +17342,171 @@ class items
 			};
 			nAttributes=1;
 		};
+	};
+	class Item22
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={6.5848694,5.9690781,-11.686279};
+			angles[]={-0,4.7252698,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
+			disableSimulation=1;
+		};
+		id=78;
+		type="Land_Laptop_unfolded_F";
+	};
+	class Item23
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={7.0848694,5.9690781,-11.686279};
+			angles[]={-0,1.5836768,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this addAction [""VISCOM"", {[true,false] call ace_spectator_fnc_setSpectator}];";
+			disableSimulation=1;
+		};
+		id=79;
+		type="Land_Laptop_unfolded_F";
+	};
+	class Item24
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={6.8348694,13.478737,-11.686279};
+			angles[]={0,3.1416116,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=80;
+		type="Land_TTowerSmall_2_F";
+	};
+	class Item25
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={6.8348694,5.4052014,-11.686279};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=81;
+		type="Land_CampingTable_small_F";
+	};
+	class Item26
+	{
+		dataType="Marker";
+		position[]={6.8739014,0,-11.702148};
+		name="viscom_marker";
+		text="VISCOM";
+		type="mil_triangle";
+		colorName="ColorGreen";
+		id=82;
+		atlOffset=-5;
+	};
+	class Item27
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={4.0240784,5.9696636,-11.797852};
+			angles[]={-0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{private _addScopes = { " \n "   private _allWeaponOptics = [primaryWeapon player,""optic""] call CBA_fnc_compatibleItems; " \n "   private _allWeaponEligibleOptics = _allWeaponOptics select { " \n "      private _optic = _x; " \n "      private _opticCfg = (configfile >> ""CfgWeapons"" >> _optic >> ""ItemInfo"" >> ""OpticsModes""); " \n "      private _opticVisionModes = [_opticCfg,2] call BIS_fnc_returnChildren; " \n "      private _opticVisionModeUseModelOptics = _opticVisionModes apply {getNumber (_x >> ""useModelOptics"")}; " \n "      private _opticUseModelOpticsFindNonZero = _opticVisionModeUseModelOptics findIf {_x != 0}; " \n "      private _cfgScope = getNumber (configfile >> ""CfgWeapons"" >> _optic >> ""scope""); " \n "      private _opticExtremes = [_opticVisionModes,[""opticsZoomMin""]] call BIS_fnc_configExtremes; " \n "      private _opticMaxZoom = (_opticExtremes select 0) select 0; " \n "      _opticMaxZoom >=0.25 && _cfgScope == 2 && _opticUseModelOpticsFindNonZero == -1; " \n "   }; " \n " " \n " " \n "   _allWeaponEligibleOptics = [_allWeaponEligibleOptics, [], { " \n "      getText (configfile >> ""CfgWeapons"" >> _x >> ""displayName""); " \n "      }] call BIS_fnc_sortBy; " \n " " \n "   private _colourSet = 0; " \n "   { " \n "      _x params [""_classname""]; " \n "      private _prevClassname = getText (configfile >> ""CfgWeapons"" >> _allWeaponEligibleOptics select (_forEachIndex - 1) >> ""displayName""); " \n "      private _name = getText (configfile >> ""CfgWeapons"" >> _className >> ""displayName""); " \n "      private _colour = ""<t color='#33cc33'>%1</t>""; " \n "      if (_name select [0,3] != _prevClassname select [0,3]) then { " \n "         _colourSet = _colourSet + 1 " \n "      }; " \n "      if (_colourSet/2 == round(_colourSet/2)) then { " \n "         _colour = ""<t color='#FF0000'>%1</t>"" " \n "      }; " \n "       private _text = format [_colour,_name]; " \n "       _this addAction [ " \n "           _text, " \n "           compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "           nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "       ]; " \n "   } forEach _allWeaponEligibleOptics; " \n "}; " \n "this call _addScopes; " \n "this addAction " \n "   [ " \n "      ""<t color='#0000cc'>REFRESH SCOPEBOX</t>"", " \n "      { " \n "         params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n "         _arguments params [""_addScopes""]; " \n "         { " \n "            _target removeAction _x " \n "         } forEach ((actionIDs _target) - [_actionId]); " \n "         _target call _addScopes; " \n "      }, " \n "      _addScopes, -1, false, true, """", ""(_target distance _this) < 3"" " \n "   ]; " \n "}";
+			disableSimulation=1;
+		};
+		id=86;
+		type="Land_PlasticCase_01_small_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ENH_virtualArsenal";
+				expression="if (!is3DEN && {_value}) then {['AmmoboxInit',[_this,true]] spawn BIS_fnc_arsenal}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item28
+	{
+		dataType="Marker";
+		position[]={4.0254211,5,-11.81958};
+		name="scopebox_marker_mixed_1";
+		text="Scopebox";
+		type="mil_triangle";
+		colorName="ColorGreen";
+		id=87;
+	};
+	class Item29
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={4.0176086,5.4052014,-11.843994};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=88;
+		type="Land_CampingTable_small_F";
 	};
 };
