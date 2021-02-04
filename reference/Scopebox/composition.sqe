@@ -1,92 +1,103 @@
 version=53;
-center[]={1889.1694,5,4067.1973};
+center[]={4305.8096,5,6447.6069};
 class items
 {
-	items=3;
+	items=1;
 	class Item0
 	{
-		dataType="Object";
-		class PositionInfo
+		dataType="Layer";
+		name="Scopebox";
+		class Entities
 		{
-			position[]={2.2196045,0.9696579,-0.79931641};
-			angles[]={-0,1.5707964,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-			init="call{private _addScopes = { " \n "   private _allWeaponOptics = [primaryWeapon player,""optic""] call CBA_fnc_compatibleItems; " \n "   private _allWeaponEligibleOptics = _allWeaponOptics select { " \n "      private _optic = _x; " \n "      private _opticCfg = (configfile >> ""CfgWeapons"" >> _optic >> ""ItemInfo"" >> ""OpticsModes""); " \n "      private _opticVisionModes = [_opticCfg,2] call BIS_fnc_returnChildren; " \n "      private _opticVisionModeUseModelOptics = _opticVisionModes apply {getNumber (_x >> ""useModelOptics"")}; " \n "      private _opticUseModelOpticsFindNonZero = _opticVisionModeUseModelOptics findIf {_x != 0}; " \n "      private _cfgScope = getNumber (configfile >> ""CfgWeapons"" >> _optic >> ""scope""); " \n "      private _opticExtremes = [_opticVisionModes,[""opticsZoomMin""]] call BIS_fnc_configExtremes; " \n "      private _opticMaxZoom = (_opticExtremes select 0) select 0; " \n "      _opticMaxZoom >=0.25 && _cfgScope == 2 && _opticUseModelOpticsFindNonZero == -1; " \n "   }; " \n " " \n " " \n "   _allWeaponEligibleOptics = [_allWeaponEligibleOptics, [], { " \n "      getText (configfile >> ""CfgWeapons"" >> _x >> ""displayName""); " \n "      }] call BIS_fnc_sortBy; " \n " " \n "   private _colourSet = 0; " \n "   { " \n "      _x params [""_classname""]; " \n "      private _prevClassname = getText (configfile >> ""CfgWeapons"" >> _allWeaponEligibleOptics select (_forEachIndex - 1) >> ""displayName""); " \n "      private _name = getText (configfile >> ""CfgWeapons"" >> _className >> ""displayName""); " \n "      private _colour = ""<t color='#33cc33'>%1</t>""; " \n "      if (_name select [0,3] != _prevClassname select [0,3]) then { " \n "         _colourSet = _colourSet + 1 " \n "      }; " \n "      if (_colourSet/2 == round(_colourSet/2)) then { " \n "         _colour = ""<t color='#FF0000'>%1</t>"" " \n "      }; " \n "       private _text = format [_colour,_name]; " \n "       _this addAction [ " \n "           _text, " \n "           compile format ['player addPrimaryWeaponItem ""%1""', _classname], " \n "           nil, 0.1, true, true, """", ""(_target distance _this) < 3"" " \n "       ]; " \n "   } forEach _allWeaponEligibleOptics; " \n "}; " \n "this call _addScopes; " \n "this addAction " \n "   [ " \n "      ""<t color='#0000cc'>REFRESH SCOPEBOX</t>"", " \n "      { " \n "         params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n "         _arguments params [""_addScopes""]; " \n "         { " \n "            _target removeAction _x " \n "         } forEach ((actionIDs _target) - [_actionId]); " \n "         _target call _addScopes; " \n "      }, " \n "      _addScopes, -1, false, true, """", ""(_target distance _this) < 3"" " \n "   ]; " \n "}";
-			disableSimulation=1;
-		};
-		id=0;
-		type="Land_PlasticCase_01_small_F";
-		atlOffset=0.8130002;
-		class CustomAttributes
-		{
-			class Attribute0
+			items=3;
+			class Item0
 			{
-				property="ENH_virtualArsenal";
-				expression="if (!is3DEN && {_value}) then {['AmmoboxInit',[_this,true]] spawn BIS_fnc_arsenal}";
-				class Value
+				dataType="Object";
+				class PositionInfo
 				{
-					class data
+					position[]={0.0014648438,0.9696579,0.021972656};
+					angles[]={-0,1.5707964,0};
+				};
+				side="Empty";
+				class Attributes
+				{
+					init="call{private _scopeBoxUI = { " \n " params [""_caller""]; " \n "    private _allWeaponOptics = [primaryWeapon _caller, ""optic""] call CBA_fnc_compatibleItems; " \n "    private _allWeaponEligibleOptics = _allWeaponOptics select { " \n "  private _optic = _x; " \n "  private _opticCfg = (configfile >> ""CfgWeapons"" >> _optic >> ""ItemInfo"" >> ""OpticsModes""); " \n "  private _opticVisionModes = [_opticCfg,2] call BIS_fnc_returnChildren; " \n "  private _opticVisionModeUseModelOptics = _opticVisionModes apply {getNumber (_x >> ""useModelOptics"")}; " \n "  private _opticUseModelOpticsFindNonZero = _opticVisionModeUseModelOptics findIf {_x != 0}; " \n "  private _cfgScope = getNumber (configfile >> ""CfgWeapons"" >> _optic >> ""scope""); " \n "  private _opticExtremes = [_opticVisionModes,[""opticsZoomMin""]] call BIS_fnc_configExtremes; " \n "  private _opticMaxZoom = (_opticExtremes select 0) select 0; " \n "  _opticMaxZoom >=0.25 && _cfgScope == 2 && _opticUseModelOpticsFindNonZero == -1; " \n "    }; " \n " " \n " " \n " private _optics = [_allWeaponEligibleOptics, [], { " \n "  getText (configfile >> ""CfgWeapons"" >> _x >> ""displayName""); " \n " }] call BIS_fnc_sortBy; " \n " private _opticsDisplay = _optics apply { " \n "  _optic = _x; " \n "  [ " \n "   getText (configfile >> ""CfgWeapons"" >> _optic >> ""displayName""), " \n "   getText (configfile >> ""CfgWeapons"" >> _optic >> ""displayName""), " \n "   getText (configfile >> ""CfgWeapons"" >> _optic >> ""picture"") " \n "  ] " \n " }; " \n " if (count _optics > 0) then { " \n "  [ " \n "   ""Scopebox 3.0"", " \n "   [ " \n "    [""LIST"", ""Select a scope"", [_optics, _opticsDisplay, 0, 15]] " \n "   ], " \n "   { " \n "    params [""_dialog_data"",""_caller""]; " \n "    _dialog_data params [""_scope""]; " \n "    _caller addPrimaryWeaponItem _scope; " \n "   }, " \n "   {}, " \n "   _caller " \n "  ] call zen_dialog_fnc_create; " \n " } else { " \n "  hint ""This weapon has no scopes available"" " \n " }; " \n "}; " \n " " \n "this addAction " \n "    [ " \n "     ""<t color='#87ceeb'>Scopebox</t>"", " \n "     { " \n "  params [""_target"", ""_caller"", ""_actionId"", ""_arguments""]; " \n "  _arguments params [""_scopeBoxUI""]; " \n "  _caller call _scopeBoxUI; " \n " }, " \n " _scopeBoxUI, 15, false, true, """", ""(_target distance _this) < 3"" " \n "]; " \n "}";
+					disableSimulation=1;
+				};
+				id=0;
+				type="Land_PlasticCase_01_small_F";
+				atlOffset=0.8130002;
+				class CustomAttributes
+				{
+					class Attribute0
 					{
-						class type
+						property="ENH_virtualArsenal";
+						expression="if (!is3DEN && {_value}) then {['AmmoboxInit',[_this,true]] spawn BIS_fnc_arsenal}";
+						class Value
 						{
-							type[]=
+							class data
 							{
-								"BOOL"
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
 							};
 						};
-						value=0;
 					};
-				};
-			};
-			class Attribute1
-			{
-				property="ammoBox";
-				expression="[_this,_value] call bis_fnc_initAmmoBox;";
-				class Value
-				{
-					class data
+					class Attribute1
 					{
-						class type
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
 						{
-							type[]=
+							class data
 							{
-								"STRING"
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 							};
 						};
-						value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 					};
+					nAttributes=2;
 				};
 			};
-			nAttributes=2;
+			class Item1
+			{
+				dataType="Marker";
+				position[]={0.0029296875,0,0.00048828125};
+				name="scopebox_marker_mixed_1";
+				text="Scopebox";
+				type="mil_triangle";
+				colorName="ColorGreen";
+				id=1;
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.0048828125,0.40520144,-0.023925781};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					disableSimulation=1;
+				};
+				id=2;
+				type="Land_CampingTable_small_F";
+			};
 		};
-	};
-	class Item1
-	{
-		dataType="Marker";
-		position[]={2.2209473,0,-0.82104492};
-		name="scopebox_marker_mixed_1";
-		text="Scopebox";
-		type="mil_triangle";
-		colorName="ColorGreen";
-		id=1;
-	};
-	class Item2
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={2.2131348,0.40520144,-0.84545898};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-			disableSimulation=1;
-		};
-		id=2;
-		type="Land_CampingTable_small_F";
+		id=3;
+		atlOffset=0.20324993;
 	};
 };
