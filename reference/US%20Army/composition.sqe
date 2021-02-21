@@ -55,6 +55,7 @@ class items
 		flags=4;
 		class Attributes
 		{
+			init="call{[this, 200] call a3aa_fnc_boxGuard}";
 			description="MAT Supply Box";
 		};
 		id=1;
@@ -15259,7 +15260,7 @@ class items
 		};
 		id=67;
 		type="Land_Laptop_unfolded_F";
-		atlOffset=0.8130002;
+		atlOffset=0.81300068;
 	};
 	class Item22
 	{
@@ -15277,7 +15278,7 @@ class items
 		};
 		id=68;
 		type="Land_Laptop_unfolded_F";
-		atlOffset=0.8130002;
+		atlOffset=0.81300068;
 	};
 	class Item23
 	{
@@ -16015,6 +16016,7 @@ class items
 		flags=4;
 		class Attributes
 		{
+			init="call{[this, 200] call a3aa_fnc_boxGuard}";
 			description="HAT Supply Box";
 		};
 		id=72;
@@ -20091,7 +20093,6 @@ class items
 		flags=4;
 		class Attributes
 		{
-			init="call{[this, 200] call a3aa_fnc_boxGuard}";
 			description="HMG Supply Box";
 		};
 		id=91;
