@@ -1,5 +1,5 @@
-version=53;
-center[]={3323.2656,5,6637.2832};
+version=54;
+center[]={3642.9297,5,1391.8969};
 class items
 {
 	items=2;
@@ -8,177 +8,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={3.0053711,0,0.012695313};
-		};
-		name="TFN_Mediterranean_Vehicles";
-		id=1727;
-		type="a3aa_ee_execute_code";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="a3aa_ee_execute_code_code";
-				expression="_this setVariable [""a3aa_ee_execute_code_code"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="{   " \n "    [_x, ""InitPost"", {   " \n "        params [""_unit""];   " \n "        _unit setObjectTexture [0, ""cnto\assets\dc_strider\hull_desert.paa""];   " \n "        _unit setObjectTexture [1, ""cnto\assets\dc_strider\turret_desert.paa""];   " \n "    }] call CBA_fnc_addClassEventHandler;   " \n "} forEach [""I_MRAP_03_F"", ""I_MRAP_03_gmg_F"", ""I_MRAP_03_hmg_F""];   " \n "   " \n "[""I_MBT_03_cannon_F"", ""InitPost"", {   " \n "    params [""_unit""];   " \n "    _unit setObjectTexture [0, ""cnto\assets\dc_kuma\hull_desert.paa""];   " \n "    _unit setObjectTexture [1, ""cnto\assets\dc_kuma\gun_desert.paa""];   " \n "    _unit setObjectTexture [2, ""cnto\assets\dc_kuma\turret_desert.paa""];   " \n "}] call CBA_fnc_addClassEventHandler;   " \n " " \n "[""O_APC_Wheeled_02_rcws_F"", ""InitPost"", {  " \n "    params [""_unit""];   " \n "    _unit setObjectTexture [0, ""cnto\assets\dc_marid\hull_desert.paa""];   " \n "    _unit setObjectTexture [1, ""cnto\assets\dc_marid\wheels.paa""];   " \n "    _unit setObjectTexture [2, ""cnto\assets\dc_marid\turret_desert.paa""];   " \n "}] call CBA_fnc_addClassEventHandler;  " \n "  " \n "[""I_Heli_Transport_02_F"", ""InitPost"", {  " \n "    params [""_unit""];  " \n "    _unit setObjectTexture [0, ""cnto\assets\dc_mohawk\cnto_mohawk_1_hull.paa""];   " \n "    _unit setObjectTexture [1, ""cnto\assets\dc_mohawk\cnto_mohawk_2_tail_ins.paa""];   " \n "    _unit setObjectTexture [2, ""cnto\assets\dc_mohawk\cnto_mohawk_3_rotor_top.paa""];  " \n "}] call CBA_fnc_addClassEventHandler;  " \n "  " \n "{  " \n "    [_x, ""InitPost"", {  " \n "        params [""_unit""];  " \n "        _unit setObjectTexture [0, ""cnto\assets\dc_hellcat\cnto_hellcat.paa""];     " \n "    }] call CBA_fnc_addClassEventHandler;  " \n "} forEach [""I_Heli_light_03_dynamicLoadout_F"",""I_Heli_light_03_unarmed_F""];";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="a3ee_runoninit";
-				expression="_this setVariable [""runoninit"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="a3ee_forjip";
-				expression="_this setVariable [""forjip"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="a3ee_keepmodule";
-				expression="_this setVariable [""keepmodule"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="a3ee_runonrespawn";
-				expression="_this setVariable [""runonrespawn"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="a3ee_execonmp";
-				expression="_this setVariable [""execonmp"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute6
-			{
-				property="a3ee_enabledexec";
-				expression="_this setVariable [""enabledexec"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute7
-			{
-				property="a3ee_execenv";
-				expression="_this setVariable [""execenv"",_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=8;
-		};
-	};
-	class Item1
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-3.0056152,0,-0.012207031};
+			position[]={-3.060791,0,0.029541016};
 		};
 		name="TFN_Mediterranean";
-		id=1728;
+		id=143;
 		type="a3aa_ee_execute_code_3den";
 		class CustomAttributes
 		{
@@ -202,6 +35,173 @@ class items
 				};
 			};
 			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={3.060791,0,-0.029541016};
+		};
+		name="TFN_Mediterranean_Vehicles";
+		id=144;
+		type="a3aa_ee_execute_code";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_execute_code_runoninit";
+				expression="_this setVariable [""a3aa_ee_execute_code_runoninit"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="a3aa_ee_execute_code_keepmodule";
+				expression="_this setVariable [""a3aa_ee_execute_code_keepmodule"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="a3aa_ee_execute_code_code";
+				expression="_this setVariable [""a3aa_ee_execute_code_code"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="{   " \n "    [_x, ""init"", {   " \n "        params [""_unit""];   " \n "        _unit setObjectTexture [0, ""cnto\assets\dc_strider\hull_desert.paa""];   " \n "        _unit setObjectTexture [1, ""cnto\assets\dc_strider\turret_desert.paa""];   " \n "    }, true, [], true] call CBA_fnc_addClassEventHandler;   " \n "} forEach [""I_MRAP_03_F"", ""I_MRAP_03_gmg_F"", ""I_MRAP_03_hmg_F""];   " \n "   " \n "[""I_MBT_03_cannon_F"", ""init"", {   " \n "    params [""_unit""];   " \n "    _unit setObjectTexture [0, ""cnto\assets\dc_kuma\hull_desert.paa""];   " \n "    _unit setObjectTexture [1, ""cnto\assets\dc_kuma\gun_desert.paa""];   " \n "    _unit setObjectTexture [2, ""cnto\assets\dc_kuma\turret_desert.paa""];   " \n "}, true, [], true] call CBA_fnc_addClassEventHandler;   " \n " " \n "[""O_APC_Wheeled_02_rcws_F"", ""init"", {  " \n "    params [""_unit""];   " \n "    _unit setObjectTexture [0, ""cnto\assets\dc_marid\hull_desert.paa""];   " \n "    _unit setObjectTexture [1, ""cnto\assets\dc_marid\wheels.paa""];   " \n "    _unit setObjectTexture [2, ""cnto\assets\dc_marid\turret_desert.paa""];   " \n "}, true, [], true] call CBA_fnc_addClassEventHandler;  " \n "  " \n "[""I_Heli_Transport_02_F"", ""init"", {  " \n "    params [""_unit""];  " \n "    _unit setObjectTexture [0, ""cnto\assets\dc_mohawk\cnto_mohawk_1_hull.paa""];   " \n "    _unit setObjectTexture [1, ""cnto\assets\dc_mohawk\cnto_mohawk_2_tail_ins.paa""];   " \n "    _unit setObjectTexture [2, ""cnto\assets\dc_mohawk\cnto_mohawk_3_rotor_top.paa""];  " \n "}, true, [], true] call CBA_fnc_addClassEventHandler;  " \n "  " \n "{  " \n "    [_x, ""init"", {  " \n "        params [""_unit""];  " \n "        _unit setObjectTexture [0, ""cnto\assets\dc_hellcat\cnto_hellcat.paa""];     " \n "    }, true, [], true] call CBA_fnc_addClassEventHandler;  " \n "} forEach [""I_Heli_light_03_dynamicLoadout_F"",""I_Heli_light_03_unarmed_F""];";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="a3aa_ee_execute_code_runonrespawn";
+				expression="_this setVariable [""a3aa_ee_execute_code_runonrespawn"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="a3aa_ee_execute_code_enabledexec";
+				expression="_this setVariable [""a3aa_ee_execute_code_enabledexec"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="a3aa_ee_execute_code_execenv";
+				expression="_this setVariable [""a3aa_ee_execute_code_execenv"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="a3aa_ee_execute_code_forjip";
+				expression="_this setVariable [""a3aa_ee_execute_code_forjip"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="a3aa_ee_execute_code_execonmp";
+				expression="_this setVariable [""a3aa_ee_execute_code_execonmp"",_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			nAttributes=8;
 		};
 	};
 };
