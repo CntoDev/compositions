@@ -1,0 +1,35 @@
+version=54;
+center[]={4349.002,5,2988.0281};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=698;
+		type="a3aa_ee_execute_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_execute_code_3den_code";
+				expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="private _replace_primary = { " \n "    params [""_gear""]; " \n "    private _primaryArr = _gear select 0; " \n "    private _new = switch (_primaryArr select 0) do {  " \n "        case ""rhs_weap_ak74m_fullplum_gp25"": { ""rhs_weap_ak74n_gp25"" }; " \n "        case ""rhs_weap_ak105""; " \n "        case ""rhs_weap_ak74m_fullplum"":      { ""rhs_weap_ak74n"" }; " \n "        default {};  " \n "    };  " \n "    if (!isNil ""_new"") then {  " \n "        _primaryArr set [0, _new];  " \n "    };  " \n "}; " \n " " \n "private _replace_uniform = {  " \n "    params [""_gear""];  " \n "    private _uniformArr = _gear select 3;  " \n "    private _new = switch (_uniformArr select 0) do {  " \n "        case ""CamoU_EMR_rs"":                { ""rhs_uniform_df15"" };  " \n "        case ""rhs_uniform_gorka_r_g""; " \n "        case ""rhs_uniform_flora_patchless"";  " \n "        case ""rhs_uniform_emr_patchless"":   { ""rhs_uniform_m88_patchless"" }; " \n "        default {};  " \n "    };  " \n "    if (!isNil ""_new"") then {  " \n "        _uniformArr set [0, _new];  " \n "    };  " \n "};  " \n " " \n "private _replace_vest = { " \n "    params [""_gear""]; " \n "    private _vestArr = _gear select 4; " \n "    private _new = switch (_vestArr select 0) do {  " \n "        case ""rhs_6b23_digi_6sh92_headset_mapcase"";  " \n "        case ""rhs_6b23_6sh116_od"";  " \n "        case ""rhs_6b23_vydra_3m""; " \n "        case ""rhs_6b23_6sh116"":                     { ""rhs_6b5_rifleman_khaki"" }; " \n "        case ""rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz""; " \n "        case ""rhs_6b23_digi_6sh92_radio""; " \n "        case ""rhs_6b23_6sh92_vog_headset"":          { ""rhs_6b5_officer_khaki"" }; " \n "        case ""rhs_6b23_digi_medic"":                 { ""rhs_6b5_medic_khaki"" }; " \n "        case ""rhsgref_6b23_ttsko_digi"":             { ""rhs_6b5_sniper_khaki"" }; " \n "        default {};  " \n "    };  " \n "    if (!isNil ""_new"") then {  " \n "        _vestArr set [0, _new];  " \n "    };  " \n "}; " \n " " \n "private _replace_backpack = { " \n "    params [""_gear""]; " \n "    private _backpackArr = _gear select 5; " \n "    private _new = switch (_backpackArr select 0) do {  " \n "        case ""rhs_assault_umbts"":                   { ""UK3CB_TKA_O_B_RIF_Khk"" }; " \n "        case ""rhs_assault_umbts_engineer_empty"":    { ""UK3CB_TKA_O_B_ENG_Khk"" }; " \n "        case ""B_Carryall_oli""; " \n "        case ""rhssaf_kitbag_smb"":                   { ""B_Carryall_khk"" }; " \n "        default {};  " \n "    };  " \n "    if (!isNil ""_new"") then {  " \n "        _backpackArr set [0, _new];  " \n "    };  " \n "}; " \n " " \n "private _replace_helmet = {  " \n "    params [""_gear""];  " \n "    private _new = switch (_gear select 6) do {  " \n "        case ""rhs_6b27m_green_ess"";  " \n "        case ""rhs_6b27m_green"";  " \n "        case ""rhs_6b27m_green_ess_bala""; " \n "        case ""rhs_6b27m_green_bala"":    { ""UK3CB_TKA_I_H_SSh68_Oli"" };  " \n "        case ""rhs_fieldcap_digi2"":      { ""rhs_fieldcap_khk"" }; " \n "        case ""H_PilotHelmetFighter_O"":  {""rhs_zsh7a_alt""}; " \n "        default {};  " \n "    };  " \n "    if (!isNil ""_new"") then {  " \n "        _gear set [6, _new];  " \n "    };  " \n "};  " \n " " \n " " \n " " \n " " \n "{  " \n "    private _unit = _x;  " \n "    private _gear = getUnitLoadout _unit; " \n "    [_gear] call _replace_uniform; " \n "    [_gear] call _replace_vest; " \n "    [_gear] call _replace_backpack; " \n "    [_gear] call _replace_helmet; " \n "    [_gear] call _replace_primary; " \n "    private _expectedGear = +_gear; " \n "    _unit setUnitLoadout _gear;  " \n "    private _actualGear = getUnitLoadout _unit; " \n "    if !(_actualGear isEqualTo _expectedGear) then { " \n "        systemchat format [""%1 failed parity check"", _unit get3DENAttribute ""description""]; " \n "    }; " \n "} forEach playableUnits;  " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
