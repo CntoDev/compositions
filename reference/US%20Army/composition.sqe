@@ -1,25 +1,25 @@
 version=54;
-center[]={6440.0293,0,1655.9408};
+center[]={5374.6694,5,2656.6731};
 class items
 {
 	items=37;
 	class Item0
 	{
 		dataType="Marker";
-		position[]={4.9589844,10.228041,-8.0960693};
+		position[]={5.0024414,10.228285,-7.7685547};
 		name="resupply_marker";
 		text="Resupply";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=379;
-		atlOffset=5.0002437;
+		id=0;
+		atlOffset=10.000244;
 	};
 	class Item1
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.0595703,5.2840548,-5.961792};
+			position[]={7.1030273,0.28405476,-5.6342773};
 		};
 		side="Empty";
 		flags=4;
@@ -29,7 +29,7 @@ class items
 			description="Fireteam Supply Box";
 			dynamicSimulation=1;
 		};
-		id=386;
+		id=1;
 		type="Box_NATO_Ammo_F";
 		class CustomAttributes
 		{
@@ -60,49 +60,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={5.4213867,5.149631,-6.555542};
-			angles[]={-0,1.5707964,0};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-			init="call{[this, 200] call cnto_fnc_boxGuard}";
-			description="MAT Supply Box";
-			dynamicSimulation=1;
-		};
-		id=387;
-		type="Box_NATO_WpsLaunch_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ammoBox";
-				expression="[_this,_value] call bis_fnc_initAmmoBox;";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="[[[[],[]],[[""rhs_mag_maaws_HEAT"",""rhs_mag_maaws_HEDP"",""rhs_mag_maaws_HE""],[6,6,6]],[[],[]],[[],[]]],false]";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item3
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={7.1425781,5.8924227,-8.0125732};
+			position[]={7.1860352,0.89242268,-7.6850586};
 		};
 		side="Empty";
 		flags=4;
@@ -112,7 +70,7 @@ class items
 			description="Platoon Supply Crate";
 			dynamicSimulation=1;
 		};
-		id=388;
+		id=3;
 		type="B_supplyCrate_F";
 		class CustomAttributes
 		{
@@ -138,22 +96,22 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item4
+	class Item3
 	{
 		dataType="Marker";
-		position[]={6.8359375,2.4371225e+032,-2.3753662};
+		position[]={6.8793945,2.4371225e+032,-2.0478516};
 		name="respawn_west";
 		type="respawn_unknown";
 		angle=359.38086;
-		id=389;
+		id=4;
 		atlOffset=2.4371225e+032;
 	};
-	class Item5
+	class Item4
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={7.0322266,5,-4.0374756};
+			position[]={7.0756836,0,-3.7099609};
 		};
 		side="Empty";
 		flags=4;
@@ -163,7 +121,7 @@ class items
 			description="Medical Supply Crate";
 			dynamicSimulation=1;
 		};
-		id=391;
+		id=5;
 		type="ACE_medicalSupplyCrate";
 		class CustomAttributes
 		{
@@ -189,7 +147,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item6
+	class Item5
 	{
 		dataType="Group";
 		side="West";
@@ -201,7 +159,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.6474609,5.0014391,10.504028};
+					position[]={-5.6040039,0.0014390945,10.831787};
 				};
 				side="West";
 				flags=7;
@@ -403,11 +361,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=393;
+				id=7;
 				type="B_officer_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_plt";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -471,7 +448,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -490,102 +467,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_plt";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_plt";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -593,7 +475,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.6474609,5.0014391,10.503052};
+					position[]={-4.6040039,0.0014390945,10.830811};
 				};
 				side="West";
 				flags=5;
@@ -607,12 +489,17 @@ class items
 					{
 						class primaryWeapon
 						{
-							name="rhs_weap_m4a1_carryhandle";
-							underBarrel="rhsusf_acc_grip3";
+							name="rhs_weap_m4a1_carryhandle_m203S";
+							flashlight="rhsusf_acc_anpeq16a";
 							class primaryMuzzleMag
 							{
 								name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
 								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
 							};
 						};
 						class handgun
@@ -632,6 +519,16 @@ class items
 						{
 							typeName="rhs_uniform_cu_ocp";
 							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=1;
+									ammoLeft=15;
+								};
+							};
 							class ItemCargo
 							{
 								items=9;
@@ -662,22 +559,22 @@ class items
 								};
 								class Item5
 								{
-									name="ACE_MapTools";
-									count=1;
+									name="ACE_CableTie";
+									count=2;
 								};
 								class Item6
 								{
-									name="acc_flashlight";
+									name="ACE_MapTools";
 									count=1;
 								};
 								class Item7
 								{
-									name="ACRE_PRC343";
+									name="acc_flashlight";
 									count=1;
 								};
 								class Item8
 								{
-									name="ACRE_PRC152";
+									name="ACRE_PRC343";
 									count=1;
 								};
 							};
@@ -688,7 +585,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=5;
+								items=3;
 								class Item0
 								{
 									name="rhs_mag_30Rnd_556x45_M855A1_PMAG";
@@ -703,43 +600,72 @@ class items
 								};
 								class Item2
 								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-								class Item3
-								{
 									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="SmokeShell";
-									count=4;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="ACE_CableTie";
-									count=2;
 								};
 							};
 						};
 						class backpack
 						{
-							typeName="UK3CB_B_O_Radio_Backpack";
+							typeName="B_AssaultPack_cbr";
 							isBackpack=1;
-							class ItemCargo
+							class MagazineCargo
 							{
-								items=1;
+								items=6;
 								class Item0
 								{
-									name="ACRE_PRC117F";
+									name="1Rnd_Smoke_Grenade_shell";
+									count=5;
+									ammoLeft=1;
+								};
+								class Item1
+								{
+									name="1Rnd_SmokeRed_Grenade_shell";
+									count=5;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="1Rnd_SmokeGreen_Grenade_shell";
+									count=5;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=7;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellGreen";
+									count=5;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellBlue";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=3;
+								class Item0
+								{
+									name="ACE_IR_Strobe_Item";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -751,11 +677,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=394;
+				id=8;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_plt";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -819,7 +764,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -838,102 +783,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_plt";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.98000002;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male09ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_plt";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -941,7 +791,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.6474609,5.0014391,10.503052};
+					position[]={-3.6040039,0.0014390945,10.830811};
 				};
 				side="West";
 				flags=5;
@@ -1139,33 +989,14 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=395;
+				id=9;
 				type="B_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -1181,7 +1012,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -1217,7 +1048,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -1236,26 +1067,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_plt";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item3
@@ -1263,7 +1075,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.6474609,5.0014391,10.503052};
+					position[]={-2.6040039,0.0014390945,10.830811};
 				};
 				side="West";
 				flags=5;
@@ -1385,33 +1197,14 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=396;
+				id=10;
 				type="B_Soldier_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -1427,7 +1220,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -1463,7 +1256,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -1482,33 +1275,14 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_plt";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=392;
+		id=6;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1533,7 +1307,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item7
+	class Item6
 	{
 		dataType="Group";
 		side="West";
@@ -1545,7 +1319,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.609375,5.0014391,7.5870361};
+					position[]={-5.5654297,0.0014390945,7.9150391};
 				};
 				side="West";
 				flags=7;
@@ -1749,11 +1523,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=398;
+				id=12;
 				type="B_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male10ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_asl";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -1803,7 +1615,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -1822,102 +1634,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_asl";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_asl";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -1925,7 +1642,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.6083984,5.0014391,7.5860596};
+					position[]={-4.5649414,0.0014390945,7.9138184};
 				};
 				side="West";
 				flags=5;
@@ -2123,33 +1840,14 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=399;
+				id=13;
 				type="B_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -2165,7 +1863,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -2201,7 +1899,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -2220,26 +1918,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_asl";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -2247,7 +1926,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.6083984,5.0014391,5.5860596};
+					position[]={-5.5649414,0.0014390945,5.9138184};
 				};
 				side="West";
 				flags=5;
@@ -2439,7 +2118,7 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=400;
+				id=14;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -2464,27 +2143,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -2500,7 +2160,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -2536,7 +2196,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -2555,26 +2215,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item3
@@ -2582,7 +2223,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.6083984,5.0014391,5.5860596};
+					position[]={-4.5649414,0.0014390945,5.9138184};
 				};
 				side="West";
 				flags=5;
@@ -2709,7 +2350,7 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=401;
+				id=15;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
@@ -2734,27 +2375,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -2770,7 +2392,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -2806,7 +2428,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -2825,26 +2447,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -2852,7 +2455,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.6083984,5.0014391,5.5855713};
+					position[]={-3.5649414,0.0014390945,5.9133301};
 				};
 				side="West";
 				flags=5;
@@ -3038,11 +2641,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=402;
+				id=16;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_team_colors";
+						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="RED";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_a1";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -3078,7 +2719,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -3097,121 +2738,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a1";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male06ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a1";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_team_colors";
-						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item5
@@ -3219,7 +2746,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.6083984,5.0014391,5.5860596};
+					position[]={-2.5649414,0.0014390945,5.9138184};
 				};
 				side="West";
 				flags=5;
@@ -3346,7 +2873,7 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=403;
+				id=17;
 				type="B_soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -3371,27 +2898,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -3407,7 +2915,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -3443,7 +2951,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -3462,26 +2970,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item6
@@ -3489,7 +2978,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.6083984,5.0014391,3.5860596};
+					position[]={-5.5649414,0.0014390945,3.9138184};
 				};
 				side="West";
 				flags=5;
@@ -3681,7 +3170,7 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=404;
+				id=18;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -3706,27 +3195,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -3742,7 +3212,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -3778,7 +3248,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -3797,26 +3267,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item7
@@ -3824,7 +3275,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.6083984,5.0014391,3.5860596};
+					position[]={-4.5649414,0.0014390945,3.9138184};
 				};
 				side="West";
 				flags=5;
@@ -3951,7 +3402,7 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=405;
+				id=19;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
@@ -3976,27 +3427,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -4012,7 +3444,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -4048,7 +3480,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -4067,26 +3499,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item8
@@ -4094,7 +3507,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.6083984,5.0014391,3.5855713};
+					position[]={-3.5649414,0.0014390945,3.9133301};
 				};
 				side="West";
 				flags=5;
@@ -4280,11 +3693,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=406;
+				id=20;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_team_colors";
+						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="YELLOW";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_a2";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -4320,7 +3771,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -4339,121 +3790,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a2";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.98000002;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male06ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a2";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_team_colors";
-						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item9
@@ -4461,7 +3798,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.6083984,5.0014391,3.5860596};
+					position[]={-2.5649414,0.0014390945,3.9138184};
 				};
 				side="West";
 				flags=5;
@@ -4588,7 +3925,7 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=407;
+				id=21;
 				type="B_soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -4613,27 +3950,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -4649,7 +3967,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -4685,7 +4003,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -4704,33 +4022,14 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_a2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=397;
+		id=11;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -4755,7 +4054,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item8
+	class Item7
 	{
 		dataType="Group";
 		side="West";
@@ -4767,7 +4066,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.1123047,5.0014391,7.5513916};
+					position[]={-1.0688477,0.0014390945,7.8791504};
 				};
 				side="West";
 				flags=7;
@@ -4970,11 +4269,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=409;
+				id=23;
 				type="B_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_bsl";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -5024,7 +4342,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -5043,102 +4361,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_bsl";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male04ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_bsl";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -5146,7 +4369,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.11328125,5.0014391,7.5518799};
+					position[]={-0.069824219,0.0014390945,7.8796387};
 				};
 				side="West";
 				flags=5;
@@ -5344,33 +4567,14 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=410;
+				id=24;
 				type="B_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -5386,7 +4590,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -5422,7 +4626,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -5441,26 +4645,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_bsl";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -5468,7 +4653,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.1132813,5.0014391,5.5518799};
+					position[]={-1.0698242,0.0014390945,5.8796387};
 				};
 				side="West";
 				flags=5;
@@ -5660,7 +4845,7 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=411;
+				id=25;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -5685,27 +4870,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -5721,7 +4887,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -5757,7 +4923,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -5776,26 +4942,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item3
@@ -5803,7 +4950,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.11328125,5.0014391,5.5518799};
+					position[]={-0.069824219,0.0014390945,5.8796387};
 				};
 				side="West";
 				flags=5;
@@ -5930,7 +5077,7 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=412;
+				id=26;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
@@ -5955,27 +5102,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -5991,7 +5119,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -6027,7 +5155,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -6046,26 +5174,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -6073,7 +5182,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.88671875,5.0014391,5.5518799};
+					position[]={0.93017578,0.0014390945,5.8796387};
 				};
 				side="West";
 				flags=5;
@@ -6259,11 +5368,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=413;
+				id=27;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_team_colors";
+						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="BLUE";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_b1";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -6299,7 +5446,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -6318,121 +5465,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b1";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male06ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b1";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_team_colors";
-						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="BLUE";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item5
@@ -6440,7 +5473,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.8867188,5.0014391,5.5518799};
+					position[]={1.9301758,0.0014390945,5.8796387};
 				};
 				side="West";
 				flags=5;
@@ -6567,7 +5600,7 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=414;
+				id=28;
 				type="B_soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -6592,27 +5625,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -6628,7 +5642,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -6664,7 +5678,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -6683,26 +5697,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item6
@@ -6710,7 +5705,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.1132813,5.0014391,3.5518799};
+					position[]={-1.0698242,0.0014390945,3.8796387};
 				};
 				side="West";
 				flags=5;
@@ -6902,7 +5897,7 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=415;
+				id=29;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -6927,27 +5922,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -6963,7 +5939,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -6999,7 +5975,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -7018,26 +5994,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item7
@@ -7045,7 +6002,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.11328125,5.0014391,3.5518799};
+					position[]={-0.069824219,0.0014390945,3.8796387};
 				};
 				side="West";
 				flags=5;
@@ -7172,7 +6129,7 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=416;
+				id=30;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
@@ -7197,27 +6154,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -7233,7 +6171,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -7269,7 +6207,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -7288,26 +6226,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item8
@@ -7315,7 +6234,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.88671875,5.0014391,3.5518799};
+					position[]={0.93017578,0.0014390945,3.8796387};
 				};
 				side="West";
 				flags=5;
@@ -7501,11 +6420,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=417;
+				id=31;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_team_colors";
+						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="GREEN";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_b2";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -7541,7 +6498,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -7560,121 +6517,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b2";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male04ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b2";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_team_colors";
-						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="GREEN";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item9
@@ -7682,7 +6525,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.8867188,5.0014391,3.5518799};
+					position[]={1.9301758,0.0014390945,3.8796387};
 				};
 				side="West";
 				flags=5;
@@ -7809,7 +6652,7 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=418;
+				id=32;
 				type="B_soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -7834,27 +6677,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -7870,7 +6694,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -7906,7 +6730,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -7925,33 +6749,14 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_b2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=408;
+		id=22;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -7976,7 +6781,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item9
+	class Item8
 	{
 		dataType="Group";
 		side="West";
@@ -7988,7 +6793,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1972656,5.0014391,7.5479736};
+					position[]={4.2407227,0.0014390945,7.8757324};
 				};
 				side="West";
 				flags=7;
@@ -8191,11 +6996,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=420;
+				id=34;
 				type="B_Soldier_SL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_csl";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -8245,7 +7069,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -8264,102 +7088,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_csl";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male12ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_csl";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -8367,7 +7096,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1972656,5.0014391,7.5469971};
+					position[]={5.2407227,0.0014390945,7.8747559};
 				};
 				side="West";
 				flags=5;
@@ -8565,33 +7294,14 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=421;
+				id=35;
 				type="B_medic_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -8607,7 +7317,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -8643,7 +7353,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -8662,26 +7372,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_csl";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -8689,7 +7380,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1972656,5.0014391,5.5469971};
+					position[]={4.2407227,0.0014390945,5.8747559};
 				};
 				side="West";
 				flags=5;
@@ -8881,7 +7572,7 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=422;
+				id=36;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -8906,27 +7597,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -8942,7 +7614,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -8978,7 +7650,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -8997,26 +7669,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item3
@@ -9024,7 +7677,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1972656,5.0014391,5.5469971};
+					position[]={5.2407227,0.0014390945,5.8747559};
 				};
 				side="West";
 				flags=5;
@@ -9151,7 +7804,7 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=423;
+				id=37;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
@@ -9176,27 +7829,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -9212,7 +7846,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -9248,7 +7882,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -9267,26 +7901,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item4
@@ -9294,7 +7909,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1972656,5.0014391,5.5465088};
+					position[]={6.2407227,0.0014390945,5.8742676};
 				};
 				side="West";
 				flags=5;
@@ -9480,11 +8095,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=424;
+				id=38;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_team_colors";
+						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="RED";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_c1";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -9520,7 +8173,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -9539,121 +8192,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c1";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c1";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_team_colors";
-						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="RED";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item5
@@ -9661,7 +8200,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.1972656,5.0014391,5.5469971};
+					position[]={7.2407227,0.0014390945,5.8747559};
 				};
 				side="West";
 				flags=5;
@@ -9788,7 +8327,7 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=425;
+				id=39;
 				type="B_soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -9813,27 +8352,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -9849,7 +8369,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -9885,7 +8405,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -9904,26 +8424,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c1";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item6
@@ -9931,7 +8432,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.1972656,5.0014391,3.5469971};
+					position[]={4.2407227,0.0014390945,3.8747559};
 				};
 				side="West";
 				flags=5;
@@ -10123,7 +8624,7 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=426;
+				id=40;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
@@ -10148,27 +8649,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -10184,7 +8666,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -10220,7 +8702,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -10239,26 +8721,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item7
@@ -10266,7 +8729,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.1972656,5.0014391,3.5469971};
+					position[]={5.2407227,0.0014390945,3.8747559};
 				};
 				side="West";
 				flags=5;
@@ -10393,7 +8856,7 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=427;
+				id=41;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
@@ -10418,27 +8881,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -10454,7 +8898,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -10490,7 +8934,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -10509,26 +8953,7 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 			class Item8
@@ -10536,7 +8961,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.1972656,5.0014391,3.5465088};
+					position[]={6.2407227,0.0014390945,3.8742676};
 				};
 				side="West";
 				flags=5;
@@ -10722,11 +9147,49 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=428;
+				id=42;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_team_colors";
+						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="YELLOW";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_c2";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -10762,7 +9225,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -10781,121 +9244,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c2";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.03;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male03ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c2";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_team_colors";
-						expression="[_this, _value] call a3aa_ee_team_colors_fnc_setColor";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="YELLOW";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item9
@@ -10903,7 +9252,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.1972656,5.0014391,3.5469971};
+					position[]={7.2407227,0.0014390945,3.8747559};
 				};
 				side="West";
 				flags=5;
@@ -11030,7 +9379,7 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=429;
+				id=43;
 				type="B_soldier_LAT_F";
 				class CustomAttributes
 				{
@@ -11055,27 +9404,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -11091,7 +9421,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -11127,7 +9457,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -11146,33 +9476,14 @@ class items
 							};
 						};
 					};
-					class Attribute5
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_c2";
-							};
-						};
-					};
-					nAttributes=6;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=419;
+		id=33;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -11197,7 +9508,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item10
+	class Item9
 	{
 		dataType="Group";
 		side="West";
@@ -11209,7 +9520,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.8476563,5.0014391,0.47277832};
+					position[]={-5.8041992,0.0014390945,0.80053711};
 				};
 				side="West";
 				flags=7;
@@ -11412,11 +9723,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=431;
+				id=45;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_mmg";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -11466,7 +9796,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -11485,102 +9815,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mmg";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.03;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male02ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mmg";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -11588,7 +9823,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.8476563,5.0014391,0.47277832};
+					position[]={-4.8041992,0.0014390945,0.80053711};
 				};
 				side="West";
 				flags=5;
@@ -11719,33 +9954,14 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=432;
+				id=46;
 				type="B_soldier_AR_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -11761,7 +9977,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -11797,7 +10013,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -11816,26 +10032,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mmg";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -11843,7 +10040,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8476563,5.0014391,0.47277832};
+					position[]={-3.8041992,0.0014390945,0.80053711};
 				};
 				side="West";
 				flags=5;
@@ -11987,33 +10184,14 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=433;
+				id=47;
 				type="B_soldier_AAR_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -12029,7 +10207,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -12065,7 +10243,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -12084,33 +10262,14 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mmg";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=430;
+		id=44;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -12135,7 +10294,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item11
+	class Item10
 	{
 		dataType="Group";
 		side="West";
@@ -12147,7 +10306,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.73632813,5.0014391,0.3170166};
+					position[]={-0.69287109,0.0014390945,0.64477539};
 				};
 				side="West";
 				flags=7;
@@ -12350,11 +10509,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=435;
+				id=49;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_mat";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -12404,7 +10582,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -12423,102 +10601,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mat";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.01;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male02ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mat";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -12526,7 +10609,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.26269531,5.0014391,0.31652832};
+					position[]={0.30615234,0.0014390945,0.64428711};
 				};
 				side="West";
 				flags=5;
@@ -12679,33 +10762,14 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=436;
+				id=50;
 				type="B_soldier_AT_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -12721,7 +10785,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -12757,7 +10821,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -12776,26 +10840,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mat";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -12803,7 +10848,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.2626953,5.0014391,0.31652832};
+					position[]={1.3061523,0.0014390945,0.64428711};
 				};
 				side="West";
 				flags=5;
@@ -12947,33 +10992,14 @@ class items
 						headgear="rhsusf_ach_helmet_ocp_alt";
 					};
 				};
-				id=437;
+				id=51;
 				type="B_soldier_AAT_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -12989,7 +11015,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -13025,7 +11051,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -13044,33 +11070,14 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mat";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=434;
+		id=48;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -13095,7 +11102,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item12
+	class Item11
 	{
 		dataType="Group";
 		side="West";
@@ -13107,7 +11114,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.1933594,5.0014391,-2.6741943};
+					position[]={-6.1499023,0.0014390945,-2.3464355};
 				};
 				side="West";
 				flags=6;
@@ -13290,11 +11297,30 @@ class items
 						headgear="rhs_Booniehat_ocp";
 					};
 				};
-				id=439;
+				id=53;
 				type="B_spotter_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_dmt";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -13344,7 +11370,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -13363,102 +11389,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dmt";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.97000003;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dmt";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -13466,7 +11397,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.1943359,5.0014391,-2.6732178};
+					position[]={-5.1508789,0.0014390945,-2.345459};
 				};
 				side="West";
 				flags=4;
@@ -13627,11 +11558,30 @@ class items
 						headgear="rhs_Booniehat_ocp";
 					};
 				};
-				id=440;
+				id=54;
 				type="B_soldier_M_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_dmt";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -13667,7 +11617,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -13686,109 +11636,14 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dmt";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dmt";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=438;
+		id=52;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -13813,7 +11668,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item13
+	class Item12
 	{
 		dataType="Group";
 		side="West";
@@ -13825,7 +11680,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.2207031,5.0014391,0.42590332};
+					position[]={4.2641602,0.0014390945,0.75366211};
 				};
 				side="West";
 				flags=7;
@@ -14008,11 +11863,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ess_ocp_alt";
 					};
 				};
-				id=442;
+				id=56;
 				type="B_engineer_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_letter_e";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -14062,7 +11936,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -14081,102 +11955,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_letter_e";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male05ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_letter_e";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -14184,7 +11963,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.2197266,5.0014391,0.42492676};
+					position[]={5.2631836,0.0014390945,0.75268555};
 				};
 				side="West";
 				flags=5;
@@ -14345,33 +12124,14 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=443;
+				id=57;
 				type="B_engineer_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -14387,7 +12147,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -14423,7 +12183,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -14442,26 +12202,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_letter_e";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -14469,7 +12210,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.2197266,5.0014391,0.42492676};
+					position[]={6.2631836,0.0014390945,0.75268555};
 				};
 				side="West";
 				flags=5;
@@ -14630,33 +12371,14 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=444;
+				id=58;
 				type="B_engineer_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -14672,7 +12394,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -14708,7 +12430,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -14727,26 +12449,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_letter_e";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item3
@@ -14754,7 +12457,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.2197266,5.0014391,0.42492676};
+					position[]={7.2631836,0.0014390945,0.75268555};
 				};
 				side="West";
 				flags=5;
@@ -14915,33 +12618,14 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=445;
+				id=59;
 				type="B_engineer_F";
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute1
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -14957,7 +12641,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -14993,7 +12677,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -15012,33 +12696,14 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_letter_e";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=441;
+		id=55;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -15063,18 +12728,18 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item14
+	class Item13
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.61035156,5,1.2427979};
+			position[]={0.65380859,0,1.5703125};
 		};
 		name="Player_Corpse_CleanUp";
 		areaSize[]={200,-1,200};
 		areaIsRectangle=1;
 		flags=1;
-		id=446;
+		id=60;
 		type="a3aa_ee_custom_location";
 		class CustomAttributes
 		{
@@ -15138,12 +12803,12 @@ class items
 			nAttributes=3;
 		};
 	};
-	class Item15
+	class Item14
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={4.9467773,5.1887245,-8.5328369};
+			position[]={4.9902344,0.18872452,-8.2050781};
 		};
 		side="Empty";
 		flags=4;
@@ -15153,7 +12818,7 @@ class items
 			description="Mortar Supply Box";
 			dynamicSimulation=1;
 		};
-		id=447;
+		id=61;
 		type="Box_NATO_Wps_F";
 		class CustomAttributes
 		{
@@ -15179,12 +12844,12 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item16
+	class Item15
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.70703125,13.478737,-8.6351318};
+			position[]={0.75048828,8.4787369,-8.3076172};
 			angles[]={0,3.1416116,0};
 		};
 		side="Empty";
@@ -15193,15 +12858,15 @@ class items
 		{
 			disableSimulation=1;
 		};
-		id=448;
+		id=62;
 		type="Land_TTowerSmall_2_F";
 	};
-	class Item17
+	class Item16
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.70703125,5.4052014,-8.6351318};
+			position[]={0.75048828,0.40520144,-8.3076172};
 		};
 		side="Empty";
 		flags=4;
@@ -15209,36 +12874,35 @@ class items
 		{
 			disableSimulation=1;
 		};
-		id=449;
+		id=63;
 		type="Land_CampingTable_small_F";
 	};
-	class Item18
+	class Item17
 	{
 		dataType="Marker";
-		position[]={0.72070313,0,-8.6237793};
+		position[]={0.76416016,0,-8.2961426};
 		name="viscom_marker";
 		text="VISCOM";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=450;
-		atlOffset=-5;
+		id=64;
 	};
-	class Item19
+	class Item18
 	{
 		dataType="Marker";
-		position[]={-1.5043945,5,-8.6486816};
+		position[]={-1.4145508,0,-8.3688965};
 		name="scopebox_marker";
 		text="Scopebox";
 		type="mil_triangle";
 		colorName="ColorGreen";
-		id=451;
+		id=65;
 	};
-	class Item20
+	class Item19
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.46582031,5.9690795,-8.5960693};
+			position[]={0.50927734,0.96907997,-8.2685547};
 			angles[]={-0,4.7176247,0};
 		};
 		side="Empty";
@@ -15249,16 +12913,16 @@ class items
 			description="VISCOM";
 			disableSimulation=1;
 		};
-		id=452;
+		id=66;
 		type="Land_Laptop_unfolded_F";
-		atlOffset=1.4305115e-006;
+		atlOffset=1.9073486e-006;
 	};
-	class Item21
+	class Item20
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.95117188,5.9690795,-8.5980225};
+			position[]={0.99462891,0.96907997,-8.2705078};
 			angles[]={-0,1.5762417,0};
 		};
 		side="Empty";
@@ -15269,11 +12933,11 @@ class items
 			description="VISCOM";
 			disableSimulation=1;
 		};
-		id=453;
+		id=67;
 		type="Land_Laptop_unfolded_F";
-		atlOffset=1.4305115e-006;
+		atlOffset=1.9073486e-006;
 	};
-	class Item22
+	class Item21
 	{
 		dataType="Group";
 		side="West";
@@ -15285,7 +12949,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.9599609,5.0014391,-2.6634521};
+					position[]={-2.9165039,0.0014390945,-2.3356934};
 				};
 				side="West";
 				flags=7;
@@ -15466,11 +13130,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=455;
+				id=69;
 				type="B_Soldier_TL_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -15520,7 +13203,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -15539,102 +13222,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.01;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male02ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -15642,7 +13230,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.9599609,5.0014391,-2.6634521};
+					position[]={-1.9165039,0.0014390945,-2.3356934};
 				};
 				side="West";
 				flags=5;
@@ -15779,11 +13367,30 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=456;
+				id=70;
 				type="B_soldier_AT_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -15819,7 +13426,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -15838,109 +13445,14 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.98000002;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=454;
+		id=68;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -15965,12 +13477,12 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item23
+	class Item22
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={4.2705078,5.1867056,-6.5355225};
+			position[]={4.3139648,0.18670559,-6.2080078};
 			angles[]={-0,1.5707964,0};
 		};
 		side="Empty";
@@ -15981,7 +13493,7 @@ class items
 			description="HAT Supply Box";
 			dynamicSimulation=1;
 		};
-		id=457;
+		id=71;
 		type="Box_NATO_WpsSpecial_F";
 		class CustomAttributes
 		{
@@ -16007,7 +13519,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item24
+	class Item23
 	{
 		dataType="Group";
 		side="West";
@@ -16019,7 +13531,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.25585938,5.0014391,-2.680542};
+					position[]={0.29931641,0.0014390945,-2.3527832};
 				};
 				side="West";
 				flags=6;
@@ -16175,11 +13687,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=459;
+				id=73;
 				type="B_support_AMG_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -16229,7 +13760,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -16248,102 +13779,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -16351,7 +13787,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.2539063,5.0014391,-2.680542};
+					position[]={1.2973633,0.0014390945,-2.3530273};
 				};
 				side="West";
 				flags=4;
@@ -16473,11 +13909,49 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=460;
+				id=74;
 				type="B_support_MG_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male07ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -16513,7 +13987,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -16532,109 +14006,14 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male07ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=458;
+		id=72;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -16659,7 +14038,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item25
+	class Item24
 	{
 		dataType="Group";
 		side="West";
@@ -16671,7 +14050,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.5419922,5.0014391,-2.680542};
+					position[]={3.5854492,0.0014390945,-2.3527832};
 				};
 				side="West";
 				flags=7;
@@ -16828,11 +14207,30 @@ class items
 						headgear="rhsusf_ach_helmet_headset_ocp_alt";
 					};
 				};
-				id=462;
+				id=76;
 				type="B_support_AMort_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_mtr";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -16882,7 +14280,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -16901,102 +14299,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mtr";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male10ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mtr";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -17004,7 +14307,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.5410156,5.0014391,-2.680542};
+					position[]={4.5844727,0.0014390945,-2.3527832};
 				};
 				side="West";
 				flags=5;
@@ -17148,11 +14451,30 @@ class items
 						headgear="rhsusf_ach_helmet_ESS_ocp_alt";
 					};
 				};
-				id=463;
+				id=77;
 				type="B_support_Mort_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_mtr";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -17188,7 +14510,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -17207,109 +14529,14 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mtr";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.98000002;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male06ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_mtr";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=461;
+		id=75;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -17334,7 +14561,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item26
+	class Item25
 	{
 		dataType="Group";
 		side="West";
@@ -17346,7 +14573,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.1533203,5.0014391,-5.7113037};
+					position[]={-6.1098633,0.0014390945,-5.3835449};
 				};
 				side="West";
 				flags=7;
@@ -17384,9 +14611,25 @@ class items
 						{
 							typeName="NatoU_ACU";
 							isBackpack=0;
+							class MagazineCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=1;
+									ammoLeft=15;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+							};
 							class ItemCargo
 							{
-								items=10;
+								items=7;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -17422,21 +14665,6 @@ class items
 									name="acc_flashlight";
 									count=1;
 								};
-								class Item7
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-								class Item8
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
 							};
 						};
 						class vest
@@ -17445,7 +14673,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=4;
 								class Item0
 								{
 									name="hlc_30Rnd_9x19_B_MP5";
@@ -17454,33 +14682,40 @@ class items
 								};
 								class Item1
 								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-								class Item2
-								{
-									name="HandGrenade";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
 									name="SmokeShell";
 									count=4;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item2
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item3
 								{
 									name="SmokeShellBlue";
 									count=2;
 									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=3;
+								class Item0
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC148";
+									count=1;
 								};
 							};
 						};
@@ -17492,11 +14727,30 @@ class items
 						headgear="rhsusf_cvc_green_ess";
 					};
 				};
-				id=465;
+				id=79;
 				type="B_crew_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_dgr";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -17560,7 +14814,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -17579,102 +14833,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute3
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dgr";
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male08ENG";
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dgr";
-							};
-						};
-					};
-					nAttributes=7;
+					nAttributes=3;
 				};
 			};
 			class Item1
@@ -17682,7 +14841,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.1542969,5.0014391,-5.7122803};
+					position[]={-5.1108398,0.0014390945,-5.3845215};
 				};
 				side="West";
 				flags=5;
@@ -17826,7 +14985,7 @@ class items
 						headgear="rhsusf_cvc_green_alt_helmet";
 					};
 				};
-				id=466;
+				id=80;
 				type="B_crew_F";
 				class CustomAttributes
 				{
@@ -17851,27 +15010,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -17887,7 +15027,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -17906,26 +15046,7 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dgr";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 			class Item2
@@ -17933,7 +15054,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.1542969,5.0014391,-5.7122803};
+					position[]={-4.1108398,0.0014390945,-5.3845215};
 				};
 				side="West";
 				flags=5;
@@ -18063,7 +15184,7 @@ class items
 						headgear="rhsusf_cvc_green_helmet";
 					};
 				};
-				id=467;
+				id=81;
 				type="B_crew_F";
 				class CustomAttributes
 				{
@@ -18088,27 +15209,8 @@ class items
 					};
 					class Attribute1
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute2
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -18124,7 +15226,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute2
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -18143,33 +15245,14 @@ class items
 							};
 						};
 					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_dgr";
-							};
-						};
-					};
-					nAttributes=5;
+					nAttributes=3;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=464;
+		id=78;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -18194,7 +15277,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item27
+	class Item26
 	{
 		dataType="Group";
 		side="West";
@@ -18206,7 +15289,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.9492188,5.0014391,-5.7073975};
+					position[]={-1.9057617,0.0014390945,-5.3796387};
 				};
 				side="West";
 				flags=7;
@@ -18244,9 +15327,19 @@ class items
 						{
 							typeName="NatoU_nomad_rs";
 							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=2;
+									ammoLeft=15;
+								};
+							};
 							class ItemCargo
 							{
-								items=10;
+								items=8;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -18287,16 +15380,6 @@ class items
 									name="ACRE_PRC343";
 									count=1;
 								};
-								class Item8
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
 							};
 						};
 						class vest
@@ -18305,7 +15388,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=5;
 								class Item0
 								{
 									name="hlc_30Rnd_9x19_B_MP5";
@@ -18314,29 +15397,23 @@ class items
 								};
 								class Item1
 								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-								class Item2
-								{
 									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item2
 								{
 									name="SmokeShell";
 									count=4;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item3
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item4
 								{
 									name="SmokeShellBlue";
 									count=2;
@@ -18350,10 +15427,20 @@ class items
 							isBackpack=1;
 							class ItemCargo
 							{
-								items=1;
+								items=3;
 								class Item0
 								{
 									name="ToolKit";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -18366,11 +15453,49 @@ class items
 						headgear="rhsusf_hgu56p_visor_black";
 					};
 				};
-				id=469;
+				id=83;
 				type="B_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_nb";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -18434,26 +15559,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="ace_isEngineer";
-						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute2
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -18472,102 +15578,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_nb";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male07ENG";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_nb";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 			class Item1
@@ -18575,7 +15586,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.94921875,5.0014391,-5.708374};
+					position[]={-0.90576172,0.0014390945,-5.3806152};
 				};
 				side="West";
 				flags=5;
@@ -18612,9 +15623,19 @@ class items
 						{
 							typeName="NatoU_nomad_rs";
 							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=2;
+									ammoLeft=15;
+								};
+							};
 							class ItemCargo
 							{
-								items=10;
+								items=8;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -18655,16 +15676,6 @@ class items
 									name="ACRE_PRC343";
 									count=1;
 								};
-								class Item8
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
 							};
 						};
 						class vest
@@ -18673,7 +15684,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=5;
 								class Item0
 								{
 									name="hlc_30Rnd_9x19_B_MP5";
@@ -18682,29 +15693,23 @@ class items
 								};
 								class Item1
 								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-								class Item2
-								{
 									name="HandGrenade";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item2
 								{
 									name="SmokeShell";
 									count=4;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item3
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item4
 								{
 									name="SmokeShellBlue";
 									count=2;
@@ -18718,10 +15723,20 @@ class items
 							isBackpack=1;
 							class ItemCargo
 							{
-								items=1;
+								items=3;
 								class Item0
 								{
 									name="ToolKit";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACRE_PRC148";
 									count=1;
 								};
 							};
@@ -18730,15 +15745,53 @@ class items
 						compass="ItemCompass";
 						watch="ItemWatch";
 						gps="ItemGPS";
-						hmd="ACE_NVG_Wide";
+						hmd="NVGoggles";
 						headgear="rhsusf_hgu56p_visor_black";
 					};
 				};
-				id=470;
+				id=84;
 				type="B_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_nb";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -18802,26 +15855,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="ace_isEngineer";
-						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute2
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -18840,109 +15874,14 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_nb";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.01;
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male12ENG";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_nb";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=468;
+		id=82;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -18967,7 +15906,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item28
+	class Item27
 	{
 		dataType="Group";
 		side="West";
@@ -18979,7 +15918,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.2802734,5.0014391,-5.7288818};
+					position[]={1.3237305,0.0014390945,-5.401123};
 				};
 				side="West";
 				flags=7;
@@ -19017,9 +15956,19 @@ class items
 						{
 							typeName="NatoU_nomad";
 							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="rhsusf_mag_15Rnd_9x19_JHP";
+									count=2;
+									ammoLeft=15;
+								};
+							};
 							class ItemCargo
 							{
-								items=10;
+								items=8;
 								class Item0
 								{
 									name="ACE_fieldDressing";
@@ -19060,16 +16009,6 @@ class items
 									name="ACRE_PRC343";
 									count=1;
 								};
-								class Item8
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-								class Item9
-								{
-									name="ACRE_PRC148";
-									count=1;
-								};
 							};
 						};
 						class vest
@@ -19078,7 +16017,7 @@ class items
 							isBackpack=0;
 							class MagazineCargo
 							{
-								items=6;
+								items=5;
 								class Item0
 								{
 									name="hlc_30Rnd_9x19_B_MP5";
@@ -19087,33 +16026,41 @@ class items
 								};
 								class Item1
 								{
-									name="rhsusf_mag_15Rnd_9x19_JHP";
-									count=1;
-									ammoLeft=15;
-								};
-								class Item2
-								{
 									name="HandGrenade";
-									count=2;
+									count=1;
 									ammoLeft=1;
 								};
-								class Item3
+								class Item2
 								{
 									name="SmokeShell";
 									count=4;
 									ammoLeft=1;
 								};
-								class Item4
+								class Item3
 								{
 									name="SmokeShellGreen";
 									count=2;
 									ammoLeft=1;
 								};
-								class Item5
+								class Item4
 								{
 									name="SmokeShellBlue";
 									count=2;
 									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC148";
+									count=1;
 								};
 							};
 						};
@@ -19129,11 +16076,49 @@ class items
 						headgear="H_PilotHelmetFighter_B";
 					};
 				};
-				id=472;
+				id=86;
 				type="B_Pilot_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="ace_isEngineer";
+						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="cnto_elem_fal";
+							};
+						};
+					};
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -19197,26 +16182,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="ace_isEngineer";
-						expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1;
-							};
-						};
-					};
-					class Attribute2
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -19235,109 +16201,14 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_fal";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=1.04;
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male12ENG";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="cnto_elem_fal";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=471;
+		id=85;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -19362,7 +16233,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item29
+	class Item28
 	{
 		dataType="Group";
 		side="West";
@@ -19374,7 +16245,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-6.1962891,5.0014391,-8.5452881};
+					position[]={-6.1523438,0.0014390945,-8.217041};
 				};
 				side="West";
 				flags=7;
@@ -19401,53 +16272,28 @@ class items
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=10;
+								items=5;
 								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=4;
-								};
-								class Item1
-								{
-									name="ACE_quikclot";
-									count=6;
-								};
-								class Item2
-								{
-									name="ACE_tourniquet";
-									count=2;
-								};
-								class Item3
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_epinephrine";
-									count=1;
-								};
-								class Item5
 								{
 									name="ACE_MapTools";
 									count=1;
 								};
-								class Item6
+								class Item1
 								{
 									name="acc_flashlight";
 									count=1;
 								};
-								class Item7
+								class Item2
 								{
 									name="ACRE_PRC343";
 									count=1;
 								};
-								class Item8
+								class Item3
 								{
 									name="ACRE_PRC152";
 									count=1;
 								};
-								class Item9
+								class Item4
 								{
 									name="ACRE_PRC148";
 									count=1;
@@ -19462,11 +16308,30 @@ class items
 						headgear="rhsusf_patrolcap_ocp";
 					};
 				};
-				id=474;
+				id=88;
 				type="B_Protagonist_VR_F";
 				class CustomAttributes
 				{
 					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male12ENG";
+							};
+						};
+					};
+					class Attribute1
 					{
 						property="a3aa_insta_zeus_unit_curator";
 						expression="[_this, _value] call a3aa_insta_zeus_fnc_createUnitCurator";
@@ -19485,7 +16350,7 @@ class items
 							};
 						};
 					};
-					class Attribute1
+					class Attribute2
 					{
 						property="a3aa_ee_acre_channels_chlist";
 						expression="_this setVariable [""a3aa_ee_acre_channels_chlist"",_value,true]";
@@ -19549,7 +16414,7 @@ class items
 							};
 						};
 					};
-					class Attribute2
+					class Attribute3
 					{
 						property="lambs_danger_dangerRadio";
 						expression="if (_value) then { _this setVariable ['lambs_danger_dangerRadio', _value, true]; }";
@@ -19568,29 +16433,10 @@ class items
 							};
 						};
 					};
-					class Attribute3
-					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
 					class Attribute4
 					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+						property="a3aa_ee_extended_gear_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -19621,49 +16467,11 @@ class items
 										"SCALAR"
 									};
 								};
-								value=0.95999998;
+								value=1.04;
 							};
 						};
 					};
-					class Attribute6
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male12ENG";
-							};
-						};
-					};
-					class Attribute7
-					{
-						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Curator";
-							};
-						};
-					};
-					nAttributes=8;
+					nAttributes=6;
 				};
 			};
 			class Item1
@@ -19671,7 +16479,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.1962891,5.0014391,-8.5452881};
+					position[]={-5.152832,0.0014390945,-8.2175293};
 				};
 				side="West";
 				flags=5;
@@ -19698,53 +16506,28 @@ class items
 							isBackpack=0;
 							class ItemCargo
 							{
-								items=10;
+								items=5;
 								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=4;
-								};
-								class Item1
-								{
-									name="ACE_quikclot";
-									count=6;
-								};
-								class Item2
-								{
-									name="ACE_tourniquet";
-									count=2;
-								};
-								class Item3
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_epinephrine";
-									count=1;
-								};
-								class Item5
 								{
 									name="ACE_MapTools";
 									count=1;
 								};
-								class Item6
+								class Item1
 								{
 									name="acc_flashlight";
 									count=1;
 								};
-								class Item7
+								class Item2
 								{
 									name="ACRE_PRC343";
 									count=1;
 								};
-								class Item8
+								class Item3
 								{
 									name="ACRE_PRC152";
 									count=1;
 								};
-								class Item9
+								class Item4
 								{
 									name="ACRE_PRC148";
 									count=1;
@@ -19759,7 +16542,7 @@ class items
 						headgear="rhsusf_patrolcap_ocp";
 					};
 				};
-				id=475;
+				id=89;
 				type="B_Protagonist_VR_F";
 				class CustomAttributes
 				{
@@ -19867,84 +16650,8 @@ class items
 					};
 					class Attribute3
 					{
-						property="lambs_danger_disableAI";
-						expression="if (_value) then { _this setVariable ['lambs_danger_disableAI', _value, true]; }";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"BOOL"
-									};
-								};
-								value=0;
-							};
-						};
-					};
-					class Attribute4
-					{
-						property="unitInsignia";
-						expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Curator";
-							};
-						};
-					};
-					class Attribute5
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"SCALAR"
-									};
-								};
-								value=0.95999998;
-							};
-						};
-					};
-					class Attribute6
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Male03ENG";
-							};
-						};
-					};
-					class Attribute7
-					{
 						property="a3aa_ee_extended_gear_insignia";
-						expression="[_this, _value] call a3aa_ee_extended_gear_fnc_insignia";
+						expression="[_this, 'a3aa_ee_extended_gear_insignia', _value] call a3aa_ee_extended_gear_fnc_setAttributeVar";
 						class Value
 						{
 							class data
@@ -19960,14 +16667,14 @@ class items
 							};
 						};
 					};
-					nAttributes=8;
+					nAttributes=4;
 				};
 			};
 		};
 		class Attributes
 		{
 		};
-		id=473;
+		id=87;
 		class CustomAttributes
 		{
 			class Attribute0
@@ -20011,57 +16718,12 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item30
-	{
-		dataType="Comment";
-		class PositionInfo
-		{
-			position[]={4.2705078,30,-4.6567383};
-		};
-		title="v2.0.0";
-		id=476;
-		atlOffset=25;
-	};
-	class Item31
+	class Item29
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-1.5097656,5.4052014,-8.6561279};
-		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-			disableSimulation=1;
-		};
-		id=477;
-		type="Land_CampingTable_small_F";
-	};
-	class Item32
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-1.5029297,5.9696631,-8.6121826};
-			angles[]={-0,1.5707964,0};
-		};
-		side="Empty";
-		class Attributes
-		{
-			init="call{this call cnto_fnc_scopebox;}";
-			disableSimulation=1;
-		};
-		id=478;
-		type="Land_PlasticCase_01_small_olive_F";
-		atlOffset=0.81300545;
-	};
-	class Item33
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={3.3427734,5.1941233,-8.5238037};
+			position[]={3.3862305,0.19412327,-8.1962891};
 		};
 		side="Empty";
 		flags=4;
@@ -20070,7 +16732,7 @@ class items
 			description="HMG Supply Box (high)";
 			dynamicSimulation=1;
 		};
-		id=479;
+		id=93;
 		type="Land_PlasticCase_01_medium_olive_F";
 		class CustomAttributes
 		{
@@ -20096,12 +16758,12 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item34
+	class Item30
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-3.265625,6.4441342,-8.6624756};
+			position[]={-3.222168,1.4441342,-8.3349609};
 			angles[]={0,3.1415927,0};
 		};
 		side="Empty";
@@ -20111,26 +16773,26 @@ class items
 			init="call{this call cnto_telestation_fnc_ui}";
 			disableSimulation=1;
 		};
-		id=480;
+		id=94;
 		type="Land_Calvary_03_F";
 	};
-	class Item35
+	class Item31
 	{
 		dataType="Marker";
-		position[]={-3.2768555,5,-8.6361084};
+		position[]={-3.2333984,0,-8.3085938};
 		name="telestation_marker";
 		text="Telestation";
 		type="mil_triangle";
 		colorName="ColorGreen";
 		angle=0.42799973;
-		id=481;
+		id=95;
 	};
-	class Item36
+	class Item32
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={2.3286133,5.1941233,-8.5498047};
+			position[]={2.3720703,0.19412327,-8.222168};
 		};
 		side="Empty";
 		flags=4;
@@ -20139,7 +16801,7 @@ class items
 			description="HMG Supply Box (low)";
 			dynamicSimulation=1;
 		};
-		id=482;
+		id=96;
 		type="Land_PlasticCase_01_medium_olive_F";
 		class CustomAttributes
 		{
@@ -20164,5 +16826,91 @@ class items
 			};
 			nAttributes=1;
 		};
+	};
+	class Item33
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={7.1875,0,-1.3068848};
+		};
+		title="v2.1.0";
+		id=98;
+	};
+	class Item34
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.5029297,0.14963102,-6.3137207};
+			angles[]={-0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this, 200] call cnto_fnc_boxGuard}";
+			description="MAT Supply Box";
+			dynamicSimulation=1;
+		};
+		id=196;
+		type="Box_NATO_WpsLaunch_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[[[[],[]],[[""MRAWS_HEAT_F"",""MRAWS_HE_F""],[6,6]],[[],[]],[[],[]]],false]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item35
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.4101563,0.40520144,-8.3881836};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=197;
+		type="Land_CampingTable_small_F";
+	};
+	class Item36
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.4165039,0.96966362,-8.3657227};
+			angles[]={-0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{this call cnto_fnc_scopebox;}";
+			disableSimulation=1;
+		};
+		id=198;
+		type="Land_PlasticCase_01_small_olive_F";
 	};
 };
