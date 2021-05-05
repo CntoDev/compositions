@@ -1,5 +1,5 @@
 version=54;
-center[]={5884.5054,5,6190.5723};
+center[]={4848.5444,5,1264.5084};
 class items
 {
 	items=1;
@@ -19,148 +19,119 @@ class items
 					items=28;
 					class Item0
 					{
-						dataType="Logic";
+						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={-4.5053711,0,1.4277344};
+							position[]={-2.5058594,0,3.4272461};
 						};
-						name="HC_0";
-						isPlayable=1;
-						id=72;
-						type="HeadlessClient_F";
+						title="ACRE2";
+						id=10;
 					};
 					class Item1
 					{
-						dataType="Logic";
+						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={-4.5053711,0,-0.57226563};
+							position[]={5.4941406,0,3.4272461};
 						};
-						name="HC_1";
-						isPlayable=1;
-						id=73;
-						type="HeadlessClient_F";
+						title="Briefing";
+						id=23;
 					};
 					class Item2
 					{
-						dataType="Logic";
+						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={-4.5053711,0,-2.5722656};
+							position[]={-0.50585938,0,3.4272461};
 						};
-						name="Spectator_0";
-						isPlayable=1;
-						id=74;
-						type="VirtualSpectator_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="AllowFreeCamera";
-								expression="_this setVariable ['AllowFreeCamera', _value];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"BOOL"
-											};
-										};
-										value=1;
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="WhitelistedSides";
-								expression="_this setVariable ['WhitelistedSides', _value];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ShowFocusInfo";
-								expression="_this setVariable ['ShowFocusInfo', _value];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"BOOL"
-											};
-										};
-										value=1;
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="AllowAi";
-								expression="_this setVariable ['AllowAi', _value];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"BOOL"
-											};
-										};
-										value=0;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="Allow3PPCamera";
-								expression="_this setVariable ['Allow3PPCamera', _value];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"BOOL"
-											};
-										};
-										value=1;
-									};
-								};
-							};
-							nAttributes=5;
-						};
+						title="CNTO";
+						id=11;
 					};
 					class Item3
 					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={3.4941406,0,3.4272461};
+						};
+						title="Etiquette";
+						id=19;
+					};
+					class Item4
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={-4.5058594,0,3.4272461};
+						};
+						title="HC/Spect";
+						id=9;
+					};
+					class Item5
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={1.4941406,0,7.4272461};
+						};
+						title="Never update Default Modules without placing an inhibitor module first!";
+						id=29;
+					};
+					class Item6
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={1.4941406,0,3.4272461};
+						};
+						title="TTPs";
+						id=13;
+					};
+					class Item7
+					{
+						dataType="Comment";
+						class PositionInfo
+						{
+							position[]={-4.5063477,0,5.4272461};
+						};
+						title="v2.0.1";
+						description="Current composition version.";
+						id=12;
+					};
+					class Item8
+					{
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-4.5053711,0,-4.5722656};
+							position[]={-4.5058594,0,1.4272461};
 						};
-						name="Spectator_1";
+						name="HC_0";
 						isPlayable=1;
-						id=75;
+						id=3;
+						type="HeadlessClient_F";
+					};
+					class Item9
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-4.5058594,0,-0.57275391};
+						};
+						name="HC_1";
+						isPlayable=1;
+						id=4;
+						type="HeadlessClient_F";
+					};
+					class Item10
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-4.5058594,0,-2.5727539};
+						};
+						name="Spectator_0";
+						isPlayable=1;
+						id=5;
 						type="VirtualSpectator_F";
 						class CustomAttributes
 						{
@@ -261,14 +232,134 @@ class items
 							nAttributes=5;
 						};
 					};
-					class Item4
+					class Item11
 					{
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-2.5053711,0,1.4277344};
+							position[]={-4.5058594,0,-4.5727539};
 						};
-						id=76;
+						name="Spectator_1";
+						isPlayable=1;
+						id=6;
+						type="VirtualSpectator_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="AllowFreeCamera";
+								expression="_this setVariable ['AllowFreeCamera', _value];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="WhitelistedSides";
+								expression="_this setVariable ['WhitelistedSides', _value];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ShowFocusInfo";
+								expression="_this setVariable ['ShowFocusInfo', _value];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="AllowAi";
+								expression="_this setVariable ['AllowAi', _value];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="Allow3PPCamera";
+								expression="_this setVariable ['Allow3PPCamera', _value];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"BOOL"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item12
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-0.50585938,0,-0.57275391};
+						};
+						id=26;
+						type="a3aa_ee_aresenal_respawn";
+					};
+					class Item13
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-2.5058594,0,1.4272461};
+						};
+						id=7;
 						type="acre_api_basicMissionSetup";
 						class CustomAttributes
 						{
@@ -389,14 +480,1167 @@ class items
 							nAttributes=6;
 						};
 					};
-					class Item5
+					class Item14
 					{
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-2.5053711,0,-0.57226563};
+							position[]={-0.50585938,0,1.4272461};
 						};
-						id=77;
+						id=25;
+						type="a3aa_ee_basic_vehicle_cargo";
+					};
+					class Item15
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={5.4941406,0,1.4272461};
+						};
+						id=24;
+						type="a3aa_ee_briefing";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="a3aa_ee_briefing_situation";
+								expression="_this setVariable [""a3aa_ee_briefing_situation"",_value]";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="a3aa_ee_briefing_mission";
+								expression="_this setVariable [""a3aa_ee_briefing_mission"",_value]";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="a3aa_ee_briefing_execution";
+								expression="_this setVariable [""a3aa_ee_briefing_execution"",_value]";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="a3aa_ee_briefing_admin_logistics";
+								expression="_this setVariable [""a3aa_ee_briefing_admin_logistics"",_value]";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="a3aa_ee_briefing_briefingfor";
+								expression="_this setVariable [""a3aa_ee_briefing_briefingfor"",_value]";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="everyone";
+									};
+								};
+							};
+							class Attribute5
+							{
+								property="a3aa_ee_briefing_command_signal";
+								expression="_this setVariable [""a3aa_ee_briefing_command_signal"",_value]";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="";
+									};
+								};
+							};
+							nAttributes=6;
+						};
+					};
+					class Item16
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={1.5629883,0,-6.65625};
+						};
+						id=14;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="JTAC REPORT";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>JTAC REPORT</font color> " \n "<br></br> " \n "<br></br> " \n "Target and Description = What is the target i.e. BMP or bunker etc, where is the target any description that may be helpful to the pilot on a CAS run. " \n "<br></br> " \n "<br></br> " \n "How target is marked = How you have marked the target either on the map or with smoke etc. " \n "<br></br> " \n "<br></br> " \n "Ingress and Egress = The best direction for the CAS run to come in from to avoid AA and/or to see the target if obscured by buildings etc. Safest direction to exit the CAS run. " \n "<br></br> " \n "<br></br>" \n "Where and/or how friendlies are marked = Give details on where friendlies are to aviod friendly fire and how you may have marked yourself either on the map or with smoke etc." \n "<br></br> " \n "<br></br>" \n "<br></br> " \n "<br></br> " \n "Example: " \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>""REAPER"" this is ""ALPHA"" standby for CAS</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>""REAPER"" Send</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>Target BMP in the open, marked Tango One on map, ingress from SW egress SE, friendlies marked with green smoke.</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>BMP Tango One, ingress SW egress SE friendlies at green smoke.</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>Roger that call in when ready.</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>""ALPHA"" this is ""REAPER"" ready for CAS</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>""REAPER"" this is ""ALPHA"" CAS mission is a go</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>""REAPER"" Ok out</font color>" \n "<br></br> " \n "<br></br>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>ALPHA Speaking</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>REAPER Speaking</font color>";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO TTP'S";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item17
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={1.4941406,0,-4.5727539};
+						};
+						id=15;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="ACE REPORT";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>ACE REPORT</font color> " \n "<br></br> " \n "<br></br> " \n "Ammo = If your team is low on ammo, give details on it. This can be in general (“Low on ammo”) or more specific (“AR is low on ammo, but we have plenty of rifle ammo”). " \n "<br></br> " \n "<br></br> " \n "Casualties = State your dead first, then wounded after that. For example - “Alpha 2, 1 dead, 1 wounded”. Alternatively, an element leader can simply reply with how many units are alive under his command (how many are “up”). In the previous example, it would become: “Alpha 2, 3 up, one is wounded”. " \n "<br></br> " \n "<br></br> " \n "Equipment = If the team has lost any important equipment, it is noted here. For example, if the automatic rifle has been lost due to a casualty, and the AAR was unable to retrieve it, the team leader states so here. If the anti-tank weapons have been expended, he can state that as well. " \n "<br></br> " \n "<br></br> " \n "Example: I am good on ammo, not injured and carry no specialist equipment my response is “All Green” " \n "<br></br> " \n "<br></br> " \n "Example: I am low on ammo, lightly wounded and carry no specialist equipment my response is “Red, Yellow, Green” " \n "<br></br> " \n "<br></br> " \n "Example: I am good on ammo, not injured and have used my AT my response is “Green, Green, Red” " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "FTL to SL Report " \n "<br></br> " \n "<br></br> " \n "Ammo = Your combined ammo state after you have redistributed (Low or Good), if after redistribution you still have team members on red or yellow ammo states you overall ammo state is low. " \n "<br></br> " \n "<br></br> " \n "Casualties = State your dead first, then wounded after that. For example - “Alpha 2, 1 dead, 1 wounded”. Alternatively, “Alpha 2, 3 up, one is wounded”. " \n "<br></br> " \n "<br></br> " \n "Equipment = If the team has lost any important equipment, it is noted here. For example all AT used, AR lost or explosives lost etc. Be specific if down on any equipment if not down response is “Equipment good”. " \n "<br></br> " \n "<br></br> " \n "Example: “SL this is A1, ACE Report, Ammo Low, 1 Dead, Equipment good”. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "As a squad leader, ACE reports from your fireteam leaders are compiled to form the sitrep that you give to the platoon commander.";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO TTP'S";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item18
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={1.4941406,0,-2.5727539};
+						};
+						id=16;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="AT PROCEDURE";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>AT PROCEDURE</font color> " \n "<br></br> " \n "<br></br> " \n "Check your surroundings while preparing the weapon. " \n "<br></br> " \n "<br></br> " \n "Shout “Clear Backblast!” once prepped. " \n "<br></br> " \n "<br></br> " \n "Team mates will respond with “Backblast Clear” or if no response received check visually if backblast is clear. " \n "<br></br> " \n "<br></br> " \n "Shout “Rocket” before pulling the trigger.";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO TTP'S";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item19
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={1.4941406,0,-0.57275391};
+						};
+						id=17;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CONTACT REPORTS";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>CONTACT REPORTS</font color> " \n "<br></br> " \n "<br></br> " \n "A = Alert by saying “CONTACT”. " \n "<br></br> " \n "<br></br> " \n "O = Orient either using the relative bearing “LEFT” or “RIGHT”, general compass “NW” or “S”, specific compass bearing “280°” or “95°”. Range if immediate threat in meters. " \n "<br></br> " \n "<br></br> " \n "D = Describe what did you see? “Infantry”, “Fire Team”, “Tank”, “Truck”. " \n "<br></br> " \n "<br></br> " \n "E = Expound on range if not already given. Specific degree bearing to the target. Info about what the target is doing. Specific positioning of the target “two soldiers on the roof”. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "Example: “Contact, South West 100m, Fire Team, Moving right to left.";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO TTP'S";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item20
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={1.4941406,0,1.4272461};
+						};
+						id=18;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="TTP'S Overview";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<br></br>This entire section will detail CNTO Tactics, Techniques and Procedures we use in game. Please read over and use to remind yourself and remind others.";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO TTP'S";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item21
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={3.4941406,0,-2.5727539};
+						};
+						id=20;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="GOLDEN RULES";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>GOLDEN RULES</font color>  " \n "<br></br>   " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>In the Lobby:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] 19:55 Once you hear ""Clear comms"" - you close your mouth instantly. " \n "There should not be any more joking around and more importantly you should show respect towards the Role Manager conducting role selection by remaining quiet and listening in. " \n "<br></br>   " \n "<br></br>   " \n "[*] Chat is not to be used unless requesting ""PTS"". " \n "<br></br>   " \n "<br></br>   " \n "[*] Whatever you want to say, it can wait 5 - 20 seconds, even if it is a response to some question or comment. Let people talk and write your PTS in the chat in order to make your response. There may be moments PTS will get cut short. " \n "<br></br>   " \n "<br></br>   " \n "[*] Let the Staff-Members (or the Role Manager) do the work and sort things out. Make it easier for them by listening and being patient. The less people tend to talk over each other, the quicker we can start the mission. " \n "<br></br>   " \n "<br></br>   " \n "[*] Make sure you have your Tags: NO TAGS - NO PLAY. " \n "<br></br>   " \n "<br></br> " \n "[*] Don’t take game impacting and leading roles if you don’t intend on staying until the very end of the mission. It gives a very bad impression to everyone in your team and creates problems with communication and logistics. If you have to leave because of real life situation forcing you - make sure someone takes over before leaving. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>In Game:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] Lower your direct speech volume at base, really do it. Not everyone wants to hear 30 peoples conversations while trying to plan for the mission. " \n "<br></br> " \n "<br></br> " \n "[*] Do not place unnecessary map markers. " \n "<br></br> " \n "<br></br> " \n "[*] Listen to orders, even if you don't like them. You can try to change your Leaders opinion, but don't force it. If he says ""move out now"" you move out now. He may have information you don't. Next time take FTL, SL or PTL if you're really unhappy by decisions being made. " \n "<br></br> " \n "<br></br> " \n "[*] looting of the enemy should be a last resort in dire situations. Do not loot the enemy dead unless permission has been granted by Platoon Lead.  " \n "<br></br> " \n "<br></br> " \n "[*] Don't talk unless necessary. You will be better in terms of concentration, awareness and your communications. This will also stop you missing orders if you’re chatting away. If you really have to wait for 5-10 mins somewhere and nothing is going on. Stick to your buddy, go on lowest volume -> Now you can talk. " \n "<br></br> " \n "<br></br> " \n "[*] At Base don't kill players, don't shoot or throw grenades, don't mess around with equipment! If you are bored, go afk until reinsertion time, make yourself some coffee or even better: ""READ ARMA 3 Tactical Guide"". " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>During Debrief:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] Keep calm during the Debrief. Don't run around, don't take your clothes off, don't drop your weapons, don't do anything but listen. Have some respect and don't distract other people from listening.  " \n "<br></br> " \n "<br></br> " \n "[*] Try to keep it brief. Sometimes we talk too much and people stop listening to us. But if you really had a cool experience make sure to share it. Just think about how much time you’re going to take. You can always go into more details in the War Stories forum. " \n "<br></br> " \n "<br></br> " \n "[*] Technical issues - address them very shortly. We don't need to know instantly how many people had the problem and all the details. We only need to know there was a problem and someone has noticed it. Talk with that person after the mission if you encounter the same issues and open up a post on the forums. ";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO Etiquette";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item22
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={3.4941406,0,-0.57275391};
+						};
+						id=21;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="REINSERTION POLICY";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>REINSERTION POLICY</font color>  " \n "<br></br>  " \n "<br></br>  " \n "[*] Reinsetions Policy: Resinsertions will be on the hour every hour only no matter your role.  " \n "<br></br>  " \n "<br></br>  " \n "[*] Platoon Wild Card: This allows the platoon commander a one time option to bring in reinsertions whenever they deem it necessary, it is designed to be used to counter extreme situations like a full or partial platoon wipe. " \n "<br></br>  " \n "<br></br> " \n "[*] Platoon Wild Card: Can be used once only during a mission and is requested by Platoon Lead through HQ.";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO Etiquette";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item23
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={3.4941406,0,1.4272461};
+						};
+						id=22;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO Etiquette Overview";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<br></br>This entire section will detail CNTO's Etiquette.";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO Etiquette";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item24
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={1.5756836,0,-8.4584961};
+						};
+						id=27;
+						type="ModuleCreateDiaryRecord_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="ModuleCreateDiaryRecord_F_PresetTitle";
+								expression="_this setVariable ['PresetTitle',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="Situation";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="ModuleCreateDiaryRecord_F_Title";
+								expression="_this setVariable ['Title',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="RADIO CHANNELS";
+									};
+								};
+							};
+							class Attribute2
+							{
+								property="ModuleCreateDiaryRecord_F_Description";
+								expression="_this setVariable ['Description',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="<font color='#FF0000' size='15'>RADIO CHANNELS</font color>  " \n "<br></br>  " \n "<br></br>  " \n "<font color='#FF0000' size='12'>Short Range</font color>  " \n "<br></br>  " \n "<br></br>  " \n "Ch 1: Alpha " \n "<br></br>  " \n "<br></br>  " \n "Ch 2: Bravo  " \n "<br></br>  " \n "<br></br>  " \n "Ch 3: Charlie  " \n "<br></br>  " \n "<br></br>  " \n "Ch 4: Platoon " \n "<br></br>  " \n "<br></br>  " \n "Ch 5: MMG " \n "<br></br>  " \n "<br></br>  " \n "Ch 6: MAT " \n "<br></br>  " \n "<br></br>  " \n "Ch 7: ENG " \n "<br></br>  " \n "<br></br>  " \n "Ch 8: DMT " \n "<br></br>  " \n "<br></br>  " \n "Ch 9: Tertiary Support Elements - HMG, HAT or Mortar " \n "<br></br>  " \n "<br></br>  " \n "<br></br>  " \n "<font color='#FF0000' size='12'>Long Range</font color>  " \n "<br></br>  " \n "<br></br>  " \n "Ch 1: Platoon Net " \n "<br></br>  " \n "<br></br>  " \n "Ch 2: Armour Net " \n "<br></br>  " \n "<br></br>  " \n "Ch 3: Air Net " \n "<br></br>  " \n "<br></br>  " \n "Ch 4: Reserved " \n "<br></br>  " \n "<br></br>  " \n "Ch 5: HQ Net";
+									};
+								};
+							};
+							class Attribute3
+							{
+								property="ModuleCreateDiaryRecord_F_Owner";
+								expression="_this setVariable ['Owner',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=3;
+									};
+								};
+							};
+							class Attribute4
+							{
+								property="ModuleCreateDiaryRecord_F_Subject";
+								expression="_this setVariable ['Subject',_value,true];";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="CNTO TTP'S";
+									};
+								};
+							};
+							nAttributes=5;
+						};
+					};
+					class Item25
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-0.50585938,0,-2.5727539};
+						};
+						name="Respaw_and_Scenario_Settings";
+						id=30;
+						type="a3aa_ee_execute_code_3den";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="a3aa_ee_execute_code_3den_code";
+								expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
+								class Value
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"STRING"
+											};
+										};
+										value="/*  " \n " * Refer to  " \n " * https://community.bistudio.com/wiki/Eden_Editor:_Setting_Attributes  " \n " *  " \n " * To get existing value for an attribute, put this in debug line:  " \n " *   <section> get3DENMissionAttribute <name>  " \n " * ie.  " \n " *   ""Multiplayer"" get3DENMissionAttribute ""Respawn""  " \n " */  " \n "set3DENMissionAttributes [  " \n "    [""Scenario"", ""Saving"", false],  " \n "    [""Scenario"", ""EnableDebugConsole"", 1],  " \n "    [""Scenario"", ""SaveBinarized"", false],  " \n "    [""Multiplayer"", ""GameType"", ""Coop""],  " \n "    [""Multiplayer"", ""DisabledAI"", true],  " \n "    [""Multiplayer"", ""Respawn"", 3],  // on custom location  " \n "    [""Multiplayer"", ""RespawnTemplates"", []],  " \n "    [""Multiplayer"", ""RespawnDelay"", 10],  " \n "    [""Multiplayer"", ""RespawnVehicleDelay"", 10],  " \n "    [""Multiplayer"", ""RespawnDialog"", false],  " \n "    [""Multiplayer"", ""AIKills"", false]  " \n "];";
+									};
+								};
+							};
+							nAttributes=1;
+						};
+					};
+					class Item26
+					{
+						dataType="Logic";
+						class PositionInfo
+						{
+							position[]={-2.5058594,0,-0.57275391};
+						};
+						id=8;
 						type="acre_api_nameChannels";
 						class CustomAttributes
 						{
@@ -612,1214 +1856,14 @@ class items
 							nAttributes=11;
 						};
 					};
-					class Item6
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={-4.5053711,0,3.4277344};
-						};
-						title="HC/Spect";
-						id=78;
-					};
-					class Item7
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={-2.5053711,0,3.4277344};
-						};
-						title="ACRE2";
-						id=79;
-					};
-					class Item8
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={-0.50537109,0,3.4277344};
-						};
-						title="CNTO";
-						id=80;
-					};
-					class Item9
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={-4.5058594,0,5.4277344};
-						};
-						title="v2.1.0";
-						description="Current composition version.";
-						id=81;
-					};
-					class Item10
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={1.4946289,0,3.4277344};
-						};
-						title="TTPs";
-						id=82;
-					};
-					class Item11
+					class Item27
 					{
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={1.5634766,0,-6.6557617};
+							position[]={-0.50537109,0,-4.5723877};
 						};
-						id=83;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="JTAC REPORT";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>JTAC REPORT</font color> " \n "<br></br> " \n "<br></br> " \n "Target and Description = What is the target i.e. BMP or bunker etc, where is the target any description that may be helpful to the pilot on a CAS run. " \n "<br></br> " \n "<br></br> " \n "How target is marked = How you have marked the target either on the map or with smoke etc. " \n "<br></br> " \n "<br></br> " \n "Ingress and Egress = The best direction for the CAS run to come in from to avoid AA and/or to see the target if obscured by buildings etc. Safest direction to exit the CAS run. " \n "<br></br> " \n "<br></br>" \n "Where and/or how friendlies are marked = Give details on where friendlies are to aviod friendly fire and how you may have marked yourself either on the map or with smoke etc." \n "<br></br> " \n "<br></br>" \n "<br></br> " \n "<br></br> " \n "Example: " \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>""REAPER"" this is ""ALPHA"" standby for CAS</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>""REAPER"" Send</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>Target BMP in the open, marked Tango One on map, ingress from SW egress SE, friendlies marked with green smoke.</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>BMP Tango One, ingress SW egress SE friendlies at green smoke.</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>Roger that call in when ready.</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>""ALPHA"" this is ""REAPER"" ready for CAS</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>""REAPER"" this is ""ALPHA"" CAS mission is a go</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>""REAPER"" Ok out</font color>" \n "<br></br> " \n "<br></br>" \n "<br></br> " \n "<br></br>" \n "<font color='#4AE507'>ALPHA Speaking</font color>" \n "<br></br> " \n "<br></br>" \n "<font color='#132DED'>REAPER Speaking</font color>";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO TTP'S";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item12
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={1.4946289,0,-4.5722656};
-						};
-						id=84;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="ACE REPORT";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>ACE REPORT</font color> " \n "<br></br> " \n "<br></br> " \n "Ammo = If your team is low on ammo, give details on it. This can be in general (“Low on ammo”) or more specific (“AR is low on ammo, but we have plenty of rifle ammo”). " \n "<br></br> " \n "<br></br> " \n "Casualties = State your dead first, then wounded after that. For example - “Alpha 2, 1 dead, 1 wounded”. Alternatively, an element leader can simply reply with how many units are alive under his command (how many are “up”). In the previous example, it would become: “Alpha 2, 3 up, one is wounded”. " \n "<br></br> " \n "<br></br> " \n "Equipment = If the team has lost any important equipment, it is noted here. For example, if the automatic rifle has been lost due to a casualty, and the AAR was unable to retrieve it, the team leader states so here. If the anti-tank weapons have been expended, he can state that as well. " \n "<br></br> " \n "<br></br> " \n "Example: I am good on ammo, not injured and carry no specialist equipment my response is “All Green” " \n "<br></br> " \n "<br></br> " \n "Example: I am low on ammo, lightly wounded and carry no specialist equipment my response is “Red, Yellow, Green” " \n "<br></br> " \n "<br></br> " \n "Example: I am good on ammo, not injured and have used my AT my response is “Green, Green, Red” " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "FTL to SL Report " \n "<br></br> " \n "<br></br> " \n "Ammo = Your combined ammo state after you have redistributed (Low or Good), if after redistribution you still have team members on red or yellow ammo states you overall ammo state is low. " \n "<br></br> " \n "<br></br> " \n "Casualties = State your dead first, then wounded after that. For example - “Alpha 2, 1 dead, 1 wounded”. Alternatively, “Alpha 2, 3 up, one is wounded”. " \n "<br></br> " \n "<br></br> " \n "Equipment = If the team has lost any important equipment, it is noted here. For example all AT used, AR lost or explosives lost etc. Be specific if down on any equipment if not down response is “Equipment good”. " \n "<br></br> " \n "<br></br> " \n "Example: “SL this is A1, ACE Report, Ammo Low, 1 Dead, Equipment good”. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "As a squad leader, ACE reports from your fireteam leaders are compiled to form the sitrep that you give to the platoon commander.";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO TTP'S";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item13
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={1.4946289,0,-2.5722656};
-						};
-						id=85;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="AT PROCEDURE";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>AT PROCEDURE</font color> " \n "<br></br> " \n "<br></br> " \n "Check your surroundings while preparing the weapon. " \n "<br></br> " \n "<br></br> " \n "Shout “Clear Backblast!” once prepped. " \n "<br></br> " \n "<br></br> " \n "Team mates will respond with “Backblast Clear” or if no response received check visually if backblast is clear. " \n "<br></br> " \n "<br></br> " \n "Shout “Rocket” before pulling the trigger.";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO TTP'S";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item14
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={1.4946289,0,-0.57226563};
-						};
-						id=86;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CONTACT REPORTS";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>CONTACT REPORTS</font color> " \n "<br></br> " \n "<br></br> " \n "A = Alert by saying “CONTACT”. " \n "<br></br> " \n "<br></br> " \n "O = Orient either using the relative bearing “LEFT” or “RIGHT”, general compass “NW” or “S”, specific compass bearing “280°” or “95°”. Range if immediate threat in meters. " \n "<br></br> " \n "<br></br> " \n "D = Describe what did you see? “Infantry”, “Fire Team”, “Tank”, “Truck”. " \n "<br></br> " \n "<br></br> " \n "E = Expound on range if not already given. Specific degree bearing to the target. Info about what the target is doing. Specific positioning of the target “two soldiers on the roof”. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "Example: “Contact, South West 100m, Fire Team, Moving right to left.";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO TTP'S";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item15
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={1.4946289,0,1.4277344};
-						};
-						id=87;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="TTP'S Overview";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<br></br>This entire section will detail CNTO Tactics, Techniques and Procedures we use in game. Please read over and use to remind yourself and remind others.";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO TTP'S";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item16
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={3.4946289,0,3.4277344};
-						};
-						title="Etiquette";
-						id=88;
-					};
-					class Item17
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={3.4946289,0,-2.5722656};
-						};
-						id=89;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="GOLDEN RULES";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>GOLDEN RULES</font color>  " \n "<br></br>   " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>In the Lobby:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] 19:55 Once you hear ""Clear comms"" - you close your mouth instantly. " \n "There should not be any more joking around and more importantly you should show respect towards the Role Manager conducting role selection by remaining quiet and listening in. " \n "<br></br>   " \n "<br></br>   " \n "[*] Chat is not to be used unless requesting ""PTS"". " \n "<br></br>   " \n "<br></br>   " \n "[*] Whatever you want to say, it can wait 5 - 20 seconds, even if it is a response to some question or comment. Let people talk and write your PTS in the chat in order to make your response. There may be moments PTS will get cut short. " \n "<br></br>   " \n "<br></br>   " \n "[*] Let the Staff-Members (or the Role Manager) do the work and sort things out. Make it easier for them by listening and being patient. The less people tend to talk over each other, the quicker we can start the mission. " \n "<br></br>   " \n "<br></br>   " \n "[*] Make sure you have your Tags: NO TAGS - NO PLAY. " \n "<br></br>   " \n "<br></br> " \n "[*] Don’t take game impacting and leading roles if you don’t intend on staying until the very end of the mission. It gives a very bad impression to everyone in your team and creates problems with communication and logistics. If you have to leave because of real life situation forcing you - make sure someone takes over before leaving. " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>In Game:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] Lower your direct speech volume at base, really do it. Not everyone wants to hear 30 peoples conversations while trying to plan for the mission. " \n "<br></br> " \n "<br></br> " \n "[*] Do not place unnecessary map markers. " \n "<br></br> " \n "<br></br> " \n "[*] Listen to orders, even if you don't like them. You can try to change your Leaders opinion, but don't force it. If he says ""move out now"" you move out now. He may have information you don't. Next time take FTL, SL or PTL if you're really unhappy by decisions being made. " \n "<br></br> " \n "<br></br> " \n "[*] looting of the enemy should be a last resort in dire situations. Do not loot the enemy dead unless permission has been granted by Platoon Lead.  " \n "<br></br> " \n "<br></br> " \n "[*] Don't talk unless necessary. You will be better in terms of concentration, awareness and your communications. This will also stop you missing orders if you’re chatting away. If you really have to wait for 5-10 mins somewhere and nothing is going on. Stick to your buddy, go on lowest volume -> Now you can talk. " \n "<br></br> " \n "<br></br> " \n "[*] At Base don't kill players, don't shoot or throw grenades, don't mess around with equipment! If you are bored, go afk until reinsertion time, make yourself some coffee or even better: ""READ ARMA 3 Tactical Guide"". " \n "<br></br> " \n "<br></br> " \n "<br></br> " \n "<font color='#b3b3b3' size='14'>During Debrief:</font color> " \n "<br></br> " \n "<br></br> " \n "[*] Keep calm during the Debrief. Don't run around, don't take your clothes off, don't drop your weapons, don't do anything but listen. Have some respect and don't distract other people from listening.  " \n "<br></br> " \n "<br></br> " \n "[*] Try to keep it brief. Sometimes we talk too much and people stop listening to us. But if you really had a cool experience make sure to share it. Just think about how much time you’re going to take. You can always go into more details in the War Stories forum. " \n "<br></br> " \n "<br></br> " \n "[*] Technical issues - address them very shortly. We don't need to know instantly how many people had the problem and all the details. We only need to know there was a problem and someone has noticed it. Talk with that person after the mission if you encounter the same issues and open up a post on the forums. ";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO Etiquette";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item18
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={3.4946289,0,-0.57226563};
-						};
-						id=90;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="REINSERTION POLICY";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>REINSERTION POLICY</font color>  " \n "<br></br>  " \n "<br></br>  " \n "[*] Reinsetions Policy: Resinsertions will be on the hour every hour only no matter your role.  " \n "<br></br>  " \n "<br></br>  " \n "[*] Platoon Wild Card: This allows the platoon commander a one time option to bring in reinsertions whenever they deem it necessary, it is designed to be used to counter extreme situations like a full or partial platoon wipe. " \n "<br></br>  " \n "<br></br> " \n "[*] Platoon Wild Card: Can be used once only during a mission and is requested by Platoon Lead through HQ.";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO Etiquette";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item19
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={3.4946289,0,1.4277344};
-						};
-						id=91;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO Etiquette Overview";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<br></br>This entire section will detail CNTO's Etiquette.";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO Etiquette";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item20
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={5.4946289,0,3.4277344};
-						};
-						title="Briefing";
-						id=92;
-					};
-					class Item21
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={5.4946289,0,1.4277344};
-						};
-						id=93;
-						type="a3aa_ee_briefing";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="a3aa_ee_briefing_situation";
-								expression="_this setVariable [""a3aa_ee_briefing_situation"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="a3aa_ee_briefing_mission";
-								expression="_this setVariable [""a3aa_ee_briefing_mission"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="a3aa_ee_briefing_execution";
-								expression="_this setVariable [""a3aa_ee_briefing_execution"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="a3aa_ee_briefing_admin_logistics";
-								expression="_this setVariable [""a3aa_ee_briefing_admin_logistics"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="";
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="a3aa_ee_briefing_briefingfor";
-								expression="_this setVariable [""a3aa_ee_briefing_briefingfor"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="everyone";
-									};
-								};
-							};
-							class Attribute5
-							{
-								property="a3aa_ee_briefing_command_signal";
-								expression="_this setVariable [""a3aa_ee_briefing_command_signal"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="";
-									};
-								};
-							};
-							nAttributes=6;
-						};
-					};
-					class Item22
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={-0.50537109,0,1.4277344};
-						};
-						id=94;
-						type="a3aa_ee_basic_vehicle_cargo";
-					};
-					class Item23
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={-0.50537109,0,-0.57226563};
-						};
-						id=95;
-						type="a3aa_ee_aresenal_respawn";
-					};
-					class Item24
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={1.5761719,0,-8.4580078};
-						};
-						id=96;
-						type="ModuleCreateDiaryRecord_F";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="ModuleCreateDiaryRecord_F_PresetTitle";
-								expression="_this setVariable ['PresetTitle',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="Situation";
-									};
-								};
-							};
-							class Attribute1
-							{
-								property="ModuleCreateDiaryRecord_F_Title";
-								expression="_this setVariable ['Title',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="RADIO CHANNELS";
-									};
-								};
-							};
-							class Attribute2
-							{
-								property="ModuleCreateDiaryRecord_F_Description";
-								expression="_this setVariable ['Description',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="<font color='#FF0000' size='15'>RADIO CHANNELS</font color>  " \n "<br></br>  " \n "<br></br>  " \n "<font color='#FF0000' size='12'>Short Range</font color>  " \n "<br></br>  " \n "<br></br>  " \n "Ch 1: Alpha " \n "<br></br>  " \n "<br></br>  " \n "Ch 2: Bravo  " \n "<br></br>  " \n "<br></br>  " \n "Ch 3: Charlie  " \n "<br></br>  " \n "<br></br>  " \n "Ch 4: Platoon " \n "<br></br>  " \n "<br></br>  " \n "Ch 5: MMG " \n "<br></br>  " \n "<br></br>  " \n "Ch 6: MAT " \n "<br></br>  " \n "<br></br>  " \n "Ch 7: ENG " \n "<br></br>  " \n "<br></br>  " \n "Ch 8: DMT " \n "<br></br>  " \n "<br></br>  " \n "Ch 9: Tertiary Support Elements - HMG, HAT or Mortar " \n "<br></br>  " \n "<br></br>  " \n "<br></br>  " \n "<font color='#FF0000' size='12'>Long Range</font color>  " \n "<br></br>  " \n "<br></br>  " \n "Ch 1: Platoon Net " \n "<br></br>  " \n "<br></br>  " \n "Ch 2: Armour Net " \n "<br></br>  " \n "<br></br>  " \n "Ch 3: Air Net " \n "<br></br>  " \n "<br></br>  " \n "Ch 4: Reserved " \n "<br></br>  " \n "<br></br>  " \n "Ch 5: HQ Net";
-									};
-								};
-							};
-							class Attribute3
-							{
-								property="ModuleCreateDiaryRecord_F_Owner";
-								expression="_this setVariable ['Owner',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"SCALAR"
-											};
-										};
-										value=3;
-									};
-								};
-							};
-							class Attribute4
-							{
-								property="ModuleCreateDiaryRecord_F_Subject";
-								expression="_this setVariable ['Subject',_value,true];";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="CNTO TTP'S";
-									};
-								};
-							};
-							nAttributes=5;
-						};
-					};
-					class Item25
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={-0.50537109,0,-4.5722656};
-						};
-						id=101;
+						id=28;
 						type="a3aa_ee_remove_ace_eh";
 						class CustomAttributes
 						{
@@ -1838,51 +1882,7 @@ class items
 												"STRING"
 											};
 										};
-										value="!(_this in playableUnits)";
-									};
-								};
-							};
-							nAttributes=1;
-						};
-					};
-					class Item26
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={1.4946289,0,7.4277344};
-						};
-						title="Never update Default Modules without placing an inhibitor module first!";
-						id=99;
-					};
-					class Item27
-					{
-						dataType="Logic";
-						class PositionInfo
-						{
-							position[]={-0.50537109,0,-2.5722656};
-						};
-						name="Respaw_and_Scenario_Settings";
-						id=98;
-						type="a3aa_ee_execute_code_3den";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="a3aa_ee_execute_code_3den_code";
-								expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="/*  " \n " * Refer to  " \n " * https://community.bistudio.com/wiki/Eden_Editor:_Setting_Attributes  " \n " *  " \n " * To get existing value for an attribute, put this in debug line:  " \n " *   <section> get3DENMissionAttribute <name>  " \n " * ie.  " \n " *   ""Multiplayer"" get3DENMissionAttribute ""Respawn""  " \n " */  " \n "set3DENMissionAttributes [  " \n "    [""Scenario"", ""Saving"", false],  " \n "    [""Scenario"", ""EnableDebugConsole"", 1],  " \n "    [""Scenario"", ""SaveBinarized"", false],  " \n "    [""Multiplayer"", ""GameType"", ""Coop""],  " \n "    [""Multiplayer"", ""DisabledAI"", true],  " \n "    [""Multiplayer"", ""Respawn"", 3],  // on custom location  " \n "    [""Multiplayer"", ""RespawnTemplates"", []],  " \n "    [""Multiplayer"", ""RespawnDelay"", 10],  " \n "    [""Multiplayer"", ""RespawnVehicleDelay"", 10],  " \n "    [""Multiplayer"", ""RespawnDialog"", false],  " \n "    [""Multiplayer"", ""AIKills"", false]  " \n "];";
+										value="private _players = playableUnits + allPlayers - [objNull]; " \n "if (isPlayer _this || _this in _players) exitWith { false }; " \n "(_players findIf { side _this getFriend side _x >= 0.6 }) isEqualTo -1";
 									};
 								};
 							};
@@ -1890,10 +1890,10 @@ class items
 						};
 					};
 				};
-				id=71;
+				id=53;
 			};
 		};
-		id=100;
+		id=31;
 		atlOffset=-2.5;
 	};
 };
