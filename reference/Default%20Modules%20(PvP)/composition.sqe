@@ -1,5 +1,5 @@
 version=54;
-center[]={4910.4644,5,1265.3202};
+center[]={4161.6177,5,7582.2124};
 class items
 {
 	items=1;
@@ -16,18 +16,18 @@ class items
 				name="Default Modules (PvP)";
 				class Entities
 				{
-					items=18;
+					items=17;
 					class Item0
 					{
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-2.4438477,0,0.66357422};
+							position[]={-2.4697266,0,0.46777344};
 						};
 						name="HC_4";
 						isPlayer=1;
 						isPlayable=1;
-						id=40;
+						id=129;
 						type="HeadlessClient_F";
 					};
 					class Item1
@@ -35,11 +35,11 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-2.4438477,0,-1.3364258};
+							position[]={-2.4697266,0,-1.5322266};
 						};
 						name="HC_5";
 						isPlayable=1;
-						id=41;
+						id=130;
 						type="HeadlessClient_F";
 					};
 					class Item2
@@ -47,11 +47,11 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-2.4438477,0,-3.3364258};
+							position[]={-2.4697266,0,-3.5322266};
 						};
 						name="Spectator_4";
 						isPlayable=1;
-						id=42;
+						id=131;
 						type="VirtualSpectator_F";
 						class CustomAttributes
 						{
@@ -157,11 +157,11 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-2.4438477,0,-5.3364258};
+							position[]={-2.4697266,0,-5.5322266};
 						};
 						name="Spectator_5";
 						isPlayable=1;
-						id=43;
+						id=132;
 						type="VirtualSpectator_F";
 						class CustomAttributes
 						{
@@ -267,9 +267,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={1.5400391,0,-1.3271484};
+							position[]={1.5141602,0,-1.5229492};
 						};
-						id=37;
+						id=133;
 						type="a3aa_ee_aresenal_respawn";
 					};
 					class Item5
@@ -277,9 +277,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-0.44384766,0,0.66357422};
+							position[]={-0.46972656,0,0.46777344};
 						};
-						id=47;
+						id=134;
 						type="acre_api_basicMissionSetup";
 						class CustomAttributes
 						{
@@ -405,9 +405,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={1.5561523,0,0.66357422};
+							position[]={1.5302734,0,0.46777344};
 						};
-						id=36;
+						id=135;
 						type="a3aa_ee_basic_vehicle_cargo";
 					};
 					class Item7
@@ -415,9 +415,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={3.5561523,0,0.66357422};
+							position[]={3.5302734,0,0.46777344};
 						};
-						id=35;
+						id=136;
 						type="a3aa_ee_briefing";
 						class CustomAttributes
 						{
@@ -543,9 +543,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={1.5400391,0,-3.3271484};
+							position[]={1.5141602,0,-3.5229492};
 						};
-						id=38;
+						id=137;
 						type="a3aa_ee_execute_code";
 						class CustomAttributes
 						{
@@ -709,9 +709,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={1.5561523,0,-5.3364258};
+							position[]={1.5302734,0,-5.5322266};
 						};
-						id=49;
+						id=138;
 						type="a3aa_ee_execute_code_3den";
 						class CustomAttributes
 						{
@@ -742,9 +742,9 @@ class items
 						dataType="Logic";
 						class PositionInfo
 						{
-							position[]={-0.42919922,0,-1.3022461};
+							position[]={-0.45507813,0,-1.4980469};
 						};
-						id=39;
+						id=139;
 						type="acre_api_nameChannels";
 						class CustomAttributes
 						{
@@ -962,46 +962,24 @@ class items
 					};
 					class Item11
 					{
-						dataType="Logic";
+						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={-0.44335938,0,-3.3361816};
+							position[]={-0.46972656,4.7683716e-007,2.4677734};
 						};
-						id=50;
-						type="a3aa_ee_remove_ace_eh";
-						class CustomAttributes
-						{
-							class Attribute0
-							{
-								property="a3aa_ee_remove_ace_eh_cond";
-								expression="_this setVariable [""a3aa_ee_remove_ace_eh_cond"",_value]";
-								class Value
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"STRING"
-											};
-										};
-										value="private _players = playableUnits + allPlayers - [objNull]; " \n "if (isPlayer _this || _this in _players) exitWith { false }; " \n "(_players findIf { side _this getFriend side _x >= 0.6 }) isEqualTo -1";
-									};
-								};
-							};
-							nAttributes=1;
-						};
+						title="ACRE2";
+						id=141;
+						atlOffset=4.7683716e-007;
 					};
 					class Item12
 					{
 						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={-0.44384766,4.7683716e-007,2.6635742};
+							position[]={3.5302734,4.7683716e-007,2.4677734};
 						};
-						title="ACRE2";
-						id=45;
+						title="Briefing";
+						id=142;
 						atlOffset=4.7683716e-007;
 					};
 					class Item13
@@ -1009,10 +987,10 @@ class items
 						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={3.5561523,4.7683716e-007,2.6635742};
+							position[]={1.5302734,4.7683716e-007,2.4677734};
 						};
-						title="Briefing";
-						id=34;
+						title="CNTO";
+						id=143;
 						atlOffset=4.7683716e-007;
 					};
 					class Item14
@@ -1020,10 +998,10 @@ class items
 						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={1.5561523,4.7683716e-007,2.6635742};
+							position[]={-2.4697266,4.7683716e-007,2.4677734};
 						};
-						title="CNTO";
-						id=46;
+						title="HC/Spect";
+						id=144;
 						atlOffset=4.7683716e-007;
 					};
 					class Item15
@@ -1031,10 +1009,10 @@ class items
 						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={-2.4438477,4.7683716e-007,2.6635742};
+							position[]={1.5302734,4.7683716e-007,6.4677734};
 						};
-						title="HC/Spect";
-						id=44;
+						title="Never update Default Modules without placing an inhibitor module first!";
+						id=145;
 						atlOffset=4.7683716e-007;
 					};
 					class Item16
@@ -1042,30 +1020,16 @@ class items
 						dataType="Comment";
 						class PositionInfo
 						{
-							position[]={1.5561523,4.7683716e-007,6.6635742};
+							position[]={-2.4697266,0,4.4677734};
 						};
-						title="Never update Default Modules without placing an inhibitor module first!";
-						id=51;
-						atlOffset=4.7683716e-007;
-					};
-					class Item17
-					{
-						dataType="Comment";
-						class PositionInfo
-						{
-							position[]={-2.4438477,4.7683716e-007,4.6635742};
-						};
-						title="v2.0.1";
+						title="v3.0.0";
 						description="Current composition version.";
-						id=48;
-						atlOffset=4.7683716e-007;
+						id=146;
 					};
 				};
-				id=32;
-				atlOffset=-1.9073486e-005;
+				id=128;
 			};
 		};
-		id=52;
-		atlOffset=-1.9073486e-005;
+		id=127;
 	};
 };
