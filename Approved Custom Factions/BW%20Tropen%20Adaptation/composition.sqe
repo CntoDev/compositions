@@ -1,0 +1,36 @@
+version=54;
+center[]={5166.728,5,3223.5991};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		name="BW_Tropen_Camo";
+		id=337;
+		type="a3aa_ee_execute_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_execute_code_3den_code";
+				expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="private _replace_strings = { " \n " params [""_from"", ""_to"", ""_gear""]; " \n " { " \n "  if (_x isEqualType []) then { " \n "   [_from, _to, _x] call _replace_strings; " \n "  } else { " \n "   if (_x isEqualType """") then { " \n "    private _off = _x find _from; " \n "    if (_off != -1) then { " \n "     _gear set [_forEachIndex, (_x select [0, _off]) + " \n "          _to + (_x select [_off + count _from])]; " \n "    }; " \n "   }; " \n "  }; " \n " } forEach _gear; " \n "}; " \n " " \n "{ " \n "    private _unit = _x; " \n " private _new_camo = ""Tropen""; " \n "  " \n " private _gear = getUnitLoadout _unit; " \n " private _replacement_table = [ " \n "  [""Fleck"", ""Tropen""]," \n "  [""CamoH_Flecktarn"",""BWA3_M92_Tropen""], " \n "  [""BoonieH_Flecktarn"",""BWA3_Booniehat_Tropen""]" \n " ]; " \n "  " \n " { " \n "  [_x select 0, _x select 1, _gear] call _replace_strings; " \n " } forEach _replacement_table; " \n "  " \n " _unit setUnitLoadout _gear; " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
