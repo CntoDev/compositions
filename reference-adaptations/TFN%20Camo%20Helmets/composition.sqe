@@ -1,0 +1,35 @@
+version=54;
+center[]={5071.9619,5,2671.9951};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		id=518;
+		type="a3aa_ee_execute_code_3den";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="a3aa_ee_execute_code_3den_code";
+				expression="[_this, _value] call a3aa_ee_execute_code_fnc_exec3DEN";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="{ " \n "    private _unit = _x; " \n "    private _loadout = getUnitLoadout _unit; " \n "    private _helmet = _loadout#6; " \n "    if (""_h_c_"" in _helmet  " \n "        || ""_h_s_"" in _helmet  " \n "        || ""_h_l_"" in _helmet " \n "    ) then { " \n "        private _asArray = _helmet splitString ""_""; " \n "        private _biome = _asArray select ((count _asArray)-1); " \n "        private _newHelm = ""cnto_flecktarn_h_b_"" + _biome; " \n "        _loadout set [6, _newHelm]; " \n "        _unit setUnitLoadout _loadout; " \n "    }; " \n "} forEach playableUnits; " \n "save3DENInventory playableUnits;";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
