@@ -32,7 +32,7 @@ This repository is maintained by the CNTO [Mission Making Team](https://github.c
 
 If you would like to contribute to this GitHub repository please follow these steps:
 
-1. Open an [Issue Report](https://github.com/CntoDev/cba-settings-lock/issues).
+1. Open an [Issue Report](https://github.com/CntoDev/compositions/issues).
 2. Identify and describe an issue, change or feature request in detail.
 
 
