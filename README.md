@@ -7,7 +7,7 @@ A collection of various EDEN editor compositions for Arma 3.
 ### How it works
 Our standard player factions (`reference`) and adaptation modules (`reference-adaptations`) are collectively created and published by the CNTO Mission Making Team. You can download the latest composition releases either directly on [GitHub](https://github.com/CntoDev/compositions/releases) or alternatively by subscribing to our [Steam Workshop collection](https://steamcommunity.com/workshop/filedetails/?id=2421823024).
 
-If you download the GitHub release manually, extract the compositions into your `compositions` directory in your Arma 3 profile:
+If you download the GitHub release manually, extract the folders into your `compositions` directory in the Arma 3 profile:
 
 ```
 C:\Users\YourWindowsUser\Documents\Arma 3\compositions
