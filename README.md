@@ -17,7 +17,7 @@ or if you have a non-default Arma 3 profile:
 C:\Users\YourWindowsUser\Documents\Arma 3 - Other Profiles\YourProfileName\compositions
 ```
 
-Additional per-author compositions not included in our standard releases are contained in the supplementary directories `Misc Compositions` and `custom factions`. You can download these manually on GitHub: green `Code` button / `Download ZIP`
+Additional per-author compositions not included in our standard releases are contained in the supplementary directories `Misc Compositions` and `custom factions`. You can download these manually on GitHub: `green Code button` then `Download ZIP`
 
 
 For detailed information regarding setup, maintenance and use of the EDEN Compositions please check the [Wiki](https://github.com/CntoDev/compositions/wiki).
