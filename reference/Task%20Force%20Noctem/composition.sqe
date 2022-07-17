@@ -1,5 +1,5 @@
 version=54;
-center[]={2645.5266,5,6245.105};
+center[]={3935.0718,5,7420.9902};
 class items
 {
 	items=1;
@@ -15,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4074707,0.89242268,-6.5849609};
+					position[]={6.4082031,0.89242268,-6.5874023};
 				};
 				side="Empty";
 				flags=4;
@@ -44,7 +44,7 @@ class items
 										"STRING"
 									};
 								};
-								value="[[[[""rhs_weap_M136_hedp""],[4]],[[""ACE_30Rnd_556x45_Stanag_Mk318_mag"",""30Rnd_556x45_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""1Rnd_HE_Grenade_shell"",""MRAWS_HEAT_F"",""MRAWS_HE_F"",""HandGrenade"",""rhsusf_5Rnd_300winmag_xm2010"",""hlc_100Rnd_762x51_M_MG3"",""hlc_100Rnd_762x51_T_MG3""],[80,20,12,30,8,4,15,6,3,24,10,6,2]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,10]],[[],[]]],false]";
+								value="[[[[""rhs_weap_M136_hedp""],[4]],[[""ACE_30Rnd_556x45_Stanag_Mk318_mag"",""30Rnd_556x45_Stanag_Tracer_Red"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellBlue"",""1Rnd_HE_Grenade_shell"",""MRAWS_HEAT_F"",""MRAWS_HE_F"",""HandGrenade"",""rhsusf_5Rnd_300winmag_xm2010"",""hlc_100Rnd_762x51_M_MG3"",""hlc_100Rnd_762x51_T_MG3"",""rhsusf_100Rnd_556x45_mixed_soft_pouch""],[80,20,30,8,4,15,6,3,24,10,6,2,12]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_packingBandage"",""ACE_elasticBandage"",""ACE_morphine"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_bloodIV""],[40,60,20,20,15,15,5,10]],[[],[]]],false]";
 							};
 						};
 					};
@@ -73,7 +73,7 @@ class items
 			class Item1
 			{
 				dataType="Marker";
-				position[]={6.2531738,1.3349106e+013,-2.2324219};
+				position[]={6.2541504,1.3349106e+013,-2.2348633};
 				name="respawn_guerrila";
 				type="respawn_unknown";
 				id=2;
@@ -82,7 +82,7 @@ class items
 			class Item2
 			{
 				dataType="Marker";
-				position[]={5.4587402,0,-5.890625};
+				position[]={5.4597168,0,-5.8930664};
 				name="resupply_marker";
 				text="Resupply";
 				type="mil_triangle";
@@ -94,9 +94,9 @@ class items
 				dataType="Comment";
 				class PositionInfo
 				{
-					position[]={7.3303223,0,-2.2387695};
+					position[]={7.3312988,0,-2.2412109};
 				};
-				title="v3.0.3";
+				title="v3.1.0";
 				id=4;
 			};
 			class Item4
@@ -104,7 +104,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4553223,0,-3.5698242};
+					position[]={6.4562988,0,-3.5722656};
 				};
 				side="Empty";
 				flags=4;
@@ -164,7 +164,7 @@ class items
 				dataType="Logic";
 				class PositionInfo
 				{
-					position[]={-0.046630859,0,1.5742188};
+					position[]={-0.045654297,0,1.5717773};
 				};
 				name="Player_Corpse_CleanUp";
 				areaSize[]={200,-1,200};
@@ -239,8 +239,8 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.15991211,0.96907806,-8.1992188};
-					angles[]={0,4.7252698,0};
+					position[]={-0.15893555,0.96907806,-8.2016602};
+					angles[]={-0,4.7252698,0};
 				};
 				side="Empty";
 				flags=4;
@@ -258,10 +258,11 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.33935547,0.96907234,-8.1987305};
-					angles[]={0,1.5836768,0};
+					position[]={0.34033203,0.96907806,-8.2011719};
+					angles[]={-0,1.5836768,0};
 				};
 				side="Empty";
+				flags=4;
 				class Attributes
 				{
 					init="call{this addAction [""VISCOM"", {[true,false,false] call ace_spectator_fnc_setSpectator}];}";
@@ -270,14 +271,13 @@ class items
 				};
 				id=8;
 				type="Land_Laptop_unfolded_F";
-				atlOffset=0.8130002;
 			};
 			class Item8
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.090087891,8.4787369,-8.1992188};
+					position[]={0.091064453,8.4787369,-8.2016602};
 					angles[]={0,3.1416116,0};
 				};
 				side="Empty";
@@ -294,7 +294,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.090087891,0.40520144,-8.1992188};
+					position[]={0.091064453,0.40520144,-8.2016602};
 				};
 				side="Empty";
 				flags=4;
@@ -308,7 +308,7 @@ class items
 			class Item10
 			{
 				dataType="Marker";
-				position[]={0.090087891,0,-8.1992188};
+				position[]={0.091064453,0,-8.2016602};
 				name="viscom_marker";
 				text="VISCOM";
 				type="mil_triangle";
@@ -318,7 +318,7 @@ class items
 			class Item11
 			{
 				dataType="Marker";
-				position[]={-2.189209,0,-8.1904297};
+				position[]={-2.1882324,0,-8.1928711};
 				name="scopebox_marker";
 				text="Scopebox";
 				type="mil_triangle";
@@ -330,7 +330,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.4814453,0.28405476,-4.902832};
+					position[]={6.4821777,0.28405476,-4.9052734};
 				};
 				side="Empty";
 				flags=4;
@@ -359,7 +359,7 @@ class items
 										"STRING"
 									};
 								};
-								value="[[[[""rhs_weap_M136_hedp""],[1]],[[""ACE_30Rnd_556x45_Stanag_Mk318_mag"",""30Rnd_556x45_Stanag_Tracer_Red"",""rhsusf_100Rnd_556x45_soft_pouch"",""SmokeShell"",""1Rnd_HE_Grenade_shell"",""HandGrenade""],[24,6,4,12,5,10]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
+								value="[[[[""rhs_weap_M136_hedp""],[1]],[[""ACE_30Rnd_556x45_Stanag_Mk318_mag"",""30Rnd_556x45_Stanag_Tracer_Red"",""SmokeShell"",""1Rnd_HE_Grenade_shell"",""HandGrenade"",""rhsusf_100Rnd_556x45_mixed_soft_pouch""],[24,6,12,5,10,4]],[[""ACE_fieldDressing"",""ACE_quikclot"",""ACE_morphine""],[12,18,4]],[[],[]]],false]";
 							};
 						};
 					};
@@ -390,8 +390,8 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.7973633,0.14963102,-6.0078125};
-					angles[]={0,4.712389,0};
+					position[]={4.7983398,0.14963102,-6.0102539};
+					angles[]={-0,4.712389,0};
 				};
 				side="Empty";
 				flags=4;
@@ -451,7 +451,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={6.3122559,0.18872452,-8.1030273};
+					position[]={6.3132324,0.18872452,-8.1054688};
 				};
 				side="Empty";
 				flags=4;
@@ -511,8 +511,8 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.5334473,0.18670559,-6.0068359};
-					angles[]={0,1.5707964,0};
+					position[]={3.5344238,0.18670559,-6.0092773};
+					angles[]={-0,1.5707964,0};
 				};
 				side="Empty";
 				flags=4;
@@ -572,7 +572,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.1828613,0.40520144,-8.1816406};
+					position[]={-2.1818848,0.40520144,-8.184082};
 				};
 				side="Empty";
 				flags=4;
@@ -588,10 +588,11 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-2.2055664,0.9696579,-8.190918};
-					angles[]={0,1.5707964,0};
+					position[]={-2.2045898,0.96966362,-8.1933594};
+					angles[]={-0,1.5707964,0};
 				};
 				side="Empty";
+				flags=4;
 				class Attributes
 				{
 					init="call{this call cnto_fnc_scopebox;}";
@@ -600,7 +601,6 @@ class items
 				};
 				id=18;
 				type="Land_PlasticCase_01_small_F";
-				atlOffset=0.8130002;
 				class CustomAttributes
 				{
 					class Attribute0
@@ -630,7 +630,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.3393555,0.19412327,-8.0917969};
+					position[]={4.340332,0.19412327,-8.0942383};
 				};
 				side="Empty";
 				flags=4;
@@ -689,7 +689,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.0187988,1.4441342,-8.199707};
+					position[]={-4.0178223,1.4441342,-8.2021484};
 					angles[]={0,3.1415927,0};
 				};
 				side="Empty";
@@ -706,7 +706,7 @@ class items
 			class Item20
 			{
 				dataType="Marker";
-				position[]={-4.0305176,0,-8.1733398};
+				position[]={-4.029541,0,-8.1757813};
 				name="telestation_marker";
 				text="Telestation";
 				type="mil_triangle";
@@ -719,7 +719,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.2414551,0.19412327,-8.0908203};
+					position[]={3.2424316,0.19412327,-8.0932617};
 				};
 				side="Empty";
 				flags=4;
@@ -785,7 +785,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-6.0285645,0.0014390945,10.087402};
+							position[]={-6.0275879,0.0014390945,10.084961};
 						};
 						side="Independent";
 						flags=7;
@@ -801,6 +801,7 @@ class items
 								{
 									name="rhs_weap_hk416d145_m320";
 									flashlight="rhsusf_acc_anpeq16a";
+									firemode="rhs_weap_hk416d145_m320:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -808,7 +809,7 @@ class items
 									};
 									class secondaryMuzzleMag
 									{
-										name="1Rnd_SmokeRed_Grenade_shell";
+										name="1Rnd_HE_Grenade_shell";
 										ammoLeft=1;
 									};
 								};
@@ -875,7 +876,7 @@ class items
 										};
 										class Item6
 										{
-											name="acc_flashlight";
+											name="rhsusf_acc_M952V";
 											count=1;
 										};
 										class Item7
@@ -918,38 +919,44 @@ class items
 									isBackpack=1;
 									class MagazineCargo
 									{
-										items=6;
+										items=7;
 										class Item0
 										{
-											name="1Rnd_Smoke_Grenade_shell";
-											count=5;
+											name="1Rnd_HE_Grenade_shell";
+											count=3;
 											ammoLeft=1;
 										};
 										class Item1
 										{
-											name="1Rnd_SmokeRed_Grenade_shell";
-											count=5;
+											name="1Rnd_Smoke_Grenade_shell";
+											count=4;
 											ammoLeft=1;
 										};
 										class Item2
 										{
-											name="1Rnd_SmokeGreen_Grenade_shell";
-											count=5;
+											name="1Rnd_SmokeRed_Grenade_shell";
+											count=4;
 											ammoLeft=1;
 										};
 										class Item3
+										{
+											name="1Rnd_SmokeGreen_Grenade_shell";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item4
 										{
 											name="SmokeShell";
 											count=7;
 											ammoLeft=1;
 										};
-										class Item4
+										class Item5
 										{
 											name="SmokeShellGreen";
 											count=5;
 											ammoLeft=1;
 										};
-										class Item5
+										class Item6
 										{
 											name="SmokeShellBlue";
 											count=2;
@@ -978,7 +985,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_s_grassland";
 							};
@@ -1154,7 +1161,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.029541,0.0014390945,10.088379};
+							position[]={-5.0285645,0.0014390945,10.085938};
 						};
 						side="Independent";
 						flags=5;
@@ -1523,7 +1530,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.029541,0.0014390945,10.088379};
+							position[]={-4.0285645,0.0014390945,10.085938};
 						};
 						side="Independent";
 						flags=5;
@@ -1827,7 +1834,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.029541,0.0014390945,10.088379};
+							position[]={-3.0285645,0.0014390945,10.085938};
 						};
 						side="Independent";
 						flags=5;
@@ -2055,6 +2062,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="PLATOON";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -2072,7 +2098,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item23
@@ -2087,7 +2113,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.9934082,0.0014390945,7.534668};
+							position[]={-5.9924316,0.0014390945,7.5322266};
 						};
 						side="Independent";
 						flags=7;
@@ -2444,7 +2470,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.9934082,0.0014390945,7.5356445};
+							position[]={-4.9924316,0.0014390945,7.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -2748,7 +2774,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.9934082,0.0014390945,5.5356445};
+							position[]={-5.9924316,0.0014390945,5.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -3060,7 +3086,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.9934082,0.0014390945,5.5356445};
+							position[]={-4.9924316,0.0014390945,5.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -3076,9 +3102,10 @@ class items
 									name="rhs_weap_minimi_para_railed";
 									muzzle="rhsusf_acc_SF3P556";
 									underBarrel="rhsusf_acc_saw_bipod";
+									firemode="rhs_weap_minimi_para_railed:FullAuto";
 									class primaryMuzzleMag
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 										ammoLeft=100;
 									};
 								};
@@ -3150,7 +3177,7 @@ class items
 										items=2;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=4;
 											ammoLeft=100;
 										};
@@ -3171,7 +3198,7 @@ class items
 										items=1;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -3179,7 +3206,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
 						};
@@ -3307,7 +3334,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.9924316,0.0014390945,5.534668};
+							position[]={-3.9914551,0.0014390945,5.5322266};
 						};
 						side="Independent";
 						flags=5;
@@ -3323,6 +3350,7 @@ class items
 								{
 									name="rhs_weap_hk416d145";
 									underBarrel="rhsusf_acc_grip2";
+									firemode="rhs_weap_hk416d145:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -3444,7 +3472,7 @@ class items
 										};
 										class Item1
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -3485,7 +3513,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
@@ -3652,7 +3680,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.9934082,0.0014390945,5.5356445};
+							position[]={-2.9924316,0.0014390945,5.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -3899,7 +3927,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.9934082,0.0014390945,3.5356445};
+							position[]={-5.9924316,0.0014390945,3.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -4211,7 +4239,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.9934082,0.0014390945,3.5356445};
+							position[]={-4.9924316,0.0014390945,3.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -4227,9 +4255,10 @@ class items
 									name="rhs_weap_minimi_para_railed";
 									muzzle="rhsusf_acc_SF3P556";
 									underBarrel="rhsusf_acc_saw_bipod";
+									firemode="rhs_weap_minimi_para_railed:FullAuto";
 									class primaryMuzzleMag
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 										ammoLeft=100;
 									};
 								};
@@ -4301,7 +4330,7 @@ class items
 										items=2;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=4;
 											ammoLeft=100;
 										};
@@ -4322,7 +4351,7 @@ class items
 										items=1;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -4330,7 +4359,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
 						};
@@ -4458,7 +4487,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.9924316,0.0014390945,3.534668};
+							position[]={-3.9914551,0.0014390945,3.5322266};
 						};
 						side="Independent";
 						flags=5;
@@ -4474,6 +4503,7 @@ class items
 								{
 									name="rhs_weap_hk416d145";
 									underBarrel="rhsusf_acc_grip2";
+									firemode="rhs_weap_hk416d145:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -4595,7 +4625,7 @@ class items
 										};
 										class Item1
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -4636,7 +4666,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
@@ -4803,7 +4833,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.9934082,0.0014390945,3.5356445};
+							position[]={-2.9924316,0.0014390945,3.5332031};
 						};
 						side="Independent";
 						flags=5;
@@ -5054,6 +5084,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ALPHA";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -5071,7 +5120,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item24
@@ -5086,7 +5135,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.54467773,0.0014390945,7.7172852};
+							position[]={-0.54370117,0.0014390945,7.7148438};
 						};
 						side="Independent";
 						flags=7;
@@ -5442,7 +5491,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.4543457,0.0014390945,7.7172852};
+							position[]={0.45532227,0.0014390945,7.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -5746,7 +5795,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.6159668,0.0014390945,5.7446289};
+							position[]={-0.61499023,0.0014390945,5.7421875};
 						};
 						side="Independent";
 						flags=5;
@@ -6058,7 +6107,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.4543457,0.0014390945,5.7172852};
+							position[]={0.45532227,0.0014390945,5.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -6074,9 +6123,10 @@ class items
 									name="rhs_weap_minimi_para_railed";
 									muzzle="rhsusf_acc_SF3P556";
 									underBarrel="rhsusf_acc_saw_bipod";
+									firemode="rhs_weap_minimi_para_railed:FullAuto";
 									class primaryMuzzleMag
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 										ammoLeft=100;
 									};
 								};
@@ -6148,7 +6198,7 @@ class items
 										items=2;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=4;
 											ammoLeft=100;
 										};
@@ -6169,7 +6219,7 @@ class items
 										items=1;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -6177,7 +6227,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
 						};
@@ -6305,7 +6355,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.4543457,0.0014390945,5.7172852};
+							position[]={1.4553223,0.0014390945,5.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -6321,6 +6371,7 @@ class items
 								{
 									name="rhs_weap_hk416d145";
 									underBarrel="rhsusf_acc_grip2";
+									firemode="rhs_weap_hk416d145:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -6442,7 +6493,7 @@ class items
 										};
 										class Item1
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -6483,7 +6534,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
@@ -6650,7 +6701,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={2.4543457,0.0014390945,5.7172852};
+							position[]={2.4553223,0.0014390945,5.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -6897,7 +6948,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.5456543,0.0014390945,3.7172852};
+							position[]={-0.54467773,0.0014390945,3.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -7209,7 +7260,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.4543457,0.0014390945,3.7172852};
+							position[]={0.45532227,0.0014390945,3.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -7225,9 +7276,10 @@ class items
 									name="rhs_weap_minimi_para_railed";
 									muzzle="rhsusf_acc_SF3P556";
 									underBarrel="rhsusf_acc_saw_bipod";
+									firemode="rhs_weap_minimi_para_railed:FullAuto";
 									class primaryMuzzleMag
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 										ammoLeft=100;
 									};
 								};
@@ -7299,7 +7351,7 @@ class items
 										items=2;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=4;
 											ammoLeft=100;
 										};
@@ -7320,7 +7372,7 @@ class items
 										items=1;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -7328,7 +7380,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
 						};
@@ -7456,7 +7508,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.4543457,0.0014390945,3.7172852};
+							position[]={1.4553223,0.0014390945,3.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -7472,6 +7524,7 @@ class items
 								{
 									name="rhs_weap_hk416d145";
 									underBarrel="rhsusf_acc_grip2";
+									firemode="rhs_weap_hk416d145:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -7593,7 +7646,7 @@ class items
 										};
 										class Item1
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -7634,7 +7687,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
@@ -7801,7 +7854,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={2.4543457,0.0014390945,3.7172852};
+							position[]={2.4553223,0.0014390945,3.7148438};
 						};
 						side="Independent";
 						flags=5;
@@ -8052,6 +8105,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="BRAVO";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -8069,7 +8141,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item25
@@ -8084,7 +8156,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.9250488,0.0014390945,7.9697266};
+							position[]={4.9260254,0.0014390945,7.9672852};
 						};
 						side="Independent";
 						flags=7;
@@ -8440,7 +8512,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.9382324,0.0014390945,7.9501953};
+							position[]={5.939209,0.0014390945,7.9477539};
 						};
 						side="Independent";
 						flags=5;
@@ -8744,7 +8816,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.9250488,0.0014390945,6};
+							position[]={4.9260254,0.0014390945,5.9975586};
 						};
 						side="Independent";
 						flags=5;
@@ -9056,7 +9128,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.9187012,0.0014390945,5.9804688};
+							position[]={5.9196777,0.0014390945,5.9780273};
 						};
 						side="Independent";
 						flags=5;
@@ -9072,9 +9144,10 @@ class items
 									name="rhs_weap_minimi_para_railed";
 									muzzle="rhsusf_acc_SF3P556";
 									underBarrel="rhsusf_acc_saw_bipod";
+									firemode="rhs_weap_minimi_para_railed:FullAuto";
 									class primaryMuzzleMag
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 										ammoLeft=100;
 									};
 								};
@@ -9146,7 +9219,7 @@ class items
 										items=2;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=4;
 											ammoLeft=100;
 										};
@@ -9167,7 +9240,7 @@ class items
 										items=1;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -9175,7 +9248,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
 						};
@@ -9303,7 +9376,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={6.8942871,0.0014390945,5.9619141};
+							position[]={6.8952637,0.0014390945,5.9594727};
 						};
 						side="Independent";
 						flags=5;
@@ -9319,6 +9392,7 @@ class items
 								{
 									name="rhs_weap_hk416d145";
 									underBarrel="rhsusf_acc_grip2";
+									firemode="rhs_weap_hk416d145:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -9440,7 +9514,7 @@ class items
 										};
 										class Item1
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -9481,7 +9555,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
@@ -9648,7 +9722,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={7.9206543,0.0014390945,5.9873047};
+							position[]={7.9216309,0.0014390945,5.9848633};
 						};
 						side="Independent";
 						flags=5;
@@ -9895,7 +9969,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.9484863,0.0014390945,3.9707031};
+							position[]={4.9494629,0.0014390945,3.9682617};
 						};
 						side="Independent";
 						flags=5;
@@ -10207,7 +10281,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.9240723,0.0014390945,3.9560547};
+							position[]={5.9250488,0.0014390945,3.9536133};
 						};
 						side="Independent";
 						flags=5;
@@ -10223,9 +10297,10 @@ class items
 									name="rhs_weap_minimi_para_railed";
 									muzzle="rhsusf_acc_SF3P556";
 									underBarrel="rhsusf_acc_saw_bipod";
+									firemode="rhs_weap_minimi_para_railed:FullAuto";
 									class primaryMuzzleMag
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 										ammoLeft=100;
 									};
 								};
@@ -10297,7 +10372,7 @@ class items
 										items=2;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=4;
 											ammoLeft=100;
 										};
@@ -10318,7 +10393,7 @@ class items
 										items=1;
 										class Item0
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -10326,7 +10401,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
 						};
@@ -10454,7 +10529,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={6.9304199,0.0014390945,3.953125};
+							position[]={6.9313965,0.0014390945,3.9506836};
 						};
 						side="Independent";
 						flags=5;
@@ -10470,6 +10545,7 @@ class items
 								{
 									name="rhs_weap_hk416d145";
 									underBarrel="rhsusf_acc_grip2";
+									firemode="rhs_weap_hk416d145:Single";
 									class primaryMuzzleMag
 									{
 										name="ACE_30Rnd_556x45_Stanag_Mk318_mag";
@@ -10591,7 +10667,7 @@ class items
 										};
 										class Item1
 										{
-											name="rhsusf_100Rnd_556x45_soft_pouch";
+											name="rhsusf_100Rnd_556x45_mixed_soft_pouch";
 											count=2;
 											ammoLeft=100;
 										};
@@ -10632,7 +10708,7 @@ class items
 								};
 								map="ItemMap";
 								compass="ItemCompass";
-								watch="ItemWatch";
+								watch="Itemwatch";
 								gps="ItemGPS";
 								headgear="cnto_flecktarn_h_c_grassland";
 							};
@@ -10799,7 +10875,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={7.9304199,0.0014390945,3.9633789};
+							position[]={7.9313965,0.0014390945,3.9609375};
 						};
 						side="Independent";
 						flags=5;
@@ -11050,6 +11126,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="CHARLIE";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -11067,7 +11162,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item26
@@ -11082,7 +11177,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.8918457,0.0014390945,0.84912109};
+							position[]={-5.8908691,0.0014390945,0.84667969};
 						};
 						side="Independent";
 						flags=7;
@@ -11438,7 +11533,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.8918457,0.0014390945,0.84814453};
+							position[]={-4.8908691,0.0014390945,0.84570313};
 						};
 						side="Independent";
 						flags=5;
@@ -11670,7 +11765,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.8918457,0.0014390945,0.84814453};
+							position[]={-3.8908691,0.0014390945,0.84570313};
 						};
 						side="Independent";
 						flags=5;
@@ -11919,6 +12014,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="MMG";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -11936,7 +12050,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item27
@@ -11951,7 +12065,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.48413086,0.0014390945,0.94824219};
+							position[]={-0.4831543,0.0014390945,0.94580078};
 						};
 						side="Independent";
 						flags=7;
@@ -12307,7 +12421,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.6809082,0.0014390945,0.95410156};
+							position[]={0.68188477,0.0014390945,0.95166016};
 						};
 						side="Independent";
 						flags=5;
@@ -12580,7 +12694,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.7980957,0.0014390945,0.97265625};
+							position[]={1.7990723,0.0014390945,0.97021484};
 						};
 						side="Independent";
 						flags=5;
@@ -12848,6 +12962,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="MAT";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -12865,7 +12998,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item28
@@ -12880,7 +13013,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.7678223,0.0014390945,0.92138672};
+							position[]={4.7687988,0.0014390945,0.91894531};
 						};
 						side="Independent";
 						flags=7;
@@ -13209,7 +13342,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.7678223,0.0014390945,0.92138672};
+							position[]={5.7687988,0.0014390945,0.91894531};
 						};
 						side="Independent";
 						flags=5;
@@ -13453,7 +13586,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={6.7678223,0.0014390945,0.92138672};
+							position[]={6.7687988,0.0014390945,0.91894531};
 						};
 						side="Independent";
 						flags=5;
@@ -13697,7 +13830,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={7.7678223,0.0014390945,0.92138672};
+							position[]={7.7687988,0.0014390945,0.91894531};
 						};
 						side="Independent";
 						flags=5;
@@ -13945,6 +14078,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -13962,7 +14114,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item29
@@ -13977,7 +14129,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.7756348,0.0014390945,-2.3935547};
+							position[]={-5.7746582,0.0014390945,-2.3964844};
 						};
 						side="Independent";
 						flags=6;
@@ -14313,7 +14465,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.4904785,0.0014390945,-2.3964844};
+							position[]={-4.489502,0.0014390945,-2.3989258};
 						};
 						side="Independent";
 						flags=4;
@@ -14612,6 +14764,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="DMT";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -14629,7 +14800,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item30
@@ -14644,7 +14815,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.7487793,0.0014390945,-2.347168};
+							position[]={-2.7478027,0.0014390945,-2.3496094};
 						};
 						side="Independent";
 						flags=7;
@@ -14977,7 +15148,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.5852051,0.0014390945,-2.3413086};
+							position[]={-1.5842285,0.0014390945,-2.34375};
 						};
 						side="Independent";
 						flags=5;
@@ -15257,6 +15428,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="HAT";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -15274,7 +15464,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item31
@@ -15289,7 +15479,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.31762695,0.0014390945,-2.3085938};
+							position[]={0.31860352,0.0014390945,-2.3110352};
 						};
 						side="Independent";
 						flags=6;
@@ -15598,7 +15788,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.3186035,0.0014390945,-2.3085938};
+							position[]={1.3195801,0.0014390945,-2.3110352};
 						};
 						side="Independent";
 						flags=4;
@@ -15863,6 +16053,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="HMG";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -15880,7 +16089,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item32
@@ -15895,7 +16104,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={3.1906738,0.0014390945,-2.2583008};
+							position[]={3.1916504,0.0014390945,-2.2607422};
 						};
 						side="Independent";
 						flags=7;
@@ -16209,7 +16418,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.1916504,0.0014390945,-2.2583008};
+							position[]={4.192627,0.0014390945,-2.2607422};
 						};
 						side="Independent";
 						flags=5;
@@ -16496,6 +16705,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="MORTAR";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -16513,7 +16741,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item33
@@ -16528,7 +16756,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.911377,0.0014390945,-5.3891602};
+							position[]={-5.9104004,0.0014390945,-5.3916016};
 						};
 						side="Independent";
 						flags=7;
@@ -16839,7 +17067,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.911377,0.0014390945,-5.3891602};
+							position[]={-4.9104004,0.0014390945,-5.3916016};
 						};
 						side="Independent";
 						flags=5;
@@ -17077,7 +17305,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.911377,0.0014390945,-5.3891602};
+							position[]={-3.9104004,0.0014390945,-5.3916016};
 						};
 						side="Independent";
 						flags=5;
@@ -17295,6 +17523,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="DAGGER";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -17312,7 +17559,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item34
@@ -17327,7 +17574,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.185791,0.0014390945,-5.2495117};
+							position[]={-2.1848145,0.0014390945,-5.2519531};
 						};
 						side="Independent";
 						flags=7;
@@ -17668,7 +17915,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.185791,0.0014390945,-5.2485352};
+							position[]={-1.1848145,0.0014390945,-5.2509766};
 						};
 						side="Independent";
 						flags=5;
@@ -18012,6 +18259,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="NIGHTBIRD";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -18029,7 +18295,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item35
@@ -18044,7 +18310,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.97387695,0.0014390945,-5.1040039};
+							position[]={0.97485352,0.0014390945,-5.1064453};
 						};
 						side="Independent";
 						flags=7;
@@ -18382,6 +18648,25 @@ class items
 				{
 					class Attribute0
 					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="FALCON";
+							};
+						};
+					};
+					class Attribute1
+					{
 						property="a3aa_ee_persistent_callsign";
 						expression="false";
 						class Value
@@ -18399,7 +18684,7 @@ class items
 							};
 						};
 					};
-					nAttributes=1;
+					nAttributes=2;
 				};
 			};
 			class Item36
@@ -18414,7 +18699,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-6.7697754,0.0014390945,-8.1479492};
+							position[]={-6.7687988,0.0014390945,-8.1503906};
 						};
 						side="Independent";
 						flags=7;
@@ -18422,7 +18707,7 @@ class items
 						{
 							rank="COLONEL";
 							init="call{this disableAI ""MOVE"";" \n "this setSpeaker ""NoVoice"";" \n "enableRadio false;}";
-							description="Game Master@GAME MASTER";
+							description="Game Master@COMMAND";
 							isPlayable=1;
 							class Inventory
 							{
@@ -18700,7 +18985,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.7697754,0.0014390945,-8.1479492};
+							position[]={-5.7687988,0.0014390945,-8.1503906};
 						};
 						side="Independent";
 						flags=5;
@@ -19022,11 +19307,30 @@ class items
 										"STRING"
 									};
 								};
-								value="GM";
+								value="COMMAND";
 							};
 						};
 					};
-					nAttributes=2;
+					class Attribute2
+					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="COMMAND";
+							};
+						};
+					};
+					nAttributes=3;
 				};
 			};
 		};
