@@ -1,5 +1,5 @@
 version=54;
-center[]={6233.0024,5,813.47015};
+center[]={5793.0146,5,3873.5015};
 class items
 {
 	items=1;
@@ -13,26 +13,26 @@ class items
 			class Item0
 			{
 				dataType="Marker";
-				position[]={5.0405273,10.228224,-7.7719116};
+				position[]={5.0024414,10.228285,-7.7678223};
 				name="resupply_marker";
 				text="Resupply";
 				type="mil_triangle";
 				colorName="ColorGreen";
 				id=1;
-				atlOffset=10.000731;
+				atlOffset=10.000244;
 			};
 			class Item1
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.1411133,0.28405476,-5.6381226};
+					position[]={7.1035156,0.28405476,-5.6345215};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					init="call{[this, 200] call cnto_fnc_boxGuard}";
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_box_signs.paa""];";
 					description="Fireteam Supply Box";
 					dynamicSimulation=1;
 				};
@@ -74,13 +74,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.2241211,0.89242268,-7.6879272};
+					position[]={7.1865234,0.89242268,-7.6833496};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					init="call{[this, 200] call cnto_fnc_boxGuard}";
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_platoon_crate.paa""];";
 					description="Platoon Supply Crate";
 					dynamicSimulation=1;
 				};
@@ -120,7 +120,7 @@ class items
 			class Item3
 			{
 				dataType="Marker";
-				position[]={6.9174805,2.4371225e+032,-2.0512085};
+				position[]={6.8793945,2.4371225e+032,-2.0471191};
 				name="respawn_west";
 				type="respawn_unknown";
 				angle=359.38086;
@@ -132,7 +132,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.1137695,0,-3.7128296};
+					position[]={7.0756836,0,-3.7087402};
 				};
 				side="Empty";
 				flags=4;
@@ -187,7 +187,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.565918,0.0014390945,10.828186};
+							position[]={-5.6040039,0.0014390945,10.832275};
 						};
 						side="West";
 						flags=7;
@@ -482,7 +482,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.565918,0.0014390945,10.827209};
+							position[]={-4.6040039,0.0014390945,10.831299};
 						};
 						side="West";
 						flags=5;
@@ -744,7 +744,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.565918,0.0014390945,10.827209};
+							position[]={-3.6040039,0.0014390945,10.831299};
 						};
 						side="West";
 						flags=5;
@@ -991,7 +991,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.565918,0.0014390945,10.827209};
+							position[]={-2.6040039,0.0014390945,10.831299};
 						};
 						side="West";
 						flags=5;
@@ -1187,7 +1187,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.5273438,0.0014390945,7.9116821};
+							position[]={-5.5654297,0.0014390945,7.9157715};
 						};
 						side="West";
 						flags=7;
@@ -1456,7 +1456,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.5268555,0.0014390945,7.9102173};
+							position[]={-4.5649414,0.0014390945,7.9143066};
 						};
 						side="West";
 						flags=5;
@@ -1703,7 +1703,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.5268555,0.0014390945,5.9102173};
+							position[]={-5.5649414,0.0014390945,5.9143066};
 						};
 						side="West";
 						flags=5;
@@ -1952,7 +1952,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.5268555,0.0014390945,5.9102173};
+							position[]={-4.5649414,0.0014390945,5.9143066};
 						};
 						side="West";
 						flags=5;
@@ -2137,7 +2137,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.5268555,0.0014390945,5.9102173};
+							position[]={-3.5649414,0.0014390945,5.9143066};
 						};
 						side="West";
 						flags=5;
@@ -2381,7 +2381,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.5268555,0.0014390945,5.9102173};
+							position[]={-2.5649414,0.0014390945,5.9143066};
 						};
 						side="West";
 						flags=5;
@@ -2565,7 +2565,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.5268555,0.0014390945,3.9102173};
+							position[]={-5.5649414,0.0014390945,3.9143066};
 						};
 						side="West";
 						flags=5;
@@ -2814,7 +2814,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.5268555,0.0014390945,3.9102173};
+							position[]={-4.5649414,0.0014390945,3.9143066};
 						};
 						side="West";
 						flags=5;
@@ -2999,7 +2999,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.5268555,0.0014390945,3.9102173};
+							position[]={-3.5649414,0.0014390945,3.9143066};
 						};
 						side="West";
 						flags=5;
@@ -3243,7 +3243,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.5268555,0.0014390945,3.9102173};
+							position[]={-2.5649414,0.0014390945,3.9143066};
 						};
 						side="West";
 						flags=5;
@@ -3457,7 +3457,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.0307617,0.0014390945,7.8760376};
+							position[]={-1.0688477,0.0014390945,7.880127};
 						};
 						side="West";
 						flags=7;
@@ -3712,7 +3712,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.031738281,0.0014390945,7.8760376};
+							position[]={-0.069824219,0.0014390945,7.880127};
 						};
 						side="West";
 						flags=5;
@@ -3959,7 +3959,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.0317383,0.0014390945,5.8760376};
+							position[]={-1.0698242,0.0014390945,5.880127};
 						};
 						side="West";
 						flags=5;
@@ -4208,7 +4208,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.031738281,0.0014390945,5.8760376};
+							position[]={-0.069824219,0.0014390945,5.880127};
 						};
 						side="West";
 						flags=5;
@@ -4393,7 +4393,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.96826172,0.0014390945,5.8760376};
+							position[]={0.93017578,0.0014390945,5.880127};
 						};
 						side="West";
 						flags=5;
@@ -4637,7 +4637,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.9682617,0.0014390945,5.8760376};
+							position[]={1.9301758,0.0014390945,5.880127};
 						};
 						side="West";
 						flags=5;
@@ -4821,7 +4821,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.0317383,0.0014390945,3.8760376};
+							position[]={-1.0698242,0.0014390945,3.880127};
 						};
 						side="West";
 						flags=5;
@@ -5070,7 +5070,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.031738281,0.0014390945,3.8760376};
+							position[]={-0.069824219,0.0014390945,3.880127};
 						};
 						side="West";
 						flags=5;
@@ -5255,7 +5255,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.96826172,0.0014390945,3.8760376};
+							position[]={0.93017578,0.0014390945,3.880127};
 						};
 						side="West";
 						flags=5;
@@ -5499,7 +5499,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.9682617,0.0014390945,3.8760376};
+							position[]={1.9301758,0.0014390945,3.880127};
 						};
 						side="West";
 						flags=5;
@@ -5713,7 +5713,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.2788086,0.0014390945,7.8721313};
+							position[]={4.2407227,0.0014390945,7.8762207};
 						};
 						side="West";
 						flags=7;
@@ -5968,7 +5968,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.2788086,0.0014390945,7.8711548};
+							position[]={5.2407227,0.0014390945,7.8752441};
 						};
 						side="West";
 						flags=5;
@@ -6215,7 +6215,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.2788086,0.0014390945,5.8711548};
+							position[]={4.2407227,0.0014390945,5.8752441};
 						};
 						side="West";
 						flags=5;
@@ -6464,7 +6464,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.2788086,0.0014390945,5.8711548};
+							position[]={5.2407227,0.0014390945,5.8752441};
 						};
 						side="West";
 						flags=5;
@@ -6649,7 +6649,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={6.2788086,0.0014390945,5.8711548};
+							position[]={6.2407227,0.0014390945,5.8752441};
 						};
 						side="West";
 						flags=5;
@@ -6893,7 +6893,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={7.2788086,0.0014390945,5.8711548};
+							position[]={7.2407227,0.0014390945,5.8752441};
 						};
 						side="West";
 						flags=5;
@@ -7077,7 +7077,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.2788086,0.0014390945,3.8711548};
+							position[]={4.2407227,0.0014390945,3.8752441};
 						};
 						side="West";
 						flags=5;
@@ -7326,7 +7326,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.2788086,0.0014390945,3.8711548};
+							position[]={5.2407227,0.0014390945,3.8752441};
 						};
 						side="West";
 						flags=5;
@@ -7511,7 +7511,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={6.2788086,0.0014390945,3.8711548};
+							position[]={6.2407227,0.0014390945,3.8752441};
 						};
 						side="West";
 						flags=5;
@@ -7755,7 +7755,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={7.2788086,0.0014390945,3.8711548};
+							position[]={7.2407227,0.0014390945,3.8752441};
 						};
 						side="West";
 						flags=5;
@@ -7969,7 +7969,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.765625,0.0014390945,0.79656982};
+							position[]={-5.8037109,0.0014390945,0.80078125};
 						};
 						side="West";
 						flags=7;
@@ -8250,7 +8250,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.765625,0.0014390945,0.79656982};
+							position[]={-4.8037109,0.0014390945,0.80078125};
 						};
 						side="West";
 						flags=5;
@@ -8452,7 +8452,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-3.7661133,0.0014390945,0.79693604};
+							position[]={-3.8041992,0.0014390945,0.80102539};
 						};
 						side="West";
 						flags=5;
@@ -8670,7 +8670,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.65478516,0.0014390945,0.64160156};
+							position[]={-0.69287109,0.0014390945,0.64575195};
 						};
 						side="West";
 						flags=7;
@@ -8951,7 +8951,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.34423828,0.0014390945,0.64056396};
+							position[]={0.30615234,0.0014390945,0.64477539};
 						};
 						side="West";
 						flags=5;
@@ -9175,7 +9175,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.3442383,0.0014390945,0.64068604};
+							position[]={1.3061523,0.0014390945,0.64477539};
 						};
 						side="West";
 						flags=5;
@@ -9393,7 +9393,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-6.1118164,0.0014390945,-2.3494263};
+							position[]={-6.1499023,0.0014390945,-2.3452148};
 						};
 						side="West";
 						flags=6;
@@ -9660,7 +9660,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.112793,0.0014390945,-2.3485718};
+							position[]={-5.1508789,0.0014390945,-2.3444824};
 						};
 						side="West";
 						flags=4;
@@ -9900,7 +9900,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.3022461,0.0014390945,0.74957275};
+							position[]={4.2641602,0.0014390945,0.75366211};
 						};
 						side="West";
 						flags=7;
@@ -10173,7 +10173,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={5.3012695,0.0014390945,0.74908447};
+							position[]={5.2631836,0.0014390945,0.75317383};
 						};
 						side="West";
 						flags=5;
@@ -10374,7 +10374,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={6.3012695,0.0014390945,0.74908447};
+							position[]={6.2631836,0.0014390945,0.75317383};
 						};
 						side="West";
 						flags=5;
@@ -10575,7 +10575,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={7.3012695,0.0014390945,0.74908447};
+							position[]={7.2631836,0.0014390945,0.75317383};
 						};
 						side="West";
 						flags=5;
@@ -10799,7 +10799,7 @@ class items
 				dataType="Logic";
 				class PositionInfo
 				{
-					position[]={0.69189453,0,1.5669556};
+					position[]={0.65380859,0,1.5710449};
 				};
 				name="Player_Corpse_CleanUp";
 				areaSize[]={200,-1,200};
@@ -10856,13 +10856,13 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={5.0288086,0.18872452,-8.2089233};
+					position[]={4.9902344,0.18872452,-8.2043457};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					init="call{[this, 200] call cnto_fnc_boxGuard}";
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_box_signs.paa""];";
 					description="Mortar Supply Box";
 					dynamicSimulation=1;
 				};
@@ -10904,7 +10904,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.78857422,8.4787369,-8.3109741};
+					position[]={0.75048828,8.4787369,-8.3068848};
 					angles[]={0,3.1416116,0};
 				};
 				side="Empty";
@@ -10921,7 +10921,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.78857422,0.40520144,-8.3109741};
+					position[]={0.75048828,0.40520144,-8.3068848};
 				};
 				side="Empty";
 				flags=4;
@@ -10935,7 +10935,7 @@ class items
 			class Item17
 			{
 				dataType="Marker";
-				position[]={0.80224609,0,-8.2997437};
+				position[]={0.76416016,0,-8.2956543};
 				name="viscom_marker";
 				text="VISCOM";
 				type="mil_triangle";
@@ -10945,7 +10945,7 @@ class items
 			class Item18
 			{
 				dataType="Marker";
-				position[]={-1.3764648,0,-8.3720093};
+				position[]={-1.4145508,0,-8.3679199};
 				name="scopebox_marker";
 				text="Scopebox";
 				type="mil_triangle";
@@ -10957,7 +10957,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.54736328,0.96907997,-8.2719116};
+					position[]={0.50927734,0.96907997,-8.2678223};
 					angles[]={-0,4.7176247,0};
 				};
 				side="Empty";
@@ -10977,7 +10977,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.0327148,0.96907997,-8.2738647};
+					position[]={0.99462891,0.96907997,-8.2697754};
 					angles[]={-0,1.5762417,0};
 				};
 				side="Empty";
@@ -11004,7 +11004,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-2.8789063,0.0014390945,-2.3384399};
+							position[]={-2.9169922,0.0014390945,-2.3342285};
 						};
 						side="West";
 						flags=7;
@@ -11263,7 +11263,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.878418,0.0014390945,-2.3388062};
+							position[]={-1.9165039,0.0014390945,-2.3347168};
 						};
 						side="West";
 						flags=5;
@@ -11467,14 +11467,14 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.3515625,0.18670559,-6.211853};
+					position[]={4.3134766,0.18670559,-6.2075195};
 					angles[]={-0,1.5707964,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					init="call{[this, 200] call cnto_fnc_boxGuard}";
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_box_signs.paa""];";
 					description="HAT Supply Box";
 					dynamicSimulation=1;
 				};
@@ -11523,7 +11523,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={0.33740234,0.0014390945,-2.3564453};
+							position[]={0.29931641,0.0014390945,-2.3522949};
 						};
 						side="West";
 						flags=6;
@@ -11757,7 +11757,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.3354492,0.0014390945,-2.3563843};
+							position[]={1.2973633,0.0014390945,-2.3522949};
 						};
 						side="West";
 						flags=4;
@@ -11966,7 +11966,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={3.6235352,0.0014390945,-2.3564453};
+							position[]={3.5854492,0.0014390945,-2.3522949};
 						};
 						side="West";
 						flags=7;
@@ -12201,7 +12201,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={4.6225586,0.0014390945,-2.3563843};
+							position[]={4.5844727,0.0014390945,-2.3522949};
 						};
 						side="West";
 						flags=5;
@@ -12419,7 +12419,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-6.0717773,0.0014390945,-5.3864136};
+							position[]={-6.1098633,0.0014390945,-5.3823242};
 						};
 						side="West";
 						flags=7;
@@ -12659,7 +12659,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.0727539,0.0014390945,-5.3876343};
+							position[]={-5.1108398,0.0014390945,-5.3835449};
 						};
 						side="West";
 						flags=5;
@@ -12846,7 +12846,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-4.0727539,0.0014390945,-5.3876343};
+							position[]={-4.1108398,0.0014390945,-5.3835449};
 						};
 						side="West";
 						flags=5;
@@ -13039,7 +13039,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-1.8676758,0.0014390945,-5.3827515};
+							position[]={-1.9057617,0.0014390945,-5.3786621};
 						};
 						side="West";
 						flags=7;
@@ -13286,7 +13286,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-0.86767578,0.0014390945,-5.383728};
+							position[]={-0.90576172,0.0014390945,-5.3796387};
 						};
 						side="West";
 						flags=5;
@@ -13562,7 +13562,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={1.3618164,0.0014390945,-5.4042358};
+							position[]={1.3237305,0.0014390945,-5.4001465};
 						};
 						side="West";
 						flags=7;
@@ -13823,7 +13823,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-6.1137695,0.0014390945,-8.2201538};
+							position[]={-6.1518555,0.0014390945,-8.2160645};
 						};
 						side="West";
 						flags=7;
@@ -13990,7 +13990,7 @@ class items
 						dataType="Object";
 						class PositionInfo
 						{
-							position[]={-5.1147461,0.0014390945,-8.2206421};
+							position[]={-5.152832,0.0014390945,-8.2165527};
 						};
 						side="West";
 						flags=5;
@@ -14167,54 +14167,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.4243164,0.19412327,-8.199646};
-				};
-				side="Empty";
-				flags=4;
-				class Attributes
-				{
-					description="HMG Supply Box (high)";
-					dynamicSimulation=1;
-				};
-				id=90;
-				type="Land_PlasticCase_01_medium_olive_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ammoBox";
-						expression="[_this,_value] call bis_fnc_initAmmoBox;";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="[[[[],[]],[[],[]],[[],[]],[[""RHS_M2_Gun_Bag"",""RHS_M2_Tripod_Bag""],[1,1]]],false]";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="ace_cargo_customName";
-						expression="_this setVariable [""ace_cargo_customName"", _value, true];";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="HMG Supply Box (high)";
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-			class Item30
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-3.1835938,1.4441342,-8.3383179};
+					position[]={-3.2216797,1.4441342,-8.3342285};
 					angles[]={0,3.1415927,0};
 				};
 				side="Empty";
@@ -14228,10 +14181,10 @@ class items
 				id=91;
 				type="Land_Calvary_03_F";
 			};
-			class Item31
+			class Item30
 			{
 				dataType="Marker";
-				position[]={-3.1953125,0,-8.3119507};
+				position[]={-3.2333984,0,-8.3078613};
 				name="telestation_marker";
 				text="Telestation";
 				type="mil_triangle";
@@ -14239,76 +14192,29 @@ class items
 				angle=0.42799973;
 				id=92;
 			};
+			class Item31
+			{
+				dataType="Comment";
+				class PositionInfo
+				{
+					position[]={7.1879883,0,-1.3078613};
+				};
+				title="v3.1.0";
+				id=94;
+			};
 			class Item32
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={2.409668,0.19412327,-8.2260132};
-				};
-				side="Empty";
-				flags=4;
-				class Attributes
-				{
-					description="HMG Supply Box (low)";
-					dynamicSimulation=1;
-				};
-				id=93;
-				type="Land_PlasticCase_01_medium_olive_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="ammoBox";
-						expression="[_this,_value] call bis_fnc_initAmmoBox;";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="[[[[],[]],[[],[]],[[],[]],[[""RHS_M2_Gun_Bag"",""RHS_M2_MiniTripod_Bag""],[1,1]]],false]";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="ace_cargo_customName";
-						expression="_this setVariable [""ace_cargo_customName"", _value, true];";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="HMG Supply Box (low)";
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-			class Item33
-			{
-				dataType="Comment";
-				class PositionInfo
-				{
-					position[]={7.2260742,0,-1.3119507};
-				};
-				title="v3.1.0";
-				id=94;
-			};
-			class Item34
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={5.5405273,0.14963102,-6.3168335};
+					position[]={5.5024414,0.14963102,-6.3125};
 					angles[]={-0,4.712389,0};
 				};
 				side="Empty";
 				flags=4;
 				class Attributes
 				{
-					init="call{[this, 200] call cnto_fnc_boxGuard}";
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_box_signs.paa""];";
 					description="MAT Supply Box";
 					dynamicSimulation=1;
 				};
@@ -14345,12 +14251,12 @@ class items
 					nAttributes=2;
 				};
 			};
-			class Item35
+			class Item33
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.3720703,0.40520144,-8.3915405};
+					position[]={-1.4101563,0.40520144,-8.3874512};
 				};
 				side="Empty";
 				flags=4;
@@ -14361,12 +14267,12 @@ class items
 				id=96;
 				type="Land_CampingTable_small_F";
 			};
-			class Item36
+			class Item34
 			{
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-1.378418,1.7826638,-8.3700562};
+					position[]={-1.4165039,1.7826638,-8.3659668};
 					angles[]={0,1.5707964,0};
 				};
 				side="Empty";
@@ -14395,6 +14301,102 @@ class items
 						};
 					};
 					nAttributes=1;
+				};
+			};
+			class Item35
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.3862305,0.28405476,-8.1955566};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_box_signs.paa""];";
+					description="HMG Supply Box (high)";
+					dynamicSimulation=1;
+				};
+				id=98;
+				type="Box_NATO_AmmoOrd_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[],[]],[[],[]],[[],[]],[[""RHS_M2_Gun_Bag"",""RHS_M2_Tripod_Bag""],[1,1]]],false]";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ace_cargo_customName";
+						expression="_this setVariable [""ace_cargo_customName"", _value, true];";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="HMG Supply Box (high)";
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item36
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.371582,0.28405476,-8.2214355};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					init="call{[this, 200] call cnto_fnc_boxGuard};" \n "" \n "this setObjectTexture [0, ""\resupply_crates\cnto_resupply_box_signs.paa""];";
+					description="HMG Supply Box (low)";
+					dynamicSimulation=1;
+				};
+				id=100;
+				type="Box_NATO_Grenades_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ammoBox";
+						expression="[_this,_value] call bis_fnc_initAmmoBox;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="[[[[],[]],[[],[]],[[],[]],[[""RHS_M2_Gun_Bag"",""RHS_M2_MiniTripod_Bag""],[1,1]]],false]";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="ace_cargo_customName";
+						expression="_this setVariable [""ace_cargo_customName"", _value, true];";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="HMG Supply Box (low)";
+							};
+						};
+					};
+					nAttributes=2;
 				};
 			};
 		};
